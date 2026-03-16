@@ -1,0 +1,373 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Multi-Frequency Approach}
+
+In this chapter, the procedure for identifying flutter derivatives using both the
+Single-Frequency and Multi-Frequency methods from CFD simulations is introduced.
+The calculation of the critical wind speed using the aerodynamic and structural
+properties of the bridge deck is then presented. A Python tool is developed to
+perform these tasks and validated against benchmark results.
+
+\noindent This chapter is organised as follows:
+\begin{enumerate}
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    \item Identification of Aerodynamic Forces
+    \item Calculation of Flutter Derivatives from Aerodynamic Forces
+    \item Calculation of Critical Wind Speed from Flutter Derivatives
+    \item Multi-Frequency Approach
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Identification of Aerodynamic Forces}
+
+Aerodynamic forces are obtained using forced-motion CFD simulations, as described below.
+
+\begin{itemize}
+    \setlength{\itemsep}{10pt}
+
+    \item A 2-D cross-section of the bridge deck is modelled in a virtual wind tunnel
+          with appropriate boundary conditions.
+
+    \item The bridge cross-section is oscillated sinusoidally in the vertical (heave)
+          direction:
+    \begin{align}
+        h(t)       &= h_0 \sin(\omega t), \\
+        \dot{h}(t) &= \omega h_0 \cos(\omega t),
+    \end{align}
+    where $h_0$ is the maximum amplitude of the applied heave motion and $\omega$ is
+    the angular frequency of the applied heave motion.
+
+    \item Since no pitch motion is applied, $\alpha = \dot{\alpha} = 0$. The
+          aerodynamic lift force and pitching moment therefore simplify to
+    \begin{align}
+        L_{ae} &= \frac{1}{2}\rho U^2 B
+                  \left[KH_1^*\frac{\dot{h}}{U} + K^2H_4^*\frac{h}{B}\right]
+                  \qquad \text{(Scanlan formulation)}, \\[4pt]
+        M_{ae} &= \frac{1}{2}\rho U^2 B^2
+                  \left[KA_1^*\frac{\dot{h}}{U} + K^2A_4^*\frac{h}{B}\right]
+                  \qquad \text{(Scanlan formulation)}.
+    \end{align}
+
+    \item Under the small-amplitude assumption (small $h_0$), Scanlan's linearisation
+          implies that the aerodynamic lift and moment measured from CFD take the
+          sinusoidal form
+    \begin{align}
+        L_{ae} &= B_0 \sin(\omega t + \phi)
+               \;=\; B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
+        M_{ae} &= C_0 \sin(\omega t + \Phi)
+               \;=\; C_1 \cos(\omega t) + C_2 \sin(\omega t).
+    \end{align}
+\end{itemize}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Calculation of Flutter Derivatives}
+
+\begin{itemize}
+    \setlength{\itemsep}{10pt}
+
+    \item Equating the lift force from the Scanlan formulation with the CFD result
+          and matching cosine and sine coefficients gives
+    \begin{align}
+        \frac{1}{2}\rho U^2 B
+        \left[KH_1^* + K^2H_4^*\right]
+        &= B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
+        \frac{1}{2}\rho U^2 B^2
+        \left[KA_1^* + K^2A_4^*\right]
+        &= C_1 \cos(\omega t) + C_2 \sin(\omega t).
+    \end{align}
+    Hence the flutter derivatives for heave excitation are
+    \begin{align}
+        H_1^* &= \frac{2B_1}{\rho\,\omega^2 B^2 h_0}, &
+        H_4^* &= \frac{2B_2}{\rho\,\omega^2 B^2 h_0}, \\[4pt]
+        A_1^* &= \frac{2C_1}{\rho\,\omega^2 B^3 h_0}, &
+        A_4^* &= \frac{2C_2}{\rho\,\omega^2 B^3 h_0}.
+    \end{align}
+
+    \item The same procedure is repeated with pitch (torsional) excitation to obtain
+          the remaining flutter derivatives $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$.
+
+    \item In total, two forced-motion simulations (one heave, one pitch) are required
+          to obtain a complete set of eight flutter derivatives at each reduced
+          velocity.
+\end{itemize}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Calculation of Critical Wind Speed}
+
+\subsection*{Equations of Motion}
+
+The coupled two-degree-of-freedom equations of motion for the bridge deck are
+
+\begin{align}
+    m\!\left(\ddot{h} + 2\omega_h\zeta_h\dot{h} + \omega_h^2 h\right)
+        &= L_{ae}, \\[4pt]
+    I_\alpha\!\left(\ddot{\alpha} + 2\omega_\alpha\zeta_\alpha\dot{\alpha}
+        + \omega_\alpha^2\alpha\right)
+        &= M_{ae},
+\end{align}
+
+where the aerodynamic forces are given by the Scanlan formulation:
+
+\begin{align}
+    L_{ae} &= \frac{1}{2}\rho U^2 B
+              \left[KH_1^*\frac{\dot{h}}{U}
+                  + KH_2^*\frac{B\dot{\alpha}}{U}
+                  + K^2H_3^*\alpha
+                  + K^2H_4^*\frac{h}{B}\right], \\[4pt]
+    M_{ae} &= \frac{1}{2}\rho U^2 B^2
+              \left[KA_1^*\frac{\dot{h}}{U}
+                  + KA_2^*\frac{B\dot{\alpha}}{U}
+                  + K^2A_3^*\alpha
+                  + K^2A_4^*\frac{h}{B}\right].
+\end{align}
+
+\subsection*{Matrix Form (Time Domain)}
+
+Substituting the aerodynamic forces into the equations of motion and rearranging
+yields the matrix system
+
+\begin{equation}
+\begin{split}
+    &\begin{bmatrix} m & 0 \\ 0 & I \end{bmatrix}
+    \begin{Bmatrix} \ddot{h} \\ \ddot{\alpha} \end{Bmatrix}
+    + \begin{bmatrix} C_h & 0 \\ 0 & C_\alpha \end{bmatrix}
+    \begin{Bmatrix} \dot{h} \\ \dot{\alpha} \end{Bmatrix}
+    + \begin{bmatrix} K_h & 0 \\ 0 & K_\alpha \end{bmatrix}
+    \begin{Bmatrix} h \\ \alpha \end{Bmatrix} \\[6pt]
+    &\quad
+    - \frac{1}{2}\rho K^2
+    \left(
+    \begin{bmatrix} H_1^* & BH_2^* \\ A_1^* & BA_2^* \end{bmatrix}
+    \begin{Bmatrix} \dot{h} \\ \dot{\alpha} \end{Bmatrix}
+    + \begin{bmatrix} H_4^* & H_3^* \\ A_4^* & BA_3^* \end{bmatrix}
+    \begin{Bmatrix} h \\ \alpha \end{Bmatrix}
+    \right)
+    = \begin{Bmatrix} 0 \\ 0 \end{Bmatrix}.
+\end{split}
+\end{equation}
+
+\subsection*{Frequency-Domain Eigenvalue Problem}
+
+Assuming harmonic motion $h = e^{i\omega t}$ and $\alpha = e^{i\omega t}$, and
+transforming to the frequency domain, the system becomes
+
+\begin{multline}
+    \left(
+    -\omega^2\begin{bmatrix} m & 0 \\ 0 & I \end{bmatrix}
+    + i\omega\begin{bmatrix} C_h & 0 \\ 0 & C_\alpha \end{bmatrix}
+    + \begin{bmatrix} K_h & 0 \\ 0 & K_\alpha \end{bmatrix}
+    - \frac{1}{2}\rho K^2
+    \begin{bmatrix} H_4^* - H_1^* & BH_3^* - BH_2^* \\
+                    A_4^* - A_1^* & BA_3^* - BA_2^* \end{bmatrix}
+    \right)
+    \begin{Bmatrix} h \\ \alpha \end{Bmatrix}
+    = \begin{Bmatrix} 0 \\ 0 \end{Bmatrix},
+\end{multline}
+
+which is of the standard form
+\begin{equation}
+    -\omega^2 M + i\omega C + K = 0.
+\end{equation}
+
+Here $\omega = \omega_r + i\omega_i$ is a complex frequency: the real part
+$\omega_r$ is the oscillation frequency and the imaginary part $\omega_i$
+governs the growth or decay of the response.
+
+\subsection*{Stability Criterion}
+
+Because structural damping is present the problem is a complex quadratic
+eigenvalue problem, which is linearised as follows:
+
+\begin{equation}
+    \left(
+    \begin{bmatrix} 0 & K \\ K & iC \end{bmatrix}
+    - \omega
+    \begin{bmatrix} K & 0 \\ 0 & -M \end{bmatrix}
+    \right)
+    \begin{pmatrix} X \\ \omega X \end{pmatrix}
+    = \begin{Bmatrix} 0 \\ 0 \end{Bmatrix},
+    \qquad
+    \text{i.e.}\quad A - \lambda B = 0.
+\end{equation}
+
+The sign of $\omega_i$ determines stability:
+
+\begin{itemize}
+    \setlength{\itemsep}{6pt}
+    \item[$\bullet$] $\omega_i > 0$:\quad
+          $h = h_0\,e^{i\omega_r t}\cdot e^{-\omega_i t}$ — \textbf{stable}
+          (amplitude decays).
+    \item[$\bullet$] $\omega_i < 0$:\quad
+          $h = h_0\,e^{i\omega_r t}\cdot e^{+|\omega_i| t}$ — \textbf{unstable}
+          (amplitude grows; flutter onset).
+\end{itemize}
+
+A Python tool has been developed to solve this linearised eigenvalue problem and
+identify the critical wind speed. 
+
+Determining the critical wind speed is an iterative process:
+
+\begin{enumerate}
+    \item A reduced velocity $U_r = U/(fB)$ is selected.
+    \item Flutter derivatives corresponding to that reduced velocity are
+          interpolated from the flutter-derivative functions.
+    \item The linearised eigenvalue problem is solved for $\omega$.
+    \item If the system is stable, the reduced velocity is increased
+          and the process repeats until the system first becomes unstable.
+    \item The actual critical wind speed is then recovered from
+    \begin{equation}
+        U_c = U_{r,c}\,\frac{\omega_r}{2\pi}\,B,
+        \label{eq:Uc}
+    \end{equation}
+    where $U_{r,c}$ is the reduced critical velocity and $\omega_r$ is
+    the real part of the eigenfrequency at that point.
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Validation of the Critical Velocity Tool}
+
+The Python tool is validated against the benchmark results of Diana~\cite{Diana}.
+
+
+\subsection*{Structural Parameters}
+
+Table~\ref{tab:structural_params} lists the structural properties used in the
+validation, taken from Diana~\cite{Diana}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Structural parameters used for validation (Diana benchmark).}
+    \label{tab:structural_params}
+    \begin{tabular}{llc}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Value} \\
+        \hline
+        $m_L$            & Mass per unit length                          & $22\,740\ \mathrm{kg/m}$      \\
+        $J_L$            & Moment of inertia per unit length             & $2.47\times10^6\ \mathrm{kg\,m^2/m}$ \\
+        $B$              & Deck chord (width)                            & $31\ \mathrm{m}$              \\
+        $f_z$            & Vertical structural eigenfrequency            & $0.10\ \mathrm{Hz}$           \\
+        $f_\theta$       & Torsional structural eigenfrequency           & $0.278\ \mathrm{Hz}$          \\
+        $\xi$            & Damping ratio (both modes)                    & $0.003\ (-)$                  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection*{Aerodynamic Parameters}
+
+In the benchmark, Theodorsen derivatives are used for the aerodynamic properties
+of the cross-section. The Theodorsen flutter derivatives are analytical functions
+derived from the closed-form solution for a thin flat plate in potential flow,
+first obtained by Theodorsen~\cite{Theodorsen1935}. They are expressed in terms
+of the real and imaginary parts of the Theodorsen circulatory function
+$C(k) = F(k) + iG(k)$, where $k$ is the reduced frequency. The analytical
+expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
+Figure~\ref{fig:Theodorsen_Flutter_Derivatives}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Analytical Theodorsen flutter derivative expressions for a flat plate.}
+    \label{tab:theodorsen_derivs}
+    \small
+    \begin{tabular}{@{}cll@{}}
+        \hline
+        & \textbf{$H_i^*$} & \textbf{$A_i^*$} \\
+        \hline
+        $i=1$ &
+            $\displaystyle H_1^* = -\frac{2\pi}{K}\,F$ &
+            $\displaystyle A_1^* = \phantom{-}\frac{\pi}{2K}\,F$ \\[10pt]
+        $i=2$ &
+            $\displaystyle H_2^* = -\frac{\pi}{2K}\!\left(1 + F + \frac{4G}{K}\right)$ &
+            $\displaystyle A_2^* = -\frac{\pi}{8K}\!\left(1 - F - \frac{4G}{K}\right)$ \\[10pt]
+        $i=3$ &
+            $\displaystyle H_3^* = -\frac{2\pi}{K^2}\!\left(F - \frac{KG}{4}\right)$ &
+            $\displaystyle A_3^* = \phantom{-}\frac{\pi}{2K^2}\!\left(\frac{K^2}{32} + F - \frac{KG}{4}\right)$ \\[10pt]
+        $i=4$ &
+            $\displaystyle H_4^* = \phantom{-}\frac{\pi}{2}\!\left(1 + \frac{4G}{K}\right)$ &
+            $\displaystyle A_4^* = -\frac{\pi}{2K}\,G$ \\[6pt]
+        \hline
+    \end{tabular}
+\end{table} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Theodorsen_Flutter_Derivatives.png}
+    \caption{Theodorsen Flutter Derivatives}
+    \label{fig:Theodorsen_Flutter_Derivatives}
+\end{figure}
+
+\subsection*{Results}
+
+The results obtained with the Python tool are shown in
+Figures~\ref{fig:eigen_freq_vs_Ur} and~\ref{fig:damping_vs_U}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Eigen_Frequency_Vs_Reduced_Velocity.png}
+    \caption{Real and imaginary parts of the eigenfrequency plotted against
+             reduced velocity}
+    \label{fig:eigen_freq_vs_Ur}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Damping_Ratio_Vs_Wind_Velocity.png}
+    \caption{Damping ratio plotted against wind velocity.}
+    \label{fig:damping_vs_U}
+\end{figure}
+
+Since the bridge deck is modelled as a two-degree-of-freedom system, two
+eigenmodes are obtained. The zero-crossing of the imaginary part of each
+eigenfrequency is checked; the lowest reduced velocity at which a zero crossing
+occurs is taken as the reduced critical velocity $U_{r,c}$. Substituting into
+Equation~\eqref{eq:Uc} yields
+
+\begin{align*}
+    U_{r,c}  &= 12.9, \\
+    \omega_r &= 1.21\ \mathrm{rad/s}, \\
+    U_c      &= 77.32\ \mathrm{m/s}.
+\end{align*}
+
+This result falls within the reference range of $[77.1,\;78.6]\ \mathrm{m/s}$
+reported by Diana~\cite{Diana}, confirming the validity of the tool.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Multi-Frequency Approach}
+
+In the single-frequency approach, the forced-motion oscillation (heave or pitch)
+is applied at one frequency at a time, yielding one set of flutter derivatives
+per simulation. In the \textbf{multi-frequency approach}, several frequencies are
+superimposed in a single forced-motion simulation:
+
+\begin{equation}
+    h(t) = \sum_{k=1}^{N} h_{0,k}\sin(\omega_k t + \phi_k).
+\end{equation}
+
+Under the assumption of aerodynamic linearity, the total aerodynamic response is
+the superposition of the responses at each individual frequency. Consequently,
+$N$ sets of flutter derivatives can be extracted from a single simulation by
+applying a Fourier decomposition of the measured aerodynamic forces at each
+frequency component $\omega_k$.
+
+The procedures for calculating the flutter derivatives (Section~2) and the
+critical wind speed (Section~3) are identical for both the single- and
+multi-frequency approaches. The only difference lies in the identification of
+aerodynamic forces (Section~1), where multiple frequency components are excited
+simultaneously rather than one at a time.
+Figures~\ref{fig:single_freq_approach} and~\ref{fig:multi_freq_approach}
+illustrate the workflow for the two approaches.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Single_Frequency.png}
+    \caption{Workflow for the single-frequency approach.}
+    \label{fig:single_freq_approach}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[angle=90, height=1.5\textwidth]{Figures/MultiFrequency_Explanation.png}
+    \caption{Workflow for the multi-frequency approach.}
+    \label{fig:multi_freq_approach}
+\end{figure}
+
+\end{document}

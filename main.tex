@@ -1,0 +1,84 @@
+\documentclass[a4paper, 12pt]{report}
+
+% ============================================================
+% Packages
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{subfiles}  
+\usepackage{titlesec}  
+\usepackage{hyperref}   
+\hypersetup{hidelinks}
+\usepackage{etoolbox}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{etoolbox}
+
+% ============================================================
+% Chapter heading formatting – compact style for thesis
+% ============================================================
+
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\centering}  
+  {\chaptertitlename\ \thechapter}        
+  {0.5em}                                  
+  {\MakeUppercase}                         
+
+
+\titlespacing*{\chapter}
+  {0pt}         
+  {-50pt}        
+  {20pt}         
+
+
+% ============================================================
+% Other formatting
+% ============================================================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% ============================================================
+% Document
+% ============================================================
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\LARGE\bfseries Efficient Identification of Flutter Derivatives from Multi-Frequency Forced-Motion Simulations\\[1em]}
+    \vspace{1cm}
+    {\large Master's Thesis}\\[0.5cm]
+    {\large Aakash Ravichandran}\\[0.5cm]
+    {\large \today}
+    \vfill
+    {\large Technical University of Munich}
+\end{titlepage}
+
+\tableofcontents\newpage
+\listoffigures\newpage
+\listoftables\newpage
+
+% ============================================================
+% Chapters
+% ============================================================
+\subfile{Chap_0/Chapt_0}
+\subfile{Chap_1/Chapt_1}
+\subfile{Chap_2/CFD_Modelling}
+\subfile{Chap_3/Chapt_3}
+\subfile{Chap_4/Chapt_4}
+\subfile{Chap_5/Chapt_5}
+\appendix
+\subfile{Chap_A/Chapt_A}
+
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\end{document}

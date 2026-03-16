@@ -1,0 +1,137 @@
+\documentclass[a4paper, 12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+
+%Indentation and spacing
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+
+%%%%%% Page - 1 %%%%%%
+
+\section*{Introduction:}
+
+In today's world, there has been a rapid development in infrastructure, including buildings and bridges, to meet the needs of the 
+people. Hence, the requirement for slender bridges is gaining importance to make it a sustainable construction by the optimal use 
+of material. For spans greater than 150m, the use of cable-stayed bridges, and for very high spans, the use of Suspension Bridges, 
+is an efficient solution. One of the important criteria in most cable-stayed and Suspension bridges for optimization is their 
+performance under wind load. Mainly, it is governed by the aeroelastic phenomenon of Flutter. Flutter is the instability failure 
+of structures under wind load at a critical velocity (of wind). It is caused due to the interaction of the bridge with the air, 
+where coupling between the vertical and torsional vibration modes of the bridge which results in a rapid increase in amplitude 
+(both vertical deflection and angular rotation) over time. This was the reason for the Tacoma Narrows Bridge's failure in 1940. 
+Hence, finding this critical velocity and improving it is essential for safe and efficient design. A 3D bridge can be idealised 
+as a 2D cross-section with 2 DOF system in vertical (Heave) and rotational (Pitch) direction. To find the critical velocity, 
+the dynamic equilibrium equation must be solved with aerodynamic forces. The dynamic equilibrium equation for a 2-DOF system is 
+given as
+
+\begin{align}
+m(\ddot{h} + 2\omega_h\xi_h\dot{h} + \omega_h^2 h) = L_{ae} \\
+I_\alpha( \ddot{\alpha} + 2\omega_\alpha\xi_\alpha\dot{\alpha} + \omega_\alpha^2 \alpha) = M_{ae}
+\end{align}
+
+where, $L_{ae}$ - Aerodynamic lift force due to wind \\
+\phantom{where,} $M_{ae}$ - Aerodynamic moment due to wind
+\vspace{0.5 cm}
+
+Here, quantifying the aerodynamic forces is the challenge. In 1935, Theodorsen, a Norwegian American aerodynamicist, developed an 
+analytical solution for the aerodynamic forces for unsteady flutter analysis of an airfoil. The solutions for $L_{ae}$ and 
+$M_{ae}$ were functions of theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
+$K = \frac{\omega b}{U}$. This quantifies the unsteadiness (i.e., the time lag between the applied force and the structure's 
+displacement). As this theory was based on the assumption of Potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
+an American civil engineer, reformulated Theodorsen's theory to accommodate bridges using a semi-empirical method based on eight 
+functions (for a 2-DOF system) known as flutter derivatives.
+
+\begin{equation}
+L_{ae} = \frac{1}{2}\rho U^2 B \left[ KH_1^* \frac{\dot{h}}{U} + KH_2^* \frac{B\dot{\alpha}}{U} + K^2 H_3^* \alpha + K^2 H_4^* \frac{h}{B} \right]
+\end{equation}
+
+\begin{equation}
+M_{ae} = \frac{1}{2}\rho U^2 B^2 \left[ KA_1^* \frac{\dot{h}}{U} + KA_2^* \frac{B\dot{\alpha}}{U} + K^2 A_3^* \alpha + K^2 A_4^* \frac{h}{B} \right]
+\end{equation}
+
+where, $h$ - vertical DOF (Heave motion), $\alpha$ - Rotational DOF (Pitch Motion)\\
+\phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
+
+%\newpage
+
+%%%%%% Page - 2 %%%%%%
+
+Flutter derivatives are shape constants that quantify the wind force on a structure as a linear relation 
+of the section's vertical velocity, angular rotation, and speed of angular rotation. They are functions 
+of $U_{red} = \frac{1}{K} = \frac{U}{fB}$ 
+
+Since this is a semi-empirical approach, the flutter derivatives cannot be directly solved. We need 
+external CFD simulation or wind-tunnel results to obtain the Flutter derivatives. The approaches 
+for finding the Flutter Derivatives can be broadly classified based on two criteria: the testing 
+environment (CFD or Wind Tunnel) and the nature of the applied motion (Free vibration or forced 
+motion). For the preliminary analysis of flutter, forced motion tests with CFD have greater 
+importance due to their easier setup and lower cost. In CFD with forced motion tests, a single 
+frequency approach is usually used to find flutter derivatives, where a heave/pitch motion of one 
+frequency is applied to the structure to find the Flutter derivative. Obtaining flutter derivatives with 
+this approach is highly computationally costly because of the following reasons. Since flutter 
+derivatives are functions of reduced velocity, multiple CFD simulations (by varying the frequency 
+of input forced motion) must be performed to obtain them. For finding each point in a set of 8 
+flutter derivatives, 2 CFD simulations are required. To obtain an accurate representation of each 
+flutter derivative function, we need a minimum of 6 to 8 points on the flutter derivative curve. 
+Hence, a total of 16 simulations is required. Each CFD simulation will take approximately 48 hours. 
+Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation time are required.  
+
+\vspace{0.5 cm}
+
+To overcome this, a multi-frequency vibration approach was introduced by Lin Huang et al in 2011. 
+By this approach, instead of applying a single forced motion, we can combine multiple forced 
+motions of different frequencies and apply them as a forced motion in CFD. Then use mathematical 
+tools, such as the Fourier Transform, to analyze the resultant aerodynamic force and obtain its 
+individual components. In this way, the method can be theoretically n times as efficient (where n 
+is the number of combinations). But according to the paper, the multi-frequency approach reduced 
+the simulation by only 18\%. The reason was to accurately identify the flutter derivative using a 
+multi-frequency approach, more simulation time is required than with a single-frequency approach. 
+After that, for a few years, there wasn’t research focusing on this. In 2023, G. Martínez-López 
+investigated a multi-frequency approach to obtaining flutter derivatives via curve fitting with LES 
+Turbulence modelling. From this work, it was identified that the selection of the frequency played 
+an important role in the approach's accuracy. The same result as with Lin Huang was observed. Ie, 
+to obtain accurate Flutter derivatives using the multi-frequency approach, the simulation time must 
+be increased. This leaves several open questions  
+
+
+\begin{flushleft}
+\hspace{2cm}1. Reason for this inaccuracy \\
+\hspace{2cm}2. If selection of frequency affects the accuracy, \\
+\hspace{3cm}a. How to choose it efficiently \\
+\hspace{3cm}b. How much does this affect the simulation time \\
+\hspace{3cm}c. What is its inaccuracy significance with respect critical velocity \\
+\hspace{2cm}3. Are there any other parameters that affect accuracy, \\
+\hspace{3cm}a. Amplitude \\
+\hspace{3cm}b. Number of combinations
+\end{flushleft}
+
+The above open questions have been researched in this master's thesis in the following approach. 
+If an inaccuracy in the multi-frequency approach exists, then two possibilities of the source of error 
+are there. First, with respect to CFD simulation, or due to the mathematical tool used for post-
+processing. So, first signal analysis with FFT of arbitrary signals has been conducted. The FFT tool 
+used in this work is from the SciPy module in Python. To investigate the source of error in CFD, a 
+nonlinearity study was conducted on the cross-section. This is done because the multi-frequency 
+approach relies entirely on the assumption of a linear relationship between the applied motion and 
+the resulting aerodynamic forces. Based on signal analysis, rules have been formulated for selecting 
+the frequency for the multifrequency approach. Based on the Nonlinearity analysis, rules have been 
+formulated for selecting the amplitude of the multi-frequency approach. Based on the formulated 
+rules, two sets of multifrequency CFD simulations have been conducted to verify the efficiency of 
+the proposed framework.   
+\vspace{0.5 cm}
+
+\begin{flushleft}   
+The document is formatted as follows to explain the research conducted. \\
+\hspace{2cm}• Intoduction to Multi-Frequency approach   \\
+\hspace{2cm}• Mesh Convergence Study \\
+\hspace{2cm}• Signal Analysis with Fast Fourier Transform (FFT) \\
+\hspace{2cm}• Nonlinearity study of the cross-section with CFD  \\
+\hspace{2cm}• Two sets of Multi-Frequency CFD analysis  \\
+\hspace{2cm}• Framework for efficient use of the multi-frequency approach with FFT.  \\
+\end{flushleft}
+
+
+\end{document}

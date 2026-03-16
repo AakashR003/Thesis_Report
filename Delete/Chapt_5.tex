@@ -1,0 +1,703 @@
+\documentclass[a4paper, 12pt]{report}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\setcounter{secnumdepth}{3}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+% Indentation and spacing
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section*{Multi-Frequency Analysis}
+
+In this chapter multifrequency simulation campaigns are performed to answer the question that we 
+discussed in the first chapter which till date is unsure
+
+\begin{flushleft}
+1. Whether number of combinations affect the accuracy of multifrequency approach \\
+2. If yes how many combinations in multifrequency method is appropiate and which parameter limits the number of combinations \\
+3. Where is the source of error in the multi-frequency approach, if it exists \\
+\end{flushleft}
+
+Frist, simulation parameters for the multi-frequency analysis are defined based on 
+the results obtained from the signal analysis and nonlinearity studies. 
+These parameters are then applied to two sets of multi-frequency campaigns, and the results 
+are compared with the single-frequency analysis. 
+Finally, a framework is formulated for the selection of frequencies and amplitudes for the multi-frequency analysis. 
+This chapter is organised as follows:
+
+\begin{flushleft}
+\hspace{2cm}1. Simulation Parameters \\
+\hspace{2cm}2. Multi-Frequency Analysis - 1 \\
+\hspace{2cm}3. Multi-Frequency Analysis - 2 \\
+\hspace{2cm}4. Framework for Multi-Frequency Analysis \\
+\end{flushleft}
+
+% ============================================================
+\section{Simulation Parameters}
+% ============================================================
+
+The following criteria govern the selection of frequencies and amplitudes for the 
+multi-frequency analysis:
+
+\begin{enumerate}
+    \item Frequencies must lie within a frequency bin - derived from the signal analysis.
+    \item Amplitude must be less than the threshold amplitude for nonlinearity - derived from the nonlinearity study.
+\end{enumerate}
+
+All other simulation parameters are kept the same.\\
+
+Based on these criteria, two sets of multi-frequency analyses are performed. For both simulation 
+campaigns, the frequency combinations are identical, but the amplitude selection differs. 
+In the first campaign, the individual heave and pitch amplitudes are kept below the nonlinearity 
+threshold. In the second campaign, the sum of the heave and pitch motion amplitudes for each 
+combination is kept below the threshold. Since the frequency selection is the same for 
+both campaigns, the frequency combinations are described once in this section, while the 
+respective amplitude selections are described in their corresponding analysis sections.
+
+% ------------------------------------------------------------
+\subsection*{Selection of Frequencies and Combinations}
+% ------------------------------------------------------------
+
+To evaluate whether increasing the number of combined frequencies affects 
+the accuracy of flutter derivative identification, eight frequencies are selected and 
+organised into four combination schemes. Combination~1 consists of single-frequency 
+simulations and serves as the reference case. Combinations~2, 3, and 4 group these 
+frequencies into subsets of two, three, and four, respectively, with the grouping size 
+increasing progressively. The frequency selection procedure and the resulting combinations 
+are described below. \\
+
+Frequency selection must be made combination wise. In each combination
+, the lowest frequency (corresponding to the highest reduced velocity) is 
+chosen first, with all other frequencies in the combination selected relative to it. The lowest frequency may be 
+chosen independently, but one important condition must be satisfied: its frequency bin spacing 
+should be a definite number, so that the dependent frequencies excatly fall in the frequency bins.\\
+
+For both campaigns in this study, lowest frequency is set to $0.125$~Hz, 
+giving a corresponding reduced wind speed of $21.86$.
+
+Allowing for 10 oscillations, the total simulation time is:
+\begin{equation}
+    t_{\text{total}} = \frac{1}{0.125} \times 10 = 80 \text{ s}
+\end{equation}
+
+With a time step size of $\Delta t = 0.002$~s, the total number of time steps is $40{,}000$.
+
+The frequency bin spacing for a simulation of 80 seconds are therefore:
+\begin{equation}
+    \Delta f = \frac{1/\Delta t}{N} = \frac{500}{40000} = 0.0125 \text{ Hz}
+\end{equation}
+
+Hence the frequency bins are $[0.0125,\ 0.0250,\ 0.0375,\ 0.0500,\ \ldots]$. \\
+
+\textbf{Note:} The frequency spacing and frequency bins depend on the number of timesteps. Therefore, if the simulation 
+is interrupted prematurely, accurate derivative extraction is not guaranteed, as the frequency bins and 
+spacing will be altered. \\
+
+Dependent frequencies are selected from this list. An additional recommendation for selection is to avoid selecting 
+two frequencies that are adjacent within the frequency bin list. If one frequency does not 
+align with a bin due to a shorter-than-expected simulation duration, the result at the 
+neighbouring frequency may also be corrupted through spectral leakage. To minimise this risk, 
+sufficient spacing between selected frequencies is advised. \\
+
+The frequencies selected for simulation are shown in Table~\ref{tab:frequencies}. 
+Frequencies are selected such that each frequency can serve as the primary frequency, 
+providing flexibility in combination schemes. The frequencies $0.15$~Hz and $0.25$~Hz are exceptions, 
+as they are also needed to cover the reduced velocity range for accurate interpolation of the 
+flutter derivative curve.
+
+\begin{table}[htbp]
+\centering
+\caption{Frequency Parameters for Multi-Frequency Analysis}
+\label{tab:frequencies}
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 1.6 & 3.2 \\
+\midrule
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3.125 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} The amplitude is identical for all frequencies; therefore, within each combination, 
+only the frequencies are listed and may be matched against the table above.
+
+The combinations are structured as follows. Combination~1 consists of single-frequency simulations, 
+which serve as the reference case. The remaining combinations are:
+
+\begin{itemize}
+    \item \textbf{Combination 1:} Single frequencies (reference)
+
+    \item \textbf{Combination 2:}
+    \begin{itemize}
+        \item $[0.125,\ 0.15]$
+        \item $[0.2,\ 0.25]$
+        \item $[0.4,\ 0.8]$
+        \item $[1.6,\ 3.2]$
+    \end{itemize}
+
+    \item \textbf{Combination 3:}
+    \begin{itemize}
+        \item $[0.125,\ 0.15,\ 0.2]$
+        \item $[0.25,\ 0.4,\ 0.8]$
+        \item $[0.8,\ 1.6,\ 3.2]$
+    \end{itemize}
+
+    \item \textbf{Combination 4:}
+    \begin{itemize}
+        \item $[0.125,\ 0.15,\ 0.2,\ 0.25]$
+        \item $[0.4,\ 0.8,\ 1.6,\ 3.2]$
+    \end{itemize}
+\end{itemize}
+
+% ============================================================
+\section{Multi-Frequency Analysis --- 1}
+% ============================================================
+
+%TODO: Insert images of multi-frequency input motion signal and aerodynamic force signal,
+%      showing separation of components first in the time domain and then in the frequency domain.
+%      Do not add frequency-domain plots directly without the time-domain context.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\label{tab:Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\begin{tabular}{|l|cccccccc|}
+\hline
+\rule{0pt}{12pt}\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 1.6 & 3.2 \\[4pt]
+\hline
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3.125 \\
+Heave Amplitude (m)     & 0.0183 & 0.0183 & 0.0183 & 0.0183 & 0.0183 & 0.0183 & 0.0183 & 0.0183 \\
+Pitch Amplitude (rad)   & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png}
+    \caption{Combined Flutter Derivatives --- Campaign 1}
+    \label{fig:Combined_Flutter_Derivatives_1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Heave_Fy_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Pitch_Fy_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Heave_PhaseFy_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Pitch_PhaseFy_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Heave_Moment_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Pitch_Moment_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Heave_PhaseMx_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF1_Compiled_Pitch_PhaseMx_vs_Combinations}
+    \end{subfigure}
+
+    \caption{Compiled Displacement vs.\ Force --- Campaign 1}
+    \label{fig:MF1_Compiled_Displacement_Vs_Force}
+\end{figure}
+
+% ------------------------------------------------------------
+\subsection{Key Findings}
+% ------------------------------------------------------------
+
+\begin{itemize}
+    \item Flutter derivatives $H_1$, $H_3$, $A_1$, and $A_3$ are accurately identified in the 
+          multi-frequency forced-motion CFD simulation.
+
+    \item Flutter derivatives $H_2$, $H_4$, $A_2$, and $A_4$ exhibit errors in the 
+          multi-frequency forced-motion CFD simulation.
+
+    \item The frequency-domain response under pitch excitation contains higher-order harmonic 
+          terms, indicating the presence of nonlinearity. This affects the pitch-motion-associated 
+          derivatives: $H_2$, $H_3$, $A_2$, and $A_3$.
+
+    \item These errors have a significant influence on the predicted critical flutter velocity.
+\end{itemize}
+
+% ============================================================
+\section{Multi-Frequency Analysis --- 2}
+% ============================================================
+
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\label{tab:Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\rule{0pt}{12pt}\textbf{MF2 Simulation} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\[4pt]
+\hline
+\rule{0pt}{12pt}\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 1.6 & 3.2 \\[4pt]
+\hline
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3.125 \\
+Heave Amplitude (m)     & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 \\
+Pitch Amplitude (rad)   & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 \\
+\hline
+\end{tabular}
+\end{table}
+
+The prescribed forced motion for the MF2 simulation 9 is shown in Figure
+
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\label{tab:Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\begin{tabular}{|l|cc|cc|cc|cc|}
+\hline
+\rule{0pt}{12pt}\textbf{MF2 Simulation} & \multicolumn{2}{c|}{9} & \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{11} & \multicolumn{2}{c|}{12} \\[4pt]
+\hline
+\rule{0pt}{12pt}\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 1.6 & 3.2 \\[4pt]
+\hline
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3.125 \\
+Heave Amplitude (m)     & 0.009 & 0.009 & 0.009 & 0.009 & 0.009 & 0.009 & 0.009 & 0.009 \\
+Pitch Amplitude (rad)   & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 \\
+\hline
+\end{tabular}
+\end{table}
+
+The prescirbed forced motion for the MF2 simulation 9 is shown in Figure
+
+
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\label{tab:Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\begin{tabular}{|l|ccc|ccc|ccc|}
+\hline
+\rule{0pt}{12pt}\textbf{MF2 Simulation} & \multicolumn{3}{c|}{13} & \multicolumn{3}{c|}{14} & \multicolumn{3}{c|}{15} \\[4pt]
+\hline
+\rule{0pt}{12pt}\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 0.8 & 1.6 & 3.2 \\[4pt]
+\hline
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 12.5 & 6.25 & 3.125 \\
+Heave Amplitude (m)     & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 \\
+Pitch Amplitude (rad)   & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 \\
+\hline
+\end{tabular}
+\end{table}
+
+The prescribed forced motion for the MF2 simulation 9 is shown in Figure
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\label{tab:Frequencies and Amplitude Parameters for Multi-Frequency campaign - 1}
+\begin{tabular}{|l|cccc|cccc|}
+\hline
+\rule{0pt}{12pt}\textbf{MF2 Simulation} & \multicolumn{4}{c|}{16} & \multicolumn{4}{c|}{17} \\[4pt]
+\hline
+\rule{0pt}{12pt}\textbf{Frequency (Hz)} & 0.125 & 0.15 & 0.2 & 0.25 & 0.4 & 0.8 & 1.6 & 3.2 \\[4pt]
+\hline
+Reduced Velocity        & 21.86 & 18.21 & 13.66 & 10.93 & 6.83 & 3.42 & 1.71 & 0.85 \\
+Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3.125 \\
+Heave Amplitude (m)     & 0.0045 & 0.0045 & 0.0045 & 0.0045 & 0.0045 & 0.0045 & 0.0045 & 0.0045 \\
+Pitch Amplitude (rad)   & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 \\
+\hline
+\end{tabular}
+\end{table}
+
+The prescribed forced motion for the MF2 simulation 9 is shown in Figure
+
+A explanation procedure of multifrequency from prescribed forced motion to obtaining flutter derivatives for Multifrequency
+method is given below for MF2 Simulation 16 with Heave motion:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/2_Superimposed_ForcedMotion.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/3_DFT_LiftForce_Superposition_Case_4.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/4_DFT_Moment_Superposition_Case_4.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Procedure_Explanation/4_Individual_Harmonic_Moment.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png}
+    \caption{Combined Flutter Derivatives --- Campaign 2}
+    \label{fig:Combined_Flutter_Derivatives_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/ReducedVelocity_Vs_Number_of_Combinations.png}
+    \caption{Reduced Velocity vs.\ Number of Combinations}
+    \label{fig:ReducedVelocity_Vs_Number_of_Combinations}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png}
+    \caption{Combined Amplitude Errors}
+    \label{fig:Combined_Amplitude_Errors}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png}
+    \caption{Combined Phase Errors}
+    \label{fig:MF2_Combined_Phase_Errors}
+\end{figure}
+
+
+\begin{figure}[htbp]  
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Case_1.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Case_1.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_0}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Case_2.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Case_2.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_2}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Case_3.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Case_3.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_4}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Case_4.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_6}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Case_4.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_6}
+    \end{subfigure}
+    
+    \caption{Frequency Domain Analysis Heave}
+    \label{fig:Frequency_Domain_Analysis_Heave}
+\end{figure}
+
+
+\begin{figure}[htbp]  
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Case_1.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_0}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Case_1.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_0}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Case_2.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Case_2.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_2}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Case_3.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Case_3.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_4}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Case_4.png}
+        \caption{}
+        \label{fig:Heave_DFT_Fy_amplitude_case_6}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Case_4.png}
+        \caption{}
+        \label{fig:Heave_DFT_moment_amplitude_case_6}
+    \end{subfigure}
+    
+    \caption{Frequency Domain Analysis Heave}
+    \label{fig:Frequency_Domain_Analysis_Heave}
+\end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Heave/NormalizedFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Heave_Fy_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Pitch/NormalizedFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Pitch_Fy_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Heave/PhaseFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Heave_PhaseFy_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Pitch/PhaseFy_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Pitch_PhaseFy_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Heave_Moment_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Pitch_Moment_vs_Combinations}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Heave_PhaseMx_vs_Combinations}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Combinations_RelativeToFirst.png}
+        \caption{}
+        \label{fig:MF2_Compiled_Pitch_PhaseMx_vs_Combinations}
+    \end{subfigure}
+
+    \caption{Compiled Displacement vs.\ Force --- Campaign 2}
+    \label{fig:MF2_Compiled_Displacement_Vs_Force}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/Simulation_Time.png}
+    \caption{Simulation Time Comparison}
+    \label{fig:Simulation_Time}
+\end{figure}
+
+% ============================================================
+\section{Framework for Multi-Frequency Analysis}
+% ============================================================
+
+Based on the results obtained above, the following framework is proposed for conducting a 
+multi-frequency analysis.
+
+\begin{enumerate}
+    \item \textbf{Determine the number of combinations.} The recommended number is 3 or 4.
+
+    \item \textbf{Target the lower frequency range.} Combinations should preferably be formed 
+          from the lowest frequencies (i.e., those at the highest reduced velocities).
+
+    \item \textbf{Select one independent frequency per combination.}
+
+    \item \textbf{Derive the dependent frequencies} within each combination such that they 
+          fall within the frequency bin of the independent frequency. A detailed procedure 
+          for this calculation is given below.
+
+    \item \textbf{Select amplitudes} such that the total amplitude (sum across all frequencies 
+          in a combination) remains below a heave ratio of 5\% and a pitch angle of 3°.
+
+    \item \textbf{Post-processing:} Apply the Discrete Fourier Transform (DFT) to the 
+          aerodynamic forces and moments to extract individual frequency components. 
+          Also inspect the spectrum for signs of nonlinearity.
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Important Notes:}
+
+\begin{itemize}
+    \item Because DFT is used, accurate spectral decomposition of the aerodynamic forces is 
+          only achievable for frequency components that fall exactly within a frequency bin. 
+          Accurate results cannot be obtained for frequencies that fall between bins.
+
+    \item Even if a frequency of interest falls exactly within a frequency bin, spectral leakage 
+          from a neighbouring frequency that does \emph{not} fall within a bin can contaminate 
+          the extracted amplitude and phase at that frequency.
+
+    \item Therefore, when selecting frequencies, avoid choosing two that are consecutive 
+          in the frequency bin list, as sufficient spacing between selected frequencies 
+          reduces the impact of spectral leakage.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Selection of Dependent Frequencies:}
+
+\end{document}
