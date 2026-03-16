@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  16 MAR 2026 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  16 MAR 2026 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,40 +461,41 @@ Package pdftex.def Info: Chap_3/Figures/SingleFrequency/3_Spectrum.png  used on 
 <Chap_3/Figures/MultiFrequency/1_Input_Signal.png, id=108, 556.479pt x 388.8126pt>
 File: Chap_3/Figures/MultiFrequency/1_Input_Signal.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/1_Input_Signal.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/1_Input_Signal.png  used on input line 330.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/1_Input_Signal.png  used on input line 328.
 (pdftex.def)             Requested size: 203.83417pt x 142.41673pt.
 <Chap_3/Figures/MultiFrequency/1_Spectrum.png, id=109, 548.7702pt x 388.0899pt>
 File: Chap_3/Figures/MultiFrequency/1_Spectrum.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/1_Spectrum.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/1_Spectrum.png  used on input line 337.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/1_Spectrum.png  used on input line 335.
 (pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
-<Chap_3/Figures/MultiFrequency/2_Input_Signal.png, id=112, 556.479pt x 388.8126pt>
+ [6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/1_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/1_Spectrum.png>]
+<Chap_3/Figures/MultiFrequency/2_Input_Signal.png, id=123, 556.479pt x 388.8126pt>
 File: Chap_3/Figures/MultiFrequency/2_Input_Signal.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/2_Input_Signal.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/2_Input_Signal.png  used on input line 381.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/2_Input_Signal.png  used on input line 379.
 (pdftex.def)             Requested size: 203.83417pt x 142.41673pt.
-<Chap_3/Figures/MultiFrequency/2_Spectrum.png, id=113, 548.7702pt x 388.0899pt>
+<Chap_3/Figures/MultiFrequency/2_Spectrum.png, id=124, 548.7702pt x 388.0899pt>
 File: Chap_3/Figures/MultiFrequency/2_Spectrum.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/2_Spectrum.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/2_Spectrum.png  used on input line 388.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/2_Spectrum.png  used on input line 386.
 (pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
- [6] [7 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/1_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/1_Spectrum.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/2_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/2_Spectrum.png>]
+ [7 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/2_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/2_Spectrum.png>]
 <Chap_3/Figures/MultiFrequency/3_Input_Signal.png, id=136, 547.0839pt x 388.8126pt>
 File: Chap_3/Figures/MultiFrequency/3_Input_Signal.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/3_Input_Signal.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/3_Input_Signal.png  used on input line 439.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/3_Input_Signal.png  used on input line 437.
 (pdftex.def)             Requested size: 203.83417pt x 144.86104pt.
 <Chap_3/Figures/MultiFrequency/3_Spectrum.png, id=137, 548.7702pt x 388.0899pt>
 File: Chap_3/Figures/MultiFrequency/3_Spectrum.png Graphic file (type png)
 <use Chap_3/Figures/MultiFrequency/3_Spectrum.png>
-Package pdftex.def Info: Chap_3/Figures/MultiFrequency/3_Spectrum.png  used on input line 446.
+Package pdftex.def Info: Chap_3/Figures/MultiFrequency/3_Spectrum.png  used on input line 444.
 (pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 447--447
+Underfull \hbox (badness 1975) in paragraph at lines 445--445
 \OT1/cmr/m/n/10.95 tral leak-age from the non-bin-matched
  []
 
-[8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/3_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/3_Spectrum.png>] [9] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.aux)
+[8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/3_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chap_3/Figures/MultiFrequency/3_Spectrum.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -503,17 +504,17 @@ Package rerunfilecheck Info: File `Chapt_3.out' has not changed.
 (rerunfilecheck)             Checksum: 86C2B71DBF7DC377B84E62C68BB4F086;1827.
  ) 
 Here is how much of TeX's memory you used:
- 12377 strings out of 476402
- 200787 string characters out of 5794312
- 1939542 words of memory out of 5000000
+ 12376 strings out of 476402
+ 200781 string characters out of 5794312
+ 1936542 words of memory out of 5000000
  34214 multiletter control sequences out of 15000+600000
  565385 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,9n,99p,399b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.pdf" (9 pages, 853785 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.pdf" (8 pages, 853303 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

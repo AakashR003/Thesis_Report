@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1773696863.12122 "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chapt_3.tex" "Chap_3/Chapt_3.pdf" "Chapt_3" 1773696866.16681 0
+["pdflatex"] 1773697345.83257 "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chapt_3.tex" "Chap_3/Chapt_3.pdf" "Chapt_3" 1773697350.07094 0
   "C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773181651 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/aakas/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1770831803 14064 c9d00ad51ab6de479fc3b84a3a845d46 ""
   "C:/Users/aakas/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1770829458 21100625 6b84699f4690aece848acd1c2c4290a8 ""
@@ -99,7 +99,7 @@
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Chap_3/../main.tex" 1773696380 2249 a3cdf1201477f12ebb5b3d0a8087d88f ""
+  "Chap_3/../main.tex" 1773696868 2249 a3cdf1201477f12ebb5b3d0a8087d88f ""
   "Chap_3/Chap_3/Figures/MultiFrequency/1_Input_Signal.png" 1773008495 52408 d21dd494bcca852e0fceb3eb132476cb ""
   "Chap_3/Chap_3/Figures/MultiFrequency/1_Spectrum.png" 1773008500 65529 ad595c2bf0878bb38b7a55de8aa1e682 ""
   "Chap_3/Chap_3/Figures/MultiFrequency/2_Input_Signal.png" 1773008914 48135 40e290e314e346c997931f609b74ea5d ""
@@ -112,11 +112,11 @@
   "Chap_3/Chap_3/Figures/SingleFrequency/2_Spectrum.png" 1773010996 66998 ae292990e928f808167ed2e70302c10a ""
   "Chap_3/Chap_3/Figures/SingleFrequency/3_Input_Signal.png" 1773011713 39545 4d1b90fb837b8d4dbd8849186af82b43 ""
   "Chap_3/Chap_3/Figures/SingleFrequency/3_Spectrum.png" 1773011580 66900 123e1231f2434953132eaa251791d0c5 ""
-  "Chap_3/Chapt_3.aux" 1773696865 7874 01840eea350d720242b812c2160bf63b "pdflatex"
-  "Chap_3/Chapt_3.out" 1773696865 1827 86c2b71dbf7dc377b84e62c68bb4f086 "pdflatex"
-  "Chap_3/Chapt_3.tex" 1773696861 22011 8731ce0e0edf5ecc96364360deeab354 ""
-  "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chapt_3.tex" 1773696861 22011 8731ce0e0edf5ecc96364360deeab354 ""
-  "main.tex" 1773696380 2249 a3cdf1201477f12ebb5b3d0a8087d88f ""
+  "Chap_3/Chapt_3.aux" 1773697349 7874 e3c415eb5cea7de646497c18ec25e10c "pdflatex"
+  "Chap_3/Chapt_3.out" 1773697349 1827 86c2b71dbf7dc377b84e62c68bb4f086 "pdflatex"
+  "Chap_3/Chapt_3.tex" 1773697338 21880 5caa77c1f1ee8773cd47a519c6664f20 ""
+  "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Chapt_3.tex" 1773697338 21880 5caa77c1f1ee8773cd47a519c6664f20 ""
+  "main.tex" 1773696868 2249 a3cdf1201477f12ebb5b3d0a8087d88f ""
   (generated)
   "Chap_3/Chapt_3.aux"
   "Chap_3/Chapt_3.log"
