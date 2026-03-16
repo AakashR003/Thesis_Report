@@ -143,7 +143,7 @@ The resulting frequency bins are:
 Note that the maximum frequency is 250~Hz, which is the Nyquist limit for this configuration.
 
 % ------------------------------------------------------------
-\subsection{Single Frequency — Bin Match}
+\subsection{Bin Match}
 % ------------------------------------------------------------
 
 A signal with a frequency of 0.4~Hz and an amplitude of 1.0 is used as input. Since 0.4~Hz
@@ -168,12 +168,12 @@ falls directly on a frequency bin, no spectral leakage is expected.
     \label{fig:sf_binmatch}
 \end{figure}
 
-The amplitude output from the FFT is 1.00, which matches the input signal amplitude exactly.
-This confirms that when the signal frequency falls on a frequency bin, no discretisation error
-is introduced.
+As shown in Figure~\ref{fig:sf_binmatch}, the amplitude output from the FFT is 1.00, which
+matches the input signal amplitude exactly. This confirms that when the signal frequency falls
+on a frequency bin, no discretisation error is introduced.
 
 % ------------------------------------------------------------
-\subsection{Single Frequency — Non-Bin Match}
+\subsection{Non-Bin Match}
 % ------------------------------------------------------------
 
 In this case, the input signal frequency is changed to 0.45~Hz, which does not coincide with
@@ -199,12 +199,12 @@ assigns its amplitude to the nearest neighbouring bin.
     \label{fig:sf_nonbinmatch}
 \end{figure}
 
-The extracted amplitude is 0.653, corresponding to an error of 34.70\%. This demonstrates
-that when the signal frequency does not fall on a frequency bin, spectral leakage causes a
-significant reduction in accuracy.
+As shown in Figure~\ref{fig:sf_nonbinmatch}, the extracted amplitude is 0.653, corresponding
+to an error of 34.70\%. This demonstrates that when the signal frequency does not fall on a
+frequency bin, spectral leakage causes a significant reduction in accuracy.
 
 % ------------------------------------------------------------
-\subsection{Single Frequency — Bin Match with Noise}
+\subsection{Bin Match with Noise}
 % ------------------------------------------------------------
 
 In this case, the input signal is kept at 0.4~Hz. Additionally, white noise with an amplitude
@@ -229,15 +229,44 @@ of 0.2 is superimposed on the signal to assess its effect on the extracted ampli
     \label{fig:sf_noise}
 \end{figure}
 
-The extracted amplitude is 0.99, corresponding to an error of only 0.04\%. Although noise does
-introduce a small error, its effect is considerably less severe than that of spectral leakage,
-provided the signal frequency falls on a frequency bin.
+As shown in Figure~\ref{fig:sf_noise}, the extracted amplitude is 0.99, corresponding to an
+error of only 0.04\%. Although noise does introduce a small error, its effect is considerably
+less severe than that of spectral leakage, provided the signal frequency falls on a frequency
+bin.
 
 % ------------------------------------------------------------
 \subsection{Frequency Bin Resolution on Non-Matching Bin}
 % ------------------------------------------------------------
 
-% TODO: Add content for this subsection
+The amplitude error associated with a non-bin-matched frequency is based on the relative
+position of that frequency between its two nearest bins. The closer the frequency lies to the
+midpoint between two adjacent bins, the greater the spectral leakage and, consequently, the
+larger the resulting error.
+
+To illustrate this, consider a signal at 0.54~Hz with the same configuration as above, where
+the neighbouring frequency bins are located at 0.5~Hz and 0.6~Hz. This frequency falls near
+the centre of the interval between the two adjacent bins, producingan error of 21.77\%. When
+the total record length is extended to 20~s, the bin spacing is reduced, placing the
+neighbouring bins at 0.5~Hz and 0.55~Hz. In this finer-resolution case, the error decreases
+to 5.6\%, since 0.54~Hz now lies closer, in relative terms, to one of its neighbouring bins.
+
+This behaviour is further illustrated by examining a signal at 0.53~Hz. In the first
+configuration (bin spacing of 0.1~Hz), the normalised distance of 0.53~Hz from the midpoint
+between its nearest bins is $0.3/0.5 = 0.6$, yielding an error of 11.68\%. In the second
+configuration (bin spacing of 0.05~Hz), this ratio increases to $0.2/0.25 = 0.8$, and the
+error rises to 24.02\%, despite the absolute distance to the nearest bin being smaller. This
+result highlights that it is the relative position within the bin interval
+ that determines the magnitude of spectral leakage error. One approach
+to mitigate error in the limiting case, where the frequency falls exactly at the midpoint
+between two bins, is to sum the amplitudes of the two neighbouring bins. However, this method
+introduces additional uncertainty and should therefore be applied with caution.
+
+Another approach is  improving the frequency resolution
+through a longer data record reduces spectral leakage error by moving the signal frequency
+closer to a bin in relative terms. However, as the resolution increases, the sensitivity of
+the error also increases. Consequently, while a finer frequency
+resolution is generally beneficial for accuracy, its associated increase in error sensitivity
+must be carefully considered when increasingthe length.
 
 \vspace{0.5cm}
 
@@ -269,7 +298,7 @@ The following cases are examined:
 \end{enumerate}
 
 % ------------------------------------------------------------
-\subsection{Multi-Frequency — All Components Bin-Matched}
+\subsection{All Components Bin-Matched}
 % ------------------------------------------------------------
 
 In this case, all input frequencies are chosen to fall on frequency bins, and the amplitude
@@ -319,7 +348,7 @@ on frequency bins, the FFT produces accurate results regardless of the number of
 components present.
 
 % ------------------------------------------------------------
-\subsection{Multi-Frequency — Bin Match with Noise}
+\subsection{Bin Match with Noise}
 % ------------------------------------------------------------
 
 The same multi-frequency signal is used here, with the addition of white noise at an amplitude
@@ -370,7 +399,7 @@ with the single-frequency case, the errors remain small relative to those caused
 leakage, provided all frequencies fall on bins.
 
 % ------------------------------------------------------------
-\subsection{Multi-Frequency — One Component Non-Bin-Matched}
+\subsection{One Component Non-Bin-Matched}
 % ------------------------------------------------------------
 
 In this case, the effect of a single frequency component not falling on a frequency bin is
