@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 MAR 2026 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 MAR 2026 18:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,152 +565,152 @@ Package pdftex.def Info: Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Ampl
 <Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png, id=140, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png  used on input line 415.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png  used on input line 418.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png, id=141, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png  used on input line 422.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png  used on input line 425.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png, id=142, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png  used on input line 429.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png  used on input line 432.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png, id=143, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png  used on input line 436.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png  used on input line 439.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png, id=144, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png  used on input line 443.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png  used on input line 446.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png, id=145, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png  used on input line 450.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png  used on input line 453.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png, id=146, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png  used on input line 457.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png  used on input line 460.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 <Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png, id=147, 462.528pt x 346.896pt>
 File: Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png Graphic file (type png)
 <use Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png>
-Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png  used on input line 464.
+Package pdftex.def Info: Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png  used on input line 467.
 (pdftex.def)             Requested size: 203.83417pt x 152.87819pt.
 
 
-LaTeX Warning: Float too large for page by 16.90584pt on input line 471.
+LaTeX Warning: Float too large for page by 16.90584pt on input line 474.
 
 <Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=148, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 478.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 481.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=149, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 485.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 488.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=150, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 492.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 495.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=151, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 499.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 502.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png, id=152, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 506.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 509.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png, id=153, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 513.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 516.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png, id=154, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 520.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 523.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png, id=155, 722.7pt x 433.62pt>
 File: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
 <use Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png>
-Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 527.
+Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 530.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 [7] [8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png>] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png>]
 <Figures/Pitch_Study/Prescribed Displacement.png, id=189, 1437.6912pt x 215.3646pt>
 File: Figures/Pitch_Study/Prescribed Displacement.png Graphic file (type png)
 <use Figures/Pitch_Study/Prescribed Displacement.png>
-Package pdftex.def Info: Figures/Pitch_Study/Prescribed Displacement.png  used on input line 575.
+Package pdftex.def Info: Figures/Pitch_Study/Prescribed Displacement.png  used on input line 578.
 (pdftex.def)             Requested size: 452.9679pt x 67.85335pt.
 <Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png, id=190, 549.85425pt x 128.27925pt>
 File: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png  used on input line 584.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png  used on input line 587.
 (pdftex.def)             Requested size: 203.83417pt x 47.55457pt.
 <Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png, id=191, 549.252pt x 124.66576pt>
 File: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png  used on input line 591.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png  used on input line 594.
 (pdftex.def)             Requested size: 203.83417pt x 46.26447pt.
 <Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png, id=192, 551.05875pt x 124.66576pt>
 File: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png  used on input line 598.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png  used on input line 601.
 (pdftex.def)             Requested size: 203.83417pt x 46.11227pt.
 <Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png, id=193, 552.26324pt x 127.677pt>
 File: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png  used on input line 605.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png  used on input line 608.
 (pdftex.def)             Requested size: 203.83417pt x 47.1248pt.
 <Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png, id=194, 552.8655pt x 127.07475pt>
 File: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png  used on input line 618.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png  used on input line 621.
 (pdftex.def)             Requested size: 203.83417pt x 46.85016pt.
 <Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png, id=195, 549.252pt x 124.0635pt>
 File: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png  used on input line 625.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png  used on input line 628.
 (pdftex.def)             Requested size: 203.83417pt x 46.04095pt.
 <Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png, id=196, 551.661pt x 125.268pt>
 File: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png  used on input line 632.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png  used on input line 635.
 (pdftex.def)             Requested size: 203.83417pt x 46.28534pt.
 <Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png, id=197, 552.26324pt x 123.46124pt>
 File: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png Graphic file (type png)
 <use Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png>
-Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png  used on input line 639.
+Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png  used on input line 642.
 (pdftex.def)             Requested size: 203.83417pt x 45.56879pt.
-
-Overfull \hbox (14.1544pt too wide) in paragraph at lines 659--670
+ [10 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Prescribed Displacement.png>]
+Overfull \hbox (15.35439pt too wide) in paragraph at lines 677--688
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CriticalVelocity_vs__Amplitude_Scheme.png, id=199, 722.7pt x 433.62pt>
+<Figures/CriticalVelocity_vs__Amplitude_Scheme.png, id=209, 722.7pt x 433.62pt>
 File: Figures/CriticalVelocity_vs__Amplitude_Scheme.png Graphic file (type png)
 <use Figures/CriticalVelocity_vs__Amplitude_Scheme.png>
-Package pdftex.def Info: Figures/CriticalVelocity_vs__Amplitude_Scheme.png  used on input line 675.
+Package pdftex.def Info: Figures/CriticalVelocity_vs__Amplitude_Scheme.png  used on input line 693.
 (pdftex.def)             Requested size: 339.72592pt x 203.8345pt.
-<Figures/ReducedVelocity_Vs__Amplitude_Scheme.png, id=200, 722.7pt x 433.62pt>
+<Figures/ReducedVelocity_Vs__Amplitude_Scheme.png, id=210, 722.7pt x 433.62pt>
 File: Figures/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type png)
 <use Figures/ReducedVelocity_Vs__Amplitude_Scheme.png>
-Package pdftex.def Info: Figures/ReducedVelocity_Vs__Amplitude_Scheme.png  used on input line 682.
+Package pdftex.def Info: Figures/ReducedVelocity_Vs__Amplitude_Scheme.png  used on input line 700.
 (pdftex.def)             Requested size: 339.72592pt x 203.8345pt.
-[10 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Prescribed Displacement.png>] [11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/CriticalVelocity_vs__Amplitude_Scheme.png>] [12 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/ReducedVelocity_Vs__Amplitude_Scheme.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
+[11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png>] [12 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/CriticalVelocity_vs__Amplitude_Scheme.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/ReducedVelocity_Vs__Amplitude_Scheme.png>] [13] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -723,17 +723,17 @@ Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
 (rerunfilecheck)             Checksum: CB159D8D0ED27D6D50BAD185654554AA;2042.
  ) 
 Here is how much of TeX's memory you used:
- 12672 strings out of 476402
- 225326 string characters out of 5794312
+ 12673 strings out of 476402
+ 225333 string characters out of 5794312
  1944542 words of memory out of 5000000
  34516 multiletter control sequences out of 15000+600000
  564532 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,10n,99p,609b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (12 pages, 6068236 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (13 pages, 6071683 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

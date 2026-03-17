@@ -53,7 +53,7 @@ for finding the Flutter Derivatives can be broadly classified based on two crite
 environment (CFD or Wind Tunnel) and the nature of the applied motion (Free vibration or forced 
 motion). For the preliminary analysis of flutter, forced motion tests with CFD have greater 
 importance due to their easier setup and lower cost. In CFD with forced motion tests, a single 
-frequency approach is usually used to find flutter derivatives, where a heave/pitch motion of one 
+frequency method is usually used to find flutter derivatives, where a heave/pitch motion of one 
 frequency is applied to the structure to find the Flutter derivative. Obtaining flutter derivatives with 
 this approach is highly computationally costly because of the following reasons. Since flutter 
 derivatives are functions of reduced velocity, multiple CFD simulations (by varying the frequency 
@@ -65,19 +65,19 @@ Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation 
 
 \vspace{0.5 cm}
 
-To overcome this, a multi-frequency vibration approach was introduced by Lin Huang et al in 2011. 
-By this approach, instead of applying a single forced motion, we can superimpose multiple forced 
+To overcome this, a multi-frequency vibration method was introduced by Lin Huang et al in 2011. 
+By this method, instead of applying a single forced motion, we can superpose multiple forced 
 motions of different frequencies and apply them as a forced motion in CFD. Then use mathematical 
 tools, such as the Fourier Transform, to analyze the resultant aerodynamic force and obtain its 
 individual components. In this way, the method can be theoretically n times as efficient (where n 
-is the number of combinations). But according to the paper, the multi-frequency approach reduced 
+is the number of combinations). But according to the paper, the multi-frequency method reduced 
 the simulation by only 18\%. The reason was to accurately identify the flutter derivative using a 
-multi-frequency approach, more simulation time is required than with a single-frequency approach. 
+multi-frequency method, more simulation time is required than with a single-frequency method. 
 After that, for a few years, there wasn't research focusing on this. In 2023, G. Martínez-López 
-investigated the multi-frequency approach to obtaining flutter derivatives via curve fitting with LES 
+investigated the multi-frequency method to obtaining flutter derivatives via curve fitting with LES 
 Turbulence modelling. From this work, it was identified that the selection of the frequency played 
-an important role in the approach's accuracy. The same result as with Lin Huang was observed. Ie, 
-to obtain accurate Flutter derivatives using the multi-frequency approach, the simulation time must 
+an important role in the method's accuracy. The same result as with Lin Huang was observed. Ie, 
+to obtain accurate Flutter derivatives using the multi-frequency method, the simulation time must 
 be increased. This leaves several open questions  
 
 
@@ -93,27 +93,27 @@ be increased. This leaves several open questions
 \end{flushleft}
 
 The above open questions have been researched in this master's thesis in the following approach. 
-If an inaccuracy in the multi-frequency approach exists, then two possibilities of the source of error 
+If an inaccuracy in the multi-frequency method exists, then two possibilities of the source of error 
 are there. First, with respect to CFD simulation, or due to the mathematical tool used for post-
 processing. So, first signal analysis with FFT of arbitrary signals has been conducted. The FFT tool 
 used in this work is from the SciPy module in Python. To investigate the source of error in CFD, a 
 nonlinearity study was conducted on the cross-section. This is done because the multi-frequency 
-approach relies entirely on the assumption of a linear relationship between the applied motion and 
+method relies entirely on the assumption of a linear relationship between the applied motion and 
 the resulting aerodynamic forces. Based on signal analysis, rules have been formulated for selecting 
-the frequency for the multifrequency approach. Based on the Nonlinearity analysis, rules have been 
-formulated for selecting the amplitude of the multi-frequency approach. Based on the formulated 
+the frequency for the multi-frequency method. Based on the Nonlinearity analysis, rules have been 
+formulated for selecting the amplitude of the multi-frequency method. Based on the formulated 
 rules, two sets of multifrequency CFD simulations have been conducted to verify the efficiency of 
 the proposed framework.   
 \vspace{0.5 cm}
 
 \begin{flushleft}   
 The document is formatted as follows \\
-\hspace{2cm}• Intoduction to Multi-Frequency approach   \\
+\hspace{2cm}• Intoduction to Multi-Frequency method   \\
 \hspace{2cm}• Mesh Convergence Study \\
 \hspace{2cm}• Signal Analysis with Fast Fourier Transform (FFT) \\
 \hspace{2cm}• Nonlinearity study of the cross-section with CFD  \\
 \hspace{2cm}• Two sets of Multi-Frequency CFD analysis  \\
-\hspace{2cm}• Framework for efficient use of the multi-frequency approach with FFT.  \\
+\hspace{2cm}• Framework for efficient use of the multi-frequency method with FFT.  \\
 \end{flushleft}
 
 \end{document}

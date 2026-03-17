@@ -13,9 +13,9 @@ In this chapter, multi-frequency simulation campaigns are performed to answer th
 discussed in the first chapter:
 
 \begin{flushleft}
-1. Whether the number of superpositions affects the accuracy of the multi-frequency approach \\
+1. Whether the number of superpositions affects the accuracy of the multi-frequency method \\
 2. If so, how many superpositions are appropriate in the multi-frequency method, and which parameter limits that number \\
-3. Where the source of error in the multi-frequency approach lies, if it exists \\
+3. Where the source of error in the multi-frequency method lies, if it exists \\
 \end{flushleft}
 
 First, simulation parameters for the multi-frequency analysis are defined based on 
@@ -261,13 +261,13 @@ as shown in Figure~\ref{fig:MF1_IndividualComponents_ForcedMotion}.
     \label{fig:MF1_IndividualComponents_ForcedMotion}
 \end{figure}
 
-These four prescribed forced motions are superposed, and the resulting superposed signal is shown in Figure~\ref{fig:MF1_Superimposed_ForcedMotion}.
+These four prescribed forced motions are superposed, and the resulting superposed signal is shown in Figure~\ref{fig:MF1_Superposed_ForcedMotion}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png}
-    \caption{Superimposed forced motion for MF1 Simulation~16}
-    \label{fig:MF1_Superimposed_ForcedMotion}
+    \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superposed_ForcedMotion.png}
+    \caption{Superposed forced motion for MF1 Simulation~16}
+    \label{fig:MF1_Superposed_ForcedMotion}
 \end{figure}
 
 This superposed forced motion is applied to the bridge deck in CFD, and the resulting aerodynamic lift 
@@ -376,7 +376,7 @@ even for superposition scheme~4. However, at higher reduced velocities the error
 larger. Based on the nonlinearity study, this is expected, as it reflects the inherent nonlinearity (due to phase of moment) of 
 the flutter derivative coefficients $H_2$ and $A_2$, and is not a consequence of the multi-frequency method itself.
 
-Overall, this plot indicates that, provided the multi-frequency approach adheres to the framework for 
+Overall, this plot indicates that, provided the multi-frequency method adheres to the framework for 
 the Fourier transformation, the errors remain small. 
 
 
@@ -398,11 +398,11 @@ multi-frequency schemes, the results reflect the inherent nonlinearity of
 the cross-section. This highlights a key distinction: not only must the peak amplitude be kept 
 below the nonlinearity threshold, but the instantaneous amplitude at every point in time must 
 also remain within this limit. This condition is satisfied only in the single-frequency case. 
-Consequently, the multi-frequency approach can never yield results fully equivalent to single-frequency 
+Consequently, the multi-frequency method can never yield results fully equivalent to single-frequency 
 analysis when the cross-section exhibits inherent nonlinearity, even at low amplitude ranges. 
 An important counterpoint, however, is that all practical flutter derivative identifications aim 
 to simulate real-world conditions, where the induced motion is never purely single-frequency. 
-From this perspective, it can be argued that the multi-frequency approach provides a more 
+From this perspective, it can be argued that the multi-frequency method provides a more 
 representative result than single-frequency oscillation. This discussion has been explored in 
 the works of~\cite{}, where it has been argued that using random-noise forced motion yields 
 more reliable flutter derivatives than oscillation at a single specific frequency. Therefore, 
@@ -690,7 +690,6 @@ in the pitch case.
 
 \subsection{Effect on Critical Wind Speed}
 
-%claude do sentence modifications from here
 Similar to the nonlinear study on critical velocity, here again influnece of various combinations
 on the critical velocity is plotted. For the birdge strcutural properties refer~\ref{tab:bridge_configs}
 Here from the Figure ~\ref{fig:CriticalVelocity_Vs_Number_of_Superpositions},

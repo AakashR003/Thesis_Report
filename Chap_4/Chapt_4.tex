@@ -18,20 +18,20 @@ linear superposition and Scanlan's linearity assumption. This section is organis
 
 \section{Motivation for Nonlinearity Study}
 
-The base assumption of the MultiFrequency Approach is that the principle of linear superposition holds. 
+The base assumption of the Multi-Frequency Method is that the principle of linear superposition holds. 
 This assumption is derived from Scanlan's linearity assumption, which states that for small heave and pitch amplitudes, 
 the applied forced motion oscillation and the obtained aerodynamic forces are equivalent with a phase 
 shift. Although the above two assumptions might appear to point to the same meaning, they can differ in 
 certain cases. From Scanlan's linearity assumption, the obtained forces can be linear with respect to 
 the prescribed motion, but the phase shift can be non-constant. 
 Therefore, it becomes essential to validate the principle of linear superposition and study the 
-linearity limit to ensure the MultiFrequency approach is valid and to create a framework for this approach. 
+linearity limit to ensure the Multi-Frequency method is valid and to create a framework for this method. 
 
 This study focuses on validating the assumption and extending the knowledge of the nonlinearity characteristics 
 of Sarkic's section. Although studying the nonlinearity characteristics of a particular cross-section may make 
 the developed framework specific to that cross-section, this is done so that any unexpected discrepancies 
-in the results of the MultiFrequency approach can be reasonably explained. These inferences from the nonlinearity study are then generalised 
-when framing the procedure for the MultiFrequency approach.
+in the results of the Multi-Frequency method can be reasonably explained. These inferences from the nonlinearity study are then generalised 
+when framing the procedure for the Multi-Frequency method.
 
 The study is conducted by increasing the heave and pitch motion amplitudes and then examining the obtained 
 flutter derivatives, aerodynamic forces, and their phase. 
@@ -389,6 +389,9 @@ The normalisation is done because, different reduced velocities will obtain diff
 Hence, normalisation allows for a better comparison of the nonlinearity characteristics across different reduced velocities.
 For a simpler understanding, if the aerodynamic forces are linear, the plot should be a constant horizontal line at value of 1. If the phase is constant, 
 the plot should similarly be a horizontal line.
+Note that the $y$-axis limits are not uniform across subplots (this should be considered 
+when comparing the degree of nonlinearity between the two figures). The non-uniform limits are 
+kept to see the variations in nonlinearity even when the overall error is small.
     
 It can be observed that for heave motion, lift force and moment, and their respective phases remain constant up to heave ratio of 5.46 
 for reduced velocities above 1.71. 
@@ -529,7 +532,7 @@ nonlinear behaviour is not detectable with spectrum analysis.
         \label{fig:Compiled_Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
     
-    \caption{Compiled Displacement Vs Force}
+    \caption{Compiled Prescribed Motion Displacement Vs Force}
     \label{fig:Compiled_Displacement_Vs_Force}
 \end{figure}
 
@@ -650,13 +653,28 @@ at which phase nonlinearity becomes significant will vary across different cross
 
 Lastly, the influence of this nonlinearity on the critical velocity is studied. 
 For the calculation of critical velocity, structural parameters are required. 
-Five bridge samples are considered, and their structural properties are summarised in Table~\ref{tab:bridge_configs}.
+Structural parameters of four existing bridges are taken from - []. 
+Their structural properties are summarised in Table~\ref{tab:bridge_configs}.
+
+The sensitivity of the critical wind speed
+to errors in flutter derivatives depends on two factors. First, whether the reduced velocity
+range at which errors occur coincides with the critical flutter range of the bridge. Second,
+the structural properties of the bridge determine which flutter derivative plays a dominant
+role in the critical velocity prediction. To cover the second point, four structural parameters are taken. 
+
+Figure~\ref{fig:CriticalVelocity_Vs_Amplitude_Scheme} shows critical velocity obtained for all amplitude schemes. 
+It shall be observed for all three bridge configurations (except Humen), till the amplitude scheme 5 there is less influence on 
+obtained critical velocity. For Humen, after the amplitude scheme 3, the critical velocity varies highly. This indicates, this
+bridge configuration might be more sensitive to $A_2$ and $H_2$ derivative. The reason for not observing a major deviation 
+in the critical velocity (till scheme 5) is, all the critical reduced velocities are below 12 (Figure~\ref{fig:ReducedVelocity_Vs_Amplitude_Scheme} ). 
+But as the errors in flutter derivatives are larger in the higher reduced velocities, 
+critical velocity did not show much variations. 
 
 \begin{table}[h!]
 \centering
 \caption{Structural parameters of bridge samples used for critical velocity analysis}
 \label{tab:bridge_configs}
-\begin{tabular}{lrrrrrrr}
+\begin{tabular}{|l|rrrrrrr|}
 \hline
 \textbf{Bridge} & \textbf{$B$ (m)} & \textbf{$m$ (kg/m)} & \textbf{$\zeta_h$} & \textbf{$f_h$ (Hz)} & \textbf{$I$ (kg$\cdot$m)} & \textbf{$\zeta_\alpha$} & \textbf{$f_\alpha$ (Hz)} \\
 \hline
@@ -687,11 +705,11 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 \section{Observations and Discussion}
 
 \begin{enumerate}
-    \item The linearity limit for heave motion agrees with the thumb rule; therefore, there should not be any issue with the MultiFrequency approach as long as the amplitude remains within this limit.
+    \item The linearity limit for heave motion agrees with the thumb rule; therefore, there should not be any issue with the Multi-Frequency method as long as the amplitude remains within this limit.
     
     \item Scanlan's assumptions and the principle of superposition are not equivalent and may differ; this is most clearly seen with pitch motion.
     
-    \item Therefore, when validating the MultiFrequency approach, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$.
+    \item Therefore, when validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$.
     
     \item Although the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the important finding here is that the present model exhibits nonlinearity at a much lower pitch degree. While the reason for this behaviour is linked to the reattachment point, an important question remains: what governs the onset of this behaviour, and why do different studies report different nonlinearity limits? This may be related to sectional properties rather than CFD modelling choices.
 \end{enumerate}

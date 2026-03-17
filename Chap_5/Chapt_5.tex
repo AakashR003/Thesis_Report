@@ -11,9 +11,9 @@ In this chapter, multi-frequency simulation campaigns are performed to answer th
 discussed in the first chapter:
 
 \begin{flushleft}
-1. Whether the number of superpositions affects the accuracy of the multi-frequency approach \\
+1. Whether the number of superpositions affects the accuracy of the multi-frequency method \\
 2. If so, how many superpositions are appropriate in the multi-frequency method, and which parameter limits that number \\
-3. Where the source of error in the multi-frequency approach lies, if it exists \\
+3. Where the source of error in the multi-frequency method lies, if it exists \\
 \end{flushleft}
 
 First, simulation parameters for the multi-frequency analysis are defined based on 
@@ -25,8 +25,8 @@ This chapter is organised as follows:
 
 \begin{flushleft}
 \hspace{2cm}1. Simulation Parameters \\
-\hspace{2cm}2. Multi-Frequency Analysis --- 1 \\
-\hspace{2cm}3. Multi-Frequency Analysis --- 2 \\
+\hspace{2cm}2. Multi-Frequency Analysis - 1 \\
+\hspace{2cm}3. Multi-Frequency Analysis - 2 \\
 \hspace{2cm}4. Framework for Multi-Frequency Analysis \\
 \end{flushleft}
 
@@ -39,40 +39,41 @@ multi-frequency analysis:
 
 \begin{enumerate}
     \item Frequencies must lie within a frequency bin, as derived from the signal analysis.
-    \item Amplitudes must be less than the threshold amplitude for nonlinearity, as derived from the nonlinearity study.
+    \item Prescribed motion amplitudes must be less than the threshold amplitude for nonlinearity, as derived from the nonlinearity study.
 \end{enumerate}
 
 All other simulation parameters are kept the same.\\
 
-Based on these criteria, two sets of multi-frequency analyses are performed. For both simulation 
-campaigns, the frequency superpositions are kept identical, but the amplitude selection differs. 
+Based on these criteria, two sets of multi-frequency campaigns are performed. For both simulation 
+campaigns, the frequency superpositions are kept identical, but the prescribed motion amplitude is differed. 
 In the first campaign, the sum of the heave and pitch motion amplitudes for each 
-superposition is kept below the threshold.
-In the second campaign, the individual heave and pitch amplitudes are kept below the nonlinearity 
+superposition is kept below the nonlinearity threshold.
+In the second campaign, the individual heave and pitch amplitudes are kept below the 
 threshold. Since the frequency selection is the same for 
 both campaigns, the frequency superpositions are described once in this section, while the 
-respective amplitude selections are described in their corresponding analysis sections.
+amplitude selections are described in their corresponding analysis sections.
 
 % ------------------------------------------------------------
 \subsection*{Selection of Frequencies and Superpositions}
+\label{sec:Selection of Frequencies and Superpositions}
 % ------------------------------------------------------------
 
 To evaluate whether increasing the number of combined frequencies affects 
 the accuracy of flutter derivative identification, eight frequencies are selected and 
-organised into four superposition schemes. Superposition~1 consists of single-frequency 
-simulations and serves as the reference case. Superpositions~2, 3, and~4 group these 
-frequencies into subsets of two, three, and four, respectively, with the group size 
-increasing progressively. The frequency selection procedure and the resulting superpositions 
-are described below.\\
+organised into four superposition schemes. Superposition scheme~1 consists of single-frequency 
+simulations and serves as the reference case. In Superpositions schemes ~2, 3, and~4, these 
+frequencies are grouped into subsets of two, three, and four superpositions respectively
+. The frequency selection procedure and the resulting superpositions 
+are described below.
 
-Frequency selection must be made superposition-wise. Within each superposition, 
+Within each superposition scheme, 
 the lowest frequency (corresponding to the highest reduced velocity) is 
-chosen first, with all other frequencies in the superposition selected relative to it. The lowest frequency may be 
+chosen first, with all other frequencies in the scheme selected relative to it. The lowest frequency may be 
 chosen independently, but one important condition must be satisfied: its frequency bin spacing 
-must be a definite number, so that the dependent frequencies fall exactly within the frequency bins.\\
+must be a definite number, so that the dependent frequencies fall exactly on the frequency bins.
 
-For both campaigns in this study, the lowest frequency is set to $0.125$~Hz, 
-giving a corresponding reduced wind speed of $21.86$.
+For both campaigns in this study, the lowest frequency is set to $0.125$~Hz ( 
+giving a corresponding reduced wind speed of $21.86$).
 
 Allowing for 10 oscillations, the total simulation time is:
 \begin{equation}
@@ -81,7 +82,7 @@ Allowing for 10 oscillations, the total simulation time is:
 
 With a time step size of $\Delta t = 0.002$~s, the total number of time steps is $40{,}000$.
 
-The frequency bin spacing for a simulation of 80 seconds is therefore:
+The frequency bin spacing for a simulation with stable time of 80 seconds is,
 \begin{equation}
     \Delta f = \frac{1/\Delta t}{N} = \frac{500}{40000} = 0.0125 \text{ Hz}
 \end{equation}
@@ -89,14 +90,14 @@ The frequency bin spacing for a simulation of 80 seconds is therefore:
 Hence the frequency bins are $[0.0125,\ 0.0250,\ 0.0375,\ 0.0500,\ \ldots]$.\\
 
 \textbf{Note:} The frequency spacing and frequency bins depend on the number of time steps. Therefore, if the simulation 
-is interrupted prematurely, accurate derivative extraction is not guaranteed, as the frequency bins and 
+is interrupted, aerodynamic force and moment cannot be extracted accurately, as the frequency bins and 
 spacing will be altered.\\
 
-Dependent frequencies are selected from this list. An additional recommendation is to avoid selecting 
+Dependent frequencies in the scheme are selected from the frequency bin list. An additional recommendation is to avoid selecting 
 two frequencies that are adjacent within the frequency bin list. If one frequency does not 
-align with a bin due to a shorter-than-expected simulation duration, the result at the 
+align with a bin due to a shorter simulation duration, the result at the 
 neighbouring frequency may also be corrupted through spectral leakage. To minimise this risk, 
-sufficient spacing between selected frequencies is advised.\\
+sufficient spacing between selected frequencies is suggested.\\
 
 The frequencies selected for simulation are shown in Table~\ref{tab:frequencies}. 
 Frequencies are selected such that each frequency can serve as the primary frequency, 
@@ -118,16 +119,15 @@ Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3
 \end{tabular}
 \end{table}
 
-\textbf{Note:} The amplitude is identical for all frequencies; therefore, within each superposition, 
-only the frequencies are listed and may be matched against the table above.
+% \textbf{Note:} The amplitude is identical for all frequencies; therefore, within each superposition, 
+% only the frequencies are listed and may be matched against the table above.
 
-The superpositions are structured as follows. Superposition~1 consists of single-frequency simulations, 
-which serve as the reference case. The remaining superpositions are:
+The schemes are structured as follows.
 
 \begin{itemize}
-    \item \textbf{Superposition 1:} Single frequencies (reference)
+    \item \textbf{Superposition scheme 1:} Single frequencies (reference)
 
-    \item \textbf{Superposition 2:}
+    \item \textbf{Superposition scheme 2:}
     \begin{itemize}
         \item $[0.125,\ 0.15]$
         \item $[0.2,\ 0.25]$
@@ -135,14 +135,14 @@ which serve as the reference case. The remaining superpositions are:
         \item $[1.6,\ 3.2]$
     \end{itemize}
 
-    \item \textbf{Superposition 3:}
+    \item \textbf{Superposition scheme 3:}
     \begin{itemize}
         \item $[0.125,\ 0.15,\ 0.2]$
         \item $[0.25,\ 0.4,\ 0.8]$
         \item $[0.8,\ 1.6,\ 3.2]$
     \end{itemize}
 
-    \item \textbf{Superposition 4:}
+    \item \textbf{Superposition scheme 4:}
     \begin{itemize}
         \item $[0.125,\ 0.15,\ 0.2,\ 0.25]$
         \item $[0.4,\ 0.8,\ 1.6,\ 3.2]$
@@ -150,7 +150,7 @@ which serve as the reference case. The remaining superpositions are:
 \end{itemize}
 
 % ============================================================
-\section{Multi-Frequency Analysis --- 1}
+\section{Multi-Frequency Analysis - 1}
 % ============================================================
 
 In this section, the sum of the heave and pitch motion amplitudes for each 
@@ -159,21 +159,22 @@ superposition is kept below the linearity limit value obtained from the nonlinea
 This section is organised as follows:
 
 \begin{flushleft}
-\hspace{2cm}1. Superposition Frequency Combinations \\
-\hspace{2cm}2. Explanation of the Multi-Frequency Procedure \\
-\hspace{2cm}3. Result --- Comparison of Flutter Derivatives \\
-\hspace{2cm}4. Result --- Frequency Domain Analysis of Aerodynamic Forces \\
-\hspace{2cm}5. Result --- Error Analysis of Aerodynamic Forces \\
-\hspace{2cm}6. Result --- Effect on Critical Wind Speed \\
+\hspace{2cm}1. Superposition Schemes \\
+\hspace{2cm}2. Procedure of Multi-Frequency method with FFT \\
+\hspace{2cm}3. Flutter Derivatives Results and Comparison \\
+\hspace{2cm}4. Frequency Domain Analysis of Aerodynamic Forces \\
+\hspace{2cm}5. Error Analysis of Aerodynamic Forces \\
+\hspace{2cm}6. Effect on Critical Wind Speed \\
 \end{flushleft}
 
-\subsection{Superposition Frequency Combinations}
+\subsection{Superposition Schemes}
 
-The amplitude parameters for each superposition scheme are described below.
+The amplitude parameters for each superposition scheme are given 
+below in tables ~\ref{tab:MF1_SP1} ~\ref{tab:MF1_SP2} ~\ref{tab:MF1_SP3} ~\ref{tab:MF1_SP4}.
 
 \begin{table}[htbp]
 \centering
-\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 --- Superposition~1}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~1}
 \label{tab:MF1_SP1}
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 \hline
@@ -191,7 +192,7 @@ Pitch Amplitude (rad)   & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 & 0.054 
 
 \begin{table}[htbp]
 \centering
-\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 --- Superposition~2}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~2}
 \label{tab:MF1_SP2}
 \begin{tabular}{|l|cc|cc|cc|cc|}
 \hline
@@ -209,7 +210,7 @@ Pitch Amplitude (rad)   & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 & 0.027 
 
 \begin{table}[htbp]
 \centering
-\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 --- Superposition~3}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~3}
 \label{tab:MF1_SP3}
 \begin{tabular}{|l|ccc|ccc|ccc|}
 \hline
@@ -227,7 +228,7 @@ Pitch Amplitude (rad)   & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 & 0.017 
 
 \begin{table}[htbp]
 \centering
-\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 --- Superposition~4}
+\caption{Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~4}
 \label{tab:MF1_SP4}
 \begin{tabular}{|l|cccc|cccc|}
 \hline
@@ -243,9 +244,9 @@ Pitch Amplitude (rad)   & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 & 0.013 
 \end{tabular}
 \end{table}
 
-\subsection{Explanation of the Multi-Frequency Procedure}
+\subsection{Procedure of Multi-Frequency method with FFT}
 
-The procedure for extracting flutter derivatives using the multi-frequency method with heave motion 
+The procedure for extracting flutter derivatives using the multi-frequency method with FFT for the heave motion 
 is illustrated below for MF1 Simulation~16.
 
 For MF1 Simulation~16, four frequencies $[0.125,\ 0.15,\ 0.2,\ 0.25]$~Hz are prescribed as forced motion. 
@@ -259,13 +260,13 @@ as shown in Figure~\ref{fig:MF1_IndividualComponents_ForcedMotion}.
     \label{fig:MF1_IndividualComponents_ForcedMotion}
 \end{figure}
 
-These four prescribed forced motions are superposed, and the resulting superposed signal is shown in Figure~\ref{fig:MF1_Superimposed_ForcedMotion}.
+These four prescribed forced motions are superposed, and the resulting superposed signal is shown in Figure~\ref{fig:MF1_Superposed_ForcedMotion}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png}
-    \caption{Superimposed forced motion for MF1 Simulation~16}
-    \label{fig:MF1_Superimposed_ForcedMotion}
+    \caption{Superposed forced motion for MF1 Simulation~16}
+    \label{fig:MF1_Superposed_ForcedMotion}
 \end{figure}
 
 This superposed forced motion is applied to the bridge deck in CFD, and the resulting aerodynamic lift 
@@ -276,7 +277,7 @@ Figures~\ref{fig:MF1_AeroLift_TimeDomain} and~\ref{fig:MF1_AeroMoment_TimeDomain
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png}
-    \caption{Aerodynamic lift force in the time domain --- MF1 Simulation~16}
+    \caption{Aerodynamic lift force in the time domain - MF1 Simulation~16}
     \label{fig:MF1_AeroLift_TimeDomain}
 \end{figure}
 
@@ -286,7 +287,7 @@ in Figure~\ref{fig:MF1_DFT_LiftForce_SP4}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png}
-    \caption{Aerodynamic lift force in the frequency domain --- MF1 Simulation~16}
+    \caption{Aerodynamic lift force in the frequency domain - MF1 Simulation~16}
     \label{fig:MF1_DFT_LiftForce_SP4}
 \end{figure}
 
@@ -302,28 +303,28 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png}
-    \caption{Individually extracted aerodynamic lift force components --- MF1 Simulation~16}
+    \caption{Individually extracted aerodynamic lift force components - MF1 Simulation~16}
     \label{fig:MF1_IndividualHarmonicLift}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png}
-    \caption{Aerodynamic moment in the time domain --- MF1 Simulation~16}
+    \caption{Aerodynamic moment in the time domain - MF1 Simulation~16}
     \label{fig:MF1_AeroMoment_TimeDomain}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png}
-    \caption{Aerodynamic moment in the frequency domain --- MF1 Simulation~16}
+    \caption{Aerodynamic moment in the frequency domain - MF1 Simulation~16}
     \label{fig:MF1_DFT_Moment_SP4}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png}
-    \caption{Individually extracted aerodynamic moment components --- MF1 Simulation~16}
+    \caption{Individually extracted aerodynamic moment components - MF1 Simulation~16}
     \label{fig:MF1_IndividualHarmonicMoment}
 \end{figure}
 
@@ -347,18 +348,20 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
 \end{tabular}
 \end{table}
 
-\subsection{Result -- Comparison of Flutter Derivatives}
+\subsection{Flutter Derivatives Results and Comparison}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png}
-    \caption{flutter derivatives --- Campaign~1}
+    \caption{flutter derivatives - Campaign~1}
     \label{fig:Combined_Flutter_Derivatives_1}
 \end{figure}
 
-From the flutter derivatives plot ~\ref{fig:Combined_Flutter_Derivatives_1} it can be observed that $H_1$, $A_1$, $H_3$, $A_3$, $H_4$, and $A_4$ 
+The 34 CFD simulations is conducted with LRZ High Performance computer and the results discussed in the current and following sections. 
+From the flutter derivatives plot (Figure~\ref{fig:Combined_Flutter_Derivatives_1}) 
+it can be observed that $H_1$, $A_1$, $H_3$, $A_3$, $H_4$, and $A_4$ 
 agree well across all superposition schemes. For superposition scheme~4, a slight error is 
-introduced, which is located in the lower reduced velocity range (i.e.\ up to $U_r = 6.83$). 
+introduced, which is located in the lower reduced velocity range (i.e.\ below $U_r = 6.83$). 
 Due to interpolation, this error propagates to higher reduced velocities, which explains the discrepancies 
 occur there.
 
@@ -374,7 +377,7 @@ even for superposition scheme~4. However, at higher reduced velocities the error
 larger. Based on the nonlinearity study, this is expected, as it reflects the inherent nonlinearity (due to phase of moment) of 
 the flutter derivative coefficients $H_2$ and $A_2$, and is not a consequence of the multi-frequency method itself.
 
-Overall, this plot indicates that, provided the multi-frequency approach adheres to the framework for 
+Overall, this plot indicates that, provided the multi-frequency method adheres to the framework for 
 the Fourier transformation, the errors remain small. 
 
 
@@ -389,19 +392,20 @@ For heave motion (solid lines), the errors at higher reduced velocities are very
 Below the reduced velocity of 6.83, the error rises to up to 40\% for superposition scheme~4. The reason for 
 this behaviour is investigated further in Section~\ref{sec:MF1_FreqDomain}. For pitch motion, 
 slight errors are present at higher reduced velocities, which is consistent with the nonlinearity 
-study and in agreement with the flutter derivative comparison presented earlier.
+study and in agreement with the flutter derivative plot discussed in previous section.
 
-An important inference here is that, although the total amplitude is the same across all four 
-multi-frequency schemes, the results reflect the inherent nonlinearity of 
-the cross-section. This highlights a key distinction: not only must the peak amplitude be kept 
+An important inference here is that, although the total prescribed motion amplitude is the same across all four 
+multi-frequency schemes, the results reflects the inherent nonlinearity of 
+the cross-section. This shows the key distinction: not only must the peak amplitude be kept 
 below the nonlinearity threshold, but the instantaneous amplitude at every point in time must 
 also remain within this limit. This condition is satisfied only in the single-frequency case. 
-Consequently, the multi-frequency approach can never yield results fully equivalent to single-frequency 
-analysis when the cross-section exhibits inherent nonlinearity, even at low amplitude ranges. 
-An important counterpoint, however, is that all practical flutter derivative identifications aim 
+Consequently, the multi-frequency method can never yield results fully equivalent to single-frequency 
+analysis when the cross-section exhibits inherent nonlinearity (due to phase change), even at low amplitude ranges. 
+
+An important counterpoint is that, flutter derivative identifications aim 
 to simulate real-world conditions, where the induced motion is never purely single-frequency. 
-From this perspective, it can be argued that the multi-frequency approach provides a more 
-representative result than single-frequency oscillation. This discussion has been explored in 
+From this perspective, it can be argued that the multi-frequency method provides a more 
+representative result than single-frequency oscillation (because of inclusion of phase change). This discussion has been investigated in 
 the works of~\cite{}, where it has been argued that using random-noise forced motion yields 
 more reliable flutter derivatives than oscillation at a single specific frequency. Therefore, 
 whether the deviations in $A_2$ and $H_2$ are acceptable depends on the perspective adopted 
@@ -410,44 +414,40 @@ and the intended use of the results.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png}
-    \caption{Amplitude errors as a function of reduced velocity --- Campaign~1}
+    \caption{Amplitude errors as a function of reduced velocity - Campaign~1}
     \label{fig: Amplitude_Errors}
 \end{figure}
 
-From the Figure~\ref{fig: Phase_Errors} , the phase errors are very small across the entire reduced 
-velocity range. This confirms that all simulations remain within the linearity limit.
+From the Figure~\ref{fig: Phase_Errors}, the phase erros exist for pitch motion accross all reduced velocities. 
+For heave motion, it is negligible. This again is in accordance with inferences from Nonlinearity study. Also similar to 
+error in forces and moments for heave motion for reduced velocities below 6.83, error in phase also exist. 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png}
-    \caption{Phase errors as a function of reduced velocity --- Campaign~1}
+    \caption{Phase errors as a function of reduced velocity - Campaign~1}
     \label{fig: Phase_Errors}
 \end{figure}
 
-The compiled displacement vs.\ force plot in Figure~\ref{fig:MF1_Compiled_Displacement_Vs_Force} 
-is analogous to the corresponding plot in the nonlinearity study (Figure~\ref{fig:Compiled_Displacement_Vs_Force}). 
-Note that the $y$-axis limits are not uniform across subplots; this should be taken into account 
-when comparing the degree of nonlinearity between the two figures. The non-uniform limits are 
-retained here to see the variations in nonlinearity with respect to the number of superposed frequencies, 
-even when the overall error is small.
-
-From this plot, the presence of nonlinearity can be inferred. Above the reduced velocity of 6.83, 
+The compiled prescribed motion amplitude Vs force plot (Figure~\ref{fig:MF1_Compiled_Displacement_Vs_Force}) 
+is analogous to the plot in the nonlinearity study (Figure~\ref{fig:Compiled_Displacement_Vs_Force}). 
+From this figure, above the reduced velocity of 6.83, 
 the nonlinearity effect is negligible. Below this value, nonlinearity is clearly present.
 
-Another important observation is that, although nonlinearity is present at lower reduced velocities, 
+Another point to note is that, although nonlinearity is present at lower reduced velocities, 
 no consistent relationship can be established between the number of frequency combinations and the 
 resulting error. A tentative inference is that the deviation in nonlinearity is generally largest 
 for superposition scheme~4; however, this is not universal, as for certain reduced velocities the 
 error in scheme~3 exceeds that in scheme~4.
 
-To illustrate this, consider the phase of the aerodynamic moment~\ref{sub@fig:MF1_Compiled_Heave_PhaseMoment_vs_Superpositions}, where the deviation due to 
-nonlinearity is most pronounced. At the reduced velocity of 3.42, the error for superposition 
-scheme~3 is greater than that for scheme~4. Similarly, for the phase of the lift force, the 
+To illustrate this, consider the phase of the aerodynamic moment Figure~\ref{sub@fig:MF1_Compiled_Heave_PhaseMoment_vs_Superpositions}, where the deviation due to 
+nonlinearity is high. At the reduced velocity of 3.42, the error for superposition 
+scheme~3 is greater than that for scheme~4. But for the phase of the lift force, the 
 error in superposition scheme~2 exceeds that of scheme~3 at most reduced velocities.
 
-Combining the observations from the amplitude and phase error analyses with the nonlinearity 
-study, it can be concluded that the superposition itself is a contributing source of error at 
-lower reduced velocities, while at higher reduced velocities the dominant source of error is 
+Combining these observations from the amplitude and phase error analyses with the nonlinearity 
+study, it can be concluded that the superposition contributes to the source of error at 
+lower reduced velocities, while at higher reduced velocities the error is due to the
 the inherent nonlinearity of the cross-section.
 
 \begin{figure}[htbp]
@@ -508,7 +508,7 @@ the inherent nonlinearity of the cross-section.
         \label{fig:MF1_Compiled_Pitch_PhaseMoment_vs_Superpositions}
     \end{subfigure}
 
-    \caption{Compiled displacement vs.\ force --- Campaign~1}
+    \caption{Compiled displacement vs.\ force - Campaign~1}
     \label{fig:MF1_Compiled_Displacement_Vs_Force}
 \end{figure}
 
@@ -516,12 +516,12 @@ the inherent nonlinearity of the cross-section.
 \subsection{Frequency Domain Analysis of Aerodynamic Forces}
 \label{sec:MF1_FreqDomain}
 
-In this section, the frequency domain of the aerodynamic forces is examined. This study helps 
+In this section, the frequency domain of the aerodynamic forces are examined. This study helps 
 to further classify the source of nonlinearity, specifically, whether it arises from higher-order 
 terms induced by large heave and pitch amplitudes, or from the inherent nonlinearity of the 
 cross-section even at low amplitude levels.
 
-The frequency spectra for all superposition combinations are clean, showing only the stationary 
+The frequency spectra for all superposition combinations are clean, showing only the static 
 component, the forced-motion response components, and the vortex shedding component. This 
 strengthens the argument from previous sections: provided the total amplitude remains below the 
 linearity limit, no higher-order harmonic terms appear in the aerodynamic response.
@@ -529,8 +529,7 @@ linearity limit, no higher-order harmonic terms appear in the aerodynamic respon
 It should also be noted that if the multi-frequency method is adopted for flutter derivative 
 identification, the only outputs available for inspection are the flutter derivative plot and 
 the frequency domain analysis. The inherent nonlinearity of the cross-section therefore cannot 
-be detected from these outputs alone, and the extracted derivatives would be accepted as correct. 
-This is an important limitation.
+be detected from these outputs alone. 
 
 
 \begin{figure}[htbp]  
@@ -591,7 +590,7 @@ This is an important limitation.
         \label{fig:Heave_DFT_moment_amplitude_case_6}
     \end{subfigure}
     
-    \caption{Frequency domain analysis of aerodynamic forces --- Heave, Campaign~1}
+    \caption{Frequency domain analysis of aerodynamic forces - Heave, Campaign~1}
     \label{fig:Frequency_Domain_Analysis_Heave_MF1}
 \end{figure}
 
@@ -654,28 +653,29 @@ This is an important limitation.
         \label{fig:Pitch_DFT_moment_amplitude_case_6_MF1}
     \end{subfigure}
     
-    \caption{Frequency domain analysis of aerodynamic forces --- Pitch, Campaign~1}
+    \caption{Frequency domain analysis of aerodynamic forces - Pitch, Campaign~1}
     \label{fig:Frequency_Domain_Analysis_Pitch_MF1}
 \end{figure}
 
-Inspection of the frequency 
-domain at lower reduced velocities reveals that the ratio between the largest and smallest aerodynamic 
-lift force components is considerably higher when superposing lower reduced velocities than when 
-combining higher ones (Figure ~\ref{fig:Reduced Velocity Vs Force Amplitudes}). This large variation is the primary reason for the errors in the 
-flutter derivatives at reduced velocity 6.83 in superposition scheme~4.
+Inspection of the frequency domain at lower reduced velocities shows that the ratio between the 
+largest and smallest aerodynamic lift force components in a superposition scheme is the reason for 
+the error in lower reduced velocities (below 6.83). This ratio is considerably higher when superposing lower reduced 
+velocities than superposing reduced velocities (Figure ~\ref{fig:Reduced Velocity Vs Force Amplitudes}). 
+This large variation is the primary reason for the errors in the 
 
-This is further confirmed by another observation. In superposition scheme~3, the reduced velocity 
-of 3.42 appears in two separate simulation groups. Following the same reasoning, the error for 
-simulation~15 of scheme~3 (which pairs lower reduced velocities) should be greater than that 
-for simulation~14 (which covers a higher reduced velocity range). This is indeed the case: for 
-the $H_1$ derivative, the error for simulation~14 of superposition scheme~3 is 0.156\%, while 
-for simulation~15 the error is 11.913\%.
+This is further confirmed by another observation. In superposition scheme~3, the aerodynamic forces for reduced velocity 
+of 3.42 can be calculated from two simulation groups (Table - \ref{tab:MF1_SP3} MF1-14 and MF1-15). 
+On following the same reasoning, the error for 
+MF1~15 of scheme~3 (which pairs 3.42 with lower reduced velocities) should be greater than that 
+for MF1~14 (which pairs 3.42 with higher reduced velocities). This is indeed the case. For 
+the $H_1$ derivative, the error for MF1~14 of superposition scheme~3 is 0.156\%, while 
+for MF1~15 the error is 11.913\%.
 
-The reason this effect is less significant for pitch motion is that the dynamic range of the 
-aerodynamic lift force between the two extreme reduced velocities within a superposition is much 
+The reason this effect is less significant for pitch motion is that the ratio of 
+aerodynamic lift force between the two extreme reduced velocities within a superposition scheme group is  
 smaller in pitch than in heave. Numerically, this ratio is 28.32 for the heave lift force and 
-3.186 for the pitch lift force. This explains why the effect does not significant 
-in the pitch case.
+3.186 for the pitch lift force. This is the reason that the effect does not significant 
+error in the pitch case.
 
 
 \begin{figure}[htbp]
@@ -688,60 +688,57 @@ in the pitch case.
 
 \subsection{Effect on Critical Wind Speed}
 
-%claude do sentence modifications from here
-
 % ── MF1 § Effect on Critical Wind Speed ──────────────────────────────────────
-Similar to the nonlinearity study on critical velocity, the influence of various superposition
-combinations on the critical flutter velocity is examined here.
+Similar to the nonlinearity study on critical velocity, the influence of superposition
+schemes on the critical flutter velocity is examined here.
 For the bridge structural properties, refer to Table~\ref{tab:bridge_configs}.
 
 From Figure~\ref{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF1}, it can be seen that
-the critical velocity remains essentially constant for the first three superposition schemes.
+the critical velocity remains constant for the first three superposition schemes.
 For the fourth scheme, a considerable variation is observed, particularly for the Humen Bridge.
 
 The reason for this behaviour can be understood by examining the reduced critical velocity
-versus number of superpositions graph (Figure~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF1}).
-It can be observed that for the Humen Bridge, the reduced critical velocity falls below~7.
-As established earlier, errors in superposition scheme~4 are highest in this lower reduced
+plot (Figure~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF1}).
+It can be observed that for the Humen Bridge, the reduced critical velocity falls below 7.
+As discussed earlier, errors in superposition scheme~4 are highest in this lower reduced
 velocity range, and these errors are directly reflected in the predicted critical velocity.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png}
-    \caption{Critical wind speed vs.\ number of superpositions --- Campaign~1}
+    \caption{Critical wind speed vs.\ number of superpositions - Campaign~1}
     \label{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF1}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{Chap_5/Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png}
-    \caption{Reduced critical wind speed vs.\ number of superpositions --- Campaign~1}
+    \caption{Reduced critical wind speed vs.\ number of superpositions - Campaign~1}
     \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF1}
 \end{figure}
 
 % ============================================================
-\section{Multi-Frequency Analysis --- 2}
+\section{Multi-Frequency Analysis 2}
 % ============================================================
 
-In this section, the multi-frequency method is applied to a dataset whose individual
-amplitudes are each kept below the linearity limit value obtained from the nonlinearity study.
+In this section, the multi-frequency method is applied with keeping individual precribed motion
+amplitudes below the linearity limit obtained from the nonlinearity study.
 
 This section is organised as follows:
 
 \begin{flushleft}
-\hspace{2cm}1. Superposition Frequency Combinations \\
-\hspace{2cm}2. Result --- Comparison of Flutter Derivatives \\
-\hspace{2cm}3. Result --- Frequency Domain Analysis of Aerodynamic Forces \\
-\hspace{2cm}4. Result --- Error Analysis of Aerodynamic Forces \\
-\hspace{2cm}5. Result --- Effect on Critical Wind Speed \\
+\hspace{2cm}1. Superposition Schemes \\
+\hspace{2cm}2. Flutter Derivatives Results and Comparison \\
+\hspace{2cm}3. Frequency Domain Analysis of Aerodynamic Forces \\
+\hspace{2cm}4. Error Analysis of Aerodynamic Forces \\
+\hspace{2cm}5. Effect on Critical Wind Speed \\
 \end{flushleft}
 
-\subsection{Superposition Frequency Combinations}
+\subsection{Superposition Schemes}
 
-The individual amplitude values are kept the same for all superposition schemes.
-Since all amplitude parameters are identical, they are presented in a single table
+Since all prescribed motion amplitude are identical, they are shown in a single table
 (Table~\ref{tab:MF2_Params}). The frequency combinations can be mapped using the
-superposition scheme defined in Section~\ref{sec:freq_selection}.
+superposition scheme defined in Section~\ref{sec:Selection of Frequencies and Superpositions}.
 
 \begin{table}[htbp]
 \centering
@@ -759,41 +756,41 @@ Pitch Amplitude (rad)   & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 
 \end{tabular}
 \end{table}
 
-\subsection{Result -- Comparison of Flutter Derivatives}
+\subsection{Flutter Derivatives Results and Comparison}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png}
-    \caption{Flutter derivatives --- Campaign~2}
+    \caption{Flutter derivatives - Campaign~2}
     \label{fig:Combined_Flutter_Derivatives_2}
 \end{figure}
 
-As seen in Figure~\ref{fig:Combined_Flutter_Derivatives_2}, the flutter derivatives exhibit
+From the Figure~\ref{fig:Combined_Flutter_Derivatives_2}, it can be observed, the flutter derivatives exhibit
 significant variation across superposition schemes, particularly for $H_2$ and $A_2$.
 A notable variation is also present in $H_4$ and $A_4$, whereas $H_1$ and $A_1$ show
-comparatively little variation. The key observation here is that the sum of the amplitudes
-across all frequencies in a superposition must be kept below the nonlinearity threshold,
-as established in the previous campaign.
+comparatively little variation. The key observation here is that the keeping individual amplitude below the nonlinearity threshold 
+produces large errors. Hence sum of the amplitudes
+across all frequencies in a superposition scheme group must be kept below the nonlinearity threshold,
+as shown in the previous campaign.
 
 \subsection{Error Analysis of Aerodynamic Forces}
 
 From the error analysis (Figure~\ref{fig:Amplitude_Errors_MF2}), the errors in the aerodynamic
 lift force and moment for pitch motion average approximately 20\%, while for heave motion they
-are around 10\%. The phase errors for pitch motion are approximately 0.2~rad, which is
-attributed to the inherent nonlinearity of the cross-section. Compared to Campaign~1, the
-aerodynamic force errors in Campaign~2 are considerably higher.
+are around 10\%. The phase errors for pitch motion are approximately 0.2~radians, which is
+because of inherent nonlinearity of the cross-section. 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png}
-    \caption{Amplitude errors as a function of reduced velocity --- Campaign~2}
+    \caption{Amplitude errors as a function of reduced velocity - Campaign~2}
     \label{fig:Amplitude_Errors_MF2}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png}
-    \caption{Phase errors as a function of reduced velocity --- Campaign~2}
+    \caption{Phase errors as a function of reduced velocity - Campaign~2}
     \label{fig:Phase_Errors_MF2}
 \end{figure}
 
@@ -801,9 +798,9 @@ aerodynamic force errors in Campaign~2 are considerably higher.
 
 From the frequency domain analysis for heave motion
 (Figure~\ref{fig:Frequency_Domain_Analysis_Heave_MF2}), higher-order harmonic terms begin to
-appear as the number of superposed frequencies increases, although they are not strongly
-pronounced. These higher-order terms are the primary cause of the significant variation
-observed in the $H_4$ and $A_4$ derivatives across superposition schemes.
+appear as the number of superposed frequencies increases, although they are not very significant. 
+These higher-order terms are the primary cause of the significant variation
+errors in the $H_4$ and $A_4$ derivatives.
 
 \begin{figure}[htbp]  
     \centering
@@ -863,17 +860,17 @@ observed in the $H_4$ and $A_4$ derivatives across superposition schemes.
         \label{fig:Heave_DFT_moment_amplitude_case_6_MF2}
     \end{subfigure}
     
-    \caption{Frequency domain analysis of aerodynamic forces --- Heave, Campaign~2}
+    \caption{Frequency domain analysis of aerodynamic forces - Heave, Campaign~2}
     \label{fig:Frequency_Domain_Analysis_Heave_MF2}
 \end{figure}
 
-Examining the frequency domain for pitch motion
-(Figure~\ref{fig:Frequency_Domain_Analysis_Pitch_MF2}), the spectra become increasingly
-noisy as the number of superposed frequencies increases. This spectral contamination is the
-primary reason for the large oscillations observed in the $H_2$ and $A_2$ derivatives.
+On examining the frequency domain for pitch motion
+(Figure~\ref{fig:Frequency_Domain_Analysis_Pitch_MF2}), the spectrum becomes increasingly
+noisy as the number of superposed frequencies increases. This spectral leakage is the
+primary reason for the large errors observed in the $H_2$ and $A_2$ derivatives.
 An important conclusion from this section is that the frequency domain analysis is a
-reliable diagnostic tool: it can clearly identify nonlinearity arising from a violation of
-the linearity assumption, which is not easily detectable from the flutter derivative plots alone.
+reliable tool for nonlinearity identification. It can clearly identify nonlinearity arising from a violation of
+the scanlan's linearity assumption. 
 
 \begin{figure}[htbp]  
     \centering
@@ -933,37 +930,32 @@ the linearity assumption, which is not easily detectable from the flutter deriva
         \label{fig:Pitch_DFT_moment_amplitude_case_6_MF2}
     \end{subfigure}
     
-    \caption{Frequency domain analysis of aerodynamic forces --- Pitch, Campaign~2}
+    \caption{Frequency domain analysis of aerodynamic forces - Pitch, Campaign~2}
     \label{fig:Frequency_Domain_Analysis_Pitch_MF2}
 \end{figure}
 
 \subsection{Effect on Critical Wind Speed}
 
-The influence of superposition on the critical flutter velocity is expected to be pronounced
-in this campaign, given the large errors in the flutter derivatives. The critical velocities
+The influence of superposition on the critical flutter velocity is expected to be high
+in this campaign, as the errors are large in the flutter derivatives. The critical velocities
 show significant variation across superposition schemes, as seen in
 Figures~\ref{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF2}
 and~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}.
 However, the variations are not as severe for the Great Belt Bridge and the DIANA reference
-configuration, which indicates that the influence of the $H_2$ derivative on the critical
+configuration, which indicates that the influence of the $H_2$ and $A_2$ derivative on the critical
 wind speed is relatively minor for these two configurations.
-This highlights an important observation: the sensitivity of the predicted critical wind speed
-to errors in flutter derivatives depends on two factors. First, whether the reduced velocity
-range at which errors occur coincides with the critical flutter range of the bridge. Second,
-the structural properties of the bridge determine which flutter derivative plays a dominant
-role in the critical velocity prediction.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png}
-    \caption{Critical wind speed vs.\ number of superpositions --- Campaign~2}
+    \caption{Critical wind speed vs.\ number of superpositions - Campaign~2}
     \label{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF2}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{Chap_5/Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png}
-    \caption{Reduced critical wind speed vs.\ number of superpositions --- Campaign~2}
+    \caption{Reduced critical wind speed vs.\ number of superpositions - Campaign~2}
     \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}
 \end{figure}
 
@@ -987,11 +979,11 @@ role in the critical velocity prediction.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{Chap_5/Figures/Simulation_Time.png}
-    \caption{Simulation time comparison}
+    \includegraphics[width=0.75\textwidth]{Chap_5/Figures/Simulation_Time.png}
+    \caption{Simulation time}
     \label{fig:Simulation_Time}
 \end{figure}
-%claude do sentence modifications till here
+
 % ============================================================
 \section{Framework for Multi-Frequency Analysis}
 % ============================================================

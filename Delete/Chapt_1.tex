@@ -16,14 +16,14 @@
 \begin{document}
 
 %%%%%% Page - 1 %%%%%%
-\section*{MultiFrequency approach}
+\section*{Multi-Frequency method}
 
 \begin{flushleft}
 This section is organized as follows: \\
 \hspace{2cm}1. Identification of aerodynamic forces \\
 \hspace{2cm}2. Calculation of Flutter Derivatives from aerodynamic forces \\
 \hspace{2cm}3. Calculation of Critical Wind Speed from Flutter Derivatives \\
-\hspace{2cm}4. Multi Frequency approach \\
+\hspace{2cm}4. Multi-Frequency method \\
 \end{flushleft}
 
 \subsection*{Identification of aerodynamic forces:}
@@ -186,15 +186,15 @@ Depending on the imaginary part of $\omega$, the system can be stable or unstabl
 A Python tool is created to solve this linearized eigenvalue problem and validated with G. Diana benchmarks. To find the critical wind speed with this approach is an iterative process. First, a reduced velocity is selected. For that reduced wind speed, aerodynamic forces are taken from the flutter derivative functions and solved for $\omega$ with the tool created for solving critical wind. If it is stable, then the next reduced wind speeds are progressively selected until the system reaches its reduced critical wind speed (unstable system). Based on the reduced critical wind speed and real part of $\omega$, the actual critical wind speed is obtained.
 
 
-\subsection*{MultiFrequency approach:}
+\subsection*{Multi-Frequency method:}
 
-For the multi-frequency approach, instead of applying a single frequency for the forced motion oscillation in heave and pitch, 
+For the multi-frequency method, instead of applying a single frequency for the forced motion oscillation in heave and pitch, 
 multiple frequencies are applied simultaneously. Assuming that aerodynamic forces are linear, the aerodynamic forces will be 
 the superposition of the aerodynamic forces obtained from each frequency. Hence, with this approach, multiple sets of flutter 
 derivatives can be obtained from a single simulation. Hence the section "Identification of aerodynamic forces" alone is different
-on comparing the single frequency and multi-frequency approach. The rest of the procedure for calculating flutter derivatives 
+on comparing the single frequency and multi-frequency method. The rest of the procedure for calculating flutter derivatives 
 and critical wind speed is the same for both approaches. Figure \ref{fig:Single_Frequency_Approach} and 
-\ref{fig:MultiFrequency_Approach} show the difference in the procedure for both approaches.
+\ref{fig:Multi-Frequency_Method} show the difference in the procedure for both approaches.
 
 \begin{figure}[htbp]
     \centering
@@ -208,8 +208,8 @@ and critical wind speed is the same for both approaches. Figure \ref{fig:Single_
 \begin{figure}[htbp]
     \centering
     \includegraphics[angle=0, width=1.0\textwidth]{Chap_1/Figures/MultiFrequency_Explanation.png}
-    \caption{Multi Frequency Approach}
-    \label{fig:MultiFrequency_Approach}
+    \caption{Multi-Frequency method}
+    \label{fig:Multi-Frequency_Method}
 \end{figure}
 
 \end{document}
