@@ -12,7 +12,7 @@ In this section, model setup for the virtual wind tunnel with CFD is described. 
 
 \textbf{CFD Model:} 
 
-The 2-D CFD model is created using GiD~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
+The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}).  
 Since forced motion oscillation tests are conducted, the structure, ie the bridge 
 deck cross-section is modelled as a obpaque object in the fluid domain without any physics parameters 
 like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
@@ -20,7 +20,7 @@ like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-s
 specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this. \\
 
 The Fluid domain is meshed with finer meshes near the structure and with coarser meshes farther away to have a optimal 
-meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided into five subregions \ref{fig:GiD_Model_2}
+meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided into five subregions as shown in Figure \ref{fig:GiD_Model_2}
 
 \vspace{0.5 cm}
 
@@ -45,10 +45,10 @@ meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided 
 
 The GiD model is solved with an open source Multiphysics solver - KratosMultiphysics. 
 The boundary conditions applied to Fluid domain are shown in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
-The turbulence is modeled with URANS and the turbulence intensity is set to 0.1 and the turbulent mixing length is set to 0.0588 m.\\
+The turbulence is modeled with URANS with a turbulence intensity of 0.1 and the turbulent mixing length is set to 0.0588 m.\\
 
-The velocity is set to 1 m/s and the corresponding Reynolds number for the flow is [insert value]. The time step is 
-taken as 0.002 seconds. The total simulation time can be divided into three phases: ramp-up time, stabilization time, and stable 
+The velocity is set to 1 m/s and the corresponding Reynolds number for the flow is $2.43*10^4$. The time step is 
+taken as 0.002 seconds (Corresponding CFL is shown in Table~\ref{tab:mesh_convergence}). The total simulation time is divided into three phases: ramp-up time, stabilization time, and stable 
 time period. In Ramp-up phase the flow velocity is steadily increased from 0 to 1 m/s to avoid numerical instabilities. 
 In Stabilization phase, the flow is allowed to stabilize. The stable time period is the duration used for analysis. 
 Ramp-up time and stabilization time are determined based on the vortex shedding frequency of the section.
@@ -58,12 +58,13 @@ Vortex shedding frequency = $ \frac{0.1 * 1}{0.366} $ = 0.273 Hz \\ [0.1cm]
 Ramp up time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
 Stabilization time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
 
-The stable time period is for capturing the flow behaviour. Since the interest of this thesis is to capture the flutter response, 
+Since the interest of this thesis is to capture the flutter response, 
 stable time period is time taken for 10 complete forced motion oscillations. But as each reduced velocity 
 has a different forced motion frequency, the stable phase of the simulations is different. A higher reduced velocity will 
 have a lower oscillating frequency and hence requiring a higher time of simulation and vice versa. Hence its calulcation is 
-shown after the information about the applied motion frequency is provided and in the conecutive chapters if anyother 
-reduced velocity is taken, the stable time period is mentioned in the respective chapter.
+shown after the information about the prescribed motion frequency is provided in the conecutive chapters. 
+
+%Check :if anyother reduced velocity is taken, the stable time period is mentioned in the respective chapter.
 
 \begin{figure}[htbp]  
     \centering
@@ -105,17 +106,20 @@ Total simulation time = Ramp-up time + Stabilization time + Stable time period =
         Deck Surface (m) & 0.0045 & 0.003 & 0.0024 & 0.0022 & 0.002 \\ \hline
         Width/ min mesh size & 81.333 & 122 & 152.5 & 166.36 & 183 \\ \hline
         Total Elements & 7368 & 15704 & 20854 & 24374 & 29408 \\ \hline
-        Minimum Mesh Size GID & 0.00358 & 0.00245 & 0.00196 & 0.00179 & 0.00159 \\ \hline
+        Minimum Mesh Size-GID & 0.00358 & 0.00245 & 0.00196 & 0.00179 & 0.00159 \\ \hline
         Velocity (m/s) & 1 & 1 & 1 & 1 & 1 \\ \hline
         Time step & 0.004 & 0.002 & 0.002 & 0.002 & 0.002 \\ \hline
         CFL & 1.11 & 0.81 & 1.02 & 1.11 & 1.26 \\ \hline
     \end{tabular}
 \end{table}
 
-With this simulation setup, the CFD simulations are conducted for all five models figure~\ref{fig:CFD_Result}. 
-This maginitude of heave and pitch amplitudes are applied and corrresponding aerodynamic lift and moment
-forces are indentified. The aerodynamic forces are then used to calculate the flutter derivatives. The convergence of flutter derivatives is then analysed. 
-Figure~\ref{fig:Model_3_CFD_Output} shows the aerodynamic lift and moment forces obtained for Model 3. 
+With this simulation setup, the CFD simulations are conducted for all five models 
+Simulations Result of the Model 3 is shown in figure~\ref{fig:CFD_Result}. 
+From this result, pressures on the structural surface is integrated to obtain aerodynamic lift and moment
+forces. Figure~\ref{fig:Model_3_CFD_Output} shows the aerodynamic lift and moment forces obtained for Model 3. 
+These aerodynamic forces are then used to calculate the flutter derivatives. 
+The convergence of flutter derivatives is then analysed. 
+
 
 
 \begin{figure}[htbp]  

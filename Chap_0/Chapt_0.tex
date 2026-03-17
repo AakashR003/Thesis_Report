@@ -44,7 +44,7 @@ where, $h$ - vertical DOF (Heave motion), $\alpha$ - Rotational DOF (Pitch Motio
 \phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
 
 Flutter derivatives are shape constants that quantify the wind force on a structure as a linear relation 
-of the section's vertical velocity, angular rotation, and speed of angular rotation. They are functions 
+of the section's vertical velocity, angular rotation, and speed of angular rotation. They are inturn functions 
 of $U_{red} = \frac{1}{K} = \frac{U}{fB}$ 
 
 Since this is a semi-empirical approach, the flutter derivatives cannot be directly solved. We need 
@@ -66,7 +66,7 @@ Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation 
 \vspace{0.5 cm}
 
 To overcome this, a multi-frequency vibration approach was introduced by Lin Huang et al in 2011. 
-By this approach, instead of applying a single forced motion, we can combine multiple forced 
+By this approach, instead of applying a single forced motion, we can superimpose multiple forced 
 motions of different frequencies and apply them as a forced motion in CFD. Then use mathematical 
 tools, such as the Fourier Transform, to analyze the resultant aerodynamic force and obtain its 
 individual components. In this way, the method can be theoretically n times as efficient (where n 
@@ -74,7 +74,7 @@ is the number of combinations). But according to the paper, the multi-frequency 
 the simulation by only 18\%. The reason was to accurately identify the flutter derivative using a 
 multi-frequency approach, more simulation time is required than with a single-frequency approach. 
 After that, for a few years, there wasn't research focusing on this. In 2023, G. Martínez-López 
-investigated a multi-frequency approach to obtaining flutter derivatives via curve fitting with LES 
+investigated the multi-frequency approach to obtaining flutter derivatives via curve fitting with LES 
 Turbulence modelling. From this work, it was identified that the selection of the frequency played 
 an important role in the approach's accuracy. The same result as with Lin Huang was observed. Ie, 
 to obtain accurate Flutter derivatives using the multi-frequency approach, the simulation time must 
@@ -107,7 +107,7 @@ the proposed framework.
 \vspace{0.5 cm}
 
 \begin{flushleft}   
-The document is formatted as follows to explain the research conducted. \\
+The document is formatted as follows \\
 \hspace{2cm}• Intoduction to Multi-Frequency approach   \\
 \hspace{2cm}• Mesh Convergence Study \\
 \hspace{2cm}• Signal Analysis with Fast Fourier Transform (FFT) \\

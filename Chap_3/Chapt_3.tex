@@ -29,13 +29,13 @@ the frequency domain. Since real-world data consists of discrete numbers rather 
 mathematical functions, the transform cannot be applied directly. Therefore, the Discrete
 Fourier Transform (DFT) is used in such cases. The DFT converts time-varying data into the
 frequency domain, and its inputs are the time-varying data and the sampling frequency. The
-sampling frequency defines how many samples are taken per second; in the CFD context used in
-this thesis, it is equal to $1/\Delta t$, where $\Delta t$ is the time step.
+sampling frequency defines how many samples are taken per second; in the CFD context, 
+it is equal to $1/\Delta t$, where $\Delta t$ is the time step.
 
-The Fast Fourier Transform (FFT) is derived from the DFT and offers significantly greater
-computational efficiency. Several open-source tools are available to perform FFT computations,
-one of which is provided by the \texttt{scipy.fft} module in Python. Since Python is used for
-post-processing throughout this thesis, the SciPy FFT tool is employed to convert the obtained
+The Fast Fourier Transform (FFT) is derived from the DFT which has significantly higher
+computational efficiency. Several open-source tools are available to perform FFT computations.
+One of which is provided by the \texttt{scipy.fft} module in Python. Since Python is used for
+post-processing throughout this thesis, the SciPy FFT tool is used to convert the obtained
 aerodynamic forces and moments into the frequency domain.
 
 Since the DFT operates on a discrete set of values, it is subject to certain inherent
@@ -57,13 +57,26 @@ The frequency bin refers to the discrete set of frequency values produced by the
 domain conversion. If the frequency of the signal to be extracted coincides with one of the
 values in the frequency bin, the extracted amplitude will be accurate and free from
 discretisation errors.
+If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
+from the FFT will contain an error. This effect is known as \textit{spectral leakage}: since
+no bin directly corresponds to the signal frequency, its amplitude is distributed across the
+neighbouring bins. 
 
 \vspace{0.3cm}
 \textbf{Calculation of Frequency Bin}
 
-% TODO: Include derivation/formula for frequency bin calculation
+\begin{equation}
+f_k = k \cdot \frac{f_s}{N}, \qquad k = 0, 1, 2, \dots, \left\lfloor \frac{N}{2} \right\rfloor
+\end{equation}
 
-% TODO: Insert figure of frequency bin
+where
+\begin{itemize}
+    \item $f_k$ \quad = frequency of the $k$-th frequency bin (Hz)
+    \item $k$     \quad = frequency bin index 
+    \item $f_s$   \quad = sampling frequency (Hz)
+    \item $N$     \quad = Length of the data
+    \item $\Delta f = \frac{f_s}{N}$ \quad = frequency resolution / bin width (Hz)
+\end{itemize}
 
 \vspace{0.3cm}
 
@@ -72,12 +85,6 @@ and the \textit{frequency resolution} of an FFT refers to how small this spacing
 bin spacing corresponds to a higher frequency resolution. As shown by the formula, the
 resolution depends on the length of the data record.
 
-If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
-from the FFT will contain an error. This effect is known as \textit{spectral leakage}: since
-no bin directly corresponds to the signal frequency, its amplitude is distributed across two
-adjacent bins. Therefore, using a longer data record increases the accuracy of the DFT by
-reducing the bin spacing and mitigating spectral leakage.
-
 Another important issue to be aware of is \textit{aliasing}. The maximum signal frequency that
 can be extracted using an FFT is limited by the Nyquist frequency, given by:
 
@@ -85,30 +92,31 @@ can be extracted using an FFT is limited by the Nyquist frequency, given by:
     f_{\text{Nyquist}} = \frac{f_s}{2}
 \end{equation}
 
-where $f_s$ is the sampling frequency. The implications of this limit are twofold. First, if
+where $f_s$ is the sampling frequency. This can create issues in two ways. First, if
 the frequency of interest lies above the Nyquist frequency, it cannot be extracted. Second,
 even if the frequency of interest lies within the Nyquist limit, any other signal with a
 frequency above it will be folded back into the valid frequency range by the FFT. If such a
 folded component does not fall on a bin, it will introduce additional spectral leakage. While
-the probability of this aliased component coinciding exactly with a frequency of interest is
+the probability of this occurance is
 low, this effect should be kept in mind when using the FFT in practice.
 
 These two effects combined impose restrictions on the frequencies that can be extracted and
-the accuracy with which they can be obtained, in various forms:
+the accuracy with which they can be obtained, in various forms. These are studied for 
+single and multifrequency method in the following sections. 
 
-\begin{enumerate}
-    \item As discussed, if the frequency of interest does not have a finite decimal
-          representation or does not fall on a frequency bin, spectral leakage will introduce
-          error.
-    \item The length of the data record determines a frequency bin that may or may not match
-          the frequency of interest.
-    \item The frequency of interest must lie within the Nyquist frequency.
-    \item If random noise such as white noise is present in the data, the extracted amplitude
-          will contain error even if the signal frequency falls on a bin. This is because random
-          noise excites many frequencies simultaneously, and any overlap with the frequency range
-          of the signal of interest will disturb the extracted amplitude. Since the noise is
-          random, a large bin spacing further compounds this error through spectral leakage.
-\end{enumerate}
+% \begin{enumerate}
+%     \item As discussed, if the frequency of interest does not have a finite decimal
+%           representation or does not fall on a frequency bin, spectral leakage will introduce
+%           error.
+%     \item The length of the data record determines a frequency bin that may or may not match
+%           the frequency of interest.
+%     \item The frequency of interest must lie within the Nyquist frequency.
+%     \item If random noise such as white noise is present in the data, the extracted amplitude
+%           will contain error even if the signal frequency falls on a bin. This is because random
+%           noise excites many frequencies simultaneously, and any overlap with the frequency range
+%           of the signal of interest will disturb the extracted amplitude. Since the noise is
+%           random, a large bin spacing further compounds this error through spectral leakage.
+% \end{enumerate}
 
 \vspace{0.5cm}
 
@@ -123,9 +131,9 @@ signal is known, it is compared against the FFT output and the error is examined
 following cases:
 
 \begin{enumerate}
-    \item Single Frequency — Bin Match
-    \item Single Frequency — Non-Bin Match
-    \item Single Frequency — Bin Match with Noise
+    \item Bin Match
+    \item Non-Bin Match
+    \item Bin Match with Noise
     \item Frequency Bin Resolution on Non-Matching Bin
 \end{enumerate}
 
@@ -133,7 +141,7 @@ The input signal parameters used throughout this section are as follows:
 
 \begin{itemize}
     \item Total time: 10 seconds
-    \item Sampling rate: 500 Hz (i.e.\ each second is divided into 500 discrete samples)
+    \item Sampling frequency: 500 Hz
 \end{itemize}
 
 The resulting frequency bins are:
@@ -231,8 +239,7 @@ of 0.2 is superimposed on the signal to assess its effect on the extracted ampli
 
 As shown in Figure~\ref{fig:sf_noise}, the extracted amplitude is 0.99, corresponding to an
 error of only 0.04\%. Although noise does introduce a small error, its effect is considerably
-less severe than that of spectral leakage, provided the signal frequency falls on a frequency
-bin.
+less severe than that of spectral leakage.
 
 % ------------------------------------------------------------
 \subsection{Frequency Bin Resolution on Non-Matching Bin}
@@ -246,7 +253,7 @@ larger the resulting error.
 To illustrate this, consider a signal at 0.54~Hz with the same configuration as above, where
 the neighbouring frequency bins are located at 0.5~Hz and 0.6~Hz. This frequency falls near
 the centre of the interval between the two adjacent bins, producingan error of 21.77\%. When
-the total record length is extended to 20~s, the bin spacing is reduced, placing the
+the total time is extended to 20~s, the bin spacing is reduced, placing the
 neighbouring bins at 0.5~Hz and 0.55~Hz. In this finer-resolution case, the error decreases
 to 5.6\%, since 0.54~Hz now lies closer, in relative terms, to one of its neighbouring bins.
 
@@ -257,14 +264,14 @@ configuration (bin spacing of 0.05~Hz), this ratio increases to $0.2/0.25 = 0.8$
 error rises to 24.02\%, despite the absolute distance to the nearest bin being smaller. This
 result highlights that it is the relative position within the bin interval
  that determines the magnitude of spectral leakage error. One approach
-to mitigate error in the limiting case, where the frequency falls exactly at the midpoint
-between two bins, is to sum the amplitudes of the two neighbouring bins. However, this method
+to mitigate error in the case where the frequency falls exactly at the midpoint
+between two bins, is to sum the amplitudes of the two neighbouring bins. However, this
 introduces additional uncertainty and should therefore be applied with caution.
 
 Another approach is improving the frequency resolution
 through a longer data which reduces spectral leakage error by moving the signal frequency
 closer to a bin in relative terms. However, as the resolution increases, the sensitivity of
-the error also increases which must be carefully considered when increasingthe length.
+the error also increases which must be carefully considered when increasing the length.
 
 \vspace{0.5cm}
 
@@ -290,9 +297,9 @@ analysis:
 The following cases are examined:
 
 \begin{enumerate}
-    \item Multi-Frequency — All Components Bin-Matched
-    \item Multi-Frequency — Bin Match with Noise
-    \item Multi-Frequency — One Component Non-Bin-Matched
+    \item All Components Bin-Matched
+    \item Bin Match with Noise
+    \item One Component Non-Bin-Matched
 \end{enumerate}
 
 % ------------------------------------------------------------
@@ -392,17 +399,17 @@ persists under multi-frequency conditions.
 \end{figure}
 
 As shown in Table~\ref{tab:mf_binmatch_noise} and Figure~\ref{fig:mf_noise}, the introduction
-of white noise produces small but non-zero errors across all frequency components. Consistent
+of white noise produces small errors across all frequency components. Consistent
 with the single-frequency case, the errors remain small relative to those caused by spectral
-leakage, provided all frequencies fall on bins.
+leakage.
 
 % ------------------------------------------------------------
 \subsection{One Component Non-Bin-Matched}
 % ------------------------------------------------------------
 
-In this case, the effect of a single frequency component not falling on a frequency bin is
-investigated within a multi-frequency signal. Specifically, the analysis examines whether the
-resulting error is isolated to the non-matching frequency or whether it propagates to
+In this case, the effect of a single frequency (within the multi-frequency signal) not falling on a frequency bin is
+investigated. Specifically, to check whether the
+resulting error is isolated to the non-matching frequency or propagates to
 neighbouring frequency components as well.
 
 To investigate this, a multi-frequency signal identical to the previous case is used, with an
@@ -457,9 +464,8 @@ corrupts the amplitudes of neighbouring frequency components, particularly 1.00~
 A key observation is that the magnitude of this leakage-induced error decreases with
 increasing spectral distance from the non-bin-matched frequency. This spatial decay of leakage
 is also visible in the FFT spectrum, where the spurious disturbance diminishes progressively
-at frequencies further from 1.05~Hz. This behaviour underlines the importance of ensuring that
-all frequency components in a multi-frequency signal fall on frequency bins before applying the
-FFT.
+at frequencies further from 1.05~Hz. This behaviour denotes the importance of ensuring
+all frequency components in a multi-frequency signal fall on frequency bins.
 
 
 \end{document}

@@ -15,21 +15,21 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Single-frequency bin-match case: input signal and corresponding FFT spectrum.}}{25}{figure.caption.18}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Single-frequency non-bin-match case: input signal and corresponding FFT spectrum showing spectral leakage.}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Single-frequency bin-match case with added white noise: input signal and corresponding FFT spectrum.}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Single-frequency bin-match case with added white noise: input signal and corresponding FFT spectrum.}}{26}{figure.caption.20}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Multi-frequency bin-matched case: input signal and corresponding FFT spectrum with zero error across all components.}}{28}{figure.caption.22}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Multi-frequency bin-matched case with added white noise: input signal and corresponding FFT spectrum.}}{29}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT spectrum illustrating leakage into neighbouring bins.}}{30}{figure.caption.26}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Combined Flutter Derivatives}}{33}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Frequency Domain Analysis Heave}}{35}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Frequency Domain Analysis Pitch}}{36}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Combined Flutter Derivatives}}{34}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Frequency Domain Analysis Heave}}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Frequency Domain Analysis Pitch}}{37}{figure.caption.31}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Prescribed Motion Amplitude Vs Force}}{39}{figure.caption.32}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Compiled Displacement Vs Force}}{40}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Prescribed Displacement}}{40}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Amplitude Study - 0 - Pitch Motion - Pressure Distribution}}{41}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Amplitude Study - 6 - Pitch Motion - Pressure Distribution}}{41}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Prescribed Displacement}}{41}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Amplitude Study - 0 - Pitch Motion - Pressure Distribution}}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Amplitude Study - 6 - Pitch Motion - Pressure Distribution}}{42}{figure.caption.36}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Critical wind speed vs.\ Amplitude Scheme}}{42}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Reduced critical wind speed vs.\ Amplitude Scheme}}{42}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Reduced critical wind speed vs.\ Amplitude Scheme}}{43}{figure.caption.39}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Individual forced motion components for MF1 Simulation~16}}{48}{figure.caption.45}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Superimposed forced motion for MF1 Simulation~16}}{48}{figure.caption.46}%
