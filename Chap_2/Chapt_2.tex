@@ -16,7 +16,7 @@ The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}).
 Since forced motion oscillation tests are conducted, the structure, ie the bridge 
 deck cross-section is modelled as a obpaque object in the fluid domain without any physics parameters 
 like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
-(Reference1), shown in Figure~\ref{fig:Sarkic_Section}. It is then externally osicllated by the solver with a 
+(Reference1), shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
 specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this. \\
 
 The Fluid domain is meshed with finer meshes near the structure and with coarser meshes farther away to have a optimal 
@@ -52,7 +52,7 @@ taken as 0.002 seconds (Corresponding CFL is shown in Table~\ref{tab:mesh_conver
 time period. In Ramp-up phase the flow velocity is steadily increased from 0 to 1 m/s to avoid numerical instabilities. 
 In Stabilization phase, the flow is allowed to stabilize. The stable time period is the duration used for analysis. 
 Ramp-up time and stabilization time are determined based on the vortex shedding frequency of the section.
-From EN 1991, the strouhal number of the section is taken as 0.1. \\ [0.1cm]
+From EN 1991, the Strouhal number of the section is taken as 0.1. \\ [0.1cm]
 
 Vortex shedding frequency = $ \frac{0.1 * 1}{0.366} $ = 0.273 Hz \\ [0.1cm]
 Ramp up time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
@@ -61,8 +61,8 @@ Stabilization time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
 Since the interest of this thesis is to capture the flutter response, 
 stable time period is time taken for 10 complete forced motion oscillations. But as each reduced velocity 
 has a different forced motion frequency, the stable phase of the simulations is different. A higher reduced velocity will 
-have a lower oscillating frequency and hence requiring a higher time of simulation and vice versa. Hence its calulcation is 
-shown after the information about the prescribed motion frequency is provided in the conecutive chapters. 
+have a lower oscillating frequency and hence requiring a higher time of simulation and vice versa. Hence its calculation is 
+shown after the information about the prescribed motion frequency is provided in the consecutive chapters. 
 
 %Check :if anyother reduced velocity is taken, the stable time period is mentioned in the respective chapter.
 
@@ -80,8 +80,8 @@ shown after the information about the prescribed motion frequency is provided in
 A mesh convergence study is conducted to determine the optimal mesh element size. Five models with progressive 
 mesh sizes are created and converegence of 8 derivatives are analysed. The Table~\ref{tab:mesh_convergence} shows the models
 and corresponding mesh sizes at each zone. The study is performed for a single point on the flutter derivative curve
-at a reduced velocity of 10.93. From the literature, reivew, it is identified 5$\%$ of width of bridge deck as the heave amplitude 
-and 5 degree as pitch amplitude are the appropiate forced motion amplitude such that aerodynamic forces show linear behaviour.  \\ [0.1cm]
+at a reduced velocity of 10.93. From the literature, it is identified 5$\%$ of width of bridge deck as the heave amplitude 
+and 5 degree as pitch amplitude are the appropriate forced motion amplitude such that aerodynamic forces show linear behaviour.  \\ [0.1cm]
 
 Heave amplitude = $ \frac{5 * 0.366}{100} $ = 0.0183 m\\ [0.1cm]
 Pitch amplitude = 0.087 radians\\ [0.1cm]
