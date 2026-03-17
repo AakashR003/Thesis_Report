@@ -1,0 +1,50 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Conclusion and Outlook}
+
+\section{Conclusion}
+This thesis presents a comprehensive investigation into the efficient identification of 
+flutter derivatives using multi-frequency forced-motion simulations in computational fluid 
+dynamics (CFD). The primary objective was to validate and optimize the multi-frequency method 
+for flutter derivative extraction, addressing key questions regarding its accuracy, efficiency, 
+and limitations compared to the traditional single-frequency approach. The objectives were 
+achieved by investigating two core base of multi-frequency method. First, examing the mathematical
+tool used for transformation. Secondly, investigation of validity of principle of superposition
+for aerodynamic forces and moments. \\ - URANS
+
+A signal analysis was performed using python SciPy's FFT module, 
+The study demonstrated that frequency 
+bin alignment is critical for accurate amplitude extraction, with errors up to 34.70 
+for non-matching bins (Spectral leakage). Noise effects were shown to be minimal (0.04 error) compared 
+to leakage, emphasizing the need for precise frequency selection in multi-frequency 
+simulations. Spectral leakage showed spatial decay. Hence with multifrequency method, 
+it is difficult to obtain result at intermediate timesteps. Accuracy of FFT is independent of number of 
+superpositions, suggesting any error in identification of flutter derivative with multi-frequency method
+is not because of FFT (if frequency bins are matched). \\
+
+Next, Nonlinearity characterstics of the sarkic crossection is studied to validate the principle of superposition 
+assumptions underlying the multi-frequency method. 
+Results of 112 simulations by varying heave (0.68 to 8.20 of deck width) and pitch (1° to 8°) amplitudes revealed 
+that flutter derivatives remain linear up to 5.46 heave and 3° pitch for most cases, with 
+and H2 showing deviations due to phase changes rather than force nonlinearity due to higher order terms. 
+Spectral analysis confirmed clean spectra up to 5° pitch, validating Scanlan's linearity assumption. 
+But princple of linear superposition is not valid to a greater extent for pitch abobe 1.55°.\\
+
+Building on these insights, Chapter 5 conducted multi-frequency analysis with two campaigns: 
+one limiting the sum of amplitudes below nonlinearity thresholds and another constraining individual 
+amplitudes. Eight frequencies (0.125 Hz to 3.2 Hz) were organized into four superposition schemes (1 to 4 frequencies). 
+Results showed that increasing superpositions improves efficiency without compromising accuracy. 
+But the efficiency is limited by superposition combinations and relative time saving. 
+The framework proposed frequency 
+bin alignment and amplitude thresholds (e.g., 5 heave, 5° pitch) for reliable multi-frequency simulations, 
+reducing computational cost by up to 75 compared to single-frequency methods. \\
+
+\section{Outlook}
+
+Multifrequency simulation campagians with the same framework described in this work should be carried out for 
+multiple crossections to improve the confidence of this method. Since, this framework were entirely carried out with URANS 
+turbulence modelling, there shall be error associated with this which may not be found in this investigation. Hence 
+following the similar framework, with other turbulence modelling and wind tunnel experiments, the proposed framework
+should be validated to increase the confidence on Multi-Frequency method. 
+
+\end{document}
