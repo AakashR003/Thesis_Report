@@ -1,5 +1,27 @@
 \documentclass[../main]{subfiles}
 \begin{document}
-\chapter{Abstract}
+\begin{abstract}
 
+This thesis investigates an efficient approach for identifying flutter derivatives using the 
+multi-frequency forced-motion method in CFD. Flutter is an aeroelastic instability that occurs 
+when a flexible structure interacts with a fluid flow. If the incoming flow speed exceeds the 
+structure's critical velocity, negative aerodynamic damping will be introduced, leading to 
+catastrophic failure. Design of long-span suspension and cable-stayed bridges for wind loading 
+is mainly governed by this phenomenon.
+
+Flutter derivatives are a set of aerodynamic coefficients that quantify self-excited lift and 
+moment forces on a bridge deck (or any bluff body) as functions of reduced velocity. Traditionally, 
+these derivatives are obtained via semi-empirical CFD procedures that require many forced-motion 
+simulations which makes the method computationally expensive.
+
+This work investigates on using multi-frequency forced-motion oscillations within URANS ($k$--$\omega$ SST turbulence modeling) 
+CFD simulations to identify flutter derivatives, which can reduce 
+simulation cost significantly. First, an error analysis with Fast Fourier Transform (FFT) is 
+performed for obtaining information on efficent frequency selection for multi-frequency method.
+Then nonlinearity assesment of sarkic cross-section is performed to validate the principal of 
+superposition for flutter derivatives. A comprehensive framework combining these analyses is 
+developed and applied to two multi-frequency test campaigns. The results demonstrate that, 
+when the proposed framework is implemented, simulation costs can be reduced by up to 60 $\%$.
+
+\end{abstract}
 \end{document}

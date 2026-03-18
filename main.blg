@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: unsrturl.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--entry type for "Martínez-López_2023" isn't style-file defined
+--line 581 of file references.bib
+Warning--I didn't find a database entry for "Theodorsen1935"
+Warning--empty journal in menter
+Warning--empty year in menter
+Warning--empty journal in zhan2012_Tacoma_Narrows
+Warning--empty journal in pentek
+Warning--empty year in pentek
+Warning--empty journal in warnakulasuriya
+Warning--empty year in warnakulasuriya
+You've used 22 entries,
+            2616 wiz_defined-function locations,
+            734 strings with 9580 characters,
+and the built_in function-call counts, 8219 in all, are:
+= -- 823
+> -- 318
+< -- 1
++ -- 101
+- -- 79
+* -- 544
+:= -- 1109
+add.period$ -- 79
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 188
+empty$ -- 839
+format.name$ -- 79
+if$ -- 2218
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 19
+newline$ -- 126
+num.names$ -- 22
+pop$ -- 163
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 582
+stack$ -- 0
+substring$ -- 407
+swap$ -- 50
+text.length$ -- 33
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 52
+width$ -- 24
+write$ -- 260
+(There were 9 warnings)

@@ -24,13 +24,13 @@ where, $L_{ae}$ - Aerodynamic lift force due to wind \\
 \phantom{where,} $M_{ae}$ - Aerodynamic moment due to wind
 \vspace{0.5 cm}
 
-Here, quantifying the aerodynamic forces is the challenge. In 1935, Theodorsen, a Norwegian American aerodynamicist, developed an 
-analytical solution for the aerodynamic forces for unsteady flutter analysis of an airfoil. The solutions for $L_{ae}$ and 
+Here, quantifying the aerodynamic forces is the challenge. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
+analytical solution for the aerodynamic forces for unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. The solutions for $L_{ae}$ and 
 $M_{ae}$ were functions of theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
 $K = \frac{\omega b}{U}$. This quantifies the unsteadiness (i.e., the time lag between the applied force and the structure's 
 displacement). As this theory was based on the assumption of Potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
 an American civil engineer, reformulated Theodorsen's theory to accommodate bridges using a semi-empirical method based on eight 
-functions (for a 2-DOF system) known as flutter derivatives.
+functions (for a 2-DOF system) known as flutter derivatives \cite{scanlan1971}.
 
 \begin{equation}
 L_{ae} = \frac{1}{2}\rho U^2 B \left[ KH_1^* \frac{\dot{h}}{U} + KH_2^* \frac{B\dot{\alpha}}{U} + K^2 H_3^* \alpha + K^2 H_4^* \frac{h}{B} \right]
@@ -65,7 +65,7 @@ Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation 
 
 \vspace{0.5 cm}
 
-To overcome this, a multi-frequency vibration method was introduced by Lin Huang et al in 2011. 
+To overcome this, a multi-frequency vibration method was introduced by Lin Huang et al in 2011 \cite{huang2011}. 
 By this method, instead of applying a single forced motion, we can superpose multiple forced 
 motions of different frequencies and apply them as a forced motion in CFD. Then use mathematical 
 tools, such as the Fourier Transform, to analyze the resultant aerodynamic force and obtain its 
@@ -75,7 +75,7 @@ the simulation by only 18\%. The reason was to accurately identify the flutter d
 multi-frequency method, more simulation time is required than with a single-frequency method. 
 After that, for a few years, there wasn't research focusing on this. In 2023, G. Martínez-López 
 investigated the multi-frequency method to obtaining flutter derivatives via curve fitting with LES 
-Turbulence modelling. From this work, it was identified that the selection of the frequency played 
+Turbulence modelling \cite{Martínez-López_2023}. From this work, it was identified that the selection of the frequency played 
 an important role in the method's accuracy. The same result as with Lin Huang was observed. Ie, 
 to obtain accurate Flutter derivatives using the multi-frequency method, the simulation time must 
 be increased. This leaves several open questions  

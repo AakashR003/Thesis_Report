@@ -20,9 +20,10 @@
 \usepackage{multirow}
 \usepackage{placeins}
 \usepackage{etoolbox}
+\usepackage{doi}
 
 % ============================================================
-% Chapter heading formatting – compact style for thesis
+% Chapter heading formatting 
 % ============================================================
 
 \titleformat{\chapter}[display]
@@ -51,16 +52,51 @@
 
 % --- Title Page ---
 \begin{titlepage}
-    \centering
-    \vspace*{2cm}
-    {\LARGE\bfseries Efficient Identification of Flutter Derivatives from Multi-Frequency Forced-Motion Simulations\\[1em]}
-    \vspace{1cm}
-    {\large Master's Thesis}\\[0.5cm]
-    {\large Aakash Ravichandran}\\[0.5cm]
-    {\large \today}
-    \vfill
-    {\large Technical University of Munich}
+    
+    \begin{flushright}
+        \includegraphics[width=2cm]{TUM_Logo.png}
+    \end{flushright}
+
+    \vspace{1.5cm}
+
+    \begin{center}
+
+    {\LARGE\bfseries Efficient Identification of Flutter Derivatives\\
+    from Multi-Frequency Forced-Motion Simulations\\[1em]}
+
+    \vspace{2.5cm}
+
+    {\normalsize
+    Submitted to the Department of Civil, Geo and Environmental Engineering\\
+    in partial fulfillment of the requirements for the degree of\\
+    M.Sc.\\
+    at the Technical University of Munich.
+    }
+    \end{center}
+
+    \vspace{2.5cm}
+
+    \begin{flushleft}
+    % Two-column info block
+    \begin{tabular}{@{} p{3.5cm} p{8cm} @{}}
+        \textbf{Supervised by} 
+            & Guillermo Martínez-López, M.Sc. \\
+            & Prof. Dr.-Ing. Roland Wuchner \\
+            & Chair of Structural Analysis \\[1em]
+        \textbf{Submitted by}  
+            & Aakash Ravichandran \\
+            & Hiltenspergerstraße 80 \\
+            & 80796 München \\
+            & Student number: 03780894 \\[1em]
+        \textbf{Submitted on}  
+            & Munich, \today \\
+    \end{tabular}
+
+    \end{flushleft}
+
 \end{titlepage}
+
+\subfile{Abstract/Abstract}
 
 \tableofcontents\newpage
 \listoffigures\newpage
@@ -79,7 +115,8 @@
 \appendix
 \subfile{Chap_A/Chapt_A}
 
-% \bibliographystyle{plain}
-% \bibliography{references}
+\nocite{*}
+\bibliographystyle{unsrturl}
+\bibliography{references}
 
 \end{document}

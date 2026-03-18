@@ -131,6 +131,8 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.s
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\doi\doi.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\doi\doi.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
@@ -170,7 +172,6 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -194,6 +195,7 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png

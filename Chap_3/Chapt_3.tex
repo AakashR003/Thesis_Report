@@ -34,7 +34,7 @@ it is equal to $1/\Delta t$, where $\Delta t$ is the time step.\\
 
 The Fast Fourier Transform (FFT) is derived from the DFT which has significantly higher
 computational efficiency. Several open-source tools are available to perform FFT computations.
-One of which is provided by the \texttt{scipy.fft} module in Python. Since Python is used for
+One of which is provided by the \texttt{scipy.fft} module in Python \cite{scipy}. Since Python is used for
 post-processing throughout this thesis, the SciPy FFT tool is used to convert the obtained
 aerodynamic forces and moments into the frequency domain.\\
 
@@ -164,14 +164,14 @@ falls directly on a frequency bin, no spectral leakage is expected.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/1_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/1_Input_Signal.png}
         \caption{Input signal at 0.4~Hz.}
         \label{fig:sf_binmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/1_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/1_Spectrum.png}
         \caption{FFT amplitude spectrum — bin match.}
         \label{fig:sf_binmatch_spectrum}
     \end{subfigure}
@@ -195,14 +195,14 @@ assigns its amplitude to the nearest neighbouring bin.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/2_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/2_Input_Signal.png}
         \caption{Input signal at 0.45~Hz.}
         \label{fig:sf_nonbinmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/2_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/2_Spectrum.png}
         \caption{FFT amplitude spectrum — non-bin match.}
         \label{fig:sf_nonbinmatch_spectrum}
     \end{subfigure}
@@ -225,14 +225,14 @@ of 0.2 is superposed on the signal to assess its effect on the extracted amplitu
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/3_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/3_Input_Signal.png}
         \caption{Input signal at 0.4~Hz with white noise.}
         \label{fig:sf_noise_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/SingleFrequency/3_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/SingleFrequency/3_Spectrum.png}
         \caption{FFT amplitude spectrum — bin match with noise.}
         \label{fig:sf_noise_spectrum}
     \end{subfigure}
@@ -336,14 +336,14 @@ accuracy of the FFT output is verified for each component.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/1_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/1_Input_Signal.png}
         \caption{Multi-frequency input signal — all bin-matched.}
         \label{fig:mf_binmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/1_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/1_Spectrum.png}
         \caption{FFT amplitude spectrum — all components bin-matched.}
         \label{fig:mf_binmatch_spectrum}
     \end{subfigure}
@@ -387,14 +387,14 @@ persists under multi-frequency conditions.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/2_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Input_Signal.png}
         \caption{Multi-frequency input signal with white noise.}
         \label{fig:mf_noise_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/2_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Spectrum.png}
         \caption{FFT amplitude spectrum — bin match with noise.}
         \label{fig:mf_noise_spectrum}
     \end{subfigure}
@@ -445,14 +445,14 @@ worst-case spectral leakage scenario.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/3_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/3_Input_Signal.png}
         \caption{Multi-frequency input signal with one non-bin-matched component.}
         \label{fig:mf_nonbinmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Chap_3/Figures/MultiFrequency/3_Spectrum.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/3_Spectrum.png}
         \caption{FFT amplitude spectrum showing spectral leakage from the non-bin-matched component.}
         \label{fig:mf_nonbinmatch_spectrum}
     \end{subfigure}

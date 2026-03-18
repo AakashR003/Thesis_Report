@@ -131,6 +131,8 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.s
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\doi\doi.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\doi\doi.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.aux
@@ -179,97 +181,97 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Input_Signal.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\SingleFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\1_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\2_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
-INPUT .\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\SingleFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\1_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\2_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Input_Signal.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Figures\MultiFrequency\3_Spectrum.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.out
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.out

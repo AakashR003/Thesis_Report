@@ -1,0 +1,181 @@
+\begin{thebibliography}{10}
+
+\bibitem{TheodorsenGarrick1934}
+Theodore Theodorsen and Ira~E. Garrick.
+\newblock General theory of aerodynamic instability and the mechanism of
+  flutter.
+\newblock NACA Report NACA-TR-920, National Advisory Committee for Aeronautics
+  (NACA), 1934.
+\newblock URL: \url{https://ntrs.nasa.gov/citations/19930090935}.
+
+\bibitem{scanlan1971}
+Robert~H. Scanlan and John~J. Tomko.
+\newblock Airfoil and {{Bridge Deck Flutter Derivatives}}.
+\newblock {\em Journal of the Engineering Mechanics Division},
+  97(6):1717--1737, December 1971.
+\newblock \href {https://doi.org/10.1061/JMCEA3.0001526}
+  {\path{doi:10.1061/JMCEA3.0001526}}.
+
+\bibitem{huang2011}
+Lin Huang and Haili Liao.
+\newblock Identification of {{Flutter Derivatives}} of {{Bridge Deck Under
+  Multi-Frequency Vibration}}.
+\newblock {\em Engineering Applications of Computational Fluid Mechanics},
+  5(1):16--25, January 2011.
+\newblock \href {https://doi.org/10.1080/19942060.2011.11015349}
+  {\path{doi:10.1080/19942060.2011.11015349}}.
+
+\bibitem{Martínez-López_2023}
+Givenname Surname et~al.
+\newblock Kratos multiphysics, release 10.1, sep 2023.
+\newblock \href {https://doi.org/10.5281/zenodo.15687676}
+  {\path{doi:10.5281/zenodo.15687676}}.
+
+\bibitem{diana2020}
+Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
+  Andersen, Tommaso Argentini, Miguel Cid~Montoya, Santiago Hern{\'a}ndez,
+  Jos{\'e}~{\'A}ngel Jurado, Hiroshi Katsuchi, Igor Kavrakov, Ho-Kyung Kim, Guy
+  Larose, Allan Larsen, Guido Morgenthal, Ole {\O}iseth, Simone Omarini,
+  Daniele Rocchi, Martin Svendsen, and Teng Wu.
+\newblock {{IABSE Task Group}} 3.1 {{Benchmark Results}}. {{Part}} 1:
+  {{Numerical Analysis}} of a {{Two-Degree-of-Freedom Bridge Deck Section
+  Based}} on {{Analytical Aerodynamics}}.
+\newblock {\em Structural Engineering International}, 30(3):401--410, July
+  2020.
+\newblock \href {https://doi.org/10.1080/10168664.2019.1639480}
+  {\path{doi:10.1080/10168664.2019.1639480}}.
+
+\bibitem{sarkic2012}
+Anina {\v S}arki{\'c}, Rupert Fisch, R{\"u}diger H{\"o}ffer, and Kai-Uwe
+  Bletzinger.
+\newblock Bridge flutter derivatives based on computed, validated pressure
+  fields.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  104--106:141--151, May 2012.
+\newblock \href {https://doi.org/10.1016/j.jweia.2012.02.033}
+  {\path{doi:10.1016/j.jweia.2012.02.033}}.
+
+\bibitem{dadvand2010}
+Pooyan Dadvand, Riccardo Rossi, and Eugenio O{\~n}ate.
+\newblock An {{Object-oriented Environment}} for {{Developing Finite Element
+  Codes}} for {{Multi-disciplinary Applications}}.
+\newblock {\em Archives of Computational Methods in Engineering},
+  17(3):253--297, September 2010.
+\newblock \href {https://doi.org/10.1007/s11831-010-9045-2}
+  {\path{doi:10.1007/s11831-010-9045-2}}.
+
+\bibitem{menter}
+Florian~R Menter.
+\newblock Turbulence {{Modeling}} for {{Engineering Flows}}.
+
+\bibitem{scipy}
+Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
+\newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
+\newblock URL: \url{https://www.scipy.org/}.
+
+\bibitem{noda2003}
+M~Noda, H~Utsunomiya, F~Nagao, M~Kanda, and N~Shiraishi.
+\newblock Effects of oscillation amplitude on aerodynamic derivatives.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  91(1-2):101--111, January 2003.
+\newblock \href {https://doi.org/10.1016/S0167-6105(02)00338-0}
+  {\path{doi:10.1016/S0167-6105(02)00338-0}}.
+
+\bibitem{lin2019}
+Siyuan Lin, Qi~Wang, Nikolaos Nikitas, and Haili Liao.
+\newblock Effects of oscillation amplitude on motion-induced forces for 5:1
+  rectangular cylinders.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  186:68--83, March 2019.
+\newblock \href {https://doi.org/10.1016/j.jweia.2019.01.002}
+  {\path{doi:10.1016/j.jweia.2019.01.002}}.
+
+\bibitem{xin2007}
+Dabo Xin and Jinping Ou.
+\newblock Numerical simulation of aerodynamic derivatives and critical wind
+  speed for long-span bridges based on simplified steady wind field.
+\newblock {\em Earthquake Engineering and Engineering Vibration},
+  6(2):197--203, June 2007.
+\newblock \href {https://doi.org/10.1007/s11803-007-0729-z}
+  {\path{doi:10.1007/s11803-007-0729-z}}.
+
+\bibitem{zhan2012_Tacoma_Narrows}
+Hao Zhan and Tao Fang.
+\newblock Flutter stability studies of {{Great Belt East Bridge}} and {{Tacoma
+  Narrows Bridge}} by {{CFD}} numerical simulation.
+\newblock 2012.
+
+\bibitem{abbas2017}
+Tajammal Abbas, Igor Kavrakov, and Guido Morgenthal.
+\newblock Methods for flutter stability analysis of long-span bridges: A
+  review.
+\newblock {\em Proceedings of the Institution of Civil Engineers - Bridge
+  Engineering}, 170(4):271--310, December 2017.
+\newblock \href {https://doi.org/10.1680/jbren.15.00039}
+  {\path{doi:10.1680/jbren.15.00039}}.
+
+\bibitem{fujino2013}
+Yozo Fujino and Dionysius Siringoringo.
+\newblock Vibration {{Mechanisms}} and {{Controls}} of {{Long-Span Bridges}}:
+  {{A Review}}.
+\newblock {\em Structural Engineering International}, 23(3):248--268, August
+  2013.
+\newblock \href {https://doi.org/10.2749/101686613X13439149156886}
+  {\path{doi:10.2749/101686613X13439149156886}}.
+
+\bibitem{sarkar2009}
+Partha~P. Sarkar, Luca Caracoglia, Frederick~L. Haan, Hiroshi Sato, and Jun
+  Murakoshi.
+\newblock Comparative and sensitivity study of flutter derivatives of selected
+  bridge deck sections, {{Part}} 1: {{Analysis}} of inter-laboratory
+  experimental data.
+\newblock {\em Engineering Structures}, 31(1):158--169, January 2009.
+\newblock \href {https://doi.org/10.1016/j.engstruct.2008.07.020}
+  {\path{doi:10.1016/j.engstruct.2008.07.020}}.
+
+\bibitem{scanlan1993}
+Robert~H. Scanlan.
+\newblock Problematics in {{Formulation}} of {{Wind}}-{{Force Models}} for
+  {{Bridge Decks}}.
+\newblock {\em Journal of Engineering Mechanics}, 119(7):1353--1375, July 1993.
+\newblock \href {https://doi.org/10.1061/(ASCE)0733-9399(1993)119:7(1353)}
+  {\path{doi:10.1061/(ASCE)0733-9399(1993)119:7(1353)}}.
+
+\bibitem{pentek}
+Mate Pentek.
+\newblock Method {{Development}} for the {{Numerical Wind Tunnel}} in {{Applied
+  Structural Engineering}}.
+
+\bibitem{warnakulasuriya}
+Suneth Warnakulasuriya and C~L{\'a}zaro.
+\newblock Reducing the computational cost of forced-motion simulations to
+  obtain flutter derivatives.
+
+\bibitem{siedziako2017}
+Bartosz Siedziako, Ole {\O}iseth, and Anders R{\o}nnquist.
+\newblock An enhanced forced vibration rig for wind tunnel testing of bridge
+  deck section models in arbitrary motion.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  164:152--163, May 2017.
+\newblock \href {https://doi.org/10.1016/j.jweia.2017.02.011}
+  {\path{doi:10.1016/j.jweia.2017.02.011}}.
+
+\bibitem{scanlan1997}
+Robert~H. Scanlan.
+\newblock Amplitude and {{Turbulence Effects}} on {{Bridge Flutter
+  Derivatives}}.
+\newblock {\em Journal of Structural Engineering}, 123(2):232--236, February
+  1997.
+\newblock \href {https://doi.org/10.1061/(ASCE)0733-9445(1997)123:2(232)}
+  {\path{doi:10.1061/(ASCE)0733-9445(1997)123:2(232)}}.
+
+\bibitem{dadvand2013}
+P.~Dadvand, R.~Rossi, M.~Gil, X.~Martorell, J.~Cotela, E.~Juanpere, S.R.
+  Idelsohn, and E.~O{\~n}ate.
+\newblock Migration of a generic multi-physics framework to {{HPC}}
+  environments.
+\newblock {\em Computers \& Fluids}, 80:301--309, July 2013.
+\newblock \href {https://doi.org/10.1016/j.compfluid.2012.02.004}
+  {\path{doi:10.1016/j.compfluid.2012.02.004}}.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  10 MAR 2026 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 MAR 2026 03:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -325,11 +325,13 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count298
 \multirow@dima=\skip59
 \bigstrutjot=\dimen192
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/doi\doi.sty
+Package: doi 2018/09/09 handle doi numbers
 ))) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box58
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.aux)
+) (Chapt_A.aux)
 \openout1 = `Chapt_A.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -409,7 +411,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 2.
- (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.out)
+ (Chapt_A.out) (Chapt_A.out)
 \@outlinefile=\write3
 \openout3 = `Chapt_A.out'.
 
@@ -425,7 +427,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.aux)
+{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (Chapt_A.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -434,15 +436,15 @@ Package rerunfilecheck Info: File `Chapt_A.out' has not changed.
 (rerunfilecheck)             Checksum: EBCD4B8C86654C659924B0D5B357249F;215.
  ) 
 Here is how much of TeX's memory you used:
- 12187 strings out of 476402
- 194370 string characters out of 5794312
+ 12210 strings out of 476402
+ 194545 string characters out of 5794312
  1952542 words of memory out of 5000000
- 34060 multiletter control sequences out of 15000+600000
+ 34079 multiletter control sequences out of 15000+600000
  563627 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,11n,99p,395b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.pdf" (3 pages, 59721 bytes).
+Output written on Chapt_A.pdf (3 pages, 59631 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)

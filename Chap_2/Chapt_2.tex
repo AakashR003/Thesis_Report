@@ -16,7 +16,7 @@ The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}).
 Since forced motion oscillation tests are conducted, the structure, ie the bridge 
 deck cross-section is modelled as a obpaque object in the fluid domain without any physics parameters 
 like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
-(Reference1), shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
+\cite{sarkic2012}, shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
 specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this. \\
 
 The Fluid domain is meshed with finer meshes near the structure and with coarser meshes farther away to have a optimal 
@@ -43,9 +43,10 @@ meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided 
 
 \textbf{Solver Informations:} 
 
-The GiD model is solved with an open source Multiphysics solver - KratosMultiphysics. 
+The GiD model is solved with an open source Multiphysics solver - KratosMultiphysics \cite{dadvand2010}. 
 The boundary conditions applied to Fluid domain are shown in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
-The turbulence is modeled with URANS with a turbulence intensity of 0.1 and the turbulent mixing length is set to 0.0588 m.\\
+The turbulence is modeled using an Unsteady Reynolds-Averaged Navier-Stokes (URANS) approach with the 
+$k$--$\omega$ SST turbulence model \cite{menter}, a turbulence intensity of 0.1, and a turbulent mixing length of 0.0588~m.\\
 
 The velocity is set to 1 m/s and the corresponding Reynolds number for the flow is $2.43*10^4$. The time step is 
 taken as 0.002 seconds (Corresponding CFL is shown in Table~\ref{tab:mesh_convergence}). The total simulation time is divided into three phases: ramp-up time, stabilization time, and stable 

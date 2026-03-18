@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 MAR 2026 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 MAR 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,6 +325,8 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count298
 \multirow@dima=\skip59
 \bigstrutjot=\dimen192
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/doi\doi.sty
+Package: doi 2018/09/09 handle doi numbers
 ))) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
@@ -616,6 +618,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--367
  []
 
 [4] [5 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png>] [6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png>]
+
+LaTeX Warning: Citation `noda2003' on page 7 undefined on input line 377.
+
+
+LaTeX Warning: Citation `lin2019' on page 7 undefined on input line 377.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 374--378
 
  []
@@ -729,6 +738,12 @@ File: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Scheme
 Package pdftex.def Info: Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 529.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 
+LaTeX Warning: Citation `noda2003' on page 8 undefined on input line 541.
+
+
+LaTeX Warning: Citation `lin2019' on page 8 undefined on input line 541.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 541--545
 
  []
@@ -800,6 +815,16 @@ File: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png Graphic file (t
 Package pdftex.def Info: Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png  used on input line 641.
 (pdftex.def)             Requested size: 203.83417pt x 45.56879pt.
 
+
+LaTeX Warning: Citation `diana2020' on page 11 undefined on input line 655.
+
+
+LaTeX Warning: Citation `xin2007' on page 11 undefined on input line 655.
+
+
+LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 11 undefined on input line 655.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 653--657
 
  []
@@ -831,21 +856,24 @@ L3 programming layer <2024-01-04>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
 (rerunfilecheck)             Checksum: CB159D8D0ED27D6D50BAD185654554AA;2042.
  ) 
 Here is how much of TeX's memory you used:
- 12673 strings out of 476402
- 225333 string characters out of 5794312
+ 12696 strings out of 476402
+ 225862 string characters out of 5794312
  1944542 words of memory out of 5000000
- 34516 multiletter control sequences out of 15000+600000
+ 34535 multiletter control sequences out of 15000+600000
  564532 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,10n,99p,620b,543s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (13 pages, 6071916 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (13 pages, 6072158 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)

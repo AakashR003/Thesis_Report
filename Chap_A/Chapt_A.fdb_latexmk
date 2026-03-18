@@ -1,6 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1773181713.37164 "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Chapt_A.tex" "Chap_A/Chapt_A.pdf" "Chapt_A" 1773181714.74068 0
-  "C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773181651 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1773800603.14466 "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Chapt_A.tex" "Chapt_A.pdf" "Chapt_A" 1773800604.23034 0
+  "../main.tex" 1773793048 3072 2e1b44308787bfbc991617a56eb32e92 ""
+  "C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773793136 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/aakas/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1770829458 21100625 6b84699f4690aece848acd1c2c4290a8 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -58,6 +59,7 @@
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty" 1696169587 12494 0c0cdb824278a4d51cefeb2e79901315 ""
+  "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/doi/doi.sty" 1536502226 3659 31067759b0a774eb3e729b6ef72bad57 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty" 1469023953 6916 16d2656a1984957e674b149555f1ea1d ""
@@ -89,15 +91,13 @@
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Chap_A/../main.tex" 1773181542 2205 6d5bbf3b8f920917a19b06dca2fdbc38 ""
-  "Chap_A/Chapt_A.aux" 1773181714 2388 8cb37d3237e9439e7e48b15f889502f1 "pdflatex"
-  "Chap_A/Chapt_A.out" 1773181714 215 ebcd4b8c86654c659924b0d5b357249f "pdflatex"
-  "Chap_A/Chapt_A.tex" 1773181711 7589 0d072e24cae34ca7ff38bfcffb6c1f0d ""
-  "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Chapt_A.tex" 1773181711 7589 0d072e24cae34ca7ff38bfcffb6c1f0d ""
-  "main.tex" 1773181542 2205 6d5bbf3b8f920917a19b06dca2fdbc38 ""
+  "Chapt_A.aux" 1773800604 2364 9b4ca29b2f4104854697f7f7409b9e59 "pdflatex"
+  "Chapt_A.out" 1773800604 215 ebcd4b8c86654c659924b0d5b357249f "pdflatex"
+  "Chapt_A.tex" 1773800600 7577 7b41aace99151ee7466a18f0c4935a1a ""
+  "d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Chapt_A.tex" 1773800600 7577 7b41aace99151ee7466a18f0c4935a1a ""
   (generated)
-  "Chap_A/Chapt_A.aux"
-  "Chap_A/Chapt_A.log"
-  "Chap_A/Chapt_A.out"
-  "Chap_A/Chapt_A.pdf"
+  "Chapt_A.aux"
+  "Chapt_A.log"
+  "Chapt_A.out"
+  "Chapt_A.pdf"
   (rewritten before read)
