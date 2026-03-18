@@ -1,30 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Structural parameters used for validation (Diana benchmark).}}{12}{table.caption.4}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Analytical Theodorsen flutter derivative expressions for a flat plate.}}{14}{table.caption.5}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Structural parameters used for validation (Diana benchmark).}}{7}{table.caption.4}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Analytical Theodorsen flutter derivative expressions for a flat plate.}}{9}{table.caption.5}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Mesh Convergence Study Results}}{20}{table.caption.14}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Mesh Convergence Study Results}}{15}{table.caption.14}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces FFT amplitude detection results for a multi-frequency bin-matched signal.}}{28}{table.caption.21}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces FFT amplitude detection results for a multi-frequency bin-matched signal with added white noise.}}{29}{table.caption.23}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces FFT amplitude detection results for a multi-frequency signal with one non-bin-matched component at 1.05~Hz.}}{30}{table.caption.25}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces FFT amplitude detection results for a multi-frequency bin-matched signal.}}{23}{table.caption.21}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces FFT amplitude detection results for a multi-frequency bin-matched signal with added white noise.}}{24}{table.caption.23}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces FFT amplitude detection results for a multi-frequency signal with one non-bin-matched component at 1.05~Hz.}}{25}{table.caption.25}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Heave and pitch amplitude}}{32}{table.caption.27}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Reduced velocities}}{32}{table.caption.28}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Structural parameters of bridge samples used for critical velocity analysis}}{42}{table.caption.37}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Heave and pitch amplitude}}{27}{table.caption.27}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Reduced velocities}}{27}{table.caption.28}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Structural parameters of bridge samples used for critical velocity analysis}}{37}{table.caption.37}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Frequency Parameters for Multi-Frequency Analysis}}{46}{table.caption.40}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~1}}{47}{table.caption.41}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~2}}{47}{table.caption.42}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~3}}{47}{table.caption.43}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~4}}{47}{table.caption.44}%
-\contentsline {table}{\numberline {6.6}{\ignorespaces Amplitude and Phase Data for MF1 Simulation~16 (Heave, Superposition~4)}}{50}{table.caption.53}%
-\contentsline {table}{\numberline {6.7}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~2}}{63}{table.caption.63}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Frequency Parameters for Multi-Frequency Analysis}}{41}{table.caption.40}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~1}}{42}{table.caption.41}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~2}}{42}{table.caption.42}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~3}}{42}{table.caption.43}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~4}}{42}{table.caption.44}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Amplitude and Phase Data for MF1 Simulation~16 (Heave, Superposition~4)}}{45}{table.caption.53}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~2}}{58}{table.caption.63}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Amplitude and Phase Errors - Case~1 (Heave Amplitude $= 0.009$\,m)}}{74}{table.caption.72}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Amplitude and Phase Errors - Case~2 (Heave Amplitude $= 0.027$\,m)}}{74}{table.caption.73}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Amplitude and Phase Errors - Case~3 (Heave Amplitude $= 0.006$\,m)}}{75}{table.caption.74}%
-\contentsline {table}{\numberline {A.4}{\ignorespaces Amplitude and Phase Errors - Case~4 (Heave Amplitude $= 0.017$\,m)}}{75}{table.caption.75}%
-\contentsline {table}{\numberline {A.5}{\ignorespaces Amplitude and Phase Errors - Case~5 (Heave Amplitude $= 0.0045$\,m)}}{76}{table.caption.76}%
-\contentsline {table}{\numberline {A.6}{\ignorespaces Amplitude and Phase Errors - Case~6 (Heave Amplitude $= 0.0013$\,m)}}{76}{table.caption.77}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Amplitude and Phase Errors - Case~1 (Heave Amplitude $= 0.009$\,m)}}{69}{table.caption.72}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Amplitude and Phase Errors - Case~2 (Heave Amplitude $= 0.027$\,m)}}{69}{table.caption.73}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Amplitude and Phase Errors - Case~3 (Heave Amplitude $= 0.006$\,m)}}{70}{table.caption.74}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Amplitude and Phase Errors - Case~4 (Heave Amplitude $= 0.017$\,m)}}{70}{table.caption.75}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Amplitude and Phase Errors - Case~5 (Heave Amplitude $= 0.0045$\,m)}}{71}{table.caption.76}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Amplitude and Phase Errors - Case~6 (Heave Amplitude $= 0.0013$\,m)}}{71}{table.caption.77}%
