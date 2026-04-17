@@ -157,21 +157,6 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -196,94 +181,36 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb

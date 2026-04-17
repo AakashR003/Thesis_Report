@@ -5,18 +5,339 @@
 
 
 
-\chapter{Nonlinear Study}
+\chapter{Single Frequency Simulations}
 
 In this chapter, the nonlinearity characteristics of Sarkic's section are studied to validate the principle of 
 linear superposition and Scanlan's linearity assumption. This section is organised as follows, 
 
-\begin{flushleft}
-\hspace{2cm}1. Motivation for Nonlinearity Study \\
-\hspace{2cm}2. Simulation Parameters \\
-\hspace{2cm}3. Results and Inferences \\
-\end{flushleft}
+\section{Mesh Convergence Study}
 
-\section{Motivation for Nonlinearity Study}
+In this section, model setup for the virtual wind tunnel with CFD is described. The following are the tasks conducted\\ 
+
+1. Creation of CFD model Geometry. \\
+2. Specifying solver informations for fluid and strcutral domain. \\
+3. Finding the optimal mesh size for the Fluid domain with Mesh Converegnce Study
+
+\vspace{0.5 cm}
+
+\textbf{CFD Model:} 
+
+The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}).  
+Since forced motion oscillation tests are conducted, the structure, ie the bridge 
+deck cross-section is modelled as a obpaque object in the fluid domain without any physics parameters 
+like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
+\cite{sarkic2012}, shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
+specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this. \\
+
+The Fluid domain is meshed with finer meshes near the structure and with coarser meshes farther away to have a optimal 
+meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided into five subregions as shown in Figure \ref{fig:GiD_Model_2}
+
+\vspace{0.5 cm}
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/Mesh_Convergence_Study/Virtual_Wind_Tunnel_Dimensions.png}
+    \caption{Virtual Wind Tunnel Dimensions}
+    \label{fig:Virtual_Wind_Tunnel_Dimensions}
+\end{figure}
+
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/Mesh_Convergence_Study/Sarkic_Section.png}
+    \caption{Sarkic Cross-Section}
+    \label{fig:Sarkic_Section}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\textbf{Solver Informations:} 
+
+The GiD model is solved with an open source Multiphysics solver - KratosMultiphysics \cite{dadvand2010}. 
+The boundary conditions applied to Fluid domain are shown in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
+The turbulence is modeled using an Unsteady Reynolds-Averaged Navier-Stokes (URANS) approach with the 
+$k$--$\omega$ SST turbulence model \cite{menter}, a turbulence intensity of 0.1, and a turbulent mixing length of 0.0588~m.\\
+
+The velocity is set to 1 m/s and the corresponding Reynolds number for the flow is $2.43*10^4$. The time step is 
+taken as 0.002 seconds (Corresponding CFL is shown in Table~\ref{tab:mesh_convergence}). The total simulation time is divided into three phases: ramp-up time, stabilization time, and stable 
+time period. In Ramp-up phase the flow velocity is steadily increased from 0 to 1 m/s to avoid numerical instabilities. 
+In Stabilization phase, the flow is allowed to stabilize. The stable time period is the duration used for analysis. 
+Ramp-up time and stabilization time are determined based on the vortex shedding frequency of the section.
+From EN 1991, the Strouhal number of the section is taken as 0.1. \\ [0.1cm]
+
+Vortex shedding frequency = $ \frac{0.1 * 1}{0.366} $ = 0.273 Hz \\ [0.1cm]
+Ramp up time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
+Stabilization time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
+
+Since the interest of this thesis is to capture the flutter response, 
+stable time period is time taken for 10 complete forced motion oscillations. But as each reduced velocity 
+has a different forced motion frequency, the stable phase of the simulations is different. A higher reduced velocity will 
+have a lower oscillating frequency and hence requiring a higher time of simulation and vice versa. Hence its calculation is 
+shown after the information about the prescribed motion frequency is provided in the consecutive chapters. 
+
+%Check :if anyother reduced velocity is taken, the stable time period is mentioned in the respective chapter.
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/Mesh_Convergence_Study/GiD_Model_2.png}
+    \caption{GiD Model of Virtual Wind Tunnel}
+    \label{fig:GiD_Model_2}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\textbf{Mesh Convergence Study:} 
+
+A mesh convergence study is conducted to determine the optimal mesh element size. Five models with progressive 
+mesh sizes are created and converegence of 8 derivatives are analysed. The Table~\ref{tab:mesh_convergence} shows the models
+and corresponding mesh sizes at each zone. The study is performed for a single point on the flutter derivative curve
+at a reduced velocity of 10.93. From the literature, it is identified 5$\%$ of width of bridge deck as the heave amplitude 
+and 5 degree as pitch amplitude are the appropriate forced motion amplitude such that aerodynamic forces show linear behaviour.  \\ [0.1cm]
+
+Heave amplitude = $ \frac{5 * 0.366}{100} $ = 0.0183 m\\ [0.1cm]
+Pitch amplitude = 0.087 radians\\ [0.1cm]
+Motion Frequency = 0.25 Hz\\ [0.1cm] 
+Stable time period = $ 10 * \frac{1}{0.25} $ = 40 seconds\\ [0.1cm]
+Total simulation time = Ramp-up time + Stabilization time + Stable time period = 7.32 + 7.32 + 40 = 54.64 seconds\\ [0.1cm]
+
+
+\begin{table}[htbp]  
+    \centering
+    \caption{Mesh Convergence Study Results}
+    \label{tab:mesh_convergence}
+    \begin{tabular}{|l|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Model 1} & \textbf{Model 2} & \textbf{Model 3} & \textbf{Model 4} & \textbf{Model 5} \\ \hline
+        Zone A (m) & 0.25 & 0.25 & 0.2304 & 0.2112 & 0.192 \\ \hline
+        Zone B (m) & 0.1 & 0.12 & 0.1152 & 0.1056 & 0.096 \\ \hline
+        Zone C (m) & 0.054 & 0.08 & 0.0576 & 0.0528 & 0.048 \\ \hline
+        Zone D (m) & 0.018 & 0.025 & 0.0288 & 0.0264 & 0.024 \\ \hline
+        Zone E (m) & - & - & 0.0096 & 0.0088 & 0.008 \\ \hline
+        Zone F (m) & 0.009 & 0.008 & 0.0048 & 0.0044 & 0.004 \\ \hline
+        Deck Surface (m) & 0.0045 & 0.003 & 0.0024 & 0.0022 & 0.002 \\ \hline
+        Width/ min mesh size & 81.333 & 122 & 152.5 & 166.36 & 183 \\ \hline
+        Total Elements & 7368 & 15704 & 20854 & 24374 & 29408 \\ \hline
+        Minimum Mesh Size-GID & 0.00358 & 0.00245 & 0.00196 & 0.00179 & 0.00159 \\ \hline
+        Velocity (m/s) & 1 & 1 & 1 & 1 & 1 \\ \hline
+        Time step & 0.004 & 0.002 & 0.002 & 0.002 & 0.002 \\ \hline
+        CFL & 1.11 & 0.81 & 1.02 & 1.11 & 1.26 \\ \hline
+    \end{tabular}
+\end{table}
+
+With this simulation setup, the CFD simulations are conducted for all five models 
+Simulations Result of the Model 3 is shown in figure~\ref{fig:CFD_Result}. 
+From this result, pressures on the structural surface is integrated to obtain aerodynamic lift and moment
+forces. Figure~\ref{fig:Model_3_CFD_Output} shows the aerodynamic lift and moment forces obtained for Model 3. 
+These aerodynamic forces are then used to calculate the flutter derivatives. 
+The convergence of flutter derivatives is then analysed. 
+
+
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/CFD_Result.png}
+    \caption{CFD Results for Model 3}
+    \label{fig:CFD_Result}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/Model_3_Heave.png}
+        \caption{Heave}
+        \label{fig:Heave}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/Model_3_Pitch.png}
+        \caption{}Pitch
+        \label{fig:Pitch}
+    \end{subfigure}
+    \caption{Heave Motion}
+    \label{fig:Model_3_CFD_Output}
+\end{figure}
+
+The results of the mesh convergence study are shown in Figure~\ref{fig:convergence}. It is observed that the 
+derivatives $H_1,H_3,A_1,A_2,$ and $A_3$ exhibited good convergence, while derivatives  $H_2,H_4,$ and $A_4$ displayed 
+oscillatory convergence behavior. This behavior is consistent with findings in the literature, as these 
+particular derivatives are known to be more difficult to capture accurately. From the study it is concluded, 
+Model 3 is optimal and this mesh size is used for all subsequent simulations.
+
+%% Figures for Mesh Convergence Study
+\begin{figure}[htbp]  
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H1}
+        \caption{H1}
+        \label{fig:h1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A1}
+        \caption{A1}
+        \label{fig:a1}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H2}
+        \caption{H2}
+        \label{fig:h2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A2}
+        \caption{A2}
+        \label{fig:a2}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H3}
+        \caption{H3}
+        \label{fig:h3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A3}
+        \caption{A3}
+        \label{fig:a3}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H4}
+        \caption{H4}
+        \label{fig:h4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A4}
+        \caption{A4}
+        \label{fig:a4}
+    \end{subfigure}
+    
+    \caption{Mesh Convergence Study Results}
+    \label{fig:convergence}
+\end{figure}
+
+\section{Validation of the Critical Velocity Tool}
+
+The Python tool is validated against the benchmark results of ~\cite{diana2020}.
+
+
+\subsection*{Structural Parameters}
+
+Table~\ref{tab:structural_params} lists the structural properties used in the
+validation, taken from ~\cite{diana2020}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Structural parameters used for validation (Diana benchmark).}
+    \label{tab:structural_params}
+    \begin{tabular}{llc}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Value} \\
+        \hline
+        $m_L$            & Mass per unit length                          & $22\,740\ \mathrm{kg/m}$      \\
+        $J_L$            & Moment of inertia per unit length             & $2.47\times10^6\ \mathrm{kg\,m^2/m}$ \\
+        $B$              & Deck chord (width)                            & $31\ \mathrm{m}$              \\
+        $f_z$            & Vertical structural eigenfrequency            & $0.10\ \mathrm{Hz}$           \\
+        $f_\theta$       & Torsional structural eigenfrequency           & $0.278\ \mathrm{Hz}$          \\
+        $\xi$            & Damping ratio (both modes)                    & $0.003\ (-)$                  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection*{Aerodynamic Parameters}
+
+In the benchmark, Theodorsen derivatives are used for the aerodynamic properties
+of the cross-section. The Theodorsen flutter derivatives are analytical functions
+derived from the closed-form solution for a thin flat plate in potential flow,
+first obtained by Theodorsen~\cite{Theodorsen1935}. They are expressed in terms
+of the real and imaginary parts of the Theodorsen circulatory function
+$C(k) = F(k) + iG(k)$, where $k$ is the reduced frequency. The analytical
+expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
+Figure~\ref{fig:Theodorsen_Flutter_Derivatives}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Analytical Theodorsen flutter derivative expressions for a flat plate.}
+    \label{tab:theodorsen_derivs}
+    \small
+    \begin{tabular}{@{}cll@{}}
+        \hline
+        & \textbf{$H_i^*$} & \textbf{$A_i^*$} \\
+        \hline
+        $i=1$ &
+            $\displaystyle H_1^* = -\frac{2\pi}{K}\,F$ &
+            $\displaystyle A_1^* = \phantom{-}\frac{\pi}{2K}\,F$ \\[10pt]
+        $i=2$ &
+            $\displaystyle H_2^* = -\frac{\pi}{2K}\!\left(1 + F + \frac{4G}{K}\right)$ &
+            $\displaystyle A_2^* = -\frac{\pi}{8K}\!\left(1 - F - \frac{4G}{K}\right)$ \\[10pt]
+        $i=3$ &
+            $\displaystyle H_3^* = -\frac{2\pi}{K^2}\!\left(F - \frac{KG}{4}\right)$ &
+            $\displaystyle A_3^* = \phantom{-}\frac{\pi}{2K^2}\!\left(\frac{K^2}{32} + F - \frac{KG}{4}\right)$ \\[10pt]
+        $i=4$ &
+            $\displaystyle H_4^* = \phantom{-}\frac{\pi}{2}\!\left(1 + \frac{4G}{K}\right)$ &
+            $\displaystyle A_4^* = -\frac{\pi}{2K}\,G$ \\[6pt]
+        \hline
+    \end{tabular}
+\end{table} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Validation/Theodorsen_Flutter_Derivatives.png}
+    \caption{Theodorsen Flutter Derivatives}
+    \label{fig:Theodorsen_Flutter_Derivatives}
+\end{figure}
+
+\subsection*{Results}
+
+The results obtained with the Python tool are shown in
+Figures~\ref{fig:eigen_freq_vs_Ur} and~\ref{fig:damping_vs_U}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png}
+    \caption{Real and imaginary parts of the eigenfrequency plotted against
+             reduced velocity}
+    \label{fig:eigen_freq_vs_Ur}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/Validation/Damping_Ratio_Vs_Wind_Velocity.png}
+    \caption{Damping ratio plotted against wind velocity.}
+    \label{fig:damping_vs_U}
+\end{figure}
+
+Since the bridge deck is modelled as a two-degree-of-freedom system, two
+eigenmodes are obtained. The zero-crossing of the imaginary part of each
+eigenfrequency is checked; the lowest reduced velocity at which a zero crossing
+occurs is taken as the reduced critical velocity $U_{r,c}$. Substituting into
+Equation~\eqref{eq:Uc} yields
+
+\begin{align*}
+    U_{r,c}  &= 12.9, \\
+    \omega_r &= 1.21\ \mathrm{rad/s}, \\
+    U_c      &= 77.32\ \mathrm{m/s}.
+\end{align*}
+
+This result falls within the reference range of $[77.1,\;78.6]\ \mathrm{m/s}$
+reported by ~\cite{diana2020}, confirming the validity of the tool.
+
+
+\section{Influence of Amplitude on Flutter Derivatives}
 
 The base assumption of the Multi-Frequency Method is that the principle of linear superposition holds. 
 This assumption is derived from Scanlan's linearity assumption, which states that for small heave and pitch amplitudes, 
@@ -111,7 +432,7 @@ It should be noted that derivative $A_2$ even changes its sign at Amplitude Case
 
 \begin{figure}[htbp]  
     \centering
-    \includegraphics[width=1\textwidth]{Figures/Combined_Flutter_Derivative.png}
+    \includegraphics[width=1\textwidth]{Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png}
     \caption{Combined Flutter Derivatives}
     \label{fig:Combined_Flutter_Derivatives}
 \end{figure}
@@ -140,14 +461,14 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png}
         \caption{}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_0}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png}
         \caption{}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_0}
     \end{subfigure}
@@ -168,42 +489,42 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png}
         \caption{}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_2}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png}
         \caption{}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_2}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png}
         \caption{}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png}
         \caption{}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_3}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png}
         \caption{}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_4}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png}
         \caption{}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_4}
     \end{subfigure}
@@ -224,14 +545,14 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png}
         \caption{}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_6}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png}
         \caption{}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_6}
     \end{subfigure}
@@ -244,14 +565,14 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png}
         \caption{}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_0}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png}
         \caption{}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_0}
     \end{subfigure}
@@ -272,42 +593,42 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png}
         \caption{}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_2}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png}
         \caption{}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_2}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png}
         \caption{}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png}
         \caption{}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_3}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png}
         \caption{}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_4}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png}
         \caption{}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_4}
     \end{subfigure}
@@ -328,14 +649,14 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png}
         \caption{}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_6}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png}
         \caption{}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_6}
     \end{subfigure}
@@ -414,56 +735,56 @@ nonlinear behaviour is not detectable with spectrum analysis.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png}
         \caption{}
         \label{fig:Heave_Fy_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png}
         \caption{}
         \label{fig:Pitch_Fy_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png}
         \caption{}
         \label{fig:Heave_PhaseFy_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png}
         \caption{}
         \label{fig:Pitch_PhaseFy_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png}
         \caption{}
         \label{fig:Heave_Moment_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png}
         \caption{}
         \label{fig:Pitch_Moment_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png}
         \caption{}
         \label{fig:Heave_PhaseMx_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png}
         \caption{}
         \label{fig:Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
@@ -477,56 +798,56 @@ nonlinear behaviour is not detectable with spectrum analysis.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Heave_Fy_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Pitch_Fy_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Heave_PhaseFy_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Pitch_PhaseFy_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Heave_Moment_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Pitch_Moment_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Heave_PhaseMx_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{}
         \label{fig:Compiled_Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
@@ -574,7 +895,7 @@ at which phase nonlinearity becomes significant will vary across different cross
 
 \begin{figure}[htbp]  
     \centering
-    \includegraphics[width=1\textwidth]{Figures/Pitch_Study/Prescribed Displacement.png}
+    \includegraphics[width=1\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png}
     \caption{Prescribed Displacement}
     \label{fig:Prescribed Displacement}
 \end{figure}
@@ -583,28 +904,28 @@ at which phase nonlinearity becomes significant will vary across different cross
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png}
         \caption{Time 30 seconds}
         \label{fig: Time 30 seconds}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png}
         \caption{Time 32 seconds}
         \label{fig:Time 32 seconds}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png}
         \caption{Time 34 seconds}
         \label{fig:Time 34 seconds}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png}
         \caption{Time 36 seconds}
         \label{fig:Time 36 seconds}
     \end{subfigure}
@@ -617,28 +938,28 @@ at which phase nonlinearity becomes significant will vary across different cross
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png}
         \caption{Time 30 seconds}
         \label{fig: Time 30 seconds}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png}
         \caption{Time 32 seconds}
         \label{fig:Time 32 seconds}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png}
         \caption{Time 34 seconds}
         \label{fig:Time 34 seconds}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png}
         \caption{Time 36 seconds}
         \label{fig:Time 36 seconds}
     \end{subfigure}
@@ -689,14 +1010,14 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/CriticalVelocity_vs__Amplitude_Scheme.png}
+    \includegraphics[width=0.75\textwidth]{Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png}
     \caption{Critical wind speed vs.\ Amplitude Scheme}
     \label{fig:CriticalVelocity_Vs_Amplitude_Scheme}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/ReducedVelocity_Vs__Amplitude_Scheme.png}
+    \includegraphics[width=0.75\textwidth]{Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png}
     \caption{Reduced critical wind speed vs.\ Amplitude Scheme}
     \label{fig:ReducedVelocity_Vs_Amplitude_Scheme}
 \end{figure}
