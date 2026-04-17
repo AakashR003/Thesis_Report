@@ -8,88 +8,51 @@ The calculation of the critical wind speed using the aerodynamic and structural
 properties of the bridge deck is then presented. A Python tool is developed to
 perform these tasks and validated against benchmark results.
 
-\noindent This chapter is organised as follows:
-\begin{enumerate}
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
-    \item Identification of Aerodynamic Forces
-    \item Calculation of Flutter Derivatives from Aerodynamic Forces
-    \item Calculation of Critical Wind Speed from Flutter Derivatives
-    \item Multi-Frequency Method
-\end{enumerate}
-
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Identification of Aerodynamic Forces}
 
-Aerodynamic forces are obtained using forced-motion CFD simulations, as described below.
-
-\begin{itemize}
-    \setlength{\itemsep}{10pt}
-
-    \item A 2-D cross-section of the bridge deck is modelled in a virtual wind tunnel
-          with appropriate boundary conditions.
-
-    \item The bridge cross-section is oscillated sinusoidally in the vertical (heave)
-          direction:
-    \begin{align}
-        h(t)       &= h_0 \sin(\omega t), \\
-        \dot{h}(t) &= \omega h_0 \cos(\omega t),
-    \end{align}
-    where $h_0$ is the maximum amplitude of the applied heave motion and $\omega$ is
-    the angular frequency of the applied heave motion.
-
-    \item Since no pitch motion is applied, $\alpha = \dot{\alpha} = 0$. The
-          aerodynamic lift force and pitching moment therefore simplify to
-    \begin{align}
-        L_{ae} &= \frac{1}{2}\rho U^2 B
-                  \left[KH_1^*\frac{\dot{h}}{U} + K^2H_4^*\frac{h}{B}\right]
-                  \qquad \text{(Scanlan formulation)}, \\[4pt]
-        M_{ae} &= \frac{1}{2}\rho U^2 B^2
-                  \left[KA_1^*\frac{\dot{h}}{U} + K^2A_4^*\frac{h}{B}\right]
-                  \qquad \text{(Scanlan formulation)}.
-    \end{align}
-
-    \item Under the small-amplitude assumption (small $h_0$), Scanlan's linearisation
-          implies that the aerodynamic lift and moment measured from CFD take the
-          sinusoidal form
-    \begin{align}
-        L_{ae} &= B_0 \sin(\omega t + \phi)
-               \;=\; B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
-        M_{ae} &= C_0 \sin(\omega t + \Phi)
-               \;=\; C_1 \cos(\omega t) + C_2 \sin(\omega t).
-    \end{align}
-\end{itemize}
+Aerodynamic forces are obtained using forced-motion CFD simulations. A 2-D cross-section of the bridge deck is modelled in a virtual wind tunnel with appropriate boundary conditions. The bridge cross-section is then oscillated sinusoidally in the vertical (heave) direction according to
+\begin{align}
+    h(t)       &= h_0 \sin(\omega t), \\
+    \dot{h}(t) &= \omega h_0 \cos(\omega t),
+\end{align}
+where $h_0$ is the maximum amplitude of the applied heave motion and $\omega$ is the angular frequency of the applied heave motion. Since no pitch motion is applied, $\alpha = \dot{\alpha} = 0$, and the aerodynamic lift force and pitching moment simplify to
+\begin{align}
+    L_{ae} &= \frac{1}{2}\rho U^2 B
+              \left[KH_1^*\frac{\dot{h}}{U} + K^2H_4^*\frac{h}{B}\right]
+              \qquad \text{(Scanlan formulation)}, \\[4pt]
+    M_{ae} &= \frac{1}{2}\rho U^2 B^2
+              \left[KA_1^*\frac{\dot{h}}{U} + K^2A_4^*\frac{h}{B}\right]
+              \qquad \text{(Scanlan formulation)}.
+\end{align}
+Under the small-amplitude assumption (small $h_0$), Scanlan's linearisation implies that the aerodynamic lift and moment measured from CFD take the sinusoidal form
+\begin{align}
+    L_{ae} &= B_0 \sin(\omega t + \phi)
+           \;=\; B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
+    M_{ae} &= C_0 \sin(\omega t + \Phi)
+           \;=\; C_1 \cos(\omega t) + C_2 \sin(\omega t).
+\end{align}
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Calculation of Flutter Derivatives}
 
-\begin{itemize}
-    \setlength{\itemsep}{10pt}
-
-    \item Equating the lift force from the Scanlan formulation with the CFD result
-          and matching cosine and sine coefficients gives
-    \begin{align}
-        \frac{1}{2}\rho U^2 B
-        \left[KH_1^* + K^2H_4^*\right]
-        &= B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
-        \frac{1}{2}\rho U^2 B^2
-        \left[KA_1^* + K^2A_4^*\right]
-        &= C_1 \cos(\omega t) + C_2 \sin(\omega t).
-    \end{align}
-    Hence the flutter derivatives for heave excitation are
-    \begin{align}
-        H_1^* &= \frac{2B_1}{\rho\,\omega^2 B^2 h_0}, &
-        H_4^* &= \frac{2B_2}{\rho\,\omega^2 B^2 h_0}, \\[4pt]
-        A_1^* &= \frac{2C_1}{\rho\,\omega^2 B^3 h_0}, &
-        A_4^* &= \frac{2C_2}{\rho\,\omega^2 B^3 h_0}.
-    \end{align}
-
-    \item The same procedure is repeated with pitch (torsional) excitation to obtain
-          the remaining flutter derivatives $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$.
-
-    \item In total, two forced-motion simulations (one heave, one pitch) are required
-          to obtain a complete set of eight flutter derivatives at each reduced
-          velocity.
-\end{itemize}
+The flutter derivatives are determined by equating the lift force from the Scanlan formulation with the CFD result and matching cosine and sine coefficients, which gives
+\begin{align}
+    \frac{1}{2}\rho U^2 B
+    \left[KH_1^* + K^2H_4^*\right]
+    &= B_1 \cos(\omega t) + B_2 \sin(\omega t), \\[4pt]
+    \frac{1}{2}\rho U^2 B^2
+    \left[KA_1^* + K^2A_4^*\right]
+    &= C_1 \cos(\omega t) + C_2 \sin(\omega t).
+\end{align}
+From this, the flutter derivatives for heave excitation are obtained as
+\begin{align}
+    H_1^* &= \frac{2B_1}{\rho\,\omega^2 B^2 h_0}, &
+    H_4^* &= \frac{2B_2}{\rho\,\omega^2 B^2 h_0}, \\[4pt]
+    A_1^* &= \frac{2C_1}{\rho\,\omega^2 B^3 h_0}, &
+    A_4^* &= \frac{2C_2}{\rho\,\omega^2 B^3 h_0}.
+\end{align}
+The same procedure is repeated with pitch (torsional) excitation to obtain the remaining flutter derivatives $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$. Consequently, a total of two forced-motion simulations (one heave, one pitch) are required to obtain a complete set of eight flutter derivatives at each reduced velocity.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Calculation of Critical Wind Speed}
@@ -195,10 +158,10 @@ The sign of $\omega_i$ determines stability:
 \begin{itemize}
     \setlength{\itemsep}{6pt}
     \item[$\bullet$] $\omega_i > 0$:\quad
-          $h = h_0\,e^{i\omega_r t}\cdot e^{-\omega_i t}$ — \textbf{stable}
+          $h = h_0\,e^{i\omega_r t}\cdot e^{-\omega_i t}$ — stable
           (amplitude decays).
     \item[$\bullet$] $\omega_i < 0$:\quad
-          $h = h_0\,e^{i\omega_r t}\cdot e^{+|\omega_i| t}$ — \textbf{unstable}
+          $h = h_0\,e^{i\omega_r t}\cdot e^{+|\omega_i| t}$ — unstable
           (amplitude grows; flutter onset).
 \end{itemize}
 

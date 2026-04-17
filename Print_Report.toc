@@ -1,0 +1,51 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Multi-Frequency Method}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Identification of Aerodynamic Forces}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Calculation of Flutter Derivatives}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Calculation of Critical Wind Speed}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Validation of the Critical Velocity Tool}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Multi-Frequency Method}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Virtual Wind Tunnel Setup for CFD Simulations}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Signal Analysis}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction to DFT}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Single Frequency}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Bin Match}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Non-Bin Match}{24}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Bin Match with Noise}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Frequency Bin Resolution on Non-Matching Bin}{25}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Multi-Frequency}{25}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}All Components Bin-Matched}{26}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Bin Match with Noise}{27}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}One Component Non-Bin-Matched}{27}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {5}Nonlinear Study}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Motivation for Nonlinearity Study}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Simulation Parameters}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Results and Inferences}{30}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Comparison of Flutter Derivatives}{30}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Spectral Analysis}{32}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Aerodynamic Force and Moment Analysis}{32}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Pressure Distribution Analysis}{36}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Influence of Nonlinearity on Critical Velocity}{39}{subsection.5.3.5}%
+\contentsline {section}{\numberline {5.4}Observations and Discussion}{40}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Multi-Frequency Analysis}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Simulation Parameters}{43}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Selection of Frequencies and Superpositions}{44}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Multi-Frequency Analysis - 1}{45}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Superposition Schemes}{45}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Procedure of Multi-Frequency method with FFT}{47}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Flutter Derivatives Results and Comparison}{51}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Error Analysis of Aerodynamic Forces}{53}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Frequency Domain Analysis of Aerodynamic Forces}{57}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Effect on Critical Wind Speed}{61}{subsection.6.2.6}%
+\contentsline {section}{\numberline {6.3}Multi-Frequency Analysis 2}{62}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Superposition Schemes}{62}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Flutter Derivatives Results and Comparison}{64}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Error Analysis of Aerodynamic Forces}{64}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Frequency Domain Analysis of Aerodynamic Forces}{65}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Effect on Critical Wind Speed}{68}{subsection.6.3.5}%
+\contentsline {section}{\numberline {6.4}Key Findings}{69}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Framework for Multi-Frequency Analysis}{69}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{71}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusion}{71}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{72}{section.7.2}%
+\contentsline {chapter}{\numberline {A}Amplitude and Phase Error Tables}{73}{appendix.A}%

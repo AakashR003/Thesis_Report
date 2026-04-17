@@ -1,0 +1,143 @@
+\documentclass[a4paper, 12pt, twoside]{report}
+
+% ============================================================
+% Packages
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{subfiles}  
+\usepackage{titlesec}  
+\usepackage{hyperref}   
+\hypersetup{hidelinks}
+\usepackage{etoolbox}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{etoolbox}
+\usepackage{doi}
+
+% ============================================================
+% Chapter heading formatting 
+% ============================================================
+
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\centering}  
+  {\chaptertitlename\ \thechapter}        
+  {0.5em}                                  
+  {\MakeUppercase}                         
+
+
+\titlespacing*{\chapter}
+  {0pt}         
+  {-50pt}        
+  {20pt}         
+
+
+% ============================================================
+% Other formatting
+% ============================================================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% ============================================================
+% Document
+% ============================================================
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    
+    \begin{flushright}
+        \includegraphics[width=2cm]{TUM_Logo.png}
+    \end{flushright}
+
+    \vspace{1.5cm}
+
+    \begin{center}
+
+    {\LARGE\bfseries Efficient Identification of Flutter Derivatives\\
+    from Multi-Frequency Forced-Motion Simulations\\[1em]}
+
+    \vspace{2.5cm}
+
+    {\normalsize
+    Submitted to the Department of Civil, Geo and Environmental Engineering\\
+    in partial fulfillment of the requirements for the degree of\\
+    M.Sc.\\
+    at the Technical University of Munich.
+    }
+    \end{center}
+
+    \vspace{2.5cm}
+
+    \begin{flushleft}
+    % Two-column info block
+    \begin{tabular}{@{} p{3.5cm} p{8cm} @{}}
+        \textbf{Supervised by} 
+            & Guillermo Martínez-López, M.Sc. \\
+            & Prof. Dr.-Ing. Roland Wuchner \\
+            & Chair of Structural Analysis \\[1em]
+        \textbf{Submitted by}  
+            & Aakash Ravichandran \\
+            & Hiltenspergerstraße 80 \\
+            & 80796 München \\
+            & Student number: 03780894 \\[1em]
+        \textbf{Submitted on}  
+            & Munich, \today \\
+    \end{tabular}
+
+    \end{flushleft}
+
+\end{titlepage}
+
+\subfile{Abstract/Abstract}
+
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\tableofcontents
+
+\cleardoublepage
+\listoffigures
+
+\cleardoublepage
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ============================================================
+% Chapters
+% ============================================================
+\cleardoublepage
+\subfile{Chap_0/Chapt_0}
+\cleardoublepage
+\subfile{Chap_1/Chapt_1}
+\cleardoublepage
+\subfile{Chap_2/Chapt_2}
+\cleardoublepage
+\subfile{Chap_3/Chapt_3}
+\cleardoublepage
+\subfile{Chap_4/Chapt_4}
+\cleardoublepage
+\subfile{Chap_5/Chapt_5}
+\cleardoublepage
+\subfile{Chap_6/Chapt_6}
+\cleardoublepage
+\appendix
+\cleardoublepage
+\subfile{Chap_A/Chapt_A}
+
+\nocite{*}
+\bibliographystyle{unsrturl}
+\bibliography{references}
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 MAR 2026 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 APR 2026 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,6 +325,8 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count298
 \multirow@dima=\skip59
 \bigstrutjot=\dimen192
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/doi\doi.sty
+Package: doi 2018/09/09 handle doi numbers
 ))) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
@@ -415,17 +417,17 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
-(C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
- (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
- []
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `scanlan1971' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 45.
 
 [1
 
@@ -435,21 +437,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Chapt_0.out' has not changed.
 (rerunfilecheck)             Checksum: 4D47AFB7107A54A21B0D2C438B3C2BD0;103.
  ) 
 Here is how much of TeX's memory you used:
- 12177 strings out of 476402
- 194200 string characters out of 5794312
- 1943542 words of memory out of 5000000
- 34051 multiletter control sequences out of 15000+600000
- 563657 words of font info for 57 fonts, out of 8000000 for 9000
+ 12142 strings out of 476402
+ 193775 string characters out of 5794312
+ 1940542 words of memory out of 5000000
+ 34036 multiletter control sequences out of 15000+600000
+ 559280 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,9n,99p,395b,502s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_0\Chapt_0.pdf" (3 pages, 95546 bytes).
+ 95i,5n,99p,743b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_0\Chapt_0.pdf" (3 pages, 46085 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 34 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
