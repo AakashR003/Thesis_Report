@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 MAR 2026 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 APR 2026 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -331,7 +331,14 @@ Package: doi 2018/09/09 handle doi numbers
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box58
-) (Chapt_A.aux)
+) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.aux
+
+LaTeX Warning: Label `fig:MF1_Compiled_Heave_PhaseLiftForce_Error_vs_Superpositions' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:MF1_Compiled_Heave_PhaseLiftForce_Error_vs_Superpositions' multiply defined.
+
+)
 \openout1 = `Chapt_A.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -411,42 +418,439 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 2.
- (Chapt_A.out) (Chapt_A.out)
+ (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.out)
 \@outlinefile=\write3
 \openout3 = `Chapt_A.out'.
 
 
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png, id=39, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png  used on input line 12.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png, id=41, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png  used on input line 19.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png, id=42, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png  used on input line 26.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png, id=43, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png  used on input line 33.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png, id=44, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png  used on input line 40.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png, id=45, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png  used on input line 47.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png, id=46, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png  used on input line 54.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png, id=47, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png  used on input line 61.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png, id=48, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png  used on input line 68.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png, id=49, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png  used on input line 75.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png, id=50, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png  used on input line 82.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png, id=51, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png  used on input line 89.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png, id=52, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png  used on input line 96.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png, id=53, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png  used on input line 103.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+
+LaTeX Warning: Float too large for page by 234.01477pt on input line 110.
+
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png, id=54, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png  used on input line 117.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png, id=55, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png  used on input line 124.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png, id=56, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png  used on input line 131.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png, id=57, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png  used on input line 138.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png, id=58, 624.4128pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png  used on input line 145.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png, id=59, 637.1805pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png  used on input line 152.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png, id=60, 624.4128pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png  used on input line 159.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png, id=61, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png  used on input line 166.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png, id=62, 624.4128pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png  used on input line 173.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png, id=63, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png  used on input line 180.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png, id=64, 624.4128pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png  used on input line 187.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png, id=65, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png  used on input line 194.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png, id=66, 624.4128pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png  used on input line 201.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png, id=67, 630.6762pt x 338.9463pt>
+File: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png Graphic file (type png)
+<use Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png>
+Package pdftex.def Info: Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png  used on input line 208.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+
+LaTeX Warning: Float too large for page by 239.49695pt on input line 215.
+
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=68, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 221.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png, id=69, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 228.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_Error_vs_Amplitude_Schemes.png, id=70, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_Error_vs_Amplitude_Schemes.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_Error_vs_Amplitude_Schemes.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_Error_vs_Amplitude_Schemes.png  used on input line 235.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_Error_vs_Amplitude_Schemes.png, id=71, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_Error_vs_Amplitude_Schemes.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_Error_vs_Amplitude_Schemes.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_Error_vs_Amplitude_Schemes.png  used on input line 242.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png, id=72, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 249.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png, id=73, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png  used on input line 256.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png, id=74, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png  used on input line 263.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png, id=75, 722.7pt x 433.62pt>
+File: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png Graphic file (type png)
+<use Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>
+Package pdftex.def Info: Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png  used on input line 270.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+[1
+
+
+{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png>] [3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png>] [4 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_Error_vs_Amplitude_Schemes.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_Error_vs_Amplitude_Schemes.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_4/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>]
+Chapter 2.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png, id=135, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png  used on input line 288.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png, id=136, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png  used on input line 295.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png, id=137, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png  used on input line 302.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_Error_vs_Superpositions.png, id=138, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_Error_vs_Superpositions.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_Error_vs_Superpositions.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_Error_vs_Superpositions.png  used on input line 309.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png, id=139, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 316.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png, id=140, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 323.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png  used on input line 330.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png, id=141, 722.7pt x 433.62pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png  used on input line 337.
+(pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png, id=142, 637.1805pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png  used on input line 351.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png, id=143, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png  used on input line 358.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png, id=144, 637.1805pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png  used on input line 365.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png, id=145, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png  used on input line 372.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png, id=146, 648.9846pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png  used on input line 379.
+(pdftex.def)             Requested size: 203.83417pt x 106.45833pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png, id=147, 641.5167pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png  used on input line 386.
+(pdftex.def)             Requested size: 203.83417pt x 107.69441pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png, id=148, 669.9429pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 393.
+(pdftex.def)             Requested size: 203.83417pt x 103.12245pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png, id=149, 662.475pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 400.
+(pdftex.def)             Requested size: 203.83417pt x 104.28613pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png, id=150, 624.4128pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png  used on input line 414.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png, id=151, 637.1805pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png  used on input line 421.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png, id=152, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png  used on input line 428.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png, id=153, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png  used on input line 435.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png, id=154, 638.1441pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png  used on input line 442.
+(pdftex.def)             Requested size: 203.83417pt x 108.26332pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png, id=155, 636.9396pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png  used on input line 449.
+(pdftex.def)             Requested size: 203.83417pt x 108.46503pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png, id=156, 665.6067pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 456.
+(pdftex.def)             Requested size: 203.83417pt x 103.79997pt.
+<Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png, id=157, 658.1388pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 463.
+(pdftex.def)             Requested size: 203.83417pt x 104.974pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png, id=158, 637.1805pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png  used on input line 482.
+(pdftex.def)             Requested size: 203.83417pt x 108.42882pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png, id=159, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png  used on input line 489.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png, id=160, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png  used on input line 496.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png, id=161, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png  used on input line 503.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png, id=162, 642.7212pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png  used on input line 510.
+(pdftex.def)             Requested size: 203.83417pt x 107.4927pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png, id=163, 641.5167pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png  used on input line 517.
+(pdftex.def)             Requested size: 203.83417pt x 107.69441pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png, id=164, 663.6795pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 524.
+(pdftex.def)             Requested size: 203.83417pt x 104.09995pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png, id=165, 662.475pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 531.
+(pdftex.def)             Requested size: 203.83417pt x 104.28613pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png, id=166, 624.4128pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png  used on input line 545.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png, id=167, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png  used on input line 552.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png, id=168, 624.4128pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png  used on input line 559.
+(pdftex.def)             Requested size: 203.83417pt x 110.6424pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png, id=169, 630.6762pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png  used on input line 566.
+(pdftex.def)             Requested size: 203.83417pt x 109.54596pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png, id=170, 631.8807pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png  used on input line 573.
+(pdftex.def)             Requested size: 203.83417pt x 109.33908pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png, id=171, 636.9396pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png  used on input line 580.
+(pdftex.def)             Requested size: 203.83417pt x 108.46503pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png, id=172, 652.839pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 587.
+(pdftex.def)             Requested size: 203.83417pt x 105.82736pt.
+<Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png, id=173, 658.1388pt x 338.9463pt>
+File: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
+<use Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
+Package pdftex.def Info: Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 594.
+(pdftex.def)             Requested size: 203.83417pt x 104.974pt.
+[5
+
+] [6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_Error_vs_Superpositions.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png>] [7 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>] [8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>] [10 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_A/Figures/Chap_5/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>]
+Chapter 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 617.
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 617.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+) [11
 
-
-{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (Chapt_A.aux)
+] [12] [13] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Chapt_A.out' has not changed.
-(rerunfilecheck)             Checksum: EBCD4B8C86654C659924B0D5B357249F;215.
+(rerunfilecheck)             Checksum: 351F5E1C39FC111513E52BEBF9302DF6;2139.
  ) 
 Here is how much of TeX's memory you used:
- 12210 strings out of 476402
- 194545 string characters out of 5794312
- 1952542 words of memory out of 5000000
- 34079 multiletter control sequences out of 15000+600000
- 563627 words of font info for 57 fonts, out of 8000000 for 9000
+ 12949 strings out of 476402
+ 258505 string characters out of 5794312
+ 1945542 words of memory out of 5000000
+ 34792 multiletter control sequences out of 15000+600000
+ 564532 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,11n,99p,395b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Chapt_A.pdf (3 pages, 58685 bytes).
+ 95i,11n,99p,402b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_A\Chapt_A.pdf" (13 pages, 9492358 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,14 +7,10 @@
 
 \chapter{Multi-Frequency Simulations}
 
-In this chapter, multi-frequency simulation campaigns are performed to answer the questions 
-discussed in the first chapter:
-
-\begin{flushleft}
-1. Whether the number of superpositions affects the accuracy of the multi-frequency method \\
-2. If so, how many superpositions are appropriate in the multi-frequency method, and which parameter limits that number \\
-3. Where the source of error in the multi-frequency method lies, if it exists \\
-\end{flushleft}
+In this chapter, multi-frequency simulation campaigns are performed to answer the questions discussed 
+in the first chapter: whether the number of superpositions affects the accuracy of the multi-frequency 
+method, if so how many superpositions are appropriate in the multi-frequency method and which parameter 
+limits that number, and where the source of error in the multi-frequency method lies, if it exists.
 
 First, simulation parameters for the multi-frequency analysis are defined based on 
 the results obtained from the signal analysis and nonlinearity studies. 
@@ -450,33 +446,6 @@ the inherent nonlinearity of the cross-section.\\
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png}
-        \caption{}
-        \label{fig: Compiled_Heave_LiftForce_vs_Superpositions}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedLiftForce_vs_Superpositions_RelativeToFirst.png}
-        \caption{}
-        \label{fig: Compiled_Pitch_LiftForce_vs_Superpositions}
-    \end{subfigure}
-
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_vs_Superpositions_RelativeToFirst.png}
-        \caption{}
-        \label{fig:MF1_Compiled_Heave_PhaseLiftForce_vs_Superpositions}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseLiftForce_vs_Superpositions_RelativeToFirst.png}
-        \caption{}
-        \label{fig:MF1_Compiled_Pitch_PhaseLiftForce_vs_Superpositions}
-    \end{subfigure}
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
@@ -494,16 +463,16 @@ the inherent nonlinearity of the cross-section.\\
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseMoment_vs_Superpositions_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png}
         \caption{}
-        \label{fig:MF1_Compiled_Heave_PhaseMoment_vs_Superpositions}
+        \label{fig:MF1_Compiled_Heave_PhaseLiftForce_Error_vs_Superpositions}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_vs_Superpositions_RelativeToFirst.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png}
         \caption{}
-        \label{fig:MF1_Compiled_Pitch_PhaseMoment_vs_Superpositions}
+        \label{fig:MF1_Compiled_Pitch_PhaseMoment_Error_vs_Superpositions}
     \end{subfigure}
 
     \caption{Compiled displacement vs.\ force - Campaign~1}
@@ -519,9 +488,11 @@ to further classify the source of nonlinearity, specifically, whether it arises 
 terms induced by large heave and pitch amplitudes, or from the inherent nonlinearity of the 
 cross-section even at low amplitude levels.\\
 
-The frequency spectra for all superposition combinations are clean, showing only the static 
-component, the forced-motion response components, and the vortex shedding component. This 
-strengthens the argument from previous sections: provided the total amplitude remains below the 
+From the figure ~\ref{fig:Frequency_Domain_Analysis_Heave_MF1} and~\ref{fig:Frequency_Domain_Analysis_Pitch_MF1},
+the frequency spectra for 4th superposition schemes is clean, showing only the static 
+component, the forced-motion response components, and the vortex shedding component. 
+This is observed for other 2 superposition schemes as well which shall be verified from the appendix~\ref{fig:app:Frequency_Domain_Analysis_Heave_MF1}.\\
+This strengthens the argument from previous sections: provided the total amplitude remains below the 
 linearity limit, no higher-order harmonic terms appear in the aerodynamic response.\\
 
 It should also be noted that if the multi-frequency method is adopted for flutter derivative 
@@ -532,48 +503,6 @@ be detected from these outputs alone.\\
 
 \begin{figure}[htbp]  
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_0}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_0}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_4}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_4}
-    \end{subfigure}
-    
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png}
@@ -595,48 +524,6 @@ be detected from these outputs alone.\\
 
 \begin{figure}[htbp]  
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_0_MF1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_0_MF1}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_2_MF1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_2_MF1}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_4_MF1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_4_MF1}
-    \end{subfigure}
-    
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png}
@@ -800,49 +687,7 @@ These higher-order terms are the primary cause of the significant variation
 errors in the $H_4$ and $A_4$ derivatives.\\
 
 \begin{figure}[htbp]  
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_0_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_0_MF2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_2_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_2_MF2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_case_4_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_case_4_MF2}
-    \end{subfigure}
-    
+    \centering   
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png}
@@ -870,49 +715,7 @@ reliable tool for nonlinearity identification. It can clearly identify nonlinear
 the scanlan's linearity assumption.\\ 
 
 \begin{figure}[htbp]  
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_0_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_1.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_0_MF2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_2_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_2_MF2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_case_4_MF2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_3.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_case_4_MF2}
-    \end{subfigure}
-    
+    \centering 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png}
@@ -960,19 +763,14 @@ wind speed is relatively minor for these two configurations.\\
 \section{Key Findings}
 % ------------------------------------------------------------
 
-\begin{itemize}
-    \item Flutter derivatives $H_1$, $H_3$, $A_1$, and $A_3$ are accurately identified in the
-          multi-frequency forced-motion CFD simulation.
-
-    \item Flutter derivatives $H_2$, $H_4$, $A_2$, and $A_4$ exhibit errors in the
-          multi-frequency forced-motion CFD simulation.
-
-    \item The frequency-domain response under pitch excitation contains higher-order harmonic
-          terms, indicating the presence of nonlinearity. This affects the pitch-motion-associated
-          derivatives: $H_2$, $H_3$, $A_2$, and $A_3$.
-
-    \item These errors have a significant influence on the predicted critical flutter velocity.
-\end{itemize}
+The multi-frequency forced-motion CFD simulations reveal distinct patterns in the accuracy of flutter derivative identification. 
+Flutter derivatives $H_1$, $H_3$, $A_1$, and $A_3$ are accurately identified across all superposition schemes. In contrast, 
+flutter derivatives $H_2$, $H_4$, $A_2$, and $A_4$ exhibit notable errors in the multi-frequency forced-motion CFD simulation. 
+These discrepancies arise from the frequency-domain response under pitch excitation, which contains higher-order harmonic terms 
+indicating the presence of nonlinearity. This nonlinearity specifically affects the pitch-motion-associated derivatives: $H_2$, 
+$H_3$, $A_2$, and $A_3$. Importantly, these errors in flutter derivative identification have a significant influence on the 
+predicted critical flutter velocity, which must be carefully considered when applying the multi-frequency method for bridge 
+design and safety analysis.
 
 \begin{figure}[htbp]
     \centering
@@ -1011,19 +809,15 @@ multi-frequency analysis.
 \vspace{0.5em}
 \textbf{Important Notes:}
 
-\begin{itemize}
-    \item Because DFT is used, accurate spectral decomposition of the aerodynamic forces is 
-          only achievable for frequency components that fall exactly within a frequency bin. 
-          Accurate results cannot be obtained for frequencies that fall between bins.
+Accurate application of the discrete Fourier transform (DFT) requires careful consideration of frequency bin placement. 
+Because DFT is used, accurate spectral decomposition of the aerodynamic forces is only achievable for frequency components 
 
-    \item Even if a frequency of interest falls exactly within a frequency bin, spectral leakage 
-          from a neighbouring frequency that does \emph{not} fall within a bin can contaminate 
-          the extracted amplitude and phase at that frequency.
-
-    \item Therefore, when selecting frequencies, avoid choosing two that are consecutive 
-          in the frequency bin list, as sufficient spacing between selected frequencies 
-          reduces the impact of spectral leakage.
-\end{itemize}
+that fall exactly within a frequency bin, and accurate results cannot be obtained for frequencies that fall between bins. 
+Moreover, even if a frequency of interest falls exactly within a frequency bin, spectral leakage from a neighbouring frequency 
+that does \emph{not} fall within a bin can contaminate the extracted amplitude and phase at that frequency. Therefore, when 
+selecting frequencies, it is essential to avoid choosing two that are consecutive in the frequency bin list, as sufficient 
+spacing between selected frequencies significantly reduces the impact of spectral leakage and ensures reliable flutter 
+derivative extraction.
 
 \vspace{0.5em}
 % \textbf{Selection of Dependent Frequencies:}
