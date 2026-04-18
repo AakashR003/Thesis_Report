@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1776426548.7583 "main.aux" "main.bbl" "main" 1776426600.52122 0
+["bibtex main"] 1776508432.87559 "main.aux" "main.bbl" "main" 1776508493.73842 0
   "./references.bib" 1773848631 30477 8a38926ae1890fc7d1d335d081d5668a ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/bibtex/bst/urlbst/unsrturl.bst" 1675594511 30912 2cfc330ae0a68bbf7dc64e1666bbb15c ""
-  "main.aux" 1776426599 51451 b7c2b19376135a8099c3d5018258d209 "pdflatex"
+  "main.aux" 1776508492 53436 285bf3629eac3a43e70dc4f605df7345 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776426549.10052 "d:/1.TUM courses/Masters Thesis/Report_Latex/main.tex" "main.pdf" "main" 1776426600.52198 0
+["pdflatex"] 1776508433.33089 "d:/1.TUM courses/Masters Thesis/Report_Latex/main.tex" "main.pdf" "main" 1776508493.73918 0
   "Abstract/Abstract.tex" 1773857006 1731 e0f05d8f28b1f02389020c4c7e570fcc ""
   "C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773793136 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/aakas/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1770831803 14064 c9d00ad51ab6de479fc3b84a3a845d46 ""
@@ -44,6 +44,7 @@
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -114,8 +115,13 @@
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/aakas/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Chap_1/Chapt_1.tex" 1776424581 7561 d2a436732f764e64c3cbfd6df83dcd9d ""
-  "Chap_2/Chapt_2.tex" 1776426239 10228 4c5842306595a856fb60362b52cfb382 ""
+  "Chap_1/Chapt_1.tex" 1776442334 8082 4c39c760cf892abe7e7c025f296dbcc6 ""
+  "Chap_2/Chapt_2.tex" 1776508338 27755 c11c3584162dd086de8739ea7eea8246 ""
+  "Chap_2/Figures/Flutter_1.png" 1776460008 9108 2b768d54e234e5fe62a983c20b46d0f7 ""
+  "Chap_2/Figures/Flutter_2.png" 1776460051 174009 0a394a6e61b63cc2de2d57e25dab0a12 ""
+  "Chap_2/Figures/Flutter_Decay_Solution_Plot.png" 1776508084 343240 a04ae1c6f2bc7fffc8088b0909a8d810 ""
+  "Chap_2/Figures/Flutter_Growth_Solution_Plot.png" 1776508038 208218 89a88a6cc517f3fec6e27bd78df82348 ""
+  "Chap_2/Figures/Galloping_2.png" 1776457007 18734 73203a99aad57af52750bd3dcc0dda3f ""
   "Chap_2/Figures/MultiFrequency_Explanation.png" 1771156202 191978 57a082c1a6f28d73b7821fa9e09b92a3 ""
   "Chap_2/Figures/Single_Frequency.png" 1771156673 350059 751cd351aaa96040a0c7b7ffa62d401d ""
   "Chap_3/Chapt_3.tex" 1776422490 21979 ed06f22fe2a89667cb29afb319309188 ""
@@ -261,14 +267,14 @@
   "Chap_6/Chapt_6.tex" 1774195710 3687 89b1a15ac5d9973b3f148ab786ada54a ""
   "Chap_A/Chapt_A.tex" 1773859329 7568 c4b52a4d428417bceeb6f7cde0de53e7 ""
   "TUM_Logo.png" 1773787021 516 eb4e4433460637fd64d9aae41a4aad52 ""
-  "d:/1.TUM courses/Masters Thesis/Report_Latex/main.tex" 1776426407 3207 674adde505118ce610cb354bea3422eb ""
-  "main.aux" 1776426599 51451 b7c2b19376135a8099c3d5018258d209 "pdflatex"
-  "main.bbl" 1776426549 7616 6d74b50bfeaa821328e9da1ee269db3d "bibtex main"
-  "main.lof" 1776426599 7282 47ef5568bb807f0d941ba231c83b2026 "pdflatex"
-  "main.lot" 1776426599 3406 6080279aa405b833a6257b1065c2dc57 "pdflatex"
-  "main.out" 1776426599 10267 e9cd5fd5d4af994b9e37432c06eca0ec "pdflatex"
-  "main.tex" 1776426407 3207 674adde505118ce610cb354bea3422eb ""
-  "main.toc" 1776426599 4715 c97f919eed2fa2776fe9535601873bd4 "pdflatex"
+  "d:/1.TUM courses/Masters Thesis/Report_Latex/main.tex" 1776508373 3207 674adde505118ce610cb354bea3422eb ""
+  "main.aux" 1776508492 53436 285bf3629eac3a43e70dc4f605df7345 "pdflatex"
+  "main.bbl" 1776508433 7616 a20461d8da58caf2729ad15392bc24f7 "bibtex main"
+  "main.lof" 1776508492 7736 22900a62de107eeacdb7401572c5727a "pdflatex"
+  "main.lot" 1776508492 3407 cf3f76c051bbb0b8425c9a07bbb66697 "pdflatex"
+  "main.out" 1776508492 10902 51a6f58da32829855599889b45376d52 "pdflatex"
+  "main.tex" 1776508373 3207 674adde505118ce610cb354bea3422eb ""
+  "main.toc" 1776508492 5088 f30527cfd2e7fe7b6f8a6a8dbd581c13 "pdflatex"
   (generated)
   "main.aux"
   "main.lof"

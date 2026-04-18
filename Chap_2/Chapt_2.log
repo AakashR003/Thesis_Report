@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 APR 2026 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 APR 2026 12:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,64 +417,114 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
-(C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+[1
+
+
+{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+[2]
+<Figures/Galloping_2.png, id=47, 489.027pt x 183.68625pt>
+File: Figures/Galloping_2.png Graphic file (type png)
+<use Figures/Galloping_2.png>
+Package pdftex.def Info: Figures/Galloping_2.png  used on input line 113.
+(pdftex.def)             Requested size: 452.9679pt x 170.14813pt.
+ [3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Galloping_2.png>]
+<Figures/Flutter_1.png, id=66, 317.38576pt x 164.41425pt>
+File: Figures/Flutter_1.png Graphic file (type png)
+<use Figures/Flutter_1.png>
+Package pdftex.def Info: Figures/Flutter_1.png  used on input line 128.
+(pdftex.def)             Requested size: 226.48395pt x 117.32698pt.
+<Figures/Flutter_2.png, id=68, 551.661pt x 388.45125pt>
+File: Figures/Flutter_2.png Graphic file (type png)
+<use Figures/Flutter_2.png>
+Package pdftex.def Info: Figures/Flutter_2.png  used on input line 140.
+(pdftex.def)             Requested size: 339.72592pt x 239.2132pt.
+ [4 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_2.png>]
+
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 5 undefined on input line 161.
 
 
-{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Overfull \hbox (48.97142pt too wide) detected at line 128
+LaTeX Warning: Citation `scanlan1971' on page 5 undefined on input line 166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 280--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
+
+ []
+
+<Figures/Single_Frequency.png, id=102, 589.0005pt x 355.92975pt>
+File: Figures/Single_Frequency.png Graphic file (type png)
+<use Figures/Single_Frequency.png>
+Package pdftex.def Info: Figures/Single_Frequency.png  used on input line 296.
+(pdftex.def)             Requested size: 452.9679pt x 273.73546pt.
+<Figures/MultiFrequency_Explanation.png, id=103, 748.59676pt x 305.943pt>
+File: Figures/MultiFrequency_Explanation.png Graphic file (type png)
+<use Figures/MultiFrequency_Explanation.png>
+Package pdftex.def Info: Figures/MultiFrequency_Explanation.png  used on input line 303.
+(pdftex.def)             Requested size: 748.59492pt x 305.94223pt.
+
+LaTeX Warning: Float too large for page by 3.46957pt on input line 306.
+
+[7]
+Overfull \hbox (48.97142pt too wide) detected at line 370
  []$[]   [] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ;$ []  
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 201--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--214
-
- []
-
-<Figures/Single_Frequency.png, id=71, 589.0005pt x 355.92975pt>
-File: Figures/Single_Frequency.png Graphic file (type png)
-<use Figures/Single_Frequency.png>
-Package pdftex.def Info: Figures/Single_Frequency.png  used on input line 217.
-(pdftex.def)             Requested size: 452.9679pt x 273.73546pt.
-<Figures/MultiFrequency_Explanation.png, id=73, 748.59676pt x 305.943pt>
-File: Figures/MultiFrequency_Explanation.png Graphic file (type png)
-<use Figures/MultiFrequency_Explanation.png>
-Package pdftex.def Info: Figures/MultiFrequency_Explanation.png  used on input line 224.
-(pdftex.def)             Requested size: 748.59492pt x 305.94223pt.
-
-LaTeX Warning: Float too large for page by 3.46957pt on input line 227.
-
-[4 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Single_Frequency.png>] [5 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/MultiFrequency_Explanation.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
+[8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Single_Frequency.png>] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/MultiFrequency_Explanation.png>]
+<Figures/Flutter_Decay_Solution_Plot.png, id=132, 722.7pt x 433.62pt>
+File: Figures/Flutter_Decay_Solution_Plot.png Graphic file (type png)
+<use Figures/Flutter_Decay_Solution_Plot.png>
+Package pdftex.def Info: Figures/Flutter_Decay_Solution_Plot.png  used on input line 425.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<Figures/Flutter_Growth_Solution_Plot.png, id=133, 722.7pt x 433.62pt>
+File: Figures/Flutter_Growth_Solution_Plot.png Graphic file (type png)
+<use Figures/Flutter_Growth_Solution_Plot.png>
+Package pdftex.def Info: Figures/Flutter_Growth_Solution_Plot.png  used on input line 431.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+ [10] [11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_Decay_Solution_Plot.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_Growth_Solution_Plot.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Chapt_2.out' has not changed.
-(rerunfilecheck)             Checksum: 86E886AA4FA070B0FFA783186611E350;957.
+(rerunfilecheck)             Checksum: FF9C9465CA7C1EB7BF9504F3ADA2BD75;1206.
  ) 
 Here is how much of TeX's memory you used:
- 12271 strings out of 476402
- 196297 string characters out of 5794312
- 1947542 words of memory out of 5000000
- 34113 multiletter control sequences out of 15000+600000
- 564232 words of font info for 59 fonts, out of 8000000 for 9000
+ 12347 strings out of 476402
+ 198193 string characters out of 5794312
+ 1944542 words of memory out of 5000000
+ 34166 multiletter control sequences out of 15000+600000
+ 563927 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,23n,99p,395b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (5 pages, 715262 bytes).
+ 95i,23n,99p,395b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (11 pages, 1405398 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

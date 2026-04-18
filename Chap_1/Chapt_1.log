@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 APR 2026 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 APR 2026 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,16 +418,16 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 Chapter 1.
 
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 16.
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 17.
 
 
-LaTeX Warning: Citation `scanlan1971' on page 1 undefined on input line 16.
+LaTeX Warning: Citation `ScanlanRosenbaum1966' on page 1 undefined on input line 18.
 
 
-LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 35.
+LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 25.
 
 
-LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 45.
+LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 34.
 
 [1
 
@@ -442,20 +442,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Chapt_1.out' has not changed.
-(rerunfilecheck)             Checksum: 4D47AFB7107A54A21B0D2C438B3C2BD0;103.
+(rerunfilecheck)             Checksum: A57663A4292CA28F7BB3D8D3341BCC35;484.
  ) 
 Here is how much of TeX's memory you used:
- 12142 strings out of 476402
- 193775 string characters out of 5794312
- 1940542 words of memory out of 5000000
- 34036 multiletter control sequences out of 15000+600000
- 559280 words of font info for 40 fonts, out of 8000000 for 9000
+ 12154 strings out of 476402
+ 193923 string characters out of 5794312
+ 1939542 words of memory out of 5000000
+ 34044 multiletter control sequences out of 15000+600000
+ 559617 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,5n,99p,743b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (3 pages, 46085 bytes).
+ 95i,5n,99p,395b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (3 pages, 50258 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
