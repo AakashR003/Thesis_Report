@@ -17,18 +17,18 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Multi-frequency bin-matched case with added white noise: input signal and corresponding FFT spectrum.}}{25}{figure.caption.21}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT spectrum illustrating leakage into neighbouring bins.}}{26}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Virtual Wind Tunnel Dimensions}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Virtual Wind Tunnel Dimensions}}{29}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Sarkic Cross-Section}}{29}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces GiD Model of Virtual Wind Tunnel}}{30}{figure.caption.26}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces CFD Results for Model 3}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Heave Motion}}{31}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mesh Convergence Study Results}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Heave Motion}}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mesh Convergence Study Results}}{33}{figure.caption.30}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Combined Flutter Derivatives}}{35}{figure.caption.33}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Frequency Domain Analysis Heave}}{36}{figure.caption.34}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Frequency Domain Analysis Pitch}}{37}{figure.caption.35}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Prescribed Motion Amplitude Vs Force}}{39}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Compiled Prescribed Motion Displacement Vs Force}}{39}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Prescribed Displacement}}{40}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Compiled Prescribed Motion Displacement Vs Force}}{40}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Prescribed Displacement}}{41}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Comparitive Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion}}{41}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Critical wind speed vs.\ Amplitude Scheme}}{42}{figure.caption.41}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Reduced critical wind speed vs.\ Amplitude Scheme}}{42}{figure.caption.41}%
