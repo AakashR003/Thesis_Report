@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  18 APR 2026 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  19 APR 2026 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,30 +337,6 @@ LaTeX Warning: Label `fig:Pitch_PhaseMx_vs_Amplitude' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:Pitch_PhaseMx_vs_Amplitude' multiply defined.
-
-
-LaTeX Warning: Label `fig: Time 30 seconds' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig: Time 30 seconds' multiply defined.
-
-
-LaTeX Warning: Label `fig:Time 32 seconds' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Time 32 seconds' multiply defined.
-
-
-LaTeX Warning: Label `fig:Time 34 seconds' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Time 34 seconds' multiply defined.
-
-
-LaTeX Warning: Label `fig:Time 36 seconds' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Time 36 seconds' multiply defined.
 
 )
 \openout1 = `Chapt_4.aux'.
@@ -814,6 +790,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 668--672
  []
 
 [15 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_Phases_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Pitch_LiftForce_and_Moment_vs_Amplitude.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Pitch_Phases_vs_Amplitude.png>]
+
+LaTeX Warning: Reference `fig: Amplitude Study - 0 - Pitch Motion - Pressure Distribution' on page 16 undefined on input line 673.
+
+
+LaTeX Warning: Reference `fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution' on page 16 undefined on input line 675.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 673--677
 
  []
@@ -823,86 +806,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--683
 
  []
 
-<Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png, id=237, 1437.6912pt x 215.3646pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png  used on input line 692.
-(pdftex.def)             Requested size: 452.9679pt x 67.85335pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png, id=238, 549.85425pt x 128.27925pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png  used on input line 701.
-(pdftex.def)             Requested size: 203.83417pt x 47.55457pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png, id=239, 549.252pt x 124.66576pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png  used on input line 708.
-(pdftex.def)             Requested size: 203.83417pt x 46.26447pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png, id=240, 551.05875pt x 124.66576pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png  used on input line 715.
-(pdftex.def)             Requested size: 203.83417pt x 46.11227pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png, id=241, 552.26324pt x 127.677pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png  used on input line 722.
-(pdftex.def)             Requested size: 203.83417pt x 47.1248pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png, id=242, 552.8655pt x 127.07475pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png  used on input line 735.
-(pdftex.def)             Requested size: 203.83417pt x 46.85016pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png, id=243, 549.252pt x 124.0635pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png  used on input line 742.
-(pdftex.def)             Requested size: 203.83417pt x 46.04095pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png, id=244, 551.661pt x 125.268pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png  used on input line 749.
-(pdftex.def)             Requested size: 203.83417pt x 46.28534pt.
-<Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png, id=245, 552.26324pt x 123.46124pt>
-File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png Graphic file (type png)
-<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png  used on input line 756.
-(pdftex.def)             Requested size: 203.83417pt x 45.56879pt.
+<Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png, id=235, 1076.823pt x 206.2104pt>
+File: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png Graphic file (type png)
+<use Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png  used on input line 692.
+(pdftex.def)             Requested size: 452.9679pt x 86.74307pt.
+<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png, id=236, 932.5239pt x 245.718pt>
+File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png Graphic file (type png)
+<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png  used on input line 701.
+(pdftex.def)             Requested size: 217.42265pt x 57.29005pt.
+<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png, id=237, 932.5239pt x 245.718pt>
+File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png Graphic file (type png)
+<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png  used on input line 708.
+(pdftex.def)             Requested size: 217.42265pt x 57.29005pt.
+<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png, id=238, 932.5239pt x 245.718pt>
+File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png Graphic file (type png)
+<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png  used on input line 715.
+(pdftex.def)             Requested size: 217.42265pt x 57.29005pt.
+<Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png, id=239, 932.5239pt x 245.718pt>
+File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png Graphic file (type png)
+<use Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png  used on input line 722.
+(pdftex.def)             Requested size: 217.42265pt x 57.29005pt.
 
-LaTeX Warning: Citation `diana2020' on page 16 undefined on input line 770.
+LaTeX Warning: Citation `diana2020' on page 16 undefined on input line 806.
 
 
-LaTeX Warning: Citation `xin2007' on page 16 undefined on input line 770.
+LaTeX Warning: Citation `xin2007' on page 16 undefined on input line 806.
 
 
-LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 16 undefined on input line 770.
+LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 16 undefined on input line 806.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--772
+Underfull \hbox (badness 10000) in paragraph at lines 804--808
 
  []
 
-[16 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>] [17 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 773--778
+[16 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 809--814
 
  []
 
 
-Overfull \hbox (15.35439pt too wide) in paragraph at lines 791--802
+Overfull \hbox (15.35439pt too wide) in paragraph at lines 827--838
  [][] 
  []
 
-<Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png, id=273, 722.7pt x 433.62pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png, id=252, 722.7pt x 433.62pt>
 File: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png Graphic file (type png)
 <use Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png  used on input line 807.
-(pdftex.def)             Requested size: 339.72592pt x 203.8345pt.
-<Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png, id=274, 722.7pt x 433.62pt>
+Package pdftex.def Info: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png  used on input line 845.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png, id=253, 722.7pt x 433.62pt>
 File: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type png)
 <use Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>
-Package pdftex.def Info: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png  used on input line 814.
-(pdftex.def)             Requested size: 339.72592pt x 203.8345pt.
-[18 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png>] [19 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
+Package pdftex.def Info: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png  used on input line 852.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+[17 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>] [18 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_4/Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -918,17 +884,17 @@ Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
 (rerunfilecheck)             Checksum: 451441EDC17017557E50C2F80EC40353;2617.
  ) 
 Here is how much of TeX's memory you used:
- 12714 strings out of 476402
- 225416 string characters out of 5794312
+ 12686 strings out of 476402
+ 224309 string characters out of 5794312
  1944542 words of memory out of 5000000
- 34532 multiletter control sequences out of 15000+600000
+ 34507 multiletter control sequences out of 15000+600000
  566088 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,13n,99p,609b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (19 pages, 8051429 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.pdf" (18 pages, 8238348 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
