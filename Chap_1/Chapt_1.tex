@@ -4,15 +4,15 @@
 
 \section{Motivation}
 In today's world, there has been a rapid development in infrastructures, including buildings and bridges, due to urbanisation and to meet the needs of the 
-people. To satisfy this requirement, there has been a significant development in constrcution strcutures in larger scale. This results in 
-structures with greater exposure to the wind loads. For exmaple if we consider a design of building, the hight increases the imporatnce accurate 
+people. To satisfy this requirement, there has been a significant development in construction structures in larger scale. This results in 
+structures with greater exposure to the wind loads. For example if we consider a design of building, the height increases the importance; the 
 the wind loads acting on it increases. This case is similar for design of majority of structures like bridges and wind turbines. 
 
 On the other hand due to the sustainability requirements, the highly optimised. When it comes to the design of bridges, for high spans cable stayed bridges 
-and the suspension bridges are the solution to satisfy this requirement. But due their highly optimised nature, the structres are more flexible under the limit state of human loads. 
-Consequently more susceptible to the dynamic wind loads expecially interaction of the wind with the structure, Flutter. 
+and the suspension bridges are the solution to satisfy this requirement. But due their highly optimised nature, the structures are more flexible under the limit state of human loads. 
+Consequently more susceptible to the dynamic wind loads especially interaction of the wind with the structure, Flutter. 
 Flutter is an aeroelastic instability failure of structures, caused due to the interaction of the structure with the air, 
-which can lead to catestrophic failure. This was the reason for the Tacoma Narrows Bridge's failure, USA in 1940. 
+which can lead to catastrophic failure. This was the reason for the Tacoma Narrows Bridge's failure, USA in 1940. 
 The key challenge in analysing flutter is quantifying the aerodynamic forces acting on the structure. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
 analytical solution for the aerodynamic forces for unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. 
 This is reformulated in the form of flutter derivatives by Scanlan and Rosenbaum in 1966 \cite{ScanlanRosenbaum1966}, in motivation of applying 
@@ -20,18 +20,18 @@ to bluff bodies such as bridge decks. The flutter derivatives are a set of shape
  
 
 \vspace{0.5 cm}
-CFD simulations or wind tunnel are peformed to obtain this constants. Since these constants are functions of motion, multiple CFD simulations by 
+CFD simulations or wind tunnel are performed to obtain these constants. Since these constants are functions of motion, multiple CFD simulations by 
 varying the motion frequency are required to obtain the flutter derivatives. This is a time consuming process.
 To overcome this, a multi-frequency vibration method was introduced by Lin Huang et al in 2011 \cite{huang2011}. 
 By this method, instead of applying a single motion frequency, we can superpose multiple 
 motions of different frequencies and apply them. Then by using mathematical 
-tools, such as the Fourier Transform the indiviual components can be obtained. By this way, the method can be theoretically n times as efficient (where n 
+tools, such as the Fourier Transform, the individual components can be obtained. By this way, the method can be theoretically n times as efficient (where n 
 is the number of combinations). But according to the author, the multi-frequency method reduced 
-the simulation by only 18\%. The reason was inaccuray in identifying the flutter derivative using a 
+the simulation by only 18\%. The reason was inaccuracy in identifying the flutter derivative using a 
 multi-frequency method. To overcome this, more simulation time was required consequently efficiency reduced. 
 After that, for a few years, there wasn't research focusing on this. In 2023, G. Martínez-López 
-investigated the multi-frequency method to obtaining flutter derivatives via curve fitting with LES 
-Turbulence modelling \cite{Martínez-López_2023}. The same result as with Lin Huang was observed. Ie, 
+investigated the multi-frequency method to obtain flutter derivatives via curve fitting with LES 
+Turbulence modelling \cite{Martínez-López_2023}. The same result as with Lin Huang was observed. I.e., 
 to obtain accurate Flutter derivatives using the multi-frequency method, the simulation time must 
 be increased. An important observation from this work is that the selection of the frequency played 
 an important role in the method's accuracy This leaves several open questions: First, why does the multi-frequency method not achieve the 

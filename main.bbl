@@ -31,6 +31,20 @@ Robert~H. Scanlan and John~J. Tomko.
 \newblock \href {https://doi.org/10.1061/JMCEA3.0001526}
   {\path{doi:10.1061/JMCEA3.0001526}}.
 
+\bibitem{diana2020}
+Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
+  Andersen, Tommaso Argentini, Miguel Cid~Montoya, Santiago Hern{\'a}ndez,
+  Jos{\'e}~{\'A}ngel Jurado, Hiroshi Katsuchi, Igor Kavrakov, Ho-Kyung Kim, Guy
+  Larose, Allan Larsen, Guido Morgenthal, Ole {\O}iseth, Simone Omarini,
+  Daniele Rocchi, Martin Svendsen, and Teng Wu.
+\newblock {{IABSE Task Group}} 3.1 {{Benchmark Results}}. {{Part}} 1:
+  {{Numerical Analysis}} of a {{Two-Degree-of-Freedom Bridge Deck Section
+  Based}} on {{Analytical Aerodynamics}}.
+\newblock {\em Structural Engineering International}, 30(3):401--410, July
+  2020.
+\newblock \href {https://doi.org/10.1080/10168664.2019.1639480}
+  {\path{doi:10.1080/10168664.2019.1639480}}.
+
 \bibitem{scipy}
 Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
 \newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
@@ -58,20 +72,6 @@ Pooyan Dadvand, Riccardo Rossi, and Eugenio O{\~n}ate.
 \bibitem{menter}
 Florian~R Menter.
 \newblock Turbulence {{Modeling}} for {{Engineering Flows}}.
-
-\bibitem{diana2020}
-Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
-  Andersen, Tommaso Argentini, Miguel Cid~Montoya, Santiago Hern{\'a}ndez,
-  Jos{\'e}~{\'A}ngel Jurado, Hiroshi Katsuchi, Igor Kavrakov, Ho-Kyung Kim, Guy
-  Larose, Allan Larsen, Guido Morgenthal, Ole {\O}iseth, Simone Omarini,
-  Daniele Rocchi, Martin Svendsen, and Teng Wu.
-\newblock {{IABSE Task Group}} 3.1 {{Benchmark Results}}. {{Part}} 1:
-  {{Numerical Analysis}} of a {{Two-Degree-of-Freedom Bridge Deck Section
-  Based}} on {{Analytical Aerodynamics}}.
-\newblock {\em Structural Engineering International}, 30(3):401--410, July
-  2020.
-\newblock \href {https://doi.org/10.1080/10168664.2019.1639480}
-  {\path{doi:10.1080/10168664.2019.1639480}}.
 
 \bibitem{noda2003}
 M~Noda, H~Utsunomiya, F~Nagao, M~Kanda, and N~Shiraishi.

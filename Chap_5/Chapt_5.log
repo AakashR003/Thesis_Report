@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  19 APR 2026 00:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  20 APR 2026 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,17 +418,17 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
+Underfull \hbox (badness 10000) in paragraph at lines 42--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
+Underfull \hbox (badness 10000) in paragraph at lines 56--63
 
  []
 
@@ -436,120 +436,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--65
 
 
 {C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--104
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
 
  []
 
 [2]
-Overfull \hbox (27.6299pt too wide) in paragraph at lines 212--224
+Overfull \hbox (27.6299pt too wide) in paragraph at lines 210--222
  [][] 
  []
 
 
-Overfull \hbox (35.46579pt too wide) in paragraph at lines 230--242
+Overfull \hbox (35.46579pt too wide) in paragraph at lines 228--240
  [][] 
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--252
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG, id=113, 3584.39125pt x 2396.955pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG  used on input line 255.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG  used on input line 253.
 (pdftex.def)             Requested size: 452.9679pt x 302.87378pt.
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png, id=116, 3584.39125pt x 601.24625pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png  used on input line 264.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png  used on input line 262.
 (pdftex.def)             Requested size: 452.9679pt x 75.97209pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--273
+Underfull \hbox (badness 10000) in paragraph at lines 267--271
 
  []
 
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png, id=119, 3584.39125pt x 600.2425pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png  used on input line 276.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png  used on input line 274.
 (pdftex.def)             Requested size: 452.9679pt x 75.84526pt.
 [5 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png>]
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png, id=129, 669.9429pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png  used on input line 286.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png  used on input line 284.
 (pdftex.def)             Requested size: 271.7835pt x 137.50006pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--299
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
 
  []
 
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png, id=135, 3584.39125pt x 2398.9625pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png  used on input line 302.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png  used on input line 300.
 (pdftex.def)             Requested size: 452.9679pt x 303.12744pt.
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png, id=136, 3584.39125pt x 600.2425pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png  used on input line 309.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png  used on input line 307.
 (pdftex.def)             Requested size: 452.9679pt x 75.84526pt.
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png, id=137, 662.475pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png  used on input line 316.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_DFT_Moment_Superposition_Scheme_4.png  used on input line 314.
 (pdftex.def)             Requested size: 271.7835pt x 139.05164pt.
 <Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png, id=138, 3584.39125pt x 2413.015pt>
 File: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png  used on input line 323.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png  used on input line 321.
 (pdftex.def)             Requested size: 452.9679pt x 304.90308pt.
 
-Overfull \hbox (19.97154pt too wide) in paragraph at lines 332--346
+Overfull \hbox (19.97154pt too wide) in paragraph at lines 330--344
  [][] 
  []
 
@@ -557,163 +557,163 @@ Overfull \hbox (19.97154pt too wide) in paragraph at lines 332--346
 <Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png, id=161, 616.704pt x 713.3049pt>
 File: Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png  used on input line 352.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png  used on input line 350.
 (pdftex.def)             Requested size: 452.9679pt x 523.92996pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 355--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--370
+Underfull \hbox (badness 10000) in paragraph at lines 363--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--375
+Underfull \hbox (badness 10000) in paragraph at lines 369--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
 
  []
 
 [8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Individual_Harmonic_Moment.png>] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 382--385
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
 
  []
 
 
-LaTeX Warning: Reference `app:amp_phase_errors' on page 10 undefined on input line 387.
+LaTeX Warning: Reference `app:amp_phase_errors' on page 10 undefined on input line 385.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--392
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--400
+Underfull \hbox (badness 10000) in paragraph at lines 384--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--407
+Underfull \hbox (badness 10000) in paragraph at lines 391--398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--405
 
  []
 
 <Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png, id=176, 1003.1076pt x 569.4876pt>
 File: Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png  used on input line 410.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png  used on input line 408.
 (pdftex.def)             Requested size: 452.9679pt x 257.16208pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--418
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
 <Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png, id=178, 1003.1076pt x 569.4876pt>
 File: Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png  used on input line 421.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png  used on input line 419.
 (pdftex.def)             Requested size: 452.9679pt x 257.16208pt.
 
-LaTeX Warning: Reference `fig:Compiled_Displacement_Vs_Force' on page 10 undefined on input line 427.
+LaTeX Warning: Reference `fig:Compiled_Displacement_Vs_Force' on page 10 undefined on input line 425.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--430
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--436
+Underfull \hbox (badness 10000) in paragraph at lines 429--434
 
  []
 
 [10] [11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png>]
 
-LaTeX Warning: Reference `sub@fig:MF1_Compiled_Heave_PhaseMoment_vs_Superpositions' on page 12 undefined on input line 437.
+LaTeX Warning: Reference `sub@fig:MF1_Compiled_Heave_PhaseMoment_vs_Superpositions' on page 12 undefined on input line 435.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--441
+Underfull \hbox (badness 10000) in paragraph at lines 435--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--446
+Underfull \hbox (badness 10000) in paragraph at lines 440--444
 
  []
 
 <Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png, id=193, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 452.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 450.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png, id=194, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 459.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png  used on input line 457.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png, id=195, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png  used on input line 466.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png  used on input line 464.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 <Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png, id=196, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png  used on input line 473.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png  used on input line 471.
 (pdftex.def)             Requested size: 203.83417pt x 122.29938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--490
+Underfull \hbox (badness 10000) in paragraph at lines 484--488
 
  []
 
 
-LaTeX Warning: Reference `fig:app:Frequency_Domain_Analysis_Heave_MF1' on page 12 undefined on input line 494.
+LaTeX Warning: Reference `fig:app:Frequency_Domain_Analysis_Heave_MF1' on page 12 undefined on input line 492.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--497
+Underfull \hbox (badness 10000) in paragraph at lines 489--495
 
  []
 
 [12 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Superpositions_RelativeToFirst.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Heave/PhaseLiftForce_Error_vs_Superpositions.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 498--502
+Underfull \hbox (badness 10000) in paragraph at lines 496--500
 
  []
 
 <Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png, id=210, 669.9429pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 508.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 506.
 (pdftex.def)             Requested size: 203.83417pt x 103.12245pt.
 <Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png, id=211, 662.475pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 515.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 513.
 (pdftex.def)             Requested size: 203.83417pt x 104.28613pt.
 <Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png, id=212, 665.6067pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 529.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 527.
 (pdftex.def)             Requested size: 203.83417pt x 103.79997pt.
 <Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png, id=213, 658.1388pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 536.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 534.
 (pdftex.def)             Requested size: 203.83417pt x 104.974pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--549
+Underfull \hbox (badness 10000) in paragraph at lines 543--547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--557
+Underfull \hbox (badness 10000) in paragraph at lines 548--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--563
+Underfull \hbox (badness 10000) in paragraph at lines 556--561
 
  []
 
@@ -721,29 +721,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--563
 <Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png, id=226, 895.1844pt x 769.4346pt>
 File: Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png  used on input line 567.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png  used on input line 565.
 (pdftex.def)             Requested size: 452.9679pt x 389.34215pt.
 
 
-LaTeX Warning: Reference `tab:bridge_configs' on page 14 undefined on input line 578.
+LaTeX Warning: Reference `tab:bridge_configs' on page 14 undefined on input line 576.
 
 
-Overfull \hbox (1.62183pt too wide) in paragraph at lines 576--579
+Overfull \hbox (1.62183pt too wide) in paragraph at lines 574--577
 \OT1/cmr/m/n/12 Similar to the non-lin-ear-i-ty s-tudy on crit-i-cal ve-loc-i-ty, the in-flu-ence of su-per-po-si-tion schemes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--579
+Underfull \hbox (badness 10000) in paragraph at lines 574--577
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--583
+Underfull \hbox (badness 10000) in paragraph at lines 578--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--589
+Underfull \hbox (badness 10000) in paragraph at lines 582--587
 
  []
 
@@ -751,20 +751,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--589
 <Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png, id=235, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png  used on input line 594.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png  used on input line 592.
 (pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
 <Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png, id=236, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png  used on input line 601.
+Package pdftex.def Info: Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png  used on input line 599.
 (pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--629
+Underfull \hbox (badness 10000) in paragraph at lines 624--627
 
  []
 
 
-Overfull \hbox (35.0658pt too wide) in paragraph at lines 634--644
+Overfull \hbox (35.0658pt too wide) in paragraph at lines 632--642
  [][] 
  []
 
@@ -772,77 +772,77 @@ Overfull \hbox (35.0658pt too wide) in paragraph at lines 634--644
 <Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png, id=246, 616.704pt x 716.4366pt>
 File: Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png  used on input line 650.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png  used on input line 648.
 (pdftex.def)             Requested size: 452.9679pt x 526.23022pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--662
+Underfull \hbox (badness 10000) in paragraph at lines 653--660
 
  []
 
 [16] [17 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 665--669
+Underfull \hbox (badness 10000) in paragraph at lines 663--667
 
  []
 
 <Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png, id=259, 1003.1076pt x 569.4876pt>
 File: Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png  used on input line 672.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png  used on input line 670.
 (pdftex.def)             Requested size: 452.9679pt x 257.16208pt.
 <Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png, id=260, 1003.1076pt x 569.4876pt>
 File: Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png  used on input line 679.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png  used on input line 677.
 (pdftex.def)             Requested size: 452.9679pt x 257.16208pt.
 [18 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 686--691
+Underfull \hbox (badness 10000) in paragraph at lines 684--689
 
  []
 
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png, id=268, 663.6795pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 696.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 694.
 (pdftex.def)             Requested size: 203.83417pt x 104.09995pt.
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png, id=269, 662.475pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 703.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png  used on input line 701.
 (pdftex.def)             Requested size: 203.83417pt x 104.28613pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--719
+Underfull \hbox (badness 10000) in paragraph at lines 710--717
 
  []
 
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png, id=271, 652.839pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 724.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png  used on input line 722.
 (pdftex.def)             Requested size: 203.83417pt x 105.82736pt.
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png, id=272, 658.1388pt x 338.9463pt>
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 731.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png  used on input line 729.
 (pdftex.def)             Requested size: 203.83417pt x 104.974pt.
 [19 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 742--750
+Underfull \hbox (badness 10000) in paragraph at lines 740--748
 
  []
 
 <Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png, id=286, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png  used on input line 755.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png  used on input line 753.
 (pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
 <Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png, id=287, 722.7pt x 433.62pt>
 File: Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png Graphic file (type png)
 <use Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png>
-Package pdftex.def Info: Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png  used on input line 762.
+Package pdftex.def Info: Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png  used on input line 760.
 (pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
 <Figures/Simulation_Time.png, id=288, 410.187pt x 264.552pt>
 File: Figures/Simulation_Time.png Graphic file (type png)
 <use Figures/Simulation_Time.png>
-Package pdftex.def Info: Figures/Simulation_Time.png  used on input line 783.
+Package pdftex.def Info: Figures/Simulation_Time.png  used on input line 781.
 (pdftex.def)             Requested size: 339.72592pt x 219.12195pt.
 [20 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png>] [21 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_5/Figures/Simulation_Time.png>] [22] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux)
  ***********
@@ -854,18 +854,18 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Chapt_5.out' has not changed.
-(rerunfilecheck)             Checksum: 184A664DE6C7836A524A28928CD99FBE;4167.
+(rerunfilecheck)             Checksum: DFBD1E75B41A9E0B185B5BDB4FEB7D7C;4212.
  ) 
 Here is how much of TeX's memory you used:
  12614 strings out of 476402
  219912 string characters out of 5794312
- 1951542 words of memory out of 5000000
+ 1950542 words of memory out of 5000000
  34411 multiletter control sequences out of 15000+600000
  565216 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,9n,99p,415b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,9n,99p,415b,543s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.pdf" (22 pages, 8389080 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.pdf" (22 pages, 8389510 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)
