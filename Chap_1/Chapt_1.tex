@@ -8,9 +8,9 @@ people. To satisfy this requirement, there has been a significant development in
 structures with greater exposure to the wind loads. For example if we consider a design of building, the height increases the importance; the 
 the wind loads acting on it increases. This case is similar for design of majority of structures like bridges and wind turbines. 
 
-On the other hand due to the sustainability requirements, the highly optimised. When it comes to the design of bridges, for high spans cable stayed bridges 
+When it comes to the design of bridges, for high spans cable stayed bridges 
 and the suspension bridges are the solution to satisfy this requirement. But due their highly optimised nature, the structures are more flexible under the limit state of human loads. 
-Consequently more susceptible to the dynamic wind loads especially interaction of the wind with the structure, Flutter. 
+Consequently they are more susceptible to the dynamic wind loads, especially for the fluid-interaction, Flutter. 
 Flutter is an aeroelastic instability failure of structures, caused due to the interaction of the structure with the air, 
 which can lead to catastrophic failure. This was the reason for the Tacoma Narrows Bridge's failure, USA in 1940. 
 The key challenge in analysing flutter is quantifying the aerodynamic forces acting on the structure. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
@@ -42,18 +42,16 @@ Third, are there additional parameters beyond frequency that influence accuracy,
 Identifying these parameters would provide a more comprehensive understanding of the method's behavior.
 
 \section{Objective}
-Investigation of above open questions is the primary motivation of this master's thesis. This is done in the following approach. 
-If an inaccuracy in the multi-frequency method exists, then two possibilities of the source of error 
-are there. First, with respect to CFD simulation, or due to the mathematical tool used for post-
-processing. So, first signal analysis with FFT of arbitrary signals has been conducted. The FFT tool 
-used in this work is from the SciPy module in Python. To investigate the source of error in CFD,
-influence of amplitude of motion frequency is studied. This is done because the multi-frequency 
-method relies entirely on the assumption of a linear relationship between the applied motion and 
-the resulting aerodynamic forces. Based on signal analysis, rules have been formulated for selecting 
-the frequency for the multi-frequency method. Based on the Nonlinearity analysis, rules have been 
-formulated for selecting the amplitude of the multi-frequency method. Based on the formulated 
-rules, two sets of multifrequency CFD simulations have been conducted to verify the efficiency of 
-the proposed framework.   
+The investigation of the open questions outlined above forms the core objective of this master's thesis. 
+The work follows a two-step approach. If inaccuracies appear in the multi-frequency method, they may originate either from the CFD 
+simulations or from the mathematical tools used in post-processing. To examine the latter, signal analysis using FFT was performed, 
+employing the SciPy FFT module in Python.
+To assess potential CFD-related errors, the influence of motion-amplitude on the response was studied. This is important because the 
+multi-frequency method assumes a linear relationship between the imposed motion and the resulting aerodynamic forces. Based on the 
+signal analysis, guidelines were developed for selecting suitable frequencies. Similarly, the nonlinearity study led to rules for 
+choosing appropriate motion amplitudes.
+Using these guidelines, two sets of multi-frequency CFD simulations were carried out to evaluate the effectiveness of the proposed 
+framework   
 \vspace{0.5 cm}
 
 \vspace{0.5 cm}

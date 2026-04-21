@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  20 APR 2026 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  21 APR 2026 02:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -471,31 +471,31 @@ File: Figures/SingleFrequency/1_Input_Signal.png Graphic file (type png)
 <use Figures/SingleFrequency/1_Input_Signal.png>
 Package pdftex.def Info: Figures/SingleFrequency/1_Input_Signal.png  used on input line 143.
 (pdftex.def)             Requested size: 203.83417pt x 140.77335pt.
-<Figures/SingleFrequency/1_Spectrum.png, id=69, 548.7702pt x 388.0899pt>
+<Figures/SingleFrequency/1_Spectrum.png, id=69, 556.7199pt x 388.0899pt>
 File: Figures/SingleFrequency/1_Spectrum.png Graphic file (type png)
 <use Figures/SingleFrequency/1_Spectrum.png>
 Package pdftex.def Info: Figures/SingleFrequency/1_Spectrum.png  used on input line 150.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
 <Figures/SingleFrequency/2_Input_Signal.png, id=71, 562.9833pt x 388.8126pt>
 File: Figures/SingleFrequency/2_Input_Signal.png Graphic file (type png)
 <use Figures/SingleFrequency/2_Input_Signal.png>
 Package pdftex.def Info: Figures/SingleFrequency/2_Input_Signal.png  used on input line 174.
 (pdftex.def)             Requested size: 203.83417pt x 140.77335pt.
-<Figures/SingleFrequency/2_Spectrum.png, id=72, 548.7702pt x 388.0899pt>
+<Figures/SingleFrequency/2_Spectrum.png, id=72, 556.7199pt x 388.0899pt>
 File: Figures/SingleFrequency/2_Spectrum.png Graphic file (type png)
 <use Figures/SingleFrequency/2_Spectrum.png>
 Package pdftex.def Info: Figures/SingleFrequency/2_Spectrum.png  used on input line 181.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
 <Figures/SingleFrequency/3_Input_Signal.png, id=74, 557.2017pt x 388.8126pt>
 File: Figures/SingleFrequency/3_Input_Signal.png Graphic file (type png)
 <use Figures/SingleFrequency/3_Input_Signal.png>
 Package pdftex.def Info: Figures/SingleFrequency/3_Input_Signal.png  used on input line 204.
 (pdftex.def)             Requested size: 203.83417pt x 142.23282pt.
-<Figures/SingleFrequency/3_Spectrum.png, id=75, 548.7702pt x 388.0899pt>
+<Figures/SingleFrequency/3_Spectrum.png, id=75, 556.7199pt x 388.0899pt>
 File: Figures/SingleFrequency/3_Spectrum.png Graphic file (type png)
 <use Figures/SingleFrequency/3_Spectrum.png>
 Package pdftex.def Info: Figures/SingleFrequency/3_Spectrum.png  used on input line 211.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
  [3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Figures/SingleFrequency/1_Input_Signal.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_3/Figures/SingleFrequency/1_Spectrum.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 227--231
 
@@ -522,23 +522,23 @@ File: Figures/MultiFrequency/1_Input_Signal.png Graphic file (type png)
 <use Figures/MultiFrequency/1_Input_Signal.png>
 Package pdftex.def Info: Figures/MultiFrequency/1_Input_Signal.png  used on input line 315.
 (pdftex.def)             Requested size: 203.83417pt x 142.41673pt.
-<Figures/MultiFrequency/1_Spectrum.png, id=107, 548.7702pt x 388.0899pt>
+<Figures/MultiFrequency/1_Spectrum.png, id=107, 556.7199pt x 388.0899pt>
 File: Figures/MultiFrequency/1_Spectrum.png Graphic file (type png)
 <use Figures/MultiFrequency/1_Spectrum.png>
 Package pdftex.def Info: Figures/MultiFrequency/1_Spectrum.png  used on input line 322.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
 <Figures/MultiFrequency/2_Input_Signal.png, id=110, 556.479pt x 388.8126pt>
 File: Figures/MultiFrequency/2_Input_Signal.png Graphic file (type png)
 <use Figures/MultiFrequency/2_Input_Signal.png>
 Package pdftex.def Info: Figures/MultiFrequency/2_Input_Signal.png  used on input line 366.
 (pdftex.def)             Requested size: 203.83417pt x 142.41673pt.
-<Figures/MultiFrequency/2_Spectrum.png, id=111, 548.7702pt x 388.0899pt>
+<Figures/MultiFrequency/2_Spectrum.png, id=111, 556.7199pt x 388.0899pt>
 File: Figures/MultiFrequency/2_Spectrum.png Graphic file (type png)
 <use Figures/MultiFrequency/2_Spectrum.png>
 Package pdftex.def Info: Figures/MultiFrequency/2_Spectrum.png  used on input line 373.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
@@ -546,20 +546,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--394
 <Figures/MultiFrequency/3_Input_Signal.png, id=131, 547.0839pt x 388.8126pt>
 File: Figures/MultiFrequency/3_Input_Signal.png Graphic file (type png)
 <use Figures/MultiFrequency/3_Input_Signal.png>
-Package pdftex.def Info: Figures/MultiFrequency/3_Input_Signal.png  used on input line 424.
+Package pdftex.def Info: Figures/MultiFrequency/3_Input_Signal.png  used on input line 426.
 (pdftex.def)             Requested size: 203.83417pt x 144.86104pt.
-<Figures/MultiFrequency/3_Spectrum.png, id=132, 548.7702pt x 388.0899pt>
+<Figures/MultiFrequency/3_Spectrum.png, id=132, 556.7199pt x 388.0899pt>
 File: Figures/MultiFrequency/3_Spectrum.png Graphic file (type png)
 <use Figures/MultiFrequency/3_Spectrum.png>
-Package pdftex.def Info: Figures/MultiFrequency/3_Spectrum.png  used on input line 431.
-(pdftex.def)             Requested size: 203.83417pt x 144.14766pt.
+Package pdftex.def Info: Figures/MultiFrequency/3_Spectrum.png  used on input line 433.
+(pdftex.def)             Requested size: 203.83417pt x 142.0928pt.
 
-Underfull \hbox (badness 1975) in paragraph at lines 432--432
+Underfull \hbox (badness 1975) in paragraph at lines 434--434
 \OT1/cmr/m/n/10.95 tral leak-age from the non-bin-matched
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--443
+Underfull \hbox (badness 10000) in paragraph at lines 441--445
 
  []
 
@@ -584,7 +584,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  95i,9n,99p,571b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.pdf" (9 pages, 870966 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.pdf" (9 pages, 879846 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
