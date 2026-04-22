@@ -8,6 +8,14 @@ Theodore Theodorsen and Ira~E. Garrick.
   (NACA), 1934.
 \newblock URL: \url{https://ntrs.nasa.gov/citations/19930090935}.
 
+\bibitem{scanlan1971}
+Robert~H. Scanlan and John~J. Tomko.
+\newblock Airfoil and {{Bridge Deck Flutter Derivatives}}.
+\newblock {\em Journal of the Engineering Mechanics Division},
+  97(6):1717--1737, December 1971.
+\newblock \href {https://doi.org/10.1061/JMCEA3.0001526}
+  {\path{doi:10.1061/JMCEA3.0001526}}.
+
 \bibitem{huang2011}
 Lin Huang and Haili Liao.
 \newblock Identification of {{Flutter Derivatives}} of {{Bridge Deck Under
@@ -22,14 +30,6 @@ Givenname Surname et~al.
 \newblock Kratos multiphysics, release 10.1, sep 2023.
 \newblock \href {https://doi.org/10.5281/zenodo.15687676}
   {\path{doi:10.5281/zenodo.15687676}}.
-
-\bibitem{scanlan1971}
-Robert~H. Scanlan and John~J. Tomko.
-\newblock Airfoil and {{Bridge Deck Flutter Derivatives}}.
-\newblock {\em Journal of the Engineering Mechanics Division},
-  97(6):1717--1737, December 1971.
-\newblock \href {https://doi.org/10.1061/JMCEA3.0001526}
-  {\path{doi:10.1061/JMCEA3.0001526}}.
 
 \bibitem{diana2020}
 Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael

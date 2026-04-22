@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {5.2.3}Comparison of Flutter Derivatives}{51}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Error Assessment Against Single Frequency Simulations}{53}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Spectral Analysis}{55}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Superposition Impact on Critical Wind Speed}{57}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.6}Superposition Impact on Critical Wind Speed}{58}{subsection.5.2.6}%
 \contentsline {section}{\numberline {5.3}Multi-Frequency Simulations 2}{58}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Superposition Schemes}{58}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Comparison of Flutter Derivatives}{59}{subsection.5.3.2}%

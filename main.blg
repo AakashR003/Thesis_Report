@@ -12,7 +12,6 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 Warning--entry type for "Martínez-López_2023" isn't style-file defined
 --line 581 of file references.bib
-Warning--I didn't find a database entry for "ScanlanRosenbaum1966"
 Warning--I didn't find a database entry for "Theodorsen1935"
 Warning--empty journal in menter
 Warning--empty year in menter
@@ -23,7 +22,7 @@ Warning--empty journal in warnakulasuriya
 Warning--empty year in warnakulasuriya
 You've used 22 entries,
             2616 wiz_defined-function locations,
-            736 strings with 9620 characters,
+            734 strings with 9580 characters,
 and the built_in function-call counts, 8219 in all, are:
 = -- 823
 > -- 318
@@ -62,4 +61,4 @@ warning$ -- 7
 while$ -- 52
 width$ -- 24
 write$ -- 260
-(There were 10 warnings)
+(There were 9 warnings)
