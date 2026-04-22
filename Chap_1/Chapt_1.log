@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  17 APR 2026 12:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  22 APR 2026 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,74 +417,22 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
-(C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
- (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 16.
 
 
-{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Overfull \hbox (48.97142pt too wide) detected at line 128
- []$[]   [] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ;$ []  
- []
+LaTeX Warning: Citation `scanlan1971' on page 1 undefined on input line 17.
 
 
-LaTeX Warning: Citation `diana2020' on page 3 undefined on input line 192.
-
-[3]
-
-LaTeX Warning: Citation `diana2020' on page 4 undefined on input line 198.
+LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 24.
 
 
-LaTeX Warning: Citation `Theodorsen1935' on page 4 undefined on input line 223.
+LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 35.
 
-<Figures/Theodorsen_Flutter_Derivatives.png, id=76, 616.704pt x 713.3049pt>
-File: Figures/Theodorsen_Flutter_Derivatives.png Graphic file (type png)
-<use Figures/Theodorsen_Flutter_Derivatives.png>
-Package pdftex.def Info: Figures/Theodorsen_Flutter_Derivatives.png  used on input line 256.
-(pdftex.def)             Requested size: 452.9679pt x 523.92996pt.
-<Figures/Eigen_Frequency_Vs_Reduced_Velocity.png, id=80, 722.7pt x 289.08pt>
-File: Figures/Eigen_Frequency_Vs_Reduced_Velocity.png Graphic file (type png)
-<use Figures/Eigen_Frequency_Vs_Reduced_Velocity.png>
-Package pdftex.def Info: Figures/Eigen_Frequency_Vs_Reduced_Velocity.png  used on input line 268.
-(pdftex.def)             Requested size: 452.9679pt x 181.18622pt.
-<Figures/Damping_Ratio_Vs_Wind_Velocity.png, id=81, 570.933pt x 357.7365pt>
-File: Figures/Damping_Ratio_Vs_Wind_Velocity.png Graphic file (type png)
-<use Figures/Damping_Ratio_Vs_Wind_Velocity.png>
-Package pdftex.def Info: Figures/Damping_Ratio_Vs_Wind_Velocity.png  used on input line 276.
-(pdftex.def)             Requested size: 452.9679pt x 283.83145pt.
-[4] [5 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_1/Figures/Theodorsen_Flutter_Derivatives.png>] [6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_1/Figures/Eigen_Frequency_Vs_Reduced_Velocity.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_1/Figures/Damping_Ratio_Vs_Wind_Velocity.png>]
-
-LaTeX Warning: Citation `diana2020' on page 7 undefined on input line 294.
+[1
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--321
-
- []
-
-<Figures/Single_Frequency.png, id=107, 589.0005pt x 355.92975pt>
-File: Figures/Single_Frequency.png Graphic file (type png)
-<use Figures/Single_Frequency.png>
-Package pdftex.def Info: Figures/Single_Frequency.png  used on input line 324.
-(pdftex.def)             Requested size: 452.9679pt x 273.73546pt.
-<Figures/MultiFrequency_Explanation.png, id=108, 748.59676pt x 305.943pt>
-File: Figures/MultiFrequency_Explanation.png Graphic file (type png)
-<use Figures/MultiFrequency_Explanation.png>
-Package pdftex.def Info: Figures/MultiFrequency_Explanation.png  used on input line 331.
-(pdftex.def)             Requested size: 748.59492pt x 305.94223pt.
-
-LaTeX Warning: Float too large for page by 3.46957pt on input line 334.
-
-[7] [8 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_1/Figures/Single_Frequency.png>] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_1/Figures/MultiFrequency_Explanation.png>] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux)
+{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -494,20 +442,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Chapt_1.out' has not changed.
-(rerunfilecheck)             Checksum: 483A474A7CCBE5D2F2CD5C3F2F26A0B0;1304.
+(rerunfilecheck)             Checksum: A57663A4292CA28F7BB3D8D3341BCC35;484.
  ) 
 Here is how much of TeX's memory you used:
- 12324 strings out of 476402
- 197934 string characters out of 5794312
- 1947542 words of memory out of 5000000
- 34155 multiletter control sequences out of 15000+600000
- 566088 words of font info for 66 fonts, out of 8000000 for 9000
+ 12154 strings out of 476402
+ 193923 string characters out of 5794312
+ 1940542 words of memory out of 5000000
+ 34044 multiletter control sequences out of 15000+600000
+ 559617 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,23n,99p,395b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (9 pages, 1120252 bytes).
+ 95i,5n,99p,395b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (3 pages, 49488 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

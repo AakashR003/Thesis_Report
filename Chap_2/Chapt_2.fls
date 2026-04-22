@@ -157,21 +157,7 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Sarkic_Section.png
+INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -195,91 +181,99 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Heave.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Convergence_Study_A4.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb

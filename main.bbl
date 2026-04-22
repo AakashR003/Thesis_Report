@@ -45,6 +45,11 @@ Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
 \newblock \href {https://doi.org/10.1080/10168664.2019.1639480}
   {\path{doi:10.1080/10168664.2019.1639480}}.
 
+\bibitem{scipy}
+Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
+\newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
+\newblock URL: \url{https://www.scipy.org/}.
+
 \bibitem{sarkic2012}
 Anina {\v S}arki{\'c}, Rupert Fisch, R{\"u}diger H{\"o}ffer, and Kai-Uwe
   Bletzinger.
@@ -67,11 +72,6 @@ Pooyan Dadvand, Riccardo Rossi, and Eugenio O{\~n}ate.
 \bibitem{menter}
 Florian~R Menter.
 \newblock Turbulence {{Modeling}} for {{Engineering Flows}}.
-
-\bibitem{scipy}
-Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
-\newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
-\newblock URL: \url{https://www.scipy.org/}.
 
 \bibitem{noda2003}
 M~Noda, H~Utsunomiya, F~Nagao, M~Kanda, and N~Shiraishi.

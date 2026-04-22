@@ -5,18 +5,236 @@
 
 
 
-\chapter{Nonlinear Study}
+\chapter{Single Frequency Simulations}
 
-In this chapter, the nonlinearity characteristics of Sarkic's section are studied to validate the principle of 
-linear superposition and Scanlan's linearity assumption. This section is organised as follows, 
+This chapter investigates the linearity of flutter derivatives using single-frequency forced-motion simulations with 
+prescribed heave and pitch motions. The computational setup and mesh convergence are first established to ensure the 
+reliability of the simulations.
 
-\begin{flushleft}
-\hspace{2cm}1. Motivation for Nonlinearity Study \\
-\hspace{2cm}2. Simulation Parameters \\
-\hspace{2cm}3. Results and Inferences \\
-\end{flushleft}
+The motion amplitudes are systematically increased from small values (0.68\% heave ratio and 1° pitch) to larger levels 
+(8.20\% heave ratio and 8° pitch), extending beyond the commonly assumed linear range. For each amplitude, flutter derivatives 
+are computed across a range of reduced velocities.
 
-\section{Motivation for Nonlinearity Study}
+The aerodynamic response is analyzed using flutter derivative evaluation, spectral decomposition of force signals, 
+phase relationship assessment, and pressure distribution study. This investigation is focused verification of Scanlan's 
+linearity assumption and the applicability of linear superposition, while also identifying which analysis methods 
+are most efficient in capturing different forms of nonlinearity. Based on this, a clear baseline is established for selecting 
+appropriate motion amplitudes in the subsequent multi-frequency simulations.
+
+\section{Simulation Setup and Methodology}
+
+\subsection{CFD Model} 
+
+The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}).  
+Since forced motion oscillation tests are conducted, the structure, i.e., the bridge 
+deck cross-section is modelled as an opaque object in the fluid domain without any physics parameters 
+like Stiffness and mass. Hence it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
+\cite{sarkic2012}, shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
+specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this. \\
+
+The Fluid domain is meshed with finer meshes near the structure and with coarser meshes farther away to have optimal 
+meshing. Hence, to produce a smoother mesh transitions, fluid domain is divided into five subregions as shown in Figure \ref{fig:GiD_Model_2}
+
+\vspace{0.5 cm}
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/Mesh_Convergence_Study/Virtual_Wind_Tunnel_Dimensions.png}
+    \caption{Virtual Wind Tunnel Dimensions}
+    \label{fig:Virtual_Wind_Tunnel_Dimensions}
+\end{figure}
+
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/Mesh_Convergence_Study/Sarkic_Section.png}
+    \caption{Sarkic Cross-Section}
+    \label{fig:Sarkic_Section}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\subsection{Solver Information} 
+
+The GiD model is solved with an open source Multiphysics solver - KratosMultiphysics \cite{dadvand2010}. 
+The boundary conditions applied to Fluid domain are shown in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
+The turbulence is modeled using an Unsteady Reynolds-Averaged Navier-Stokes (URANS) approach with the 
+$k$--$\omega$ SST turbulence model \cite{menter}, a turbulence intensity of 0.1, and a turbulent mixing length of 0.0588~m.\\
+
+The velocity is set to 1 m/s and the corresponding Reynolds number for the flow is $2.43*10^4$. The time step is 
+taken as 0.002 seconds (Corresponding CFL is shown in Table~\ref{tab:mesh_convergence}). The total simulation time is divided into three phases: ramp-up time, stabilization time, and stable 
+time period. In Ramp-up phase the flow velocity is steadily increased from 0 to 1 m/s to avoid numerical instabilities. 
+In Stabilization phase, the flow is allowed to stabilize. The stable time period is the duration used for analysis. 
+Ramp-up time and stabilization time are determined based on the vortex shedding frequency of the section.
+From EN 1991, the Strouhal number of the section is taken as 0.1. \\ [0.1cm]
+
+Vortex shedding frequency = $ \frac{0.1 * 1}{0.366} $ = 0.273 Hz \\ [0.1cm]
+Ramp up time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
+Stabilization time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
+
+Since the interest of this thesis is to capture the flutter response, 
+stable time period is time taken for 10 complete forced motion oscillations. But as each reduced velocity 
+has a different forced motion frequency, the stable phase of the simulations is different. A higher reduced velocity will 
+have a lower oscillating frequency and hence requiring a higher time of simulation and vice versa. Hence its calculation is 
+shown after the information about the prescribed motion frequency is provided in the consecutive chapters. 
+
+%Check: if any other reduced velocity is taken, the stable time period is mentioned in the respective chapter.
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/Mesh_Convergence_Study/GiD_Model_2.png}
+    \caption{GiD Model of Virtual Wind Tunnel}
+    \label{fig:GiD_Model_2}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\subsection{Mesh Convergence Study} 
+
+A mesh convergence study is conducted to determine the optimal mesh element size. Five models with progressive 
+mesh sizes are created and convergence of 8 derivatives are analyzed. The Table~\ref{tab:mesh_convergence} shows the models
+and corresponding mesh sizes at each zone. The study is performed for a single point on the flutter derivative curve
+at a reduced velocity of 10.93. From the literature, it is identified 5$\%$ of width of bridge deck as the heave amplitude 
+and 5 degree as pitch amplitude are the appropriate forced motion amplitude such that aerodynamic forces show linear behavior.  \\ [0.1cm]
+
+Heave amplitude = $ \frac{5 * 0.366}{100} $ = 0.0183 m\\ [0.1cm]
+Pitch amplitude = 0.087 radians\\ [0.1cm]
+Motion Frequency = 0.25 Hz\\ [0.1cm] 
+Stable time period = $ 10 * \frac{1}{0.25} $ = 40 seconds\\ [0.1cm]
+Total simulation time = Ramp-up time + Stabilization time + Stable time period = 7.32 + 7.32 + 40 = 54.64 seconds\\ [0.1cm]
+
+
+\begin{table}[htbp]  
+    \centering
+    \caption{Mesh Convergence Study Results}
+    \label{tab:mesh_convergence}
+    \begin{tabular}{|l|c|c|c|c|c|}
+        \hline
+        \textbf{} & \textbf{Model 1} & \textbf{Model 2} & \textbf{Model 3} & \textbf{Model 4} & \textbf{Model 5} \\ \hline
+        Zone A (m) & 0.25 & 0.25 & 0.2304 & 0.2112 & 0.192 \\ \hline
+        Zone B (m) & 0.1 & 0.12 & 0.1152 & 0.1056 & 0.096 \\ \hline
+        Zone C (m) & 0.054 & 0.08 & 0.0576 & 0.0528 & 0.048 \\ \hline
+        Zone D (m) & 0.018 & 0.025 & 0.0288 & 0.0264 & 0.024 \\ \hline
+        Zone E (m) & - & - & 0.0096 & 0.0088 & 0.008 \\ \hline
+        Zone F (m) & 0.009 & 0.008 & 0.0048 & 0.0044 & 0.004 \\ \hline
+        Deck Surface (m) & 0.0045 & 0.003 & 0.0024 & 0.0022 & 0.002 \\ \hline
+        Width/ min mesh size & 81.333 & 122 & 152.5 & 166.36 & 183 \\ \hline
+        Total Elements & 7368 & 15704 & 20854 & 24374 & 29408 \\ \hline
+        Minimum Mesh Size-GID & 0.00358 & 0.00245 & 0.00196 & 0.00179 & 0.00159 \\ \hline
+        Velocity (m/s) & 1 & 1 & 1 & 1 & 1 \\ \hline
+        Time step & 0.004 & 0.002 & 0.002 & 0.002 & 0.002 \\ \hline
+        CFL & 1.11 & 0.81 & 1.02 & 1.11 & 1.26 \\ \hline
+    \end{tabular}
+\end{table}
+
+With this simulation setup, the CFD simulations are conducted for all five models 
+Simulations Result of the Model 3 is shown in figure~\ref{fig:CFD_Result}. 
+From this result, pressures on the structural surface is integrated to obtain aerodynamic lift and moment
+forces. Figure~\ref{fig:Model_3_CFD_Output} shows the aerodynamic lift and moment forces obtained for Model 3. 
+These aerodynamic forces are then used to calculate the flutter derivatives. 
+The convergence of flutter derivatives is then analyzed. 
+
+
+
+\begin{figure}[htbp]  
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/CFD_Result.png}
+    \caption{CFD Results for Model 3}
+    \label{fig:CFD_Result}
+\end{figure}
+
+\vspace{0.5 cm}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/Model_3_Heave.png}
+        \caption{Heave}
+        \label{fig:Heave}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Figures/Mesh_Convergence_Study/Model_3_Pitch.png}
+        \caption{}Pitch
+        \label{fig:Pitch}
+    \end{subfigure}
+    \caption{Heave Motion}
+    \label{fig:Model_3_CFD_Output}
+\end{figure}
+
+The results of the mesh convergence study are shown in Figure~\ref{fig:convergence}. It is observed that the 
+derivatives $H_1,H_3,A_1,A_2,$ and $A_3$ exhibited good convergence, while derivatives  $H_2,H_4,$ and $A_4$ displayed 
+oscillatory convergence behavior. This behavior is consistent with findings in the literature, as these 
+particular derivatives are known to be more difficult to capture accurately. From the study it is concluded, 
+Model 3 is optimal and this mesh size is used for all subsequent simulations.
+
+%% Figures for Mesh Convergence Study
+\begin{figure}[htbp]  
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H1}
+        \caption{H1}
+        \label{fig:h1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A1}
+        \caption{A1}
+        \label{fig:a1}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H2}
+        \caption{H2}
+        \label{fig:h2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A2}
+        \caption{A2}
+        \label{fig:a2}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H3}
+        \caption{H3}
+        \label{fig:h3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A3}
+        \caption{A3}
+        \label{fig:a3}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H4}
+        \caption{H4}
+        \label{fig:h4}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A4}
+        \caption{A4}
+        \label{fig:a4}
+    \end{subfigure}
+    
+    \caption{Mesh Convergence Study Results}
+    \label{fig:convergence}
+\end{figure}
+
+
+\section{Influence of Amplitude on Flutter Derivatives}
 
 The base assumption of the Multi-Frequency Method is that the principle of linear superposition holds. 
 This assumption is derived from Scanlan's linearity assumption, which states that for small heave and pitch amplitudes, 
@@ -27,16 +245,25 @@ the prescribed motion, but the phase shift can be non-constant.
 Therefore, it becomes essential to validate the principle of linear superposition and study the 
 linearity limit to ensure the Multi-Frequency method is valid and to create a framework for this method.\\
 
-This study focuses on validating the assumption and extending the knowledge of the nonlinearity characteristics 
-of Sarkic's section. Although studying the nonlinearity characteristics of a particular cross-section may make 
+This section focuses on validating the assumption and extending the knowledge of the nonlinearity characteristics 
+of Sarkic's section. Although investigating the nonlinearity characteristics of a particular cross-section may make 
 the developed framework specific to that cross-section, this is done so that any unexpected discrepancies 
 in the results of the Multi-Frequency method can be reasonably explained. These inferences from the nonlinearity study are then generalised 
 when framing the procedure for the Multi-Frequency method.\\
 
 The study is conducted by increasing the heave and pitch motion amplitudes and then examining the obtained 
-flutter derivatives, aerodynamic forces, and their phase. 
+flutter derivatives, aerodynamic forces, and their phase. The following results are studied to understand the nonlinearity characteristics of the section:
 
-\section{Simulation Parameters}
+\begin{flushleft}
+\hspace{2cm}1. Comparison of Flutter Derivatives \\
+\hspace{2cm}2. Spectral Analysis \\
+\hspace{2cm}3. Aerodynamic Force and Moment Analysis \\
+\hspace{2cm}4. Pressure Distribution Study \\
+\hspace{2cm}5. Amplitude Impact on Critical Wind Speed \\
+\end{flushleft}
+
+
+\subsection{Simulation Parameters}
 
 Since the motion amplitudes are the only parameters changed, the remaining parameters derived from Chapter 2 are kept the same.
 From the literature review, 5$\%$ of the section width for heave amplitude and 5 degrees for pitch are 
@@ -44,7 +271,7 @@ the linearity limit. Hence, six CFD simulations are performed by linearly increa
 amplitudes from 0.68$\%$ to 8.20$\%$ and the pitch amplitude from 1 degree to 8 degrees. 
 Table~\ref{tab:nonlinear_amplitude} shows the simulation parameters for the amplitude ranges.\\
 
-For each heave and pitch motion amplitude, aerodynamic forces are computed at 8 different reduced velocities (shown in Table~\ref{tab:Reduced velocities}). As described in 
+For each heave and pitch motion amplitude, aerodynamic forces are computed at 8 different reduced velocities (shown in Table~\ref{tab:Reduced velocities}). As mentioned in 
 Chapter 2, the stable time period for each of the reduced velocities is also given the table. A total of $7 \times 8 \times 2 = 112$ 
 simulations are conducted. 
 
@@ -56,19 +283,19 @@ simulations are conducted.
         \hline
         & \textbf{Heave Amplitude (m)} & \textbf{Heave ratio} & \textbf{Pitch (radians)} & \textbf{Pitch (Degree)} \\
         \hline
-        \textbf{Amplitude 0} & 0.0025 & 0.68 & 0.017 & 0.97 \\
+        \textbf{Amplitude Scheme 0} & 0.0025 & 0.68 & 0.017 & 0.97 \\
         \hline
-        \textbf{Amplitude 1} & 0.005 & 1.36 & 0.027 & 1.55 \\
+        \textbf{Amplitude Scheme 1} & 0.005 & 1.36 & 0.027 & 1.55 \\
         \hline
-        \textbf{Amplitude 2} & 0.01 & 2.73 & 0.054 & 3.09 \\
+        \textbf{Amplitude Scheme 2} & 0.01 & 2.73 & 0.054 & 3.09 \\
         \hline
-        \textbf{Amplitude 3} & 0.015 & 4.09 & 0.07 & 4.01 \\
+        \textbf{Amplitude Scheme 3} & 0.015 & 4.09 & 0.07 & 4.01 \\
         \hline
-        \textbf{Amplitude 4} & 0.0183 & 5 & 0.087 & 4.98 \\
+        \textbf{Amplitude Scheme 4} & 0.0183 & 5 & 0.087 & 4.98 \\
         \hline
-        \textbf{Amplitude 5} & 0.02 & 5.46 & 0.1047 & 6 \\
+        \textbf{Amplitude Scheme 5} & 0.02 & 5.46 & 0.1047 & 6 \\
         \hline
-        \textbf{Amplitude 6} & 0.03 & 8.20 & 0.14 & 8.02 \\
+        \textbf{Amplitude Scheme 6} & 0.03 & 8.20 & 0.14 & 8.02 \\
         \hline
     \end{tabular}
 \end{table}
@@ -85,17 +312,6 @@ simulations are conducted.
     \end{tabular}
 \end{table}
 
-\section{Results and Inferences}
-
-The following results are studied to understand the nonlinearity characteristics of the section:
-
-\begin{flushleft}
-\hspace{2cm}1. Comparison of Flutter Derivatives \\
-\hspace{2cm}2. Spectral Analysis \\
-\hspace{2cm}3. Aerodynamic Force and Moment Analysis \\
-\hspace{2cm}4. Pressure Distribution Analysis \\
-\hspace{2cm}5. Influence of Nonlinearity on Critical Velocity \\
-\end{flushleft}
 
 \subsection{Comparison of Flutter Derivatives}
 
@@ -103,15 +319,16 @@ Figure~\ref{fig:Combined_Flutter_Derivatives} shows the flutter derivatives obta
 and pitch amplitudes. It is observed that derivatives $H_1$, $H_4$, $A_1$, and $A_4$ are equal for amplitudes up to a 
 heave ratio of 5.46$\%$. When it exceeds this value, the flutter derivatives vary. This validates the thumb 
 rule of a 5$\%$ linearity limit. For derivatives $H_2$, $H_3$, and $A_3$, the linear 
-limit holds up to 3 degrees, although $H_2$ exhibits a slight nonlinear behaviour within that range. 
+limit holds up to 3 degrees, although $H_2$ exhibits a slight nonlinear behavior within that range. 
 This is slightly lower than the thumb rule of 5 degrees. \\
 
 From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2$ significantly deviates beyond 1.55 degrees. 
-It should be noted that derivative $A_2$ even changes its sign at Amplitude Case 3 (pitch degree = 4.01). 
+It should be noted that derivative $A_2$ even changes its sign at Amplitude Scheme 3 (pitch degree = 4.01). 
+The reason for these behaviours is investigated and explained in the following sections. 
 
 \begin{figure}[htbp]  
     \centering
-    \includegraphics[width=1\textwidth]{Figures/Combined_Flutter_Derivative.png}
+    \includegraphics[width=1\textwidth]{Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png}
     \caption{Combined Flutter Derivatives}
     \label{fig:Combined_Flutter_Derivatives}
 \end{figure}
@@ -120,119 +337,44 @@ It should be noted that derivative $A_2$ even changes its sign at Amplitude Case
 
 Spectral analysis is a powerful tool to identify the presence of nonlinear terms in the obtained forces and validating scanlan's linearity assumption. 
 If the spectrum of the obtained forces contains higher-order sine terms other than applied frequency, 
-then nonlinear behaviour is present. In this section, the spectrum of the obtained aerodynamic lift force and moment is analysed for different amplitudes. 
-Discrete Fourier Transform (DFT) is used to obtain the spectrum of the obtained forces.
-Plots of spectrum corresponding to the reduced velocity of 21.86 are shown, since this is the most affected by nonlinearity.\\
+then nonlinear behavior is present. In this section, the spectrum of the obtained aerodynamic lift force and moment is analyzed for different amplitudes. 
+Discrete Fourier Transform (DFT) is used to obtain the spectrum of the forces.
+Plots of spectrum corresponding to the reduced velocity of 21.86 are taken for explanation, since this is the most affected by nonlinearity.\\
 
-From Figure~\ref{fig:Frequency_Domain_Analysis_Heave} for all heave ampltiude range, the spectrum of the obtained both aerodynamic forces and moments are clean, 
-indicating that the obtained forces are linear with respect to the prescribed motion.\\
+Figure~\ref{fig:Frequency_Domain_Analysis_Heave} shows the spectrum for amplitude scheme 6 for heave motion. 
+The y axis is presented in log scale so that noises are clearly visible. 
+It is observed that the spectrum of the obtained both lift force and moment are clean, 
+indicating that the obtained forces are linear with respect to the prescribed motion. 
+This is same for all amplitude schemes which shall be observed in appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86} and \ref{fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86} \\
 
-From Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, for pitch amplitude up to 5 degrees for pitch, the spectrum of the obtained both aerodynamic forces and moments are clean, 
-indicating that the obtained forces are linear with respect to the prescribed motion. Above these limits, significant noise is present, indicating the 
-presence of higher-order sine terms and, therefore nonlinearity starts to appear. \\
+Figure~\ref{fig:Frequency_Domain_Analysis_Pitch} shows the Lift force spectrum for amplitude scheme 3 and 4 for pitch motion (pitch degrees of 4.01 and 4.98). 
+In general, the spectrum of pitch motion is noisy when visuvalised with log scale. But in the normal scale, this spectrum is clean (less noisy) upto scheme 3. 
+It is observed that the spectrum changes from clean to noisy from scheme 3 to 4, indicating the presence of higher-order sine terms and, therefore nonlinearity starts to appear. 
+For all above this pitch degree, the spectrum nosiy. This shall be verified in appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86} and \ref{fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86}.
+This case is same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
+which is slightly lower than the thumb rule of 5 degrees.\\
 
 On comparing Figure~\ref{fig:Combined_Flutter_Derivatives} and Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, 
-it can be observed that the nonlinearity in flutter derivatives $A_2$ and $H_2$ starts to deviate at a lower pitch degree than the nonlinearity in the obtained spectrum analysis.
-Hence this deviation in flutter derivatives is not due to nonlinearity in the obtained forces. Though it validates the thumb rule of 5 degrees for pitch motion, 
-it raises the question of why the flutter derivatives show nonlinearity at a lower pitch degree than the obtained forces.\\
+it can be observed that the nonlinearity in flutter derivatives $A_2$ and $H_2$ starts to occur at a lower pitch degree (3.09 degrees) than the nonlinearity in the obtained spectrum analysis (4.98 degrees).
+Hence this deviation in flutter derivatives is not due to nonlinearity in the obtained forces. Though spectrum analysis nearly validates the thumb rule of 5 degrees for pitch motion, 
+it raises the question of why the flutter derivatives show nonlinearity at a lower pitch degree than the obtained forces.
+This is investigated in the next section with a study on aerodynamic forces and phases. 
+\\
 
 \begin{figure}[htbp]  
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_0.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_Scheme_0}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_0.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_Scheme_0}
-    \end{subfigure}
-    
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_1.png}
-    %     \caption{}
-    %     \label{fig:Heave_DFT_Fy_amplitude_Scheme_1}
-    % \end{subfigure}
-    % \hfill
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_1.png}
-    %     \caption{}
-    %     \label{fig:Heave_DFT_moment_amplitude_Scheme_1}
-    % \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_Scheme_2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_2.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_Scheme_2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_Scheme_3}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_3.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_Scheme_3}
-    \end{subfigure}
+    \centering    
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_4.png}
-        \caption{}
-        \label{fig:Heave_DFT_Fy_amplitude_Scheme_4}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_4.png}
-        \caption{}
-        \label{fig:Heave_DFT_moment_amplitude_Scheme_4}
-    \end{subfigure}
-
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_5.png}
-    %     \caption{}
-    %     \label{fig:Heave_DFT_Fy_amplitude_Scheme_5}
-    % \end{subfigure}
-    % \hfill
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_5.png}
-    %     \caption{}
-    %     \label{fig:Heave_DFT_moment_amplitude_Scheme_5}
-    % \end{subfigure}    
-
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png}
+        \caption{Lift Force}
         \label{fig:Heave_DFT_Fy_amplitude_Scheme_6}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png}
+        \caption{Moment}
         \label{fig:Heave_DFT_moment_amplitude_Scheme_6}
     \end{subfigure}
 
@@ -241,103 +383,32 @@ it raises the question of why the flutter derivatives show nonlinearity at a low
 \end{figure}
 
 \begin{figure}[htbp]  
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_0.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_Scheme_0}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_0.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_Scheme_0}
-    \end{subfigure}
-    
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_1.png}
-    %     \caption{}
-    %     \label{fig:Pitch_DFT_Fy_amplitude_Scheme_1}
-    % \end{subfigure}
-    % \hfill
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_1.png}
-    %     \caption{}
-    %     \label{fig:Pitch_DFT_moment_amplitude_Scheme_1}
-    % \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_Scheme_2}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_2.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_Scheme_2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_3.png}
+        \caption{Scheme 3 (Pitch degree = 4.01)}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_3.png}
+        \caption{Scheme 3 (Pitch degree = 4.01)}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_3}
     \end{subfigure}
-
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_4.png}
+        \caption{Scheme 4 (Pitch degree = 4.98)}
         \label{fig:Pitch_DFT_Fy_amplitude_Scheme_4}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png}
+        \caption{Scheme 4 (Pitch degree = 4.98)}
         \label{fig:Pitch_DFT_moment_amplitude_Scheme_4}
-    \end{subfigure}
-
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_5.png}
-    %     \caption{}
-    %     \label{fig:Pitch_DFT_Fy_amplitude_Scheme_5}
-    % \end{subfigure}
-    % \hfill
-    % \begin{subfigure}[b]{0.45\textwidth}
-    %     \centering
-    %     \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_5.png}
-    %     \caption{}
-    %     \label{fig:Pitch_DFT_moment_amplitude_Scheme_5}
-    % \end{subfigure}    
-
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Amplitude_Scheme_6.png}
-        \caption{}
-        \label{fig:Pitch_DFT_Fy_amplitude_Scheme_6}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_6.png}
-        \caption{}
-        \label{fig:Pitch_DFT_moment_amplitude_Scheme_6}
     \end{subfigure}
 
     \caption{Frequency Domain Analysis Pitch}
@@ -353,9 +424,10 @@ conducted for phase of the aerodynamic forces and moments.\\
 Figure~\ref{fig:Displacement_Vs_Force} shows plots of prescribed motion amplitude vs aerodynamic force and moment, and 
 prescribed motion amplitude vs phase of aerodynamic force and moment, for both heave and pitch motion. These are plotted for 
 a reduced velocity of 21.86. It can be observed that for heave motion, the lift force and moment amplitude 
-exhibit linear behaviour with respect to the prescribed displacement. Furthermore, the phase of the force and 
-moment is constant. For pitch motion, the lift force and moment shows linear behaviour upto to the pitch degree of 5
-(the moment exhibits very little nonlinearity within this region). This is again consistent with the thumb rule of 5 degrees and 
+exhibit linear behavior with respect to the prescribed displacement. Furthermore, the phase of the force and 
+moment is constant. For pitch motion, the lift force and moment shows linear behavior up to the pitch degree of 5
+(A mild nonlinearity is present and this is the reason small noises was obtained in the spectrum even in lower amplitude scheme for pitch in the previous section). 
+This is again consistent with the thumb rule of 5 degrees and 
 spectral analysis and therefore validating the scanlan's linearity assumption \\
 
 However, the phase is not constant either for the lift force or moment after 3 degrees. To have a 
@@ -374,7 +446,9 @@ at 3 degrees derivative $A_2$ changes its sign. This confirms the sign change in
 It is therefore concluded that the nonlinearity in derivatives $A_2$ and $H_2$ is not due to nonlinearity in the obtained forces, 
 but due to the phase change.
 This is reason the spectrum of the obtained forces is clean even when nonlinearity existed.
-A similar behaviour was observed by \cite{noda2003} and \cite{lin2019}.\\ 
+A similar behavior was observed by \cite{noda2003} and \cite{lin2019}.
+(A detialled study on reasoning this behaviour and comparative analysis with the 
+referenced paper is provided on the next subsection on pressure distribution analysis) \\ 
 
 This observation points to the earlier discussion that Scanlan's linearity assumption is not equivalent to the principle of linear superposition. 
 Though the obtained forces is be linear with respect to the prescribed motion, we cannot linearly superpose it the signals at these amplitudes.\\  
@@ -383,88 +457,60 @@ Since the plot shown before was only for the redcued velocity of 21.86, it is ne
 velocities before finalising the conclusion. The results for all reduced velocities are compiled in Figure~\ref{fig:Compiled_Displacement_Vs_Force}. 
 The x-axis is same as before, the ampltiude case, but the y-axis is modified.\\
 
-This y-axis represents aerodynamic force divided by the prescribed motion amplitude and normalised with respect to the first amplitude case. 
+This y-axis represents aerodynamic force divided by the prescribed motion amplitude and normalised with respect to the first amplitude scheme. 
 The normalisation is done because, different reduced velocities will obtain different values of aerodynamic force per unit motion amplitude.
-Hence, normalisation allows for a better comparison of the nonlinearity characteristics across different reduced velocities.
+With respect to phase, instead of normalising, the relative error to the first amplitude scheme is taken as the y-axis.
+These allow for a better comparison of the nonlinearity characteristics across different reduced velocities.
+
 For a simpler understanding, if the aerodynamic forces are linear, the plot should be a constant horizontal line at value of 1. If the phase is constant, 
-the plot should similarly be a horizontal line.
+the plot should similarly be a horizontal line at value of 0 (indicating error is zero).
 Note that the $y$-axis limits are not uniform across subplots (this should be considered 
 when comparing the degree of nonlinearity between the two figures). The non-uniform limits are 
 kept to see the variations in nonlinearity even when the overall error is small.\\
     
-It can be observed that for heave motion, lift force and moment, and their respective phases remain constant up to heave ratio of 5.46 
-for reduced velocities above 1.71. 
-The is equivalent to the behaviour observed earlier for the reduced velocity of 21.86
-(Figure~\ref{fig:Displacement_Vs_Force}). For pitch motion, the lift force and moment exhibit slight nonlinearity, 
-as seen for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}).  
-Another observation is that the nonlinearity in phase increases with increasing reduced velocity (decreasing frequency).
-This further validates the behaviour observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, 
-where the nonlinearity in $A_2$ and $H_2$ is lower at lower reduced velocities.\\ 
+It can be observed that for heave motion moment, and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
+for reduced velocities above 1.71. This is equivalent to the behavior observed earlier for the reduced velocity of 21.86 
+(Figure~\ref{fig:Displacement_Vs_Force}). The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone shows significant deviation 
+because they are affected by the vortex shedding effect. The spectral leakage from vortex shedding makes capturing derivatives at higher frequencies difficult.
+The similar behavior is observed for the heave lift force as well which shall be verified in appendix~\ref{fig:Appendix_Complete_Compiled_Displacement_Vs_Force}.\\
 
-The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone shows significant deviation 
-in both heave and pitch motions. It is because they are affected by the vortex shedding effect. The spectral leakage 
-from vortex shedding makes capturing derivatives at higher frequencies difficult.\\ 
+For pitch motion, the moment exhibit slight nonlinearity, as seen before for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}).  
+Another observation is that the nonlinearity in phase increases with increasing reduced velocity (decreasing frequency).
+This further validates the behavior observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, 
+where the nonlinearity in $A_2$ and $H_2$ is less at lower reduced velocities.\\ 
 
 To conclude, although Scanlan's assumption of linearity holds for the 
 obtained forces, aerodynamic derivatives may still exhibit nonlinearity. And the essential note is that this 
-nonlinear behaviour is not detectable with spectrum analysis. 
+nonlinear behavior is not detectable with spectrum analysis. 
 
 % Nonlinearity Study
 \begin{figure}[htbp]  
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/Lift_Force_vs_Amplitude.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png}
+        \caption{Magnitude of forces - Heave}
         \label{fig:Heave_Fy_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/Lift_Force_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Pitch_Fy_vs_Amplitude}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_Phases_vs_Amplitude.png}
+        \caption{Phase of of forces - Heave}
+        \label{fig:Heave_Phases_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Heave_PhaseFy_vs_Amplitude}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Pitch_LiftForce_and_Moment_vs_Amplitude.png}
+        \caption{Magnitude of forces - Pitch}
+        \label{fig:Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Pitch_PhaseFy_vs_Amplitude}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/Moment_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Heave_Moment_vs_Amplitude}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/Moment_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Pitch_Moment_vs_Amplitude}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Heave/PhaseMoment_vs_Amplitude.png}
-        \caption{}
-        \label{fig:Heave_PhaseMx_vs_Amplitude}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Displacement_Vs_Force/Pitch/PhaseMoment_vs_Amplitude.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Displacement_Vs_Force/Pitch/Pitch_Phases_vs_Amplitude.png}
+        \caption{Phase of forces - Pitch}
         \label{fig:Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
     
@@ -477,57 +523,29 @@ nonlinear behaviour is not detectable with spectrum analysis.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
-        \label{fig:Compiled_Heave_Fy_vs_Amplitude}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
-        \label{fig:Compiled_Pitch_Fy_vs_Amplitude}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
-        \label{fig:Compiled_Heave_PhaseFy_vs_Amplitude}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseLift_Force_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
-        \label{fig:Compiled_Pitch_PhaseFy_vs_Amplitude}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \caption{Magnitude of Moment - Heave}
         \label{fig:Compiled_Heave_Moment_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
+        \caption{Magnitude of Moment - Pitch}
         \label{fig:Compiled_Pitch_Moment_vs_Amplitude}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Heave/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png}
+        \caption{Phase of Moment - Heave}
         \label{fig:Compiled_Heave_PhaseMx_vs_Amplitude}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_vs_Amplitude_Schemes_RelativeToFirst.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png}
+        \caption{Phase of Moment - Pitch}
         \label{fig:Compiled_Pitch_PhaseMx_vs_Amplitude}
     \end{subfigure}
     
@@ -536,12 +554,13 @@ nonlinear behaviour is not detectable with spectrum analysis.
 \end{figure}
 
 
-\subsection{Pressure Distribution Analysis}
+\subsection{Pressure Distribution Study}
 
 As mentioned earlier, a similar nonlinearity of derivatives $A_2$ and $H_2$ are observed by \cite{noda2003} and \cite{lin2019}. 
 However, in those works the nonlinearity were for a larger pitch 
 angles than observed here. This difference raises the question of whether the sane underlying physical mechanism 
-is responsible for the phenomenon.\\
+is responsible for the phenomenon. Hence in this subsection, the reason behind this behaviour is analysed and verified whether is it 
+similar to what is observed in the reference.\\
 
 In that paper, it has been explained that the phase shift is primarily due to changes in the flow reattachment 
 point which is the result of variation in pressure distribution along the section. At small pitch amplitudes, 
@@ -550,23 +569,28 @@ substantial changes between the positive and negative peaks of the pitch motion 
 distribution varies highly over the cycle because the flow field exhibits significant alterations during 
 the peak pitch motion. This is the cause of observed phase deviation.\\
 
-In order to determine whether a similar mechanism is responsible for the behaviour seen in the present study, 
-pressure distributions were extracted and compared across selected pitch amplitudes. Time instants were chosen 
-to cover one full oscillation cycle, starting from the negative peak displacement at 30 seconds 
+To perform a similar study, pressure distributions for the present simulation were extracted and compared across different pitch amplitudes. Time instants were chosen 
+to cover one full oscillation cycle, starting from pitch degree 0 (At simulation time of 32 seconds) to the maximum negative peak displacement at 38 seconds 
 (see the prescribed motion in Figure~\ref{fig:Prescribed Displacement}).\\
 
-Figure~\ref{fig: Amplitude Study - 0 - Pitch Motion - Pressure Distribution} shows the pressure distribution 
-around the cross-section at several time steps for the smallest amplitude case (Amplitude 0). The pressure field 
-remains quite constant across the different phases of the motion. In contrast, for amplitude case 6 (Figure~\ref{fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution}) 
+Figure~\ref{fig: Comparitive Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution 
+around the cross-section at several time steps for the smallest amplitude scheme (scheme 0). The pressure field 
+remains quite constant across the different phases of the motion. In contrast, for amplitude scheme 6 (Figure~\ref{fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution}) 
 shows the pressure distribution varies highly.\\ 
 
-Although distribution of pressure itself changes, this behaviour mainly affects the pitching moment (and therefore derivatives $A_2$ and $H_2$) 
+Figure~\ref{fig: Comparitive Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution plotted around the 
+bridge cross-section for the amplitude scheme 0 and 6 (Pressure inward represents negative pressure). It shall be observed that the for scheme 0, the pressure distribution
+is consistent among all 4 time steps. But for the amplitude scheme 6, it varies highly. 
+
+Although distribution of pressure itself changes, this behavior mainly affects the pitching moment (and therefore derivatives $A_2$ and $H_2$) 
 rather than the lift force (related to $A_3$ and $H_3$). It is because, the integrated lift force remains approximately constant 
 even at higher pitch angles, but the distribution of pressure on structure surface changes considerably. As a result, the effective centre 
 of pressure (the moment arm weighted by the pressure distribution) shifts during the cycle, which is directly 
-reflected in the pitching moment. Since the lift force is the net vertical integration, it is much less sensitive to these redistributions.\\
+reflected in the pitching moment. Since the lift force is the net vertical integration, it is much less sensitive to these redistributions.
+This observation is consistent with the observations from the reference and therefore it shall be understood a similar mechanism is responsible 
+for this discrepency in the derivative A2 and H2. \\
 
-Finally, it should be noted that the onset of this nonlinear behaviour in pitch motion are strongly 
+Finally, it should be noted that the onset of this nonlinear behavior in pitch motion are strongly 
 influenced by the breadth-to-depth ratio of the section. Hence, the amplitude threshold 
 at which phase nonlinearity becomes significant will vary across different cross-sectional shapes.
 
@@ -574,81 +598,117 @@ at which phase nonlinearity becomes significant will vary across different cross
 
 \begin{figure}[htbp]  
     \centering
-    \includegraphics[width=1\textwidth]{Figures/Pitch_Study/Prescribed Displacement.png}
+    \includegraphics[width=1\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png}
     \caption{Prescribed Displacement}
     \label{fig:Prescribed Displacement}
 \end{figure}
 
 \begin{figure}[htbp]  
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png}
         \caption{Time 30 seconds}
         \label{fig: Time 30 seconds}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png}
         \caption{Time 32 seconds}
         \label{fig:Time 32 seconds}
     \end{subfigure}
     
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png}
         \caption{Time 34 seconds}
         \label{fig:Time 34 seconds}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png}
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png}
         \caption{Time 36 seconds}
         \label{fig:Time 36 seconds}
     \end{subfigure}
     
-    \caption{Amplitude Study - 0 - Pitch Motion - Pressure Distribution}
-    \label{fig: Amplitude Study - 0 - Pitch Motion - Pressure Distribution}
-\end{figure}
-
-\begin{figure}[htbp]  
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png}
-        \caption{Time 30 seconds}
-        \label{fig: Time 30 seconds}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png}
-        \caption{Time 32 seconds}
-        \label{fig:Time 32 seconds}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png}
-        \caption{Time 34 seconds}
-        \label{fig:Time 34 seconds}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png}
-        \caption{Time 36 seconds}
-        \label{fig:Time 36 seconds}
-    \end{subfigure}
-    
-    \caption{Amplitude Study - 6 - Pitch Motion - Pressure Distribution}
-    \label{fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution}
+    \caption{Comparitive Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion}
+    \label{fig: Comparitive Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion}
 \end{figure}
 
 
-\subsection{Influence of Nonlinearity on Critical Velocity}
+
+% \begin{figure}[htbp]  
+%     \centering
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_30.png}
+%         \caption{Time 30 seconds}
+%         \label{fig: Time 30 seconds}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_32.png}
+%         \caption{Time 32 seconds}
+%         \label{fig:Time 32 seconds}
+%     \end{subfigure}
+    
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_34.png}
+%         \caption{Time 34 seconds}
+%         \label{fig:Time 34 seconds}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Amp0_Pressure_Pitch_0.125_36.png}
+%         \caption{Time 36 seconds}
+%         \label{fig:Time 36 seconds}
+%     \end{subfigure}
+    
+%     \caption{Amplitude Study - 0 - Pitch Motion - Pressure Distribution}
+%     \label{fig: Amplitude Study - 0 - Pitch Motion - Pressure Distribution}
+% \end{figure}
+
+% \begin{figure}[htbp]  
+%     \centering
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_30.png}
+%         \caption{Time 30 seconds}
+%         \label{fig: Time 30 seconds}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_32.png}
+%         \caption{Time 32 seconds}
+%         \label{fig:Time 32 seconds}
+%     \end{subfigure}
+    
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_34.png}
+%         \caption{Time 34 seconds}
+%         \label{fig:Time 34 seconds}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Pitch_Study/Amp_6/Amp6_Pressure_Pitch_0.125_36.png}
+%         \caption{Time 36 seconds}
+%         \label{fig:Time 36 seconds}
+%     \end{subfigure}
+    
+%     \caption{Amplitude Study - 6 - Pitch Motion - Pressure Distribution}
+%     \label{fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution}
+% \end{figure}
+
+
+\subsection{Amplitude Impact on Critical Wind Speed}
 
 Lastly, the influence of this nonlinearity on the critical velocity is studied. 
 For the calculation of critical velocity, structural parameters are required. 
@@ -689,29 +749,30 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/CriticalVelocity_vs__Amplitude_Scheme.png}
-    \caption{Critical wind speed vs.\ Amplitude Scheme}
-    \label{fig:CriticalVelocity_Vs_Amplitude_Scheme}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png}
+        \caption{Critical wind speed vs.\ Amplitude Scheme}
+        \label{fig:CriticalVelocity_Vs_Amplitude_Scheme}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png}
+        \caption{Reduced critical wind speed vs.\ Amplitude Scheme}
+        \label{fig:ReducedVelocity_Vs_Amplitude_Scheme}
+    \end{minipage}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.75\textwidth]{Figures/ReducedVelocity_Vs__Amplitude_Scheme.png}
-    \caption{Reduced critical wind speed vs.\ Amplitude Scheme}
-    \label{fig:ReducedVelocity_Vs_Amplitude_Scheme}
-\end{figure}
 
 \section{Observations and Discussion}
 
-\begin{enumerate}
-    \item The linearity limit for heave motion agrees with the thumb rule; therefore, there should not be any issue with the Multi-Frequency method as long as the amplitude remains within this limit.
-    
-    \item Scanlan's assumptions and the principle of superposition are not equivalent and may differ; this is most clearly seen with pitch motion.
-    
-    \item Therefore, when validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$.
-    
-    \item Although the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the important finding here is that the present model exhibits nonlinearity at a much lower pitch degree. While the reason for this behaviour is linked to the reattachment point, an important question remains: what governs the onset of this behaviour, and why do different studies report different nonlinearity limits? This may be related to sectional properties rather than CFD modelling choices.
-\end{enumerate}
+The linearity limit for heave motion agrees with the thumb rule; therefore, there should not be any issue with the 
+Multi-Frequency method as long as the amplitude remains within this limit. Scanlan's assumptions and the principle of 
+superposition are not equivalent and may differ, with this being most clearly seen with pitch motion. Therefore, when 
+validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$. Although 
+the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the important finding here is that 
+the present model exhibits nonlinearity at a much lower pitch degree for sarkic cross-section. 
 
 
 \end{document}
