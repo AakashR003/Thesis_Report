@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  21 APR 2026 00:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  22 APR 2026 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,16 +418,16 @@ Package hyperref Info: Link coloring OFF on input line 2.
 
 Chapter 1.
 
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 17.
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 1 undefined on input line 16.
 
 
-LaTeX Warning: Citation `ScanlanRosenbaum1966' on page 1 undefined on input line 18.
+LaTeX Warning: Citation `scanlan1971' on page 1 undefined on input line 17.
 
 
-LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 25.
+LaTeX Warning: Citation `huang2011' on page 1 undefined on input line 24.
 
 
-LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 34.
+LaTeX Warning: Citation `Martínez-López_2023' on page 1 undefined on input line 35.
 
 [1
 
@@ -447,13 +447,13 @@ Package rerunfilecheck Info: File `Chapt_1.out' has not changed.
 Here is how much of TeX's memory you used:
  12154 strings out of 476402
  193923 string characters out of 5794312
- 1939542 words of memory out of 5000000
+ 1940542 words of memory out of 5000000
  34044 multiletter control sequences out of 15000+600000
  559617 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,5n,99p,395b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\aakas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (3 pages, 50153 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.pdf" (3 pages, 49488 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
