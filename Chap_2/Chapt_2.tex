@@ -12,22 +12,22 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 Structural wind engineering can be viewed as a field in civil engineering studying how a structure will respond when exposed to wind. 
 This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
 The response of a structure to a wind load can be broadly classified into two types: (1) along-wind response and (2) across-wind response. 
-long-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
+Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
 act perpendicular to the direction of wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
 Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
 of the structure due to the mean wind load is analyzed. In dynamic analysis, the response of the structure due to the fluctuating component (time-varying) of the 
 wind load is considered. The static analysis primarily involves along-wind response created due to the drag force exerted by wind on the structure. 
 The major sources of dynamic wind loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations. 
 
-Buffeting is one of main example of Extraneously induced excitations, which is along wind response caused by turbulence in the wind. 
+Buffeting is one of the main examples of extraneously induced excitations, which is an along-wind response caused by turbulence in the wind. 
 This shall be understood as, if we plot a graph between wind velocity (acting on the structure) vs time, then the mean of this wind velocity is the static component and the variance
-of this plot is the buffeting component. The calculation of buffeting component is given EN 1991-1-4. 
+of this plot is the buffeting component. The calculation of the buffeting component is given in EN 1991-1-4. 
 
-Next is Instability induced excitations. Vortex induced vibration (VIV) is an example Instability induced excitations which is an across wind response that occurs 
+Next is instability-induced excitations. Vortex induced vibration (VIV) is an example of instability-induced excitations, which is an across-wind response that occurs 
 in a bluff body. This is caused by the alternate shedding of 
 vortices in the wake region of the structure. A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causes separation
 points. The wake is the region in the downstream of the body where the flow is highly disturbed and has negative pressures. When the fluid flows over a structure,
-the flow separates at the separation points and forms wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex will be time-invariant and the structure will be subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
+the flow separates at the separation points and forms wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex is time-invariant and the structure is subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
 to shed alternately from the two sides of the structure. This induces an alternating time-varying force of a sinusoidal manner in the across-wind direction. 
 This causes vibration in the structure known as vortex-induced vibration. Since this is a dynamic force, it requires attention to the calculation of the frequency, as this can determine the resonance of the building. When the frequency of vortex shedding matches with the 
 natural frequency of the structure, it will cause resonance leading to large amplitude vibrations and potential structural failure.
@@ -203,7 +203,7 @@ created. This can lead to a rapid increase in the amplitude of oscillations, whi
 \end{figure}
 
 
-This is explained in figure \ref{fig:flutter_2}. Here, in the first image, it shall be observed, that the phase between the vertical and pitch motion is such that the possitive work created during the
+This is illustrated in the Figure \ref{fig:flutter_2}. Here, in the first image, it shall be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the second image, the phase between the vertical and pitch motion is such that 
 the positive works are created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable.
 
@@ -261,8 +261,8 @@ each of the flutter derivatives is for quantifying the aerodynamic lift and mome
 $H_1^*$ is the flutter derivative for quantifying the lift force due to vertical velocity of the structure. $A3^*$ is 
 the flutter derivative for quantifying the moment force due to angular rotation of the structure.
 
-Since this is a semi-emperical method, these derivatives have to be found through CFD simulations or wind-tunnel tests. 
-Once found this is applied back to the dynamic equilibrium equation to find the critical velocity.
+Since this is a semi-empirical method, these derivatives must be found through CFD simulations or wind-tunnel tests. 
+Once obtained, they are applied back to the dynamic equilibrium equation to determine the critical velocity.
 The approaches for finding the Flutter Derivatives can be broadly classified based on 
 the nature of the applied motion 1. Free vibration and 2. forced motion tests. In forced motion tests, the structure is forced to 
 oscillate at a specific frequency and amplitude, and the resulting aerodynamic forces are measured to determine the flutter derivatives.
@@ -318,7 +318,7 @@ From this, the flutter derivatives for heave excitation are obtained as
     A_4^* &= \frac{2C_2}{\rho\,\omega^2 B^3 h_0}.
 \end{align}
 
-The same procedure is repeated with pitch (torsional) excitation and the $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$ derivatives are obtained.  
+The same procedure is repeated with pitch (torsional) excitation to obtain the $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$ derivatives.  
 
 \begin{align}
 H_2 &= \frac{{2B_1}}{\rho \omega^2 B^3 \theta_{0}}, &
@@ -477,7 +477,7 @@ linearised as shown below to be solved as a generalised eigenvalue problem:
     \text{i.e.}\quad A - \lambda B = 0.
 \end{equation}
 
-Based on the explanation provided above for damping, the system shall determined whether it is stable or unstable.
+Based on the explanation provided above for damping, the system stability or instability can be determined.
 For a case, consider a solution of $\omega = \omega_r + i\omega_i$, where both are positive. 
 Then, $e^{-\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)$ represents a damped oscillation with frequency 
 $\omega_r$ and an amplitude that decays exponentially over time due to the positive $\omega_i$.
@@ -515,7 +515,7 @@ This is illustrated in Figure~\ref{fig:Flutter_Solution_Plot}.
 
 A Python tool has been developed to solve this linearised eigenvalue problem and identify the critical wind speed. 
 Determining the critical wind speed is an iterative process because the flutter derivatives are functions of reduced velocity, 
-which in turn is a function of wind speed. Hence the following steps ( which forms the algorithm of the code) are 
+which in turn is a function of wind speed. Hence the following steps (which form the algorithm of the code) are 
 performed iteratively to find the critical wind speed:
 
 \begin{enumerate}
