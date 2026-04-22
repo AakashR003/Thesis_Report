@@ -13,7 +13,7 @@ Structural wind engineering can be viewed as a field in civil engineering studyi
 This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
 The response of a structure to a wind load can be broadly classified into two types: (1) along-wind response and (2) across-wind response. 
 Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
-act perpendicular to the direction of wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
+act perpendicular to the direction of the wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
 Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
 of the structure due to the mean wind load is analyzed. In dynamic analysis, the response of the structure due to the fluctuating component (time-varying) of the 
 wind load is considered. The static analysis primarily involves along-wind response created due to the drag force exerted by wind on the structure. 
@@ -27,7 +27,7 @@ Next is instability-induced excitations. Vortex induced vibration (VIV) is an ex
 in a bluff body. This is caused by the alternate shedding of 
 vortices in the wake region of the structure. A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causes separation
 points. The wake is the region in the downstream of the body where the flow is highly disturbed and has negative pressures. When the fluid flows over a structure,
-the flow separates at the separation points and forms wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex is time-invariant and the structure is subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
+the flow separates at the separation points and forms a wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex is time-invariant and the structure is subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
 to shed alternately from the two sides of the structure. This induces an alternating time-varying force of a sinusoidal manner in the across-wind direction. 
 This causes vibration in the structure known as vortex-induced vibration. Since this is a dynamic force, it requires attention to the calculation of the frequency, as this can determine the resonance of the building. When the frequency of vortex shedding matches with the 
 natural frequency of the structure, it will cause resonance leading to large amplitude vibrations and potential structural failure.
@@ -45,7 +45,7 @@ Movement-induced excitations mostly cause instability failures in civil engineer
 because once the threshold limit is reached, the structure would not be able to return to a stable state and would directly fail. Flutter and galloping are examples of these types of dynamic instabilities. Torsional divergence is also this type of instability, except 
 this instability is static in nature. Torsional divergence can be observed in failure of solar panels, etc. 
 Instability indicates a loss in any one of the structural parameters such as stiffness, damping, etc., due to the interaction with wind. In torsional
-divergence, the stiffness of the structure is lost due to interaction with wind. This is analogous to the structural stability failure like buckling. 
+divergence, the stiffness of the structure is lost due to the interaction with wind. This is analogous to the structural stability failure like buckling. 
 In buckling, stiffness is lost due to the second-order effect, and here this is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
 this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}.
 
@@ -59,14 +59,14 @@ and hence can be useful in the intuitive understanding of these dynamic aeroelas
 Consider a 1-DOF spring-mass system with a bluff body attached to it. When the wind passes over the bluff body, it creates drag and lift forces. 
 Assume, due to an external forced vibration or VIV, the structure starts to vibrate in the vertical direction. Now, due to this vertical vibration, 
 depending on the structural velocity, the angle of attack of the wind on the bluff body changes. %This is because a body under rest and in motion will not experience same force vector. 
-Since the angle of attack changes, the lift and drag forces also change (except for section where for any angle of attack the lift force remains constant - like circle).
+Since the angle of attack changes, the lift and drag forces also change (except for the sections where for any angle of attack the lift force remains constant - like circle).
 If the change in forces is such that it increases the motion amplitude, then a positive feedback loop is created. This is known as galloping. 
 For this reason, a purely circular rope or cable will not undergo galloping, as the lift force is constant for all angles of attack. 
 But a rectangular section will undergo galloping as the lift force changes with angle of attack.
 
 Next, the analytical formulation for galloping is derived. This formulation is based on the assumption: the instantaneous excitation 
 force acting on the moving structure is nearly equivalent to the static force calculated considering change in angle of attack due to the 
-velocity of structure. This means there is no phase difference between applied force and structural velocity. 
+velocity of the structure. This means there is no phase difference between applied force and structural velocity. 
 
 For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force acting on the structure is
 
@@ -178,7 +178,7 @@ V_{\mathrm{crit}} = \frac{2c}{\left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right
 To determine whether a structure will undergo galloping, CFD simulations are conducted without fluid-structure interaction (FSI) at various angles of attack. 
 The lift and drag coefficients are extracted from these simulations. Subsequently, the slope of the aerodynamic force function at zero angle of attack is 
 determined and substituted into the critical galloping equation presented above. This approach enables analysis of structural response subjected to unsteady forces using 
-quasi-steady analysis. This is the result of assumption introduced earlier in the galloping formulation. 
+quasi-steady analysis. This is the result of the assumption introduced earlier in the galloping formulation. 
 
 \begin{figure}[htbp]
     \centering
@@ -191,7 +191,7 @@ quasi-steady analysis. This is the result of assumption introduced earlier in th
 \section{Flutter Analysis}
 
 Flutter is a dynamic instability phenomenon that occurs when the aerodynamic forces acting on a structure couple with its natural modes of vibration, leading to self-excited oscillations.
-Consider a 2-DOF system of vertical (heave) and rotational (pitch) motion Figure \ref{fig:flutter_1}. If the vertical and pitch motion are coupled in such a way that the aerodynamic forces 
+Consider a 2-DOF system of vertical (heave) and rotational (pitch) motion( Figure \ref{fig:flutter_1}). If the vertical and pitch motion are coupled in such a way that the aerodynamic forces 
 due to the vertical motion cause an increase in the pitch motion, and the aerodynamic forces due to the pitch motion cause an increase in the vertical motion, then a positive feedback loop is 
 created. This can lead to a rapid increase in the amplitude of oscillations, which can ultimately result in structural failure.
 
@@ -203,9 +203,9 @@ created. This can lead to a rapid increase in the amplitude of oscillations, whi
 \end{figure}
 
 
-This is illustrated in the Figure \ref{fig:flutter_2}. Here, in the first image, it shall be observed that the phase between the vertical and pitch motion is such that the positive work created during the
+This is illustrated in Figure \ref{fig:flutter_2}. Here, in the first image, it shall be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the second image, the phase between the vertical and pitch motion is such that 
-the positive works are created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable.
+the positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable.
 
 \begin{figure}[htbp]
     \centering
@@ -235,9 +235,9 @@ where, $L_{ae}$ - Aerodynamic lift force due to wind \\
 
 Here, quantifying  unsteady aerodynamic forces is the challenge. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
 analytical formulation for the aerodynamic forces for unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. The solutions for $L_{ae}$ and 
-$M_{ae}$ were functions of theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
+$M_{ae}$ were functions of Theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
 $K = \frac{\omega b}{U}$. This quantifies the unsteadiness (i.e., the time lag between the applied force and the structure's 
-displacement). As this theory was based on the assumption of Potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
+displacement). As this theory was based on the assumption of potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
 an American civil engineer, reformulated Theodorsen's theory to accommodate bridges using a semi-empirical method based on eight 
 functions (for a 2-DOF system) known as flutter derivatives \cite{scanlan1971}.
 
@@ -251,26 +251,26 @@ L_{ae} = \frac{1}{2}\rho U^2 B \left[ KH_1^* \frac{\dot{h}}{U} + KH_2^* \frac{B\
 M_{ae} = \frac{1}{2}\rho U^2 B^2 \left[ KA_1^* \frac{\dot{h}}{U} + KA_2^* \frac{B\dot{\alpha}}{U} + K^2 A_3^* \alpha + K^2 A_4^* \frac{h}{B} \right]
 \end{equation}
 
-where, $h$ - vertical DOF (Heave motion), $\alpha$ - Rotational DOF (Pitch Motion)\\
+where, $h$ - vertical DOF (heave motion), $\alpha$ - Rotational DOF (pitch motion)\\
 \phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
 
 Flutter derivatives are shape constants that quantify the wind force acting on a structure as a linear relation 
 of the section's vertical velocity, angular rotation, and speed of angular rotation. They are in turn functions 
-of $U_{red} = \frac{1}{K} = \frac{U}{fB}$. These derivatives shall be viewed as: how $C_d$, acts as a non-dimensional shape constant for computing drag force on a structure, 
+of $U_{red} = \frac{1}{K} = \frac{U}{fB}$. These derivatives shall be viewed as: how $C_d$ acts as a non-dimensional shape constant for computing drag force on a structure, 
 each of the flutter derivatives is for quantifying the aerodynamic lift and moment forces. For example, 
 $H_1^*$ is the flutter derivative for quantifying the lift force due to vertical velocity of the structure. $A3^*$ is 
 the flutter derivative for quantifying the moment force due to angular rotation of the structure.
 
 Since this is a semi-empirical method, these derivatives must be found through CFD simulations or wind-tunnel tests. 
 Once obtained, they are applied back to the dynamic equilibrium equation to determine the critical velocity.
-The approaches for finding the Flutter Derivatives can be broadly classified based on 
+The approaches for finding the flutter derivatives can be broadly classified based on 
 the nature of the applied motion 1. Free vibration and 2. forced motion tests. In forced motion tests, the structure is forced to 
 oscillate at a specific frequency and amplitude, and the resulting aerodynamic forces are measured to determine the flutter derivatives.
 In free vibration tests, the structure is allowed to vibrate freely under the influence of aerodynamic forces, 
 and the flutter derivatives are determined from the observed damping response.
 For the preliminary analysis of flutter, forced motion tests with CFD have greater 
-importance due to their easier setup and lower cost. Since forced motion tests are the interest of this thesis, it is 
-alone explained in the following sections
+importance due to their easier setup and lower cost. Since forced motion tests are the interest of this thesis, only it is 
+explained in the following sections
 
 
 \section{Identification of Flutter Derivatives with Forced Motion Simulations}
@@ -331,13 +331,13 @@ A_3 &= \frac{2 C_2}{\rho \omega^2 B^4 \theta_{0}}.
 Consequently, a total of two forced-motion simulations (one heave, one pitch) are required to obtain a complete set of eight flutter derivatives at each reduced velocity.
 
 This is the single frequency method where a heave/pitch motion of one 
-frequency is applied to the structure to find the Flutter derivative. Obtaining flutter derivatives with 
+frequency is applied to the structure to find the flutter derivative. Obtaining flutter derivatives with 
 this approach is highly computationally costly because of the following reasons. Since flutter 
 derivatives are functions of reduced velocity, multiple CFD simulations (by varying the frequency 
 of input forced motion) must be performed to obtain them. For finding each point in a set of 8 
 flutter derivatives, 2 CFD simulations are required. To obtain an accurate representation of each 
 flutter derivative function, we need a minimum of 6 to 8 points on the flutter derivative curve. 
-Hence, a total of 16 simulations is required. Each CFD simulation will take approximately 48 hours. 
+Hence, a total of 16 simulations are required. Each CFD simulation will take approximately 48 hours. 
 Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation time are required. 
 
 
@@ -347,7 +347,7 @@ Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation 
 \section{Multi-Frequency Method}
 
 In the multi-frequency method, instead of applying the single-frequency forced-motion oscillation at a time and extracting the 4 flutter derivatives,
-several frequencies are superposed applied simultaneously to the structure. By this way, n*4 flutter derivatives can be obtained from n simulations. 
+several frequencies are superimposed and applied simultaneously to the structure. By this way, n*4 flutter derivatives can be obtained from n simulations. 
 For example, if 4 frequencies are applied simultaneously, then 16 flutter derivatives can be obtained from a single simulation.
 The superimposition of multiple frequencies can be expressed as
 
@@ -392,7 +392,7 @@ illustrate the workflow for the two methods. \\
 
 To obtain the critical wind speed, the equations of motion for the bridge deck (equations \ref{eq:eq_of_motion_h} and \ref{eq:eq_of_motion_alpha}) are 
 equated to the aerodynamic forces from the Scanlan formulation (\ref{eq:lift_force} and \ref{eq:moment_force}) and solved.
-On equating it yields,
+On equating it yields
 
 \begin{align}
     m\!\left(\ddot{h} + 2\omega_h\zeta_h\dot{h} + \omega_h^2 h\right)
@@ -460,8 +460,8 @@ Solution of a simple harmonic oscillation without damping can be represented wit
 Here this represents a pure sinusoidal oscillation with frequency $\omega$ (real number) and with phase angle. To represent the effect of damping, 
 the solution takes the form $x(t) = e^{i\omega t} = e^{i\omega_r t} \cdot e^{-\omega_i t} = e^{-\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)$,
 where the real part $\omega_r$ is the oscillation frequency and the imaginary part $\omega_i$ governs the damping of the response.
-This equation has to be solved for $\omega$ to determine the system's osillating frequency and damping characteristics. 
-Because structural damping is present the problem takes the form of a quadratic eigenvalue problem. Hence this is 
+This equation has to be solved for $\omega$ to determine the system's oscillating frequency and damping characteristics. 
+Because structural damping is present, the problem takes the form of a quadratic eigenvalue problem. Hence this is 
 linearised as shown below to be solved as a generalised eigenvalue problem:
 
 
@@ -539,13 +539,13 @@ performed iteratively to find the critical wind speed:
 
 \section{Validation of the Critical Velocity Tool}
 
-The Python tool is validated against the benchmark results of ~\cite{diana2020}.
+The Python tool is validated against the benchmark results of~\cite{diana2020}.
 
 
 \subsection*{Structural Parameters}
 
 Table~\ref{tab:structural_params} lists the structural properties used in the
-validation, taken from ~\cite{diana2020}.
+validation, taken from~\cite{diana2020}.
 
 \begin{table}[htbp]
     \centering
@@ -641,7 +641,7 @@ Equation~\eqref{eq:Uc} yields
 \end{align*}
 
 This result falls within the reference range of $[77.1,\;78.6]\ \mathrm{m/s}$
-reported by ~\cite{diana2020}, confirming the validity of the tool.
+reported by~\cite{diana2020}, confirming the validity of the tool.
 
 
 \end{document}
