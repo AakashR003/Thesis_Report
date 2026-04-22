@@ -2,7 +2,7 @@
 \begin{document}
 \chapter{Flutter}
 
-In this chapter, first an introduction to structural wind engineering is provided and is extended to flutter. Next, flutter mechanism and 
+This chapter first provides an introduction to structural wind engineering and extends it to flutter. Next, the flutter mechanism and 
 methods to obtain flutter derivatives are discussed. Then the mathematical formulation for calculating the critical wind speed is provided. 
 Finally, the multi-frequency method is introduced and its workflow is compared with the single-frequency method.
 
@@ -11,84 +11,77 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 \section{Structural Wind Engineering}
 Structural wind engineering can be viewed as a field in civil engineering studying how a structure will respond when exposed to wind. 
 This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
-Response of a structure for a wind load can broadly be classified into two types. 1. Along wind response and 2. Across wind response. 
-Along wind responses are the forces (due to wind) acting on the structure in parallel to the direction of wind. And in across wind response, this force
-acts perpendicular to the direction of wind. Since wind is a time varying load, the response of the structure to the wind load is dynamic in nature. 
-So analysis of structure subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response of the structure is 
-due to the mean wind load is analyzed. And in dynamic analysis, the response of the structure is due to the fluctuating component (time varying) 
-of the wind load is considered. The static analysis primarily involves along wind response created due to drag force exerted by the wind structure. 
-The major source of dynamic wind loads are response due to Extraneously induced excitations , Instability induced excitations and movement induced excitations. 
+The response of a structure to a wind load can be broadly classified into two types: (1) along-wind response and (2) across-wind response. 
+long-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
+act perpendicular to the direction of wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
+Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
+of the structure due to the mean wind load is analyzed. In dynamic analysis, the response of the structure due to the fluctuating component (time-varying) of the 
+wind load is considered. The static analysis primarily involves along-wind response created due to the drag force exerted by wind on the structure. 
+The major sources of dynamic wind loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations. 
 
 Buffeting is one of main example of Extraneously induced excitations, which is along wind response caused by turbulence in the wind. 
 This shall be understood as, if we plot a graph between wind velocity (acting on the structure) vs time, then the mean of this wind velocity is the static component and the variance
 of this plot is the buffeting component. The calculation of buffeting component is given EN 1991-1-4. 
 
 Next is Instability induced excitations. Vortex induced vibration (VIV) is an example Instability induced excitations which is an across wind response that occurs 
-in a bluff body. This is caused due to the alternate shedding of 
-vortices in the wake region of the structure. A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causing separation
-points. Wake is the region in the downstream of the body where the flow is highly disturbed and has negative pressures. When the fluid flows over a structure,
-the flow separates at the separation points and forms wake region in the downstream. When the velocity (reynolds number) of the fluid is low, the vortex will time 
-invariant and the structure will be subjected to a constant along wind force, that is static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
-to shed alternately from the two sides of the structure. This induces an alternating time varying force of sinusoidal manner in across wind direction. 
-This causes vibration to the structure known as vortex induced vibration. Since this is a dynamic force, it imposes attention to calculation 
-of the frequency of the force as this can decide on resonance of the building. When the frequency of vortex shedding matches with the 
+in a bluff body. This is caused by the alternate shedding of 
+vortices in the wake region of the structure. A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causes separation
+points. The wake is the region in the downstream of the body where the flow is highly disturbed and has negative pressures. When the fluid flows over a structure,
+the flow separates at the separation points and forms wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex will be time-invariant and the structure will be subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
+to shed alternately from the two sides of the structure. This induces an alternating time-varying force of a sinusoidal manner in the across-wind direction. 
+This causes vibration in the structure known as vortex-induced vibration. Since this is a dynamic force, it requires attention to the calculation of the frequency, as this can determine the resonance of the building. When the frequency of vortex shedding matches with the 
 natural frequency of the structure, it will cause resonance leading to large amplitude vibrations and potential structural failure.
 The vortex shedding frequency is given by the formula f = St*U/D, where D is the characteristic length of the structure and U is the velocity of the fluid. 
-St is the non dimensional parameter called Strouhal number, which is a shape constant. For regular shapes, the value of St shall be taken from EN 1994-1-4.   
+St is the non dimensional parameter called Strouhal number, which is a shape constant. For regular shapes, the value of St shall be taken from EN 1991-1-4.   
 
 Finally, movement induced excitations are caused due to the interaction between the wind and the structure. When wind passes over a structure, 
 it creates a force that causes deformation/displacement in the structure. Now due to this displacement, 
 the flow around the structure changes and consequently the force acting on the structure changes (also depending on the rate of change of displacement 
 of the structure, the force acting changes). This can create a positive feedback loop where the 
 deformation causes an increase in the force, which in turn causes more deformation. This can lead to a rapid increase in the amplitude of vibrations, which can 
-ultimately result in structural failure. These phenomena are known as movement induced vibration first as first an initial motion is required to trigger this phenomenon to start. 
+ultimately result in structural failure. These phenomena are known as movement-induced vibrations, as an initial motion is first required to trigger this phenomenon. 
 
-Movement induced exctations mostly cause instability failures in civil engineering structures. This is 
-because once the threshold limit is reached, the structure would be able to return to stable. 
-state and it will directly fail. Flutter and galloping are the examples of this type of dynamic instability. Torsional divergence is also this type of instability except 
-this stability is static in nature. Torsional divergence can be observed in failure of solar panels, etc. 
-Instability indicates loss in any one of the structural parameters such as stiffness, damping, etc due to the interaction with wind. In torsional
-divergence, stiffness of the structure is lost due to interaction with wind. This is analogous to the structural stability failure like buckling. 
-In buckling stiffness is lost due to the second order effect and here this is due to FSI interaction. Also similar to buckling, the failure due to
-this phenomenon depends on the flexibility of the structure rather than the ultimate strength [reference wind effect on structures book by scanlan].
+Movement-induced excitations mostly cause instability failures in civil engineering structures. This is 
+because once the threshold limit is reached, the structure would not be able to return to a stable state and would directly fail. Flutter and galloping are examples of these types of dynamic instabilities. Torsional divergence is also this type of instability, except 
+this instability is static in nature. Torsional divergence can be observed in failure of solar panels, etc. 
+Instability indicates a loss in any one of the structural parameters such as stiffness, damping, etc., due to the interaction with wind. In torsional
+divergence, the stiffness of the structure is lost due to interaction with wind. This is analogous to the structural stability failure like buckling. 
+In buckling, stiffness is lost due to the second-order effect, and here this is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
+this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}.
 
-In flutter, the loss is damping. Since flutter is the focus of this thesis, the following sections will be focused on discussing the mathematical formulations for quantifying this loss.
-Before the discussing on flutter, first galloping is discussed. This is done because, galloping is a similar phenomenon to flutter with lesser complexity 
-and hence it can be useful in intuitive understanding of these dynamic aeroelastic phenomena.
+In flutter, the loss is in damping. Since flutter is the focus of this thesis, the following sections will focus on discussing the mathematical formulations for quantifying this loss.
+Before discussing flutter, galloping is discussed first. This is done because galloping is a similar phenomenon to flutter with less complexity 
+and hence can be useful in the intuitive understanding of these dynamic aeroelastic phenomena.
 
 
 \section{Galloping}
 
-Consider a 1-DOF spring-mass system with a bluff body attached to it. When the wind passes through the bluff body, it creates a drag and lift force. 
+Consider a 1-DOF spring-mass system with a bluff body attached to it. When the wind passes over the bluff body, it creates drag and lift forces. 
 Assume, due to an external forced vibration or VIV, the structure starts to vibrate in the vertical direction. Now, due to this vertical vibration, 
 depending on the structural velocity, the angle of attack of the wind on the bluff body changes. %This is because a body under rest and in motion will not experience same force vector. 
 Since the angle of attack changes, the lift and drag forces also change (except for section where for any angle of attack the lift force remains constant - like circle).
 If the change in forces is such that it increases the motion amplitude, then a positive feedback loop is created. This is known as galloping. 
-This is the reason behind a pure circular rope or cable will not undergo galloping, as the lift force is constant for all angle of attack. 
+For this reason, a purely circular rope or cable will not undergo galloping, as the lift force is constant for all angles of attack. 
 But a rectangular section will undergo galloping as the lift force changes with angle of attack.
 
-Next the analytical formulation for the galloping is derived. This formulation is based on the assumption: the instantaneous excitation 
+Next, the analytical formulation for galloping is derived. This formulation is based on the assumption: the instantaneous excitation 
 force acting on the moving structure is nearly equivalent to the static force calculated considering change in angle of attack due to the 
 velocity of structure. This means there is no phase difference between applied force and structural velocity. 
 
-For the system shown in figure , the net vertical force acting on the structure is Figure (\ref{fig:galloping} - a),
+For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force acting on the structure is
 
 \begin{equation}
 F_y = -F_L \cos \theta - F_D \sin \theta \quad 
 \end{equation}
 
-where,
-
-\[
-F_L = C_L \frac{\rho d V_{\mathrm{rel}}^2}{2}, \quad F_D = C_D \frac{\rho d V_{\mathrm{rel}}^2}{2}.
-\]
-
-$C_L$ - coefficient of lift force
-$C_D$ - coefficient of Drag force
-$\rho_{\mathrm{air}}$ is the density of air
-\[
-V_{\mathrm{rel}} = \sqrt{V^2 + \dot{y}^2}, \quad \theta = \tan^{-1}\left(\frac{\dot{y}}{V}\right) \quad
-\] - relative velocity of wind to structre's velocity
+where:
+\begin{align*}
+C_L &= \text{coefficient of lift force}, \\
+C_D &= \text{coefficient of drag force}, \\
+\rho_{\mathrm{air}} &= \text{density of air}, \\
+V_{\mathrm{rel}} &= \sqrt{V^2 + \dot{y}^2} = \text{relative velocity of wind to structure's velocity}, \\
+\theta &= \tan^{-1}\left(\frac{\dot{y}}{V}\right) = \text{angle of attack}.
+\end{align*}
 
 Writing the vertical force in terms of $C_y$,
 \[
@@ -114,7 +107,7 @@ To solve the equation, we can linearise the system by assuming small motion at t
 For this condition,
 
 \begin{equation}
-F_{\mathrm{y}} \approx \left.\frac{\mathrm{d}F_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\alpha\
+F_{\mathrm{y}} \approx \left.\frac{\mathrm{d}F_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\alpha
 \end{equation}
 
 which gives us the following equations,
