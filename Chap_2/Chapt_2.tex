@@ -11,7 +11,7 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 \section{Structural Wind Engineering}
 Structural wind engineering can be viewed as a field in civil engineering studying how a structure will respond when exposed to wind. 
 This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
-The response of a structure to a wind load can be broadly classified into two types: (1) along-wind response and (2) across-wind response. 
+The response of a structure to a wind load can be broadly classified into two types: (1) along and across wind response. 
 Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
 act perpendicular to the direction of the wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
 Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
@@ -35,7 +35,7 @@ The vortex shedding frequency is given by the formula f = St*U/D, where D is the
 St is the non dimensional parameter called Strouhal number, which is a shape constant. For regular shapes, the value of St shall be taken from EN 1991-1-4.   
 
 Finally, movement induced excitations are caused due to the interaction between the wind and the structure. When wind passes over a structure, 
-it creates a force that causes deformation/displacement in the structure. Now due to this displacement, 
+it creates a force that causes deformation/displacement in the structure. Due to this displacement, 
 the flow around the structure changes and consequently the force acting on the structure changes (also depending on the rate of change of displacement 
 of the structure, the force acting changes). This can create a positive feedback loop where the 
 deformation causes an increase in the force, which in turn causes more deformation. This can lead to a rapid increase in the amplitude of vibrations, which can 
@@ -57,7 +57,7 @@ and hence can be useful in the intuitive understanding of these dynamic aeroelas
 \section{Galloping}
 
 Consider a 1-DOF spring-mass system with a bluff body attached to it. When the wind passes over the bluff body, it creates drag and lift forces. 
-Assume, due to an external forced vibration or VIV, the structure starts to vibrate in the vertical direction. Now, due to this vertical vibration, 
+Assume, due to an external forced vibration or VIV, the structure starts to vibrate in the vertical direction. Due to this vertical vibration, 
 depending on the structural velocity, the angle of attack of the wind on the bluff body changes. %This is because a body under rest and in motion will not experience same force vector. 
 Since the angle of attack changes, the lift and drag forces also change (except for the sections where for any angle of attack the lift force remains constant - like circle).
 If the change in forces is such that it increases the motion amplitude, then a positive feedback loop is created. This is known as galloping. 
@@ -74,15 +74,14 @@ For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force ac
 F_y = -F_L \cos \theta - F_D \sin \theta \quad 
 \end{equation}
 
-where,
+where
 
 \[
 F_L = C_L \frac{\rho d V_{\mathrm{rel}}^2}{2}, \quad F_D = C_D \frac{\rho d V_{\mathrm{rel}}^2}{2}.
 \]
 
-$C_L$ - coefficient of lift force
-$C_D$ - coefficient of Drag force
-$\rho_{\mathrm{air}}$ is the density of air
+$C_L$ is coefficient of lift force, $C_D$ is coefficient of Drag force and $\rho_{\mathrm{air}}$ is the density of air. 
+
 \[
 V_{\mathrm{rel}} = \sqrt{V^2 + \dot{y}^2}, \quad \theta = \tan^{-1}\left(\frac{\dot{y}}{V}\right) \quad
 \] - relative velocity of wind to structre's velocity
@@ -91,30 +90,30 @@ Writing the vertical force in terms of $C_y$,
 \[
 F_y = C_y \frac{\rho d V_{\mathrm{rel}}^2}{2}
 \]
-where, 
+where 
 \[
 \quad C_y = -\frac{1}{\cos\theta}(C_L + C_D \tan\theta) \quad
 \]
 
-Now the equations of motion for the system can be written as,
+The equations of motion for the system can be written as
 
 \begin{equation}
 m\,\ddot{y} + c\,\dot{y} + k\,y = F_{\mathrm{y}}(\alpha) = \frac{\rho_{\mathrm{air}}\,V^2}{2}\,d\,C_y(\alpha)
 \end{equation}
 
-To solve the equation, we can linearise the system by assuming small motion at the zero angle of attack, 
+To solve the equation, we can linearise the system by assuming small motion at the zero angle of attack 
 
 \begin{equation}
 \alpha \approx \frac{\dot{y}}{V}
 \end{equation}
 
-For this condition,
+For this condition
 
 \begin{equation}
 F_{\mathrm{y}} \approx \left.\frac{\mathrm{d}F_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\alpha
 \end{equation}
 
-which gives us the following equations,
+which gives us the following equations
 
 \begin{equation}
 m\,\ddot{y} + c\,\dot{y} + k\,y = \left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\frac{\dot{y}}{V}\frac{\rho\,V^2}{2}\,d
@@ -203,7 +202,7 @@ created. This can lead to a rapid increase in the amplitude of oscillations, whi
 \end{figure}
 
 
-This is illustrated in Figure \ref{fig:flutter_2}. Here, in the first image, it shall be observed that the phase between the vertical and pitch motion is such that the positive work created during the
+This is illustrated in Figure \ref{fig:flutter_2}. In the first subfigure of \ref{fig:flutter_2}, it shall be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the second image, the phase between the vertical and pitch motion is such that 
 the positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable.
 
@@ -229,15 +228,14 @@ m(\ddot{h} + 2\omega_h\xi_h\dot{h} + \omega_h^2 h) = L_{ae} \\
 I_\alpha( \ddot{\alpha} + 2\omega_\alpha\xi_\alpha\dot{\alpha} + \omega_\alpha^2 \alpha) = M_{ae} 
 \end{align}
 
-where, $L_{ae}$ - Aerodynamic lift force due to wind \\
-\phantom{where,} $M_{ae}$ - Aerodynamic moment due to wind
-\vspace{0.5 cm}
-
-Here, quantifying  unsteady aerodynamic forces is the challenge. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
+$L_{ae}$ is the aerodynamic lift force due to wind and $M_{ae}$ aerodynamic moment due to wind. 
+In this equation, quantifying  unsteady aerodynamic forces is the challenge. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
 analytical formulation for the aerodynamic forces for unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. The solutions for $L_{ae}$ and 
-$M_{ae}$ were functions of Theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
-$K = \frac{\omega b}{U}$. This quantifies the unsteadiness (i.e., the time lag between the applied force and the structure's 
-displacement). As this theory was based on the assumption of potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
+$M_{ae}$ are functions of Theodorsen circulatory functions, which, in turn, are functions of $K$, the reduced frequency, where 
+$K = \frac{\omega b}{U}$. ${\omega b}$ is oscillating frequency in radians per second, b is breadth of the cross-section and U is the velocity of the fluid. 
+The reduced frequency shall be understood as, oscillating velocity in relative to fluid flow velocity.
+This quantifies the time lag between the applied force and the structure's displacement.  
+As this theory was based on the assumption of potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
 an American civil engineer, reformulated Theodorsen's theory to accommodate bridges using a semi-empirical method based on eight 
 functions (for a 2-DOF system) known as flutter derivatives \cite{scanlan1971}.
 
@@ -251,20 +249,22 @@ L_{ae} = \frac{1}{2}\rho U^2 B \left[ KH_1^* \frac{\dot{h}}{U} + KH_2^* \frac{B\
 M_{ae} = \frac{1}{2}\rho U^2 B^2 \left[ KA_1^* \frac{\dot{h}}{U} + KA_2^* \frac{B\dot{\alpha}}{U} + K^2 A_3^* \alpha + K^2 A_4^* \frac{h}{B} \right]
 \end{equation}
 
-where, $h$ - vertical DOF (heave motion), $\alpha$ - Rotational DOF (pitch motion)\\
-\phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
+% where, $h$ - vertical DOF (heave motion), $\alpha$ - Rotational DOF (pitch motion)\\
+% \phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
 
-Flutter derivatives are shape constants that quantify the wind force acting on a structure as a linear relation 
+In this equation, $h$ denotes the vertical degree of freedom (called as heave motion) and $\alpha$ denotes rotational degree of freedom (pitch motion). 
+The quantities $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are the flutter derivatives.
+These are shape constants that quantify the wind force acting on a structure as a linear relation 
 of the section's vertical velocity, angular rotation, and speed of angular rotation. They are in turn functions 
 of $U_{red} = \frac{1}{K} = \frac{U}{fB}$. These derivatives shall be viewed as: how $C_d$ acts as a non-dimensional shape constant for computing drag force on a structure, 
-each of the flutter derivatives is for quantifying the aerodynamic lift and moment forces. For example, 
+each of the flutter derivatives is for quantifying the aeroelastic lift and moment forces. For example, 
 $H_1^*$ is the flutter derivative for quantifying the lift force due to vertical velocity of the structure. $A3^*$ is 
 the flutter derivative for quantifying the moment force due to angular rotation of the structure.
 
 Since this is a semi-empirical method, these derivatives must be found through CFD simulations or wind-tunnel tests. 
 Once obtained, they are applied back to the dynamic equilibrium equation to determine the critical velocity.
 The approaches for finding the flutter derivatives can be broadly classified based on 
-the nature of the applied motion 1. Free vibration and 2. forced motion tests. In forced motion tests, the structure is forced to 
+the nature of the applied motion: forced motion tests or free vibration. In forced motion tests, the structure is forced to 
 oscillate at a specific frequency and amplitude, and the resulting aerodynamic forces are measured to determine the flutter derivatives.
 In free vibration tests, the structure is allowed to vibrate freely under the influence of aerodynamic forces, 
 and the flutter derivatives are determined from the observed damping response.
@@ -282,7 +282,7 @@ sinusoidally in the vertical (heave) direction according to
     \dot{h}(t) &= \omega h_0 \cos(\omega t),
 \end{align}
 where $h_0$ is the maximum amplitude of the applied heave motion and $\omega$ is the angular frequency of the applied heave motion. 
-Since no pitch motion is applied, $\alpha = \dot{\alpha} = 0$, and the aerodynamic lift force and pitching moment simplify to
+Since no pitch motion is applied, $\alpha = \dot{\alpha} = 0$, and the aerodynamic lift force\ref{eq:lift_force} and pitching moment\ref{eq:moment_force} simplifies to
 \begin{align}
     L_{ae} &= \frac{1}{2}\rho U^2 B
               \left[KH_1^*\frac{\dot{h}}{U} + K^2H_4^*\frac{h}{B}\right]
@@ -347,7 +347,7 @@ Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation 
 \section{Multi-Frequency Method}
 
 In the multi-frequency method, instead of applying the single-frequency forced-motion oscillation at a time and extracting the 4 flutter derivatives,
-several frequencies are superimposed and applied simultaneously to the structure. By this way, n*4 flutter derivatives can be obtained from n simulations. 
+several frequencies are superimposed and applied simultaneously to the structure. By this way, N*4 flutter derivatives can be obtained from N simulations. 
 For example, if 4 frequencies are applied simultaneously, then 16 flutter derivatives can be obtained from a single simulation.
 The superimposition of multiple frequencies can be expressed as
 
@@ -371,14 +371,14 @@ illustrate the workflow for the two methods. \\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{Figures/Single_Frequency.png}
+    \includegraphics[width=0.75\textwidth]{Figures/Single_Frequency.png}
     \caption{Workflow for the single-frequency method.}
     \label{fig:single_freq_method}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[angle=90, height=1.5\textwidth]{Figures/MultiFrequency_Explanation.png}
+    \includegraphics[angle=0, width=\textwidth]{Figures/MultiFrequency_Explanation.png}
     \caption{Workflow for the multi-frequency method.}
     \label{fig:multi_freq_method}
 \end{figure}
@@ -501,19 +501,18 @@ This is illustrated in Figure~\ref{fig:Flutter_Solution_Plot}.
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Flutter_Decay_Solution_Plot.png}
-        \subcaption{Decay solution}
+        \subcaption{Damped solution}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Flutter_Growth_Solution_Plot.png}
-        \subcaption{Growth solution}
+        \subcaption{Diveregent solution}
     \end{minipage}
     \caption{Time-domain response of the flutter/galloping solution}
     \label{fig:Flutter_Solution_Plot}
 \end{figure}
 
-A Python tool has been developed to solve this linearised eigenvalue problem and identify the critical wind speed. 
 Determining the critical wind speed is an iterative process because the flutter derivatives are functions of reduced velocity, 
 which in turn is a function of wind speed. Hence the following steps (which form the algorithm of the code) are 
 performed iteratively to find the critical wind speed:
@@ -540,12 +539,7 @@ performed iteratively to find the critical wind speed:
 \section{Validation of the Critical Velocity Tool}
 
 The Python tool is validated against the benchmark results of~\cite{diana2020}.
-
-
-\subsection*{Structural Parameters}
-
-Table~\ref{tab:structural_params} lists the structural properties used in the
-validation, taken from~\cite{diana2020}.
+The structural paramters taken for the validation are taken from~\cite{diana2020} given in Table~\ref{tab:structural_params}
 
 \begin{table}[htbp]
     \centering
@@ -565,12 +559,10 @@ validation, taken from~\cite{diana2020}.
     \end{tabular}
 \end{table}
 
-\subsection*{Aerodynamic Parameters}
-
-In the benchmark, Theodorsen derivatives are used for the aerodynamic properties
+Theodorsen derivatives are used for the aerodynamic properties
 of the cross-section. The Theodorsen flutter derivatives are analytical functions
 derived from the closed-form solution for a thin flat plate in potential flow,
-first obtained by Theodorsen~\cite{Theodorsen1935}. They are expressed in terms
+first obtained by Theodorsen~\cite{TheodorsenGarrick1934}. They are expressed in terms
 of the real and imaginary parts of the Theodorsen circulatory function
 $C(k) = F(k) + iG(k)$, where $k$ is the reduced frequency. The analytical
 expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
@@ -601,12 +593,12 @@ Figure~\ref{fig:Theodorsen_Flutter_Derivatives}.
     \end{tabular}
 \end{table} 
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/Validation/Theodorsen_Flutter_Derivatives.png}
-    \caption{Theodorsen Flutter Derivatives}
-    \label{fig:Theodorsen_Flutter_Derivatives}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{Figures/Validation/Theodorsen_Flutter_Derivatives.png}
+%     \caption{Theodorsen Flutter Derivatives}
+%     \label{fig:Theodorsen_Flutter_Derivatives}
+% \end{figure}
 
 \subsection*{Results}
 
@@ -621,12 +613,12 @@ Figures~\ref{fig:eigen_freq_vs_Ur} and~\ref{fig:damping_vs_U}.
     \label{fig:eigen_freq_vs_Ur}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/Validation/Damping_Ratio_Vs_Wind_Velocity.png}
-    \caption{Damping ratio plotted against wind velocity.}
-    \label{fig:damping_vs_U}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{Figures/Validation/Damping_Ratio_Vs_Wind_Velocity.png}
+%     \caption{Damping ratio plotted against wind velocity.}
+%     \label{fig:damping_vs_U}
+% \end{figure}
 
 Since the bridge deck is modelled as a two-degree-of-freedom system, two
 eigenmodes are obtained. The zero-crossing of the imaginary part of each

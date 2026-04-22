@@ -158,6 +158,7 @@ OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -202,7 +203,6 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2.png
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
@@ -232,21 +232,14 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Theodorsen_Flutter_Derivatives.png
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
@@ -254,13 +247,6 @@ INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eig
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Damping_Ratio_Vs_Wind_Velocity.png
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out

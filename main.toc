@@ -35,18 +35,18 @@
 \contentsline {section}{\numberline {4.3}Observations and Discussion}{42}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Multi-Frequency Simulations}{43}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Simulation Parameters}{43}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Selection of Frequencies and Superpositions}{44}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Selection of Frequencies and Superpositions}{43}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Multi-Frequency Simulations - 1}{45}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Superposition Schemes}{46}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Procedure of Multi-Frequency method with FFT}{47}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}Procedure of Multi-Frequency Method with FFT}{47}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Comparison of Flutter Derivatives}{51}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Error Assessment Against Single Frequency Simulations}{53}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.4}Error Assessment Against Single-Frequency Simulations}{53}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Spectral Analysis}{55}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Superposition Impact on Critical Wind Speed}{58}{subsection.5.2.6}%
 \contentsline {section}{\numberline {5.3}Multi-Frequency Simulations 2}{58}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Superposition Schemes}{58}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Comparison of Flutter Derivatives}{59}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Error Assessment Against Single Frequency Simulations}{61}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.3}Error Assessment Against Single-Frequency Simulations}{61}{subsection.5.3.3}%
 \contentsline {subsection}{\numberline {5.3.4}Spectral Analysis}{62}{subsection.5.3.4}%
 \contentsline {subsection}{\numberline {5.3.5}Superposition Impact on Critical Wind Speed}{63}{subsection.5.3.5}%
 \contentsline {section}{\numberline {5.4}Key Findings}{63}{section.5.4}%

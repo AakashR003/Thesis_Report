@@ -44,9 +44,7 @@ values in the frequency bin, the extracted amplitude will be accurate and free f
 discretisation errors. If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
 from the FFT will contain an error. This effect is known as \textit{spectral leakage}: since
 no bin directly corresponds to the signal frequency, its amplitude is distributed across the
-neighbouring bins. \vspace{0.3cm}
-
-\textbf{Calculation of Frequency Bin}
+neighbouring bins. The frequency bins of a time data is calculated as
 
 \begin{equation}
 f_k = k \cdot \frac{f_s}{N}, \qquad k = 0, 1, 2, \dots, \left\lfloor \frac{N}{2} \right\rfloor
@@ -151,7 +149,7 @@ falls directly on a frequency bin, no spectral leakage is expected.
 \end{figure}
 
 As shown in Figure~\ref{fig:sf_binmatch}, the amplitude output from the FFT is 1.00, which
-matches the input signal amplitude exactly. This confirms that when the signal frequency falls
+matches the input signal amplitude exactly. This confirms that, when the signal frequency falls
 on a frequency bin, no discretisation error is introduced.
 
 % ------------------------------------------------------------
@@ -231,7 +229,7 @@ the neighbouring frequency bins are located at 0.5~Hz and 0.6~Hz. This frequency
 the centre of the interval between the two adjacent bins, producing an error of 21.77\%. When
 the total time is extended to 20~s, the bin spacing is reduced, placing the
 neighbouring bins at 0.5~Hz and 0.55~Hz. In this finer-resolution case, the error decreases
-to 5.6\%, since 0.54~Hz now lies closer, in relative terms, to one of its neighbouring bins.\\
+to 5.6\%, since 0.54~Hz lies closer, in relative terms, to one of its neighbouring bins.\\
 
 This behavior is further illustrated by examining a signal at 0.53~Hz. In the first
 configuration (bin spacing of 0.1~Hz), the normalised distance of 0.53~Hz from the midpoint
