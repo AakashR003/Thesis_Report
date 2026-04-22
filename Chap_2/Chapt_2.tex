@@ -74,14 +74,18 @@ For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force ac
 F_y = -F_L \cos \theta - F_D \sin \theta \quad 
 \end{equation}
 
-where:
-\begin{align*}
-C_L &= \text{coefficient of lift force}, \\
-C_D &= \text{coefficient of drag force}, \\
-\rho_{\mathrm{air}} &= \text{density of air}, \\
-V_{\mathrm{rel}} &= \sqrt{V^2 + \dot{y}^2} = \text{relative velocity of wind to structure's velocity}, \\
-\theta &= \tan^{-1}\left(\frac{\dot{y}}{V}\right) = \text{angle of attack}.
-\end{align*}
+where,
+
+\[
+F_L = C_L \frac{\rho d V_{\mathrm{rel}}^2}{2}, \quad F_D = C_D \frac{\rho d V_{\mathrm{rel}}^2}{2}.
+\]
+
+$C_L$ - coefficient of lift force
+$C_D$ - coefficient of Drag force
+$\rho_{\mathrm{air}}$ is the density of air
+\[
+V_{\mathrm{rel}} = \sqrt{V^2 + \dot{y}^2}, \quad \theta = \tan^{-1}\left(\frac{\dot{y}}{V}\right) \quad
+\] - relative velocity of wind to structre's velocity
 
 Writing the vertical force in terms of $C_y$,
 \[
