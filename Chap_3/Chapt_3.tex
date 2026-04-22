@@ -1,15 +1,11 @@
 \documentclass[../main]{subfiles}
 \begin{document}
 
-
-
-
-
 \chapter{Signal Analysis}
 
 Signal analysis is performed in this chapter. The aim is to first provide a brief introduction
-to the Discrete Fourier Transform (DFT) in the context of its application to MultiFrequency analysis
-for Flutter Derivative Identification. This is then applied to single- and multi-frequency signal extraction.
+to the Discrete Fourier Transform (DFT) in the context of its application to multi-frequency analysis
+for flutter derivative identification. This is then applied to single- and multi-frequency signal extraction.
 Finally, potential sources of error and methods to mitigate them are discussed.\\
 
 The Fourier Transform is a mathematical tool used to convert a signal from the time domain to
@@ -20,9 +16,9 @@ frequency domain, and its inputs are the time-varying data and the sampling freq
 sampling frequency defines how many samples are taken per second; in the CFD context, 
 it is equal to $1/\Delta t$, where $\Delta t$ is the time step.\\
 
-The Fast Fourier Transform (FFT) is derived from the DFT which has significantly higher
-computational efficiency. Several open-source tools are available to perform FFT computations.
-One of which is provided by the \texttt{scipy.fft} module in Python \cite{scipy}. Since Python is used for
+The Fast Fourier Transform (FFT) is derived from the DFT, which has significantly higher
+computational efficiency. Several open-source tools are available to perform FFT computations,
+one of which is provided by the \texttt{scipy.fft} module in Python \cite{scipy}. Since Python is used for
 post-processing throughout this thesis, the SciPy FFT tool is used to convert the obtained
 aerodynamic forces and moments into the frequency domain.\\
 
@@ -45,13 +41,11 @@ parameters:
 The frequency bin refers to the discrete set of frequency values produced by the FFT during
 domain conversion. If the frequency of the signal to be extracted coincides with one of the
 values in the frequency bin, the extracted amplitude will be accurate and free from
-discretisation errors.
-If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
+discretisation errors. If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
 from the FFT will contain an error. This effect is known as \textit{spectral leakage}: since
 no bin directly corresponds to the signal frequency, its amplitude is distributed across the
-neighbouring bins. 
+neighbouring bins. \vspace{0.3cm}
 
-\vspace{0.3cm}
 \textbf{Calculation of Frequency Bin}
 
 \begin{equation}
@@ -91,7 +85,7 @@ low, this effect should be kept in mind when using the FFT in practice.\\
 
 These two effects combined impose restrictions on the frequencies that can be extracted and
 the accuracy with which they can be obtained, in various forms. These are studied for 
-single and multifrequency method in the following sections. \\
+single- and multi-frequency methods in the following sections. \\
 
 % \begin{enumerate}
 %     \item As discussed, if the frequency of interest does not have a finite decimal
@@ -151,7 +145,8 @@ falls directly on a frequency bin, no spectral leakage is expected.
         \caption{FFT amplitude spectrum — bin match.}
         \label{fig:sf_binmatch_spectrum}
     \end{subfigure}
-    \caption{Single-frequency bin-match case: input signal and corresponding FFT spectrum.}
+    
+\caption{Single-frequency bin-match case: input signal and corresponding FFT spectrum.}
     \label{fig:sf_binmatch}
 \end{figure}
 
@@ -182,7 +177,8 @@ assigns its amplitude to the nearest neighbouring bin.
         \caption{FFT amplitude spectrum — non-bin match.}
         \label{fig:sf_nonbinmatch_spectrum}
     \end{subfigure}
-    \caption{Single-frequency non-bin-match case: input signal and corresponding FFT spectrum showing spectral leakage.}
+    
+\caption{Single-frequency non-bin-match case: input signal and corresponding FFT spectrum showing spectral leakage.}
     \label{fig:sf_nonbinmatch}
 \end{figure}
 
@@ -211,6 +207,7 @@ of 0.2 is superposed on the signal to assess its effect on the extracted amplitu
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/3_Spectrum.png}
         \caption{FFT amplitude spectrum — bin match with noise.}
         \label{fig:sf_noise_spectrum}
+   
     \end{subfigure}
     \caption{Single-frequency bin-match case with added white noise: input signal and corresponding FFT spectrum.}
     \label{fig:sf_noise}
@@ -231,7 +228,7 @@ larger the resulting error.\\
 
 To illustrate this, consider a signal at 0.54~Hz with the same configuration as above, where
 the neighbouring frequency bins are located at 0.5~Hz and 0.6~Hz. This frequency falls near
-the centre of the interval between the two adjacent bins, producingan error of 21.77\%. When
+the centre of the interval between the two adjacent bins, producing an error of 21.77\%. When
 the total time is extended to 20~s, the bin spacing is reduced, placing the
 neighbouring bins at 0.5~Hz and 0.55~Hz. In this finer-resolution case, the error decreases
 to 5.6\%, since 0.54~Hz now lies closer, in relative terms, to one of its neighbouring bins.\\
@@ -242,16 +239,15 @@ between its nearest bins is $0.3/0.5 = 0.6$, yielding an error of 11.68\%. In th
 configuration (bin spacing of 0.05~Hz), this ratio increases to $0.2/0.25 = 0.8$, and the
 error rises to 24.02\%, despite the absolute distance to the nearest bin being smaller. This
 result highlights that it is the relative position within the bin interval
- that determines the magnitude of spectral leakage error. One approach
+that determines the magnitude of spectral leakage error. One approach
 to mitigate error in the case where the frequency falls exactly at the midpoint
-between two bins, is to sum the amplitudes of the two neighbouring bins. However, this
+between two bins is to sum the amplitudes of the two neighbouring bins. However, this
 introduces additional uncertainty and should therefore be applied with caution.\\
 
 Another approach is improving the frequency resolution
-through a longer data which reduces spectral leakage error by moving the signal frequency
+through a longer data record, which reduces spectral leakage error by moving the signal frequency
 closer to a bin in relative terms. However, as the resolution increases, the sensitivity of
 the error also increases which must be carefully considered when increasing the length.
-
 
 % ============================================================
 \section{Multi-Frequency}
@@ -363,7 +359,7 @@ persists under multi-frequency conditions.
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Input_Signal.png}
+        \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Input_Signal.png}        
         \caption{Multi-frequency input signal with white noise.}
         \label{fig:mf_noise_input}
     \end{subfigure}
@@ -381,7 +377,7 @@ persists under multi-frequency conditions.
 As shown in Table~\ref{tab:mf_binmatch_noise} and Figure~\ref{fig:mf_noise}, the introduction
 of white noise produces small errors across all frequency components. This result is consistent
 with the single-frequency case with noise, where the errors remain small relative to those caused by spectral
-leakage. white noise produces uniform amplitude perturbations across the entire frequency spectrum. 
+leakage. White noise produces uniform amplitude perturbations across the entire frequency spectrum.
 Consequently, each amplitude component experiences the same level of disturbance regardless of how many signals 
 are superposed. Hence, the result is consistent in both cases. 
 
@@ -390,7 +386,7 @@ are superposed. Hence, the result is consistent in both cases.
 % ------------------------------------------------------------
 
 In this case, the effect of a single frequency (within the multi-frequency signal) not falling on a frequency bin is
-investigated. Specifically, to check whether the
+investigated, specifically to check whether the
 resulting error is isolated to the non-matching frequency or propagates to
 neighbouring frequency components as well.\\
 
@@ -422,7 +418,7 @@ worst-case spectral leakage scenario.
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
-        \centering
+        \centering   
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/3_Input_Signal.png}
         \caption{Multi-frequency input signal with one non-bin-matched component.}
         \label{fig:mf_nonbinmatch_input}
@@ -434,7 +430,8 @@ worst-case spectral leakage scenario.
         \caption{FFT amplitude spectrum showing spectral leakage from the non-bin-matched component.}
         \label{fig:mf_nonbinmatch_spectrum}
     \end{subfigure}
-    \caption{Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT spectrum illustrating leakage into neighbouring bins.}
+    \caption{Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT 
+spectrum illustrating leakage into neighbouring bins.}
     \label{fig:mf_nonbinmatch}
 \end{figure}
 
@@ -448,6 +445,5 @@ increasing spectral distance from the non-bin-matched frequency. This spatial de
 is also visible in the FFT spectrum, where the spurious disturbance diminishes progressively
 at frequencies further from 1.05~Hz. This behavior denotes the importance of ensuring
 all frequency components in a multi-frequency signal fall on frequency bins.
-
 
 \end{document}
