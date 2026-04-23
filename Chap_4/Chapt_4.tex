@@ -6,7 +6,7 @@
 This chapter investigates the linearity of flutter derivatives using single-frequency forced-motion simulations with 
 prescribed heave and pitch motions. The computational setup and mesh convergence are first established to ensure the 
 reliability of the simulations. The motion amplitudes are systematically increased from small values (0.68\% heave ratio and 1° pitch) to larger levels 
-(8.20\% heave ratio and 8° pitch), extending beyond the commonly assumed linear range. For each amplitude, flutter derivatives 
+(8.20\% heave ratio and 8° pitch), extending beyond the linear range. For each amplitude, flutter derivatives 
 are computed across a range of reduced velocities. The aerodynamic response is analyzed using flutter derivative evaluation, spectral decomposition of force signals, 
 phase relationship assessment, and pressure distribution study. This investigation is focused on the verification of Scanlan's 
 linearity assumption and the applicability of linear superposition, while also identifying which analysis methods 
@@ -19,7 +19,7 @@ appropriate motion amplitudes in the subsequent multi-frequency simulations.
 
 The 2-D CFD model is created using GiD (Figure \ref{fig:GiD_Model_2}). Since forced motion oscillation tests are conducted, the structure, i.e., the bridge 
 deck cross-section, is modelled as an opaque object in the fluid domain without any physical parameters 
-like stiffness and mass. Hence, it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
+such as stiffness and mass. Hence, it is a one-way coupling. The bridge deck cross-section is taken from Sarkic
 \cite{sarkic2012}, shown in Figure~\ref{fig:Sarkic_Section}. It is then externally oscillated by the solver with a 
 specific frequency. Arbitrary Lagrangian-Eulerian (ALE) framework is used for this.\\
 
@@ -58,8 +58,7 @@ Vortex shedding frequency = $ \frac{0.1 * 1}{0.366} $ = 0.273 Hz \\ [0.1cm]
 Ramp-up time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
 Stabilization time = $ 2 * \frac{1}{0.273} $ = 7.32 seconds \\ [0.1cm]
 
-Since the interest of this thesis is to capture the flutter response, 
-stable time period is time taken for 10 complete forced motion oscillations. But as each reduced velocity 
+For flutter response, stable time period is considered as the time taken for 10 complete forced motion oscillations. As each reduced velocity 
 has a different forced motion frequency, the stable phase of the simulations is different. A higher reduced velocity will 
 have a lower oscillating frequency and hence requires a longer simulation time and vice versa. Hence, its calculation is 
 shown after the information about the prescribed motion frequency is provided in the consecutive chapters. %Check: if any other reduced velocity is taken, the stable time period is mentioned in the respective chapter.
@@ -292,9 +291,9 @@ simulations are conducted.
 
 Figure~\ref{fig:Combined_Flutter_Derivatives} shows the flutter derivatives obtained for 6 heave 
 and pitch amplitudes. It is observed that derivatives $H_1$, $H_4$, $A_1$, and $A_4$ are equal for amplitudes up to a 
-heave ratio of 5.46$\%$. When it exceeds this value, the flutter derivatives vary. This validates the thumb 
-rule of a 5$\%$ linearity limit. For derivatives $H_2$, $H_3$, and $A_3$, the linear 
-limit holds up to 3 degrees, although $H_2$ exhibits a slight nonlinear behavior within that range. This is slightly lower than the thumb rule of 5 degrees. \\
+heave ratio of 5.46$\%$. When it exceeds this value, the flutter derivatives vary. This validates the rule of thumb 
+of a 5$\%$ linearity limit. For derivatives $H_2$, $H_3$, and $A_3$, the linear 
+limit holds up to 3 degrees, although $H_2$ exhibits a slight nonlinear behavior within that range. This is slightly lower than the rule of thumb of 5 degrees. \\
 
 From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2$ significantly deviates beyond 1.55 degrees. It should be noted that derivative $A_2$ even changes its sign at Amplitude Scheme 3 (pitch degree = 4.01). The reason for these behaviors is investigated and explained in the following sections.
 
@@ -307,19 +306,32 @@ From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2$ significant
 
 \subsection{Spectral Analysis}
 
-Spectral analysis is a powerful tool to identify the presence of nonlinear terms in the obtained forces and validate Scanlan's linearity assumption. If the spectrum of the obtained forces contains higher-order sine terms other than the applied frequency, 
-then nonlinear behavior is present. In this section, the spectrum of the obtained aerodynamic lift force and moment is analyzed for different amplitudes. A Discrete Fourier Transform (DFT) is used to obtain the spectrum of the forces. Plots of the spectrum corresponding to the reduced velocity of 21.86 are taken for explanation, since this is the most affected by nonlinearity.\\
+Spectral analysis is an effective tool to identify the presence of nonlinear terms in the obtained forces and 
+validate Scanlan's linearity assumption. If the spectrum of the obtained forces contains higher-order sine terms 
+other than the applied frequency, 
+then nonlinear behavior is present. In this section, the spectrum of the obtained aerodynamic lift force and moment is 
+analyzed for different amplitudes. A Discrete Fourier Transform (DFT) is used to obtain the spectrum of the forces. 
+Plots of the spectrum corresponding to the reduced velocity of 21.86 are presented as representative samples, since this is the 
+most affected by nonlinearity.\\
 
-Figure~\ref{fig:Frequency_Domain_Analysis_Heave} shows the spectrum for amplitude scheme 6 for heave motion. The y-axis is presented on a log scale so that noises are clearly visible. It is observed that the spectra of both the obtained lift force and moment are clean, 
-indicating that the obtained forces are linear with respect to the prescribed motion. This is same for all amplitude schemes, which shall be observed in Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86}. \\
+Figure~\ref{fig:Frequency_Domain_Analysis_Heave} shows the spectrum for amplitude scheme 6 for heave motion. The y-axis is presented on a log scale so that any noise 
+is easily distinguishable. It is observed that the spectra of both the obtained lift force and moment are without spurious frequencies, 
+indicating that the obtained forces are linear with respect to the prescribed motion. 
+This is the same for all amplitude schemes, which is shown in Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86}. \\
 
-Figure~\ref{fig:Frequency_Domain_Analysis_Pitch} shows the lift force spectrum for amplitude schemes 3 and 4 for pitch motion (pitch degrees of 4.01 and 4.98). In general, the spectrum of pitch motion is noisy when visualized on a log scale. But on the normal scale, this spectrum is clean (less noisy) up to scheme 3. 
-It is observed that the spectrum changes from clean to noisy from scheme 3 to 4, indicating the presence of higher-order sine terms and, therefore, nonlinearity starts to appear. For all degrees above this pitch degree, the spectrum is noisy. This shall be verified in Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86}. This case is the same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
-which is slightly lower than the thumb rule of 5 degrees.\\
+Figure~\ref{fig:Frequency_Domain_Analysis_Pitch} shows the lift force spectrum for amplitude schemes 3 and 4 for pitch motion (pitch degrees of 4.01 and 4.98). 
+In general, the spectrum of pitch motion is noisy when visualized on a log scale. However on the normal scale, this spectrum is without spurious frequencies up to scheme 3. 
+It is observed that the spectrum exhibits spurious frequency components from scheme 4, indicating the presence of higher-order sine terms and, 
+therefore, nonlinearity starts to appear. For all degrees above this pitch degree, the spectrum contains spurious frequencies. This is  
+presented in Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86}. This case is the same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
+which is slightly lower than the rule of thumb of 5 degrees.\\
 
 On comparing Figure~\ref{fig:Combined_Flutter_Derivatives} and Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, 
-it can be observed that the nonlinearity in flutter derivatives $A_2$ and $H_2$ starts to occur at a lower pitch degree (3.09 degrees) than the nonlinearity in the obtained spectrum analysis (4.98 degrees). Hence, this deviation in flutter derivatives is not due to nonlinearity in the obtained forces. Though spectrum analysis nearly validates the thumb rule of 5 degrees for pitch motion, 
-it raises the question of why the flutter derivatives show nonlinearity at a lower pitch degree than the obtained forces. This is investigated in the next section with a study on aerodynamic forces and phases.\\
+It is observed that the nonlinearity in flutter derivatives $A_2$ and $H_2$ starts to occur at a lower pitch degree (3.09 degrees) 
+than the linearity limit which was obtained from the spectrum analysis (4.98 degrees). 
+Therefore, the deviation in flutter derivatives A2 and H2 for the scheme 3 and 4 does not arise from nonlinearity in the forces themselves. Although spectral analysis approximately validates the 
+rule of thumb of 5 degrees for pitch motion, 
+the flutter derivatives exhibit nonlinearity at a smaller pitch angle. This is investigated in the next section with a study on aerodynamic forces and phases.\\
 
 \begin{figure}[htbp]  
     \centering    
@@ -383,47 +395,56 @@ conducted for the phase of aerodynamic forces and moments.\\
 
 Figure~\ref{fig:Displacement_Vs_Force} shows plots of prescribed motion amplitude vs aerodynamic force and moment, and 
 prescribed motion amplitude vs phase of aerodynamic force and moment, for both heave and pitch motion. These are plotted for 
-a reduced velocity of 21.86. It can be observed that for heave motion, the lift force and moment amplitude 
+a reduced velocity of 21.86. It is observed that for heave motion, the lift force and moment amplitude 
 exhibit linear behavior with respect to the prescribed displacement. Furthermore, the phase of the force and 
 moment is constant. For pitch motion, the lift force and moment show linear behavior up to a pitch degree of 5
-(a mild nonlinearity is present, and this is the reason small noises were obtained in the spectrum even in the lower amplitude scheme for pitch in the previous section). This is again consistent with the thumb rule of 5 degrees and 
+(a mild nonlinearity is present, and this is the reason minor noise components are obtained in the spectrum even in the lower amplitude scheme for pitch in the previous section). This is again consistent with the rule of thumb of 5 degrees and 
 spectral analysis and therefore validates Scanlan's linearity assumption.\\
 
-However, the phase is not constant either for the lift force or moment after 3 degrees. To have a 
-comparative study of phase with flutter derivatives, first, their relation is once again stated, then the comparative study is shown. Derivatives $H_1$, $A_1$, $H_4$, and $A_4$ are associated with the heave motion aerodynamic 
+However, the phase is not constant either for the lift force or moment after 3 degrees. To facilitate the comparative 
+study of the phase alongside flutter derivatives, their relationship is briefly reiterated. Derivatives $H_1$, $A_1$, $H_4$, and $A_4$ are associated with the heave motion aerodynamic 
 lift, moment, and their phase. Derivatives $H_2$, $A_2$, $H_3$, and $A_3$ are associated with the pitch motion aerodynamic 
 lift, moment, and their phase. $H_2$ and $A_2$ are associated with the phase of the pitch motion aerodynamic 
 lift and moment.\\ 
 
 On comparing Figure~\ref{fig:Displacement_Vs_Force} and Figure~\ref{fig:Combined_Flutter_Derivatives}, 
-it is clear that the nonlinearity in flutter derivatives $A_2$ and $H_2$ is due to the phase change. Further, on examining Figure~\ref{fig:Displacement_Vs_Force}-{h}, the phase of the moment (related to derivative $A_2$) changes 
-from positive to negative at 3 degrees. And it can be observed in Figure~\ref{fig:Combined_Flutter_Derivatives} 
-that at 3 degrees, derivative $A_2$ changes its sign. This confirms the sign change in $A_2$ is caused by the phase change. It is therefore concluded that the nonlinearity in derivatives $A_2$ and $H_2$ is not due to nonlinearity in the obtained forces, 
-but due to the phase change. This is the reason the spectrum of the obtained forces is clean even when nonlinearity existed. A similar behavior was observed by \cite{noda2003} and \cite{lin2019}.
+it is clear that the nonlinearity in flutter derivatives $A_2$ and $H_2$ is due to the phase change. 
+On examining Figure~\ref{fig:Displacement_Vs_Force}-{h}, the phase of the moment (related to derivative $A_2$) changes 
+from positive to negative at 3 degrees (scheme 3). Further, it can be observed in Figure~\ref{fig:Combined_Flutter_Derivatives} 
+that at 3 degrees, derivative $A_2$ changes its sign. This confirms the sign change in $A_2$ is caused by the phase change. It is therefore concluded 
+that the nonlinearity in derivatives $A_2$ and $H_2$ is not due to nonlinearity in the obtained forces, 
+but due to the phase change. This explains why the force spectrum remains without spurious frequencies even when nonlinearity is present. A similar behavior was observed by \cite{noda2003} and \cite{lin2019}.
 (A detailed study on reasoning this behavior and comparative analysis with the 
 referenced paper is provided in the next subsection on pressure distribution analysis).\\ 
 
-This observation points to the earlier discussion that Scanlan's linearity assumption is not equivalent to the principle of linear superposition. Though the obtained forces may be linear with respect to the prescribed motion, we cannot linearly superpose the signals at these amplitudes.\\  
+This observation points to the earlier discussion that Scanlan's linearity assumption is not equivalent to the principle of linear superposition. 
+Although the obtained forces may be linear with respect to the prescribed motion, linear superposition of the signals is not applicable at these amplitudes.\\  
 
-Since the plot shown before was only for the reduced velocity of 21.86, it is necessary to analyze the results for other reduced 
-velocities before finalizing the conclusion. The results for all reduced velocities are compiled in Figure~\ref{fig:Compiled_Displacement_Vs_Force}. The x-axis is the same as before, the amplitude case, but the y-axis is modified.\\
+Since the Figure \ref{fig:Displacement_Vs_Force}, plots linearity assessment only for the reduced velocity of 21.86, it is necessary to analyze the results for other reduced 
+velocities before finalizing the conclusion. The results for all reduced velocities are compiled in Figure~\ref{fig:Compiled_Displacement_Vs_Force}. The x-axis is the same as before, the amplitude scheme, but the y-axis is modified.\\
 
-This y-axis represents aerodynamic force divided by the prescribed motion amplitude and normalized with respect to the first amplitude scheme. The normalization is done because different reduced velocities will obtain different values of aerodynamic force per unit motion amplitude. With respect to phase, instead of normalizing, the relative error to the first amplitude scheme is taken as the y-axis. These allow for a better comparison of the nonlinearity characteristics across different reduced velocities. For a simpler understanding, if the aerodynamic forces are linear, the plot should be a constant horizontal line at a value of 1. If the phase is constant, 
+This y-axis represents aerodynamic force divided by the prescribed motion amplitude and normalized with respect to the first amplitude scheme. The normalization 
+is done because different reduced velocities will obtain different values of aerodynamic force per unit motion amplitude. With respect 
+to phase, instead of normalizing, the relative error to the first amplitude scheme is taken as the y-axis. These allow for a 
+better comparison of the nonlinearity characteristics across different reduced velocities. For better understanding, 
+if the aerodynamic forces are linear, the plot should be a constant horizontal line at value of 1. If the phase is constant, 
 the plot should similarly be a horizontal line at a value of 0 (indicating error is zero). Note that the $y$-axis limits are not uniform across subplots (this should be considered 
 when comparing the degree of nonlinearity between the two figures). The non-uniform limits are 
-kept to see the variations in nonlinearity even when the overall error is small.\\
+kept to capture the variations in nonlinearity even when the overall error is small.\\
     
-It can be observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
+It is observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
 for reduced velocities above 1.71. This is equivalent to the behavior observed earlier for the reduced velocity of 21.86 
 (Figure~\ref{fig:Displacement_Vs_Force}). The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone show significant deviation 
-because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at higher frequencies difficult. Similar behavior is observed for the heave lift force as well, which shall be verified in Appendix~\ref{fig:Appendix_Complete_Compiled_Displacement_Vs_Force}.\\
+because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at higher frequencies (1.6 and 3.2 Hz) difficult. Similar behavior is observed for the heave lift force as well, which presented in Appendix~\ref{fig:Appendix_Complete_Compiled_Displacement_Vs_Force}.\\
 
-For pitch motion, the moment exhibits slight nonlinearity, as seen before for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}). Another observation is that the nonlinearity in phase increases with increasing reduced velocity (decreasing frequency). This further validates the behavior observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, 
+For pitch motion, the moment exhibits slight nonlinearity, as seen before for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}). 
+Another observation is that the influence of nonlinearity in phase increases with increasing reduced velocity (decreasing frequency). This further validates 
+the behavior observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, 
 where the nonlinearity in $A_2$ and $H_2$ is less at lower reduced velocities.\\ 
 
 To conclude, although Scanlan's assumption of linearity holds for the 
-obtained forces, aerodynamic derivatives may still exhibit nonlinearity. And the essential note is that this 
-nonlinear behavior is not detectable with spectrum analysis.
+obtained forces, aerodynamic derivatives may still exhibit nonlinearity. Moreover, this 
+nonlinear behaviour cannot be detected via spectral analysis.
 
 % Nonlinearity Study
 \begin{figure}[htbp]  
@@ -498,36 +519,39 @@ nonlinear behavior is not detectable with spectrum analysis.
 
 \subsection{Pressure Distribution Study}
 
-As mentioned earlier, a similar nonlinearity of derivatives $A_2$ and $H_2$ was observed by \cite{noda2003} and \cite{lin2019}. However, in those works, the nonlinearity was for larger pitch 
-angles than observed here. This difference raises the question of whether the same underlying physical mechanism 
-is responsible for the phenomenon. Hence, in this subsection, the reason behind this behavior is analyzed and verified to see whether it is 
+As mentioned earlier, a similar nonlinear behaviour of derivatives $A_2$ and $H_2$ was observed by \cite{noda2003} and \cite{lin2019}. 
+However, in those works, the linearity limits observed at a larger pitch 
+angles than observed in this study. This difference raises the question of whether the same underlying physical mechanism 
+is responsible for the phenomenon. Hence, in this subsection, the reason behind this behavior is analyzed and verified to determine whether it is 
 similar to what is observed in the references.\\
 
 In that paper, it has been explained that the phase shift is primarily due to changes in the flow reattachment 
-point, which is the result of variation in pressure distribution along the section. At small pitch amplitudes, 
+point, which is the resulted in the variation in pressure distribution along the section. At small pitch amplitudes, 
 the pressure field remains relatively consistent throughout the oscillation cycle. The flow around the structure does not undergo 
 substantial changes between the positive and negative peaks of the pitch motion amplitude. At larger pitch amplitudes, the pressure 
 distribution varies highly over the cycle because the flow field exhibits significant alterations during 
 the peak pitch motion. This is the cause of the observed phase deviation.\\
 
 To perform a similar study, pressure distributions for the present simulation were extracted and compared across different pitch amplitudes. Time instants were chosen 
-to cover one full oscillation cycle, starting from pitch degree 0 (at a simulation time of 32 seconds) to the maximum negative peak displacement at 38 seconds 
-(see the prescribed motion in Figure~\ref{fig:Prescribed Displacement}).\\
+to cover one full oscillation cycle, starting from pitch degree 0 (at a simulation time of 32 seconds) to the maximum negative peak rotation at 38 seconds 
+(as shown in Figure~\ref{fig:Prescribed Displacement}).\\
 
-Figure~\ref{fig: Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution 
-around the cross-section at several time steps for the smallest amplitude scheme (scheme 0). The pressure field 
-remains quite constant across the different phases of the motion. In contrast, for amplitude scheme 6 (Figure~\ref{fig: Amplitude Study - 6 - Pitch Motion - Pressure Distribution}) 
-the pressure distribution varies highly.\\ 
+% Figure~\ref{fig: Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution 
+% around the cross-section at several time steps for the amplitude scheme 0 and 6. The pressure field 
+% remains relatively constant across the different phases of the motion. In contrast, for amplitude scheme 6
+% the pressure distribution varies highly.\\ 
 
 Figure~\ref{fig: Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution plotted around the 
-bridge cross-section for amplitude schemes 0 and 6 (pressure inward represents negative pressure). It shall be observed that for scheme 0, the pressure distribution
-is consistent among all 4 time steps. But for amplitude scheme 6, it varies highly. 
+bridge cross-section for amplitude schemes 0 and 6 (pressure inward represents negative pressure). It is observed that for scheme 0, the pressure distribution
+is consistent among all 4 time steps. However for the amplitude scheme 6, it varies highly. 
 
 Although the distribution of pressure itself changes, this behavior mainly affects the pitching moment (and therefore derivatives $A_2$ and $H_2$) 
-rather than the lift force (related to $A_3$ and $H_3$). It is because the integrated lift force remains approximately constant 
+rather than the lift force (related to $A_3$ and $H_3$). This is because the integrated lift force remains approximately constant 
 even at higher pitch angles, but the distribution of pressure on the structure's surface changes considerably. As a result, the effective center 
 of pressure (the moment arm weighted by the pressure distribution) shifts during the cycle, which is directly 
-reflected in the pitching moment. Since the lift force is the net vertical integration, it is much less sensitive to these redistributions. This observation is consistent with the observations from the references, and therefore it shall be understood that a similar mechanism is responsible 
+reflected in the pitching moment. Since the lift force is the net vertical integration, it is considerably less 
+sensitive to these redistributions. This observation is consistent with the observations from the references, and 
+therefore it is concluded that a similar mechanism is responsible 
 for this discrepancy in the derivatives $A_2$ and $H_2$.\\
 
 Finally, it should be noted that the onset of this nonlinear behavior in pitch motion is strongly 
@@ -648,19 +672,22 @@ at which phase nonlinearity becomes significant will vary across different cross
 
 \subsection{Amplitude Impact on Critical Wind Speed}
 
-Lastly, the influence of this nonlinearity on the critical velocity is studied. For the calculation of critical velocity, structural parameters are required. Structural parameters of four existing bridges are taken from - [\cite{diana2020}, \cite{xin2007}, \cite{zhan2012_Tacoma_Narrows}]. Their structural properties are summarized in Table~\ref{tab:bridge_configs}.\\
+Finally, the influence of this nonlinearity on the critical velocity is studied. For the calculation of critical velocity, structural parameters are required. Structural parameters of four existing bridges are taken from - [\cite{diana2020}, \cite{xin2007}, \cite{zhan2012_Tacoma_Narrows}]. Their structural properties are summarized in Table~\ref{tab:bridge_configs}.\\
 
 The sensitivity of the critical wind speed
 to errors in flutter derivatives depends on two factors. First, whether the reduced velocity
 range at which errors occur coincides with the critical flutter range of the bridge. Second,
 the structural properties of the bridge determine which flutter derivative plays a dominant
-role in the critical velocity prediction. To cover the second point, four structural parameters are taken.\\ 
+role in the critical velocity prediction. To address the latter factor, the structural 
+parameters of four bridges are analyzed.\\ 
 
-Figure~\ref{fig:CriticalVelocity_Vs_Amplitude_Scheme} shows the critical velocity obtained for all amplitude schemes. It shall be observed for all three bridge configurations (except Humen) that up to amplitude scheme 5 there is less influence on 
+Figure~\ref{fig:CriticalVelocity_Vs_Amplitude_Scheme} shows the critical velocity obtained for all amplitude schemes. 
+It is observed for all three bridge configurations (except Humen) that up to amplitude scheme 5 there is less influence on 
 the obtained critical velocity. For Humen, after amplitude scheme 3, the critical velocity varies significantly. This indicates that this
-bridge configuration might be more sensitive to the $A_2$ and $H_2$ derivatives. The reason for not observing a major deviation 
-in the critical velocity (up to scheme 5) is that all the critical reduced velocities are below 12 (Figure~\ref{fig:ReducedVelocity_Vs_Amplitude_Scheme}). But as the errors in flutter derivatives are larger in the higher reduced velocities, 
-the critical velocity did not show much variation.
+bridge configuration might be more sensitive to the $A_2$ and $H_2$ derivatives. The reason that no major deviation is observed 
+in the critical velocity (up to scheme 5) is that all the critical reduced velocities are below 12 (Figure~\ref{fig:ReducedVelocity_Vs_Amplitude_Scheme}). 
+As the errors in flutter derivatives are significant in the higher reduced velocities, 
+the critical velocity did not show significant variation.
 
 \begin{table}[h!]
 \centering
@@ -700,11 +727,11 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 
 \section{Observations and Discussion}
 
-The linearity limit for heave motion agrees with the thumb rule; therefore, there should not be any issue with the 
-Multi-Frequency method as long as the amplitude remains within this limit. Scanlan's assumptions and the principle of 
-superposition are not equivalent and may differ, with this being most clearly seen with pitch motion. Therefore, when 
+The linearity limit for heave motion agrees with the rule of thumb; therefore, the 
+Multi-Frequency method should remain valid as long as the amplitude remains within this limit. Scanlan’s assumptions and the principle of superposition 
+are not equivalent and may differ; this discrepancy is observed for pitch motion. Therefore, when 
 validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$. Although 
-the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the important finding here is that 
-the present model exhibits nonlinearity at a much lower pitch degree for Sarkic's cross-section.
+the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the finding from this investigation is that 
+the present model exhibits nonlinearity at a considerably lower pitch degree for Sarkic's cross-section.
 
 \end{document}

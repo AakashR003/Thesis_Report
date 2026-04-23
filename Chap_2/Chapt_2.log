@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  22 APR 2026 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  23 APR 2026 05:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,12 +438,12 @@ File: Figures/Galloping_2.png Graphic file (type png)
 <use Figures/Galloping_2.png>
 Package pdftex.def Info: Figures/Galloping_2.png  used on input line 184.
 (pdftex.def)             Requested size: 452.9679pt x 167.76566pt.
-<Figures/Flutter_1.png, id=65, 317.38576pt x 164.41425pt>
+ [4 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Galloping_2.png>]
+<Figures/Flutter_1.png, id=75, 317.38576pt x 164.41425pt>
 File: Figures/Flutter_1.png Graphic file (type png)
 <use Figures/Flutter_1.png>
 Package pdftex.def Info: Figures/Flutter_1.png  used on input line 199.
 (pdftex.def)             Requested size: 226.48395pt x 117.32698pt.
- [4 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Galloping_2.png>]
 <Figures/Flutter_2.png, id=78, 551.661pt x 388.45125pt>
 File: Figures/Flutter_2.png Graphic file (type png)
 <use Figures/Flutter_2.png>
@@ -456,11 +456,6 @@ LaTeX Warning: Citation `TheodorsenGarrick1934' on page 6 undefined on input lin
 
 LaTeX Warning: Citation `scanlan1971' on page 6 undefined on input line 240.
 
-
-Overfull \hbox (41.83588pt too wide) in paragraph at lines 255--263
-\OT1/cmr/m/n/12 de-notes ro-ta-tion-al de-gree of free-dom (pitch mo-tion). The quan-ti-ties $\OML/cmm/m/it/12 H[]; H[]; H[]; H[]; A[]; A[]; A[]; A[]$
- []
-
 [6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 358--363
 
@@ -471,18 +466,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--371
 
  []
 
-<Figures/Single_Frequency.png, id=115, 589.0005pt x 355.92975pt>
+<Figures/Single_Frequency.png, id=113, 589.0005pt x 355.92975pt>
 File: Figures/Single_Frequency.png Graphic file (type png)
 <use Figures/Single_Frequency.png>
 Package pdftex.def Info: Figures/Single_Frequency.png  used on input line 374.
 (pdftex.def)             Requested size: 339.72592pt x 205.3043pt.
-<Figures/MultiFrequency_Explanation.png, id=116, 748.59676pt x 305.943pt>
+<Figures/MultiFrequency_Explanation.png, id=114, 748.59676pt x 305.943pt>
 File: Figures/MultiFrequency_Explanation.png Graphic file (type png)
 <use Figures/MultiFrequency_Explanation.png>
 Package pdftex.def Info: Figures/MultiFrequency_Explanation.png  used on input line 381.
 (pdftex.def)             Requested size: 748.59492pt x 305.94223pt.
 [8] [9 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Single_Frequency.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/MultiFrequency_Explanation.png>]
-Overfull \hbox (48.97142pt too wide) detected at line 450
+Overfull \hbox (68.79207pt too wide) detected at line 450
  []$[]   [] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ;$ []  
  []
 
@@ -504,13 +499,13 @@ LaTeX Warning: Citation `diana2020' on page 11 undefined on input line 541.
 
 LaTeX Warning: Citation `diana2020' on page 11 undefined on input line 542.
 
-
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 11 undefined on input line 565.
-
-
-LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 11 undefined on input line 569.
-
 [11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_Decay_Solution_Plot.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_Growth_Solution_Plot.png>]
+
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 12 undefined on input line 565.
+
+
+LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 12 undefined on input line 569.
+
 
 LaTeX Warning: Reference `fig:damping_vs_U' on page 12 undefined on input line 606.
 
@@ -543,7 +538,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  95i,23n,99p,513b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (13 pages, 1511341 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (13 pages, 1511584 bytes).
 PDF statistics:
  243 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 500000)

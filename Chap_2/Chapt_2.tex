@@ -11,7 +11,7 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 \section{Structural Wind Engineering}
 Structural wind engineering can be viewed as a field in civil engineering studying how a structure will respond when exposed to wind. 
 This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
-The response of a structure to a wind load can be broadly classified into two types: (1) along and across wind response. 
+The response of a structure to a wind load can be broadly classified into two types: along and across wind response. 
 Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
 act perpendicular to the direction of the wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
 Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
@@ -20,7 +20,7 @@ wind load is considered. The static analysis primarily involves along-wind respo
 The major sources of dynamic wind loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations. 
 
 Buffeting is one of the main examples of extraneously induced excitations, which is an along-wind response caused by turbulence in the wind. 
-This shall be understood as, if we plot a graph between wind velocity (acting on the structure) vs time, then the mean of this wind velocity is the static component and the variance
+This shall be understood as, if a graph between wind velocity (acting on the structure) vs time is plotted, then the mean of this wind velocity is the static component and the variance
 of this plot is the buffeting component. The calculation of the buffeting component is given in EN 1991-1-4. 
 
 Next is instability-induced excitations. Vortex induced vibration (VIV) is an example of instability-induced excitations, which is an across-wind response that occurs 
@@ -46,7 +46,7 @@ because once the threshold limit is reached, the structure would not be able to 
 this instability is static in nature. Torsional divergence can be observed in failure of solar panels, etc. 
 Instability indicates a loss in any one of the structural parameters such as stiffness, damping, etc., due to the interaction with wind. In torsional
 divergence, the stiffness of the structure is lost due to the interaction with wind. This is analogous to the structural stability failure like buckling. 
-In buckling, stiffness is lost due to the second-order effect, and here this is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
+In buckling, stiffness is lost due to the second-order effect, and in this case it is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
 this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}.
 
 In flutter, the loss is in damping. Since flutter is the focus of this thesis, the following sections will focus on discussing the mathematical formulations for quantifying this loss.
@@ -101,7 +101,7 @@ The equations of motion for the system can be written as
 m\,\ddot{y} + c\,\dot{y} + k\,y = F_{\mathrm{y}}(\alpha) = \frac{\rho_{\mathrm{air}}\,V^2}{2}\,d\,C_y(\alpha)
 \end{equation}
 
-To solve the equation, we can linearise the system by assuming small motion at the zero angle of attack 
+To solve the equation, the system is linearised by assuming small motion at the zero angle of attack 
 
 \begin{equation}
 \alpha \approx \frac{\dot{y}}{V}
@@ -165,7 +165,7 @@ m\,\ddot{y} + \left(c\ -\left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right|_{\al
 % m\,\ddot{w} + \left(c - \left.\frac{\mathrm{d}c_L}{\mathrm{d}\alpha}\right|_{\alpha=0}\frac{\rho\,v_{\mathrm{wind}}\,d}{2}\right)\dot{w} + k\,w = 0
 % \end{equation}
 
-Here we can see how the system damping is affected by the interaction with wind: Effective damping = $\left(c\ -\left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\frac{\rho\,V}{2}\,d \right)$. 
+From this equation, it shall be realised how the system damping is affected by the interaction with wind: Effective damping = $\left(c\ -\left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\frac{\rho\,V}{2}\,d \right)$. 
 When this effective damping becomes negative, the system becomes unstable and galloping occurs. 
 Hence, the critical wind speed for galloping can be obtained by setting the effective damping to zero, which yields,
 
@@ -253,7 +253,7 @@ M_{ae} = \frac{1}{2}\rho U^2 B^2 \left[ KA_1^* \frac{\dot{h}}{U} + KA_2^* \frac{
 % \phantom{where,} $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are flutter derivatives\\
 
 In this equation, $h$ denotes the vertical degree of freedom (called as heave motion) and $\alpha$ denotes rotational degree of freedom (pitch motion). 
-The quantities $H_1^*, H_2^*, H_3^*, H_4^*, A_1^*, A_2^*, A_3^*, A_4^*$ are the flutter derivatives.
+The quantities $H_1^*$, $H_2^*$, $H_3^*$, $H_4^*$, $A_1^*$, $A_2^*$, $A_3^*$, $A_4^*$ are the flutter derivatives.
 These are shape constants that quantify the wind force acting on a structure as a linear relation 
 of the section's vertical velocity, angular rotation, and speed of angular rotation. They are in turn functions 
 of $U_{red} = \frac{1}{K} = \frac{U}{fB}$. These derivatives shall be viewed as: how $C_d$ acts as a non-dimensional shape constant for computing drag force on a structure, 
@@ -336,7 +336,7 @@ this approach is highly computationally costly because of the following reasons.
 derivatives are functions of reduced velocity, multiple CFD simulations (by varying the frequency 
 of input forced motion) must be performed to obtain them. For finding each point in a set of 8 
 flutter derivatives, 2 CFD simulations are required. To obtain an accurate representation of each 
-flutter derivative function, we need a minimum of 6 to 8 points on the flutter derivative curve. 
+flutter derivative function, a minimum of 6 to 8 points on the flutter derivative curve is needed. 
 Hence, a total of 16 simulations are required. Each CFD simulation will take approximately 48 hours. 
 Hence, to obtain a complete set of flutter derivatives, 768 hours of simulation time are required. 
 
@@ -411,7 +411,7 @@ On equating it yields
 \end{align}
 
 
-Converting this to matrix format and rearranging the terms, we get
+Converting this to matrix format and rearranging the terms
 
 \begin{equation}
 \begin{split}
@@ -422,28 +422,28 @@ Converting this to matrix format and rearranging the terms, we get
     + \begin{bmatrix} K_h & 0 \\ 0 & K_\alpha \end{bmatrix}
     \begin{Bmatrix} h \\ \alpha \end{Bmatrix} \\[6pt]
     &\quad
-    - \frac{1}{2}\rho K^2
+    - \frac{1}{2}\rho B^2
     \left(
-    \begin{bmatrix} H_1^* & BH_2^* \\ A_1^* & BA_2^* \end{bmatrix}
+    \begin{bmatrix} H_1^* & BH_2^* \\ BA_1^* & B^2A_2^* \end{bmatrix}
     \begin{Bmatrix} \dot{h} \\ \dot{\alpha} \end{Bmatrix}
-    + \begin{bmatrix} H_4^* & H_3^* \\ A_4^* & BA_3^* \end{bmatrix}
+    + \begin{bmatrix} H_4^* & BH_3^* \\ BA_4^* & B^2A_3^* \end{bmatrix}
     \begin{Bmatrix} h \\ \alpha \end{Bmatrix}
     \right)
     = \begin{Bmatrix} 0 \\ 0 \end{Bmatrix}.
 \end{split}
 \end{equation}
 
-This equation is in time domain. To solve it, we assume harmonic motion $h = e^{i\omega t}$ and $\alpha = e^{i\omega t}$ 
-and transform it to the frequency domain. The system becomes,
+This equation is in time domain. To solve it, assuming a harmonic motion $h = e^{i\omega t}$ and $\alpha = e^{i\omega t}$ 
+and transforming it to the frequency domain. The system becomes
 
 \begin{multline}
     \left(
     -\omega^2\begin{bmatrix} m & 0 \\ 0 & I \end{bmatrix}
     + i\omega\begin{bmatrix} C_h & 0 \\ 0 & C_\alpha \end{bmatrix}
     + \begin{bmatrix} K_h & 0 \\ 0 & K_\alpha \end{bmatrix}
-    - \frac{1}{2}\rho K^2
+    - \frac{1}{2}\rho B^2
     \begin{bmatrix} H_4^* - H_1^* & BH_3^* - BH_2^* \\
-                    A_4^* - A_1^* & BA_3^* - BA_2^* \end{bmatrix}
+                    BA_4^* - BA_1^* & B^2A_3^* - B^2A_2^* \end{bmatrix}
     \right)
     \begin{Bmatrix} h \\ \alpha \end{Bmatrix}
     = \begin{Bmatrix} 0 \\ 0 \end{Bmatrix},
@@ -457,7 +457,7 @@ which is of the standard form
 The unknown in the equation is $\omega = \omega_r + i\omega_i$, which represents the frequency in complex form: 
 The meaning of frequency in complex form can be interpreted from structural dynamics theory. 
 Solution of a simple harmonic oscillation without damping can be represented with $x(t) = e^{i\omega t}$ = cos($\omega t$) + i sin($\omega t$). 
-Here this represents a pure sinusoidal oscillation with frequency $\omega$ (real number) and with phase angle. To represent the effect of damping, 
+This represents a pure sinusoidal oscillation with frequency $\omega$ (real number) and with phase angle. To represent the effect of damping, 
 the solution takes the form $x(t) = e^{i\omega t} = e^{i\omega_r t} \cdot e^{-\omega_i t} = e^{-\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)$,
 where the real part $\omega_r$ is the oscillation frequency and the imaginary part $\omega_i$ governs the damping of the response.
 This equation has to be solved for $\omega$ to determine the system's oscillating frequency and damping characteristics. 
