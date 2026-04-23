@@ -8,31 +8,120 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 
 % ─────────────────────────────────────────────────────────────────────────────
 
-\section{Structural Wind Engineering}
-Structural wind engineering can be viewed as a field in civil engineering studying how a structure will respond when exposed to wind. 
-This is studied by combining the concepts of fluid mechanics and structural mechanics to understand the mechanisms of different responses and quantify the load due to it.
-The response of a structure to a wind load can be broadly classified into two types: along and across wind response. 
-Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces 
-act perpendicular to the direction of the wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature. 
-Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response 
-of the structure due to the mean wind load is analyzed. In dynamic analysis, the response of the structure due to the fluctuating component (time-varying) of the 
-wind load is considered. The static analysis primarily involves along-wind response created due to the drag force exerted by wind on the structure. 
-The major sources of dynamic wind loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations. 
+\section{Wind Effect on Structures}
 
-Buffeting is one of the main examples of extraneously induced excitations, which is an along-wind response caused by turbulence in the wind. 
-This shall be understood as, if a graph between wind velocity (acting on the structure) vs time is plotted, then the mean of this wind velocity is the static component and the variance
-of this plot is the buffeting component. The calculation of the buffeting component is given in EN 1991-1-4. 
+Understanding the wind load on structures shall begin from Alan G. Davenport wind loading chain. This gives a framework
+to understand and analyse the complex problem of wind load into a series of 5 chain links. First, wind climate deals with 
+macrometerological scale of wind. This gives information about wind in the follwoing areas: based on geographical location and 
+phenomenons with high return period like natural hazards and yearly variation of wind etc. These are crucial informations that dictates
+the maximum wind load that has to be considered for a structure based on its service life. Next, 2nd one is influence of terrian. This chain
+goes from a higher space scale in the previous chain to specific location of the building. To understand this, first it is needed to know 
+Atmoshperic boundary layer (ABL). It describes the profile of a wind as a function of height. It shall be understood as due to viscousity of 
+wind and turbulences of building near the ground, the wind velocities will be low. But as the height increases the wind velocity will increase. 
+This profile is given by atmoshperic boundary layer. This profile varies for each depending upon the terrian at which the structure is located. 
+For example a structure located located in dense urban area would have a lesser wind velocities at its base when compared to structure that is 
+located near the sea shore. 3rd link in the chain is the aerodynamics. This essentially deals with converting wind profile (varies in both time and space) 
+into aerodynamic forces acting on the building. Figure \ref{ABL} and \ref{veloctiy vs time} shall be combinedy visuvalised to relasie the time and space 
+variation of the wind load. 4th link is studying, response of the structure to these forces. The focus of this thesis 
+will be mainly around these two links. Before going to it, few points on spectrum known as Van der Hoven Spectrum will be discussed which 
+would give a sense on the time scale chain link 3 and 4 deal with, in comparitive to wind climate. The x axis of the plot is frequency and y axis 
+is the spectral energy. This graph gives information on dominant wind frequency (or cycle is dominant). For example a peak shall be observed at 
+the 0.5 days, which represents the wind cycle of a day. Another important observation from this plot is presence of spectral gap (marked in the figure). 
+This differentiates between macrometerological and micrometerological chracterstics of wind, which is the difference between wind climate and aerodynamic force.
+Figure\ref{ABL}. 
 
-Next is instability-induced excitations. Vortex induced vibration (VIV) is an example of instability-induced excitations, which is an across-wind response that occurs 
-in a bluff body. This is caused by the alternate shedding of 
-vortices in the wake region of the structure. A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causes separation
+\begin{figure}[htbp]
+\centering
+
+\begin{tikzpicture}[
+    every node/.style={
+        circle,
+        draw=blue,
+        minimum size=3cm,
+        align=center,
+        font=\small
+    },
+    arrow/.style={
+        ->,
+        thick,
+        >=Stealth
+    }
+]
+
+% Define horizontal spacing (less than diameter → overlap)
+\def\dx{2.9} % 3.2cm diameter → ~10% overlap
+
+% Nodes
+\node (climate) at (0,0) {Wind\\Climate};
+\node (terrain) at (0.9*\dx,0) {Influence \\ of Terrian};
+\node (aero) at (1.8*\dx,0) {Aerodynamic\\Effects};
+\node (dynamic) at (2.7*\dx,0) {Dynamic\\Effects};
+\node (response) at (3.6*\dx,0) {Criteria};
+
+
+\end{tikzpicture}
+
+\caption{Wind loading chain based on Davenport}
+\label{fig:wind_chain_circular}
+
+\end{figure}
+
+In analysing force acting on a structure due to wind, along with wind characterstics, the shape of the structure highly affects the aerodynamic forces. Hence,
+depending on this aerodynamic analysis can be classified based on whether the strcuture is buff body and streamlined body.
+Civil engineering structures mostly fall under the category of bluff body aerodynamics.
+A bluff body shall be understood as an object that disturbs the streamline flow of a fluid and causes separation
 points. The wake is the region in the downstream of the body where the flow is highly disturbed and has negative pressures. When the fluid flows over a structure,
-the flow separates at the separation points and forms a wake region in the downstream. When the velocity (Reynolds number) of the fluid is low, the vortex is time-invariant and the structure is subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices 
-to shed alternately from the two sides of the structure. This induces an alternating time-varying force of a sinusoidal manner in the across-wind direction. 
-This causes vibration in the structure known as vortex-induced vibration. Since this is a dynamic force, it requires attention to the calculation of the frequency, as this can determine the resonance of the building. When the frequency of vortex shedding matches with the 
+the flow separates at the separation points and forms a wake region in the downstream.
+The response of a structure to a wind load can be broadly classified into two types: along and across wind response.
+Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, forces
+act perpendicular to the direction of the wind. Since wind loads are time-varying, the response of the structure to the wind load is dynamic in nature.
+Therefore, analysis of structures subjected to wind needs to be differentiated between static and dynamic analysis. In static analysis, the response
+of the structure due to the mean wind load is analyzed. In dynamic analysis, the response of the structure due to the fluctuating component (time-varying) of the
+wind load is considered. The static analysis primarily involves along-wind response created due to the drag force exerted by wind on the structure.
+The major sources of dynamic wind loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations.
+
+Buffeting is one of the main examples of extraneously induced excitations, which is an along-wind response caused by turbulence in the wind.
+This shall be understood as, if a graph between wind velocity (acting on the structure) vs time is plotted, then the mean of this wind velocity is the static component and the variance
+of this plot is the buffeting component. The calculation of the buffeting component is given in EN 1991-1-4.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/Vander_Hoven_Spectrum.png}
+    \caption{}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Figures/Wind_speed_vs_response_Mate.png}
+    \caption{}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.6\textwidth}
+        \includegraphics[width=1\textwidth]{Figures/Atmospheric_Boundary_Layer.png}
+        \caption{}
+        \label{fig:Heave}
+    \end{subfigure}
+    \begin{subfigure}{0.6\textwidth}
+        \includegraphics[width=1\textwidth]{Figures/Wind_speed_vs_time.png}
+        \caption{}
+        \label{fig:Heave}
+    \end{subfigure}
+    \label{}
+\end{figure}
+
+Next is instability-induced excitations. Vortex induced vibration (VIV) is an example of instability-induced excitations, which is an across-wind response that occurs
+in a bluff body. This is caused by the alternate shedding of
+vortices in the wake region of the structure. When the velocity (Reynolds number) of the fluid is low, the vortex is time-invariant and the structure is subjected to a constant along-wind force, that is, static and buffeting response. But if the velocity is high, the flow becomes unstable causing the vortices
+to shed alternately from the two sides of the structure. This induces an alternating time-varying force of a sinusoidal manner in the across-wind direction.
+This causes vibration in the structure known as vortex-induced vibration. Since this is a dynamic force, it requires attention to the calculation of the frequency, as this can determine the resonance of the building. When the frequency of vortex shedding matches with the
 natural frequency of the structure, it will cause resonance leading to large amplitude vibrations and potential structural failure.
-The vortex shedding frequency is given by the formula f = St*U/D, where D is the characteristic length of the structure and U is the velocity of the fluid. 
-St is the non dimensional parameter called Strouhal number, which is a shape constant. For regular shapes, the value of St shall be taken from EN 1991-1-4.   
+The vortex shedding frequency is given by the formula f = St*U/D, where D is the characteristic length of the structure and U is the velocity of the fluid.
+St is the non dimensional parameter called Strouhal number, which is a shape constant. For regular shapes, the value of St shall be taken from EN 1991-1-4.
+
 
 Finally, movement induced excitations are caused due to the interaction between the wind and the structure. When wind passes over a structure, 
 it creates a force that causes deformation/displacement in the structure. Due to this displacement, 
