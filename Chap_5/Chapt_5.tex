@@ -365,24 +365,24 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
 
 A total of 34 CFD simulations are conducted, and the results are discussed in the current and following sections.
 From the flutter derivative plot (Figure~\ref{fig:Combined_Flutter_Derivatives_1}), 
-it can be observed that $H_1$, $A_1$, $H_3$, $A_3$, $H_4$, and $A_4$ 
+it can be observed that $H_1^*$, $A_1^*$, $H_3^*$, $A_3^*$, $H_4^*$, and $A_4^*$ 
 agree well across all superposition schemes.
 For Superposition Scheme~4, a slight error is 
 introduced, which is located in the lower reduced velocity range (i.e., below $U_r = 6.83$).
 Due to interpolation, this error propagates to higher reduced velocities, which explains the discrepancies 
 occurring there.\\
 
-It is also noted that $H_3$ and $A_3$ exhibit slightly varying values at the higher reduced velocities.
-This can be inferred from the single frequency simulations, which indicates that $H_3$ and $A_3$ display mild 
+It is also noted that $H_3^*$ and $A_3^*$ exhibit slightly varying values at the higher reduced velocities.
+This can be inferred from the single frequency simulations, which indicates that $H_3^*$ and $A_3^*$ display mild 
 nonlinearity at higher reduced velocities.
-It is further noted that $H_4$ and $A_4$ show slightly varying values, although the magnitude of 
+It is further noted that $H_4^*$ and $A_4^*$ show slightly varying values, although the magnitude of 
 the error is not clearly visible in this figure.\\
 
-For the flutter derivatives $H_2$ and $A_2$, the errors at lower reduced velocities are negligible, 
+For the flutter derivatives $H_2^*$ and $A_2^*$, the errors at lower reduced velocities are negligible, 
 even for Superposition Scheme~4.
 However, at higher reduced velocities, the error becomes significantly larger.
 Based on the single frequency simulations, this is expected, as it reflects the nonlinearity due to the phase of the moment of 
-the flutter derivative coefficients $H_2$ and $A_2$, and is not a consequence of the multi-frequency method itself.\\
+the flutter derivative coefficients $H_2^*$ and $A_2^*$, and is not a consequence of the multi-frequency method itself.\\
 
 The plot indicates that when the multi-frequency method is implemented in accordance with the principles 
 underlying the Fourier transformation, the resulting errors are negligible.\\
@@ -407,14 +407,14 @@ This shows the key distinction: not only must the peak amplitude be kept
 below the linearity threshold, but the instantaneous amplitude at every point in time must 
 also remain within this limit.
 This condition is satisfied only in the single-frequency case. 
-Consequently, the multi-frequency method for $H_2$ and $A_2$ derivatives is unlikely yield results fully equivalent to single-frequency 
+Consequently, the multi-frequency method for $H_2^*$ and $A_2^*$ derivatives is unlikely yield results fully equivalent to single-frequency 
 simulation results when the prescribed motion amplitude, chosen for pitch is below the limit of phase variations.\\
 
 Conversely, flutter derivative identifications aim 
 to simulate real-world conditions, where the induced motion is not a pure single frequency.
 From this perspective, it can be argued that the multi-frequency method provides a more 
 representative result than single-frequency oscillation (because of the inclusion of phase change).
-Therefore, whether the deviations in $A_2$ and $H_2$ are acceptable depends on the perspective adopted 
+Therefore, whether the deviations in $A_2^*$ and $H_2^*$ are acceptable depends on the perspective adopted 
 and the intended use of the results.\\
 
 \begin{figure}[htbp]
@@ -566,7 +566,7 @@ This reasoning is further supported by an additional observation. In Superpositi
 of 3.42 can be calculated from two simulation groups (Table~\ref{tab:MF1_SP3}, MF1-14 and MF1-15).
 Following the same reasoning, the error for MF1-15 of Scheme~3 (which pairs 3.42 with lower reduced velocities) should be greater than that 
 for MF1-14 (which pairs 3.42 with higher reduced velocities).
-This is indeed the case. For the $H_1$ derivative, the error for MF1-14 of Superposition Scheme~3 is 0.156\%, while 
+This is indeed the case. For the $H_1^*$ derivative, the error for MF1-14 of Superposition Scheme~3 is 0.156\%, while 
 for MF1-15 the error is 11.913\%.\\
 
 This effect is less significant for pitch motion because the ratio of 
@@ -658,8 +658,8 @@ Pitch Amplitude (rad)   & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 
 \end{figure}
 
 From Figure~\ref{fig:Combined_Flutter_Derivatives_2}, it can be observed that the flutter derivatives exhibit
-significant variation across superposition schemes, particularly for $H_2$ and $A_2$.
-A notable variation is also present in $H_4$ and $A_4$, whereas $H_1$ and $A_1$ show
+significant variation across superposition schemes, particularly for $H_2^*$ and $A_2^*$.
+A notable variation is also present in $H_4^*$ and $A_4^*$, whereas $H_1^*$ and $A_1^*$ show
 comparatively little variation.
 The key observation is that keeping only individual amplitudes below the linearity threshold produces large errors.
 Hence, the sum of the amplitudes across all frequencies in a superposition scheme group must be kept below the linearity threshold,
@@ -691,7 +691,7 @@ The phase errors for pitch motion are approximately 0.2~radians, which is becaus
 From the spectral analysis for heave motion
 (Figure~\ref{fig:Frequency_Domain_Analysis_Heave_MF2}), higher-order harmonic terms begin to
 appear as the number of superposed frequencies increases, although they are not substantial.
-These higher-order terms are the primary cause of the significant variation errors in the $H_4$ and $A_4$ derivatives.\\
+These higher-order terms are the primary cause of the significant variation errors in the $H_4^*$ and $A_4^*$ derivatives.\\
 
 \begin{figure}[htbp]  
     \centering   
@@ -716,7 +716,7 @@ These higher-order terms are the primary cause of the significant variation erro
 On examining the frequency domain for pitch motion
 (Figure~\ref{fig:Frequency_Domain_Analysis_Pitch_MF2}), the spectrum becomes increasingly
 noisy as the number of superposed frequencies increases.
-This spectral leakage is the primary reason for the large errors observed in the $H_2$ and $A_2$ derivatives.
+This spectral leakage is the primary reason for the large errors observed in the $H_2^*$ and $A_2^*$ derivatives.
 An important conclusion from this section is that the spectral analysis is a reliable tool for nonlinearity identification.
 It can clearly identify nonlinearity arising from a violation of Scanlan's linearity assumption.\\ 
 
@@ -770,22 +770,22 @@ and~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}.\\
 % ------------------------------------------------------------
 
 When using the multi-frequency vibration method with frequencies aligned to frequency bins and amplitude sums below 
-the linearity threshold, the flutter derivatives $H_1$, $H_3$, $A_1$, and $A_3$ are accurately identifiable across all 
+the linearity threshold, the flutter derivatives $H_1^*$, $H_3^*$, $A_1^*$, and $A_3^*$ are accurately identifiable across all 
 frequencies up to a superposition of three frequencies.
-The derivatives $H_4$ and $A_4$ exhibit minimal errors, while $H_2$ 
-and $A_2$ show the most significant deviations.
+The derivatives $H_4^*$ and $A_4^*$ exhibit minimal errors, while $H_2^*$ 
+and $A_2^*$ show the most significant deviations.
 Despite maintaining the amplitude summation below the linearity threshold, 
-considerable deviations appear in the flutter derivatives $A_2$ and $H_2$ across superposition schemes.
+considerable deviations appear in the flutter derivatives $A_2^*$ and $H_2^*$ across superposition schemes.
 These deviations are due to phase changes identified in the amplitude study of Chapter 4. An important consideration is determining which result is representative.
 Because, in real-world scenarios, externally applied motion is typically not purely sinusoidal;
-therefore, the multi-frequency approach provides a comparably better representation of flutter derivatives $H_2$ and $A_2$ that captures variations due to phase.
+therefore, the multi-frequency approach provides a comparably better representation of flutter derivatives $H_2^*$ and $A_2^*$ that captures variations due to phase.
 Moreover, these derivatives have minimal influence on the critical wind speed.
 However, as this conclusion is based on only four bridge 
 deck configurations, it should not be generalized.
 For other bridge deck properties, these derivatives may be critical.
 In such cases, the choice between single- and multi-frequency methods should be carefully investigated.
 % Future studies 
-% investigating which bridge deck characteristics cause $A_2$ and $H_2$ to dominate the critical wind speed would be valuable, 
+% investigating which bridge deck characteristics cause $A_2^*$ and $H_2^*$ to dominate the critical wind speed would be valuable, 
 % as this deviation is not localized to this cross-section alone but rather inherent to pitch motion behavior in flutter analysis.
 From multi-frequency simulation Campaign 2, if the sum of amplitudes exceeds the linearity threshold, the flutter derivatives 
 become highly inaccurate.

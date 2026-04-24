@@ -187,7 +187,7 @@ Obtaining Flutter Derivatives with Forced-Motion CFD simulations:
     \setlength{\itemsep}{10pt}
     \item[$\bullet$] On equating the lift force from Scanlan's formulation and CFD
     \begin{equation}
-        \frac{1}{2}\rho U^2 B \left[KH_1^* + K^2H_2^*\right] = H_1 \cos(\omega t) + H_2 \sin(\omega t)
+        \frac{1}{2}\rho U^2 B \left[KH_1^* + K^2H_2^*\right] = H_1^* \cos(\omega t) + H_2^* \sin(\omega t)
     \end{equation}
     \begin{equation}
         \frac{1}{2}\rho U^2 B^2 \left[KA_1^* + K^2A_2^*\right] = C_1 \cos(\omega t) + C_2 \sin(\omega t)
@@ -482,7 +482,7 @@ Figure~\ref{fig:Heave_Motion} shows the aerodynamic lift and moment forces obtai
 \end{figure}
 
 The results of the mesh convergence study are shown in Figure~\ref{fig:convergence}. It is observed that the 
-derivatives $H_1,H_3,A_1,A_2,$ and $A_3$ exhibited good convergence, while derivatives  $H_2,H_4,$ and $A_4$ displayed 
+derivatives $H_1^*,H_3^*,A_1^*,A_2^*,$ and $A_3^*$ exhibited good convergence, while derivatives  $H_2^*,H_4^*,$ and $A_4^*$ displayed 
 oscillatory convergence behavior. This behavior is consistent with findings in the literature, as these 
 particular derivatives are known to be more difficult to capture accurately. From the study it is concluded, 
 Model 3 is optimal and this mesh size is used for all subsequent simulations.

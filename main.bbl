@@ -69,10 +69,6 @@ Pooyan Dadvand, Riccardo Rossi, and Eugenio O{\~n}ate.
 \newblock \href {https://doi.org/10.1007/s11831-010-9045-2}
   {\path{doi:10.1007/s11831-010-9045-2}}.
 
-\bibitem{menter}
-Florian~R Menter.
-\newblock Turbulence {{Modeling}} for {{Engineering Flows}}.
-
 \bibitem{noda2003}
 M~Noda, H~Utsunomiya, F~Nagao, M~Kanda, and N~Shiraishi.
 \newblock Effects of oscillation amplitude on aerodynamic derivatives.
@@ -145,6 +141,10 @@ Robert~H. Scanlan.
 Mate Pentek.
 \newblock Method {{Development}} for the {{Numerical Wind Tunnel}} in {{Applied
   Structural Engineering}}.
+
+\bibitem{menter}
+Florian~R Menter.
+\newblock Turbulence {{Modeling}} for {{Engineering Flows}}.
 
 \bibitem{warnakulasuriya}
 Suneth Warnakulasuriya and C~L{\'a}zaro.

@@ -114,13 +114,13 @@ The following results are studied to understand the nonlinearity characteristics
 \subsection{Comparison of Flutter Derivatives}
 
 Figure~\ref{fig:Combined_Flutter_Derivatives} shows the flutter derivatives obtained for 6 heave 
-and pitch amplitudes. It is observed that derivatives $H_1$, $H_4$, $A_1$, and $A_4$ are equal for amplitudes up to a 
+and pitch amplitudes. It is observed that derivatives $H_1^*$, $H_4^*$, $A_1^*$, and $A_4^*$ are equal for amplitudes up to a 
 heave ratio of 5.46$\%$. When it exceeds this value, the flutter derivatives vary. This validates the thumb 
-rule of a 5$\%$ linearity limit. For derivatives $H_2$, $H_3$, and $A_3$, the linear 
-limit holds up to 3 degrees, although $H_2$ exhibits a slight nonlinear behaviour within that range. 
+rule of a 5$\%$ linearity limit. For derivatives $H_2^*$, $H_3^*$, and $A_3^*$, the linear 
+limit holds up to 3 degrees, although $H_2^*$ exhibits a slight nonlinear behaviour within that range. 
 This is slightly lower than the rule of thumb of 5 degrees. \\ 
-From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2$ significantly deviates beyond 1.55 degrees. 
-It should be noted that derivative $A_2$ even changes its sign at Amplitude Case 3 (pitch degree = 4.01). 
+From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2^*$ significantly deviates beyond 1.55 degrees. 
+It should be noted that derivative $A_2^*$ even changes its sign at Amplitude Case 3 (pitch degree = 4.01). 
 
 \begin{figure}[htbp]  
     \centering
@@ -146,7 +146,7 @@ indicating that the obtained forces are linear with respect to the applied motio
 presence of higher-order sine terms and, therefore nonlinearity starts to appear. \\
 
 On comparing Figure~\ref{fig:Combined_Flutter_Derivatives} and Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, 
-it can be observed that the nonlinearity in flutter derivatives $A_2$ and $H_2$ starts to deviate at a lower pitch degree than the nonlinearity in the obtained spectrum analysis.
+it can be observed that the nonlinearity in flutter derivatives $A_2^*$ and $H_2^*$ starts to deviate at a lower pitch degree than the nonlinearity in the obtained spectrum analysis.
 Hence this deviation in flutter derivatives is not due to nonlinearity in the obtained forces. This validdates the rule of thumb of 5 degrees for pitch motion, 
 but it also raises the question of why the flutter derivatives show nonlinearity at a lower pitch degree than the obtained forces.
 
@@ -374,18 +374,18 @@ spectral analysis and therefore validating the scanlan's linearity assumption. \
 
 However, the phase is not constant for either the lift force or the moment after 3 degrees. To have a 
 comparative study of phase with flutter derivatives, first their relaton is once again stated, then comparitive study is shown. 
-Derivatives $H_1$, $A_1$, $H_4$, and $A_4$ are associated with the heave motion aerodynamic 
-lift, moment, and their phase. Derivatives $H_2$, $A_2$, $H_3$, and $A_3$ are associated with the pitch motion aerodynamic 
-lift, moment, and their phase. $H_2$ and $A_2$ are associated with the phase of the pitch motion aerodynamic 
+Derivatives $H_1^*$, $A_1^*$, $H_4^*$, and $A_4^*$ are associated with the heave motion aerodynamic 
+lift, moment, and their phase. Derivatives $H_2^*$, $A_2^*$, $H_3^*$, and $A_3^*$ are associated with the pitch motion aerodynamic 
+lift, moment, and their phase. $H_2^*$ and $A_2^*$ are associated with the phase of the pitch motion aerodynamic 
 lift and moment. \\
 
 On comparing Figure~\ref{fig:Displacement_Vs_Force} and Figure~\ref{fig:Combined_Flutter_Derivatives}, 
-it is clear that the nonlinearity in flutter derivatives $A_2$ and $H_2$ is due to the phase change.
-Further, on examining~\ref{fig:Displacement_Vs_Force}{h} the phase of the moment (related to derivative $A_2$), it changes 
+it is clear that the nonlinearity in flutter derivatives $A_2^*$ and $H_2^*$ is due to the phase change.
+Further, on examining~\ref{fig:Displacement_Vs_Force}{h} the phase of the moment (related to derivative $A_2^*$), it changes 
 from positive to negative at 3 degrees. And it can be observed in Figure~\ref{fig:Combined_Flutter_Derivatives} 
-at 3 degrees derivative $A_2$ changes its sign. This confirms the sign change in $A_2$ is caused by the phase change. \\
+at 3 degrees derivative $A_2^*$ changes its sign. This confirms the sign change in $A_2^*$ is caused by the phase change. \\
 
-It is therefore concluded that the nonlinearity in derivatives $A_2$ and $H_2$ is not due to nonlinearity in the obtained forces, 
+It is therefore concluded that the nonlinearity in derivatives $A_2^*$ and $H_2^*$ is not due to nonlinearity in the obtained forces, 
 but due to the phase change.
 This is reason the spectrum of the obtained forces is clean: the amplitude of the force is linear, but the phase is not.
 A similar behaviour was observed by --- and ---. \\
@@ -414,7 +414,7 @@ in both heave and pitch motions.
 As they are affected by the vortex shedding effect, capturing these derivatives is difficult, and therefore they 
 are more affected by noise.
 Another important observation is that the nonlinearity in phase increases with increasing reduced velocity (decreasing frequency).
-This further validates the behaviour observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, where the nonlinearity in $A_2$ and $H_2$ is lower at lower reduced velocities. \\
+This further validates the behaviour observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, where the nonlinearity in $A_2^*$ and $H_2^*$ is lower at lower reduced velocities. \\
 
 To conclude, although Scanlan's assumption of linearity holds for the 
 obtained forces, aerodynamic derivatives may still exhibit nonlinearity. And the essential note is that this 
@@ -604,9 +604,9 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
     
     \item Scanlan's assumptions and the principle of superposition are not equivalent and may differ; this is most clearly seen with pitch motion.
     
-    \item Therefore, when validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2$ and $H_2$.
+    \item Therefore, when validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2^*$ and $H_2^*$.
     
-    \item Although the nonlinearity in $A_2$ and $H_2$ has been established in multiple research papers, the important finding here is that the present model exhibits nonlinearity at a much lower pitch degree. While the reason for this behaviour is linked to the reattachment point, an important question remains: what governs the onset of this behaviour, and why do different studies report different nonlinearity limits? This may be related to sectional properties rather than CFD modelling choices.
+    \item Although the nonlinearity in $A_2^*$ and $H_2^*$ has been established in multiple research papers, the important finding here is that the present model exhibits nonlinearity at a much lower pitch degree. While the reason for this behaviour is linked to the reattachment point, an important question remains: what governs the onset of this behaviour, and why do different studies report different nonlinearity limits? This may be related to sectional properties rather than CFD modelling choices.
 \end{enumerate}
 
 \end{document}

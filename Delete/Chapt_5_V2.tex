@@ -358,23 +358,23 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
     \label{fig:Combined_Flutter_Derivatives_1}
 \end{figure}
 
-From the flutter derivatives plot ~\ref{fig:Combined_Flutter_Derivatives_1} it can be observed that $H_1$, $A_1$, $H_3$, $A_3$, $H_4$, and $A_4$ 
+From the flutter derivatives plot ~\ref{fig:Combined_Flutter_Derivatives_1} it can be observed that $H_1^*$, $A_1^*$, $H_3^*$, $A_3^*$, $H_4^*$, and $A_4^*$ 
 agree well across all superposition schemes. For superposition scheme~4, a slight error is 
 introduced, which is located in the lower reduced velocity range (i.e.\ up to $U_r = 6.83$). 
 Due to interpolation, this error propagates to higher reduced velocities, which explains the discrepancies 
 occur there.
 
-It is also noted that $H_3$ and $A_3$ exhibit slightly varying values at the higher reduced velocities. 
-This can be inferred from the nonlinearity study, which indicates that $H_3$ and $A_3$ display mild 
+It is also noted that $H_3^*$ and $A_3^*$ exhibit slightly varying values at the higher reduced velocities. 
+This can be inferred from the nonlinearity study, which indicates that $H_3^*$ and $A_3^*$ display mild 
 nonlinearity at higher reduced velocities.
 
-It is further noted that $H_4$ and $A_4$ show slightly varying values, although the magnitude of 
+It is further noted that $H_4^*$ and $A_4^*$ show slightly varying values, although the magnitude of 
 the error is not clearly visible in this figure.
 
-For the flutter derivatives $H_2$ and $A_2$, the errors at lower reduced velocities are very small, 
+For the flutter derivatives $H_2^*$ and $A_2^*$, the errors at lower reduced velocities are very small, 
 even for superposition scheme~4. However, at higher reduced velocities the error becomes significantly 
 larger. Based on the nonlinearity study, this is expected, as it reflects the inherent nonlinearity (due to phase of moment) of 
-the flutter derivative coefficients $H_2$ and $A_2$, and is not a consequence of the multi-frequency method itself.
+the flutter derivative coefficients $H_2^*$ and $A_2^*$, and is not a consequence of the multi-frequency method itself.
 
 Overall, this plot indicates that, provided the multi-frequency method adheres to the framework for 
 the Fourier transformation, the errors remain small. 
@@ -406,7 +406,7 @@ From this perspective, it can be argued that the multi-frequency method provides
 representative result than single-frequency oscillation. This discussion has been explored in 
 the works of~\cite{}, where it has been argued that using random-noise forced motion yields 
 more reliable flutter derivatives than oscillation at a single specific frequency. Therefore, 
-whether the deviations in $A_2$ and $H_2$ are acceptable depends on the perspective adopted 
+whether the deviations in $A_2^*$ and $H_2^*$ are acceptable depends on the perspective adopted 
 and the intended use of the results.
 
 \begin{figure}[htbp]
@@ -670,7 +670,7 @@ This is further confirmed by another observation. In superposition scheme~3, the
 of 3.42 appears in two separate simulation groups. Following the same reasoning, the error for 
 simulation~15 of scheme~3 (which pairs lower reduced velocities) should be greater than that 
 for simulation~14 (which covers a higher reduced velocity range). This is indeed the case: for 
-the $H_1$ derivative, the error for simulation~14 of superposition scheme~3 is 0.156\%, while 
+the $H_1^*$ derivative, the error for simulation~14 of superposition scheme~3 is 0.156\%, while 
 for simulation~15 the error is 11.913\%.
 
 The reason this effect is less significant for pitch motion is that the dynamic range of the 
@@ -1018,15 +1018,15 @@ properties will decide on which derivative will play an signidicant role in the 
 % ------------------------------------------------------------
 
 \begin{itemize}
-    \item Flutter derivatives $H_1$, $H_3$, $A_1$, and $A_3$ are accurately identified in the 
+    \item Flutter derivatives $H_1^*$, $H_3^*$, $A_1^*$, and $A_3^*$ are accurately identified in the 
           multi-frequency forced-motion CFD simulation.
 
-    \item Flutter derivatives $H_2$, $H_4$, $A_2$, and $A_4$ exhibit errors in the 
+    \item Flutter derivatives $H_2^*$, $H_4^*$, $A_2^*$, and $A_4^*$ exhibit errors in the 
           multi-frequency forced-motion CFD simulation.
 
     \item The frequency-domain response under pitch excitation contains higher-order harmonic 
           terms, indicating the presence of nonlinearity. This affects the pitch-motion-associated 
-          derivatives: $H_2$, $H_3$, $A_2$, and $A_3$.
+          derivatives: $H_2^*$, $H_3^*$, $A_2^*$, and $A_3^*$.
 
     \item These errors have a significant influence on the predicted critical flutter velocity.
 \end{itemize}
