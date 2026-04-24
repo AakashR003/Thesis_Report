@@ -16,33 +16,28 @@ appropriate motion amplitudes in the subsequent multi-frequency simulations.
 
 \section{Computational Fluid Dynamics}
 
-
 Computational Fluid Dynamics (CFD) refers to the numerical modelling of fluid flow problems. Numerical modelling are 
-approximate methods for solving differential or partial differential equations using mathematical techniques. Consider, 
+approximate methods for partial differential equations using mathematical techniques. Consider, 
 for instance, the differential equation governing the bending of a beam under the assumption of first-order kinematics. 
-The solution—i.e., the deflection profile—can be obtained either analytically through direct integration or approximately 
+The solution i.e., the deflection profile, can be obtained either analytically through direct integration or approximately 
 via numerical methods such as the Finite Element Method (FEM). Analytical solutions offer the advantage of being continuous 
 and exact across the entire domain; for any point on the beam, the deflection can be determined precisely. In contrast, 
-numerical solutions inherently lack such accuracy and provide results only at discrete sets of points. 
+numerical solutions lack such accuracy and provide results only at discrete sets of points. 
 
 The fundamental equations governing fluid flow are the Navier-Stokes equations. Due to their complex, non-linear nature, 
 analytical solutions do not generally exist for real-world engineering applications (a mathematical challenge famously 
 highlighted by the Clay Mathematics Institute's Millennium Prize), necessitating numerical approaches. This section provides a 
-brief overview of these governing equations, the numerical techniques used to solve them, and outline to turbulence 
+brief overview of these governing equations, the numerical techniques used to solve them, and a outline to turbulence 
 modeling.
 
 \subsection{Numerical Solution of the Navier-Stokes Equations} 
 
-When formulating the equations of motion for a fluid system, two reference frames exists: the Lagrangian 
-and the Eulerian approaches. In the Lagrangian framework, the observer moves with and tracks individual fluid particles over 
-time. Conversely, the Eulerian framework utilizes a fixed frame of reference, observing the properties of the fluid as it passes 
-through fixed spatial locations. Given the computational complexity of tracking continuous particle deformation in complex 
-geometries, the Eulerian approach is conventionally adopted in CFD. 
-
+When formulating the equations of motion for a fluid system, Eulerian system is used. 
+In the Eulerian system, the observer moves with and tracks individual fluid particles over 
+time. In the Eulerian framework, a fixed frame of reference is used, where the observer measures 
+the properties of the fluid as it passes through fixed spatial locations.
 The Navier-Stokes equations represent Newton's second law of motion adapted for fluid continua within an Eulerian framework, 
-constrained by the principle of mass conservation. For flows where the Mach number is sufficiently low (typically $Ma < 0.3$), 
-the fluid velocity is significantly lower than the local speed of sound. Under these conditions, the flow can be assumed 
-incompressible, meaning the density of the fluid remains constant. 
+constrained by the principle of mass conservation.  
 
 
 \begin{equation}
@@ -55,7 +50,7 @@ incompressible, meaning the density of the fluid remains constant.
 
 Because these equations are non-linear PDEs functioning in both time and space, numerical methods are required to convert 
 them into a system of algebraic equations through spatial and temporal discretization. The most widely used techniques include the the Finite 
-Volume, Finite Difference, and Finite Element methods. Because the solver used in this thesis is based on the Finite Element 
+Volume, Finite Difference, and Finite Element methods. As the solver used in this thesis is based on the Finite Element 
 Method (FEM), this approach is primarily discussed. In FEM, the strong form of the governing differential equations is 
 transformed into an integral weak form. By discretizing the fluid domain into finite elements, the continuous problem is 
 converted into a system of linear equations that can be solved computationally (refer to [Insert Citation] for a detailed 
@@ -65,18 +60,17 @@ mathematical formulation).
 
 The most precise methodology for solving fluid flows is Direct Numerical Simulation (DNS), which resolves the Navier-Stokes 
 equations across all spatial and temporal scales. The primary limitation of DNS is its extreme computational cost: 
-resolving all turbulent scales down to the Kolmogorov length scale requires an exceedingly fine mesh. To circumvent this, 
+resolving all turbulent scales down to the Kolmogorov length scale requires an exceedingly fine mesh. To overcome this, 
 turbulence is modelled rather than resolved directly. This leads to methods such as Reynolds-Averaged Navier-Stokes (RANS) 
-and Unsteady RANS (URANS), which significantly reduce simulation times. An intermediate approach, Large Eddy Simulation (LES), 
-resolves the larger, energy-containing eddies while modelling the smaller, more universal scales. LES thus incurs a computational 
-cost between that of DNS and RANS. This subsection first provides a brief introduction to turbulence modelling principles, 
-followed by a discussion of the $k-\omega$ Shear Stress Transport (SST) model employed in the CFD simulations of this thesis.
+and Unsteady RANS (URANS) and Large Eddy Simulation (LES), which significantly reduce simulation times. An intermediate approach, Large Eddy Simulation (LES), 
+resolves the larger energy containing eddies while modelling the smaller. LES thus incurs a computational 
+cost between that of DNS and RANS. 
 
-In RANS and URANS, the Navier-Stokes equations are time-averaged, yielding the Reynolds-averaged Navier-Stokes equations. 
+In RANS and URANS, the Navier-Stokes equations are time averaged, yielding the Reynolds-averaged Navier-Stokes equations. 
 This decomposition separates the instantaneous velocity into mean and fluctuating components. The averaging procedure introduces 
 additional terms—the Reynolds stresses—which represent the effects of turbulence on the mean flow. This constitutes a closure 
 problem, as additional equations are required to relate these unknown stresses to the mean flow variables. Turbulence models 
-provide this closure.
+to solve this closure problem.
 
 Most RANS models rely on the Boussinesq hypothesis, which relates the Reynolds stresses to the mean velocity gradients via a 
 turbulent "eddy viscosity." This parameter mathematically acts as an artificial increase in the fluid's viscosity to account 
@@ -115,11 +109,11 @@ formulations.
     \label{fig:Model_3_CFD_Output}
 \end{figure}
 
-The $k-\epsilon$ turbulence model demonstrates high robustness in free-stream conditions but lacks near-wall accuracy, 
+The $k-\epsilon$ turbulence model have high robustness in free-stream conditions but lacks near-wall accuracy, 
 whereas the $k-\omega$ formulation excels at resolving boundary layers but exhibits excessive sensitivity in the deep 
 fluid domain. To overcome these limitations, Florian Menter introduced the $k-\omega$ Shear Stress Transport 
 (SST) model, which employes mathematical blending functions to dynamically transition between the near-wall $k-\omega$ 
-approach and the far-field $k-\epsilon$ formulation. The $k-\omega$ SST model is used for all CFD simulations presented in this thesis
+approach and the far-field $k-\epsilon$ formulation. The $k-\omega$ SST model is used for all CFD simulations presented in this thesis. 
 
 
 \section{Simulation Setup and Methodology}
