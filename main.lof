@@ -9,50 +9,50 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Two-degree-of-freedom system for flutter analysis.}}{9}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Mechanism of flutter\cite {pentek}}}{10}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Workflow for the single-frequency method.}}{13}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Workflow for the multi-frequency method.}}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Workflow for the multi-frequency method.}}{14}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Time-domain response of the flutter/galloping solution}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Real and imaginary parts of the eigenfrequency plotted against reduced velocity}}{16}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Real and imaginary parts of the eigenfrequency plotted against reduced velocity}}{17}{figure.caption.15}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Single-frequency bin-match case: input signal and corresponding FFT spectrum.}}{20}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Single-frequency non-bin-match case: input signal and corresponding FFT spectrum showing spectral leakage.}}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Single-frequency non-bin-match case: input signal and corresponding FFT spectrum showing spectral leakage.}}{21}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Single-frequency bin-match case with added white noise: input signal and corresponding FFT spectrum.}}{21}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Multi-frequency bin-matched case: input signal and corresponding FFT spectrum with zero error across all components.}}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Multi-frequency bin-matched case with added white noise: input signal and corresponding FFT spectrum.}}{23}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT spectrum illustrating leakage into neighbouring bins.}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Multi-frequency bin-matched case with added white noise: input signal and corresponding FFT spectrum.}}{24}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT spectrum illustrating leakage into neighbouring bins.}}{25}{figure.caption.24}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Kolmogorov Turbulent Energy Spectrum \cite {wolfdynamics2021}}}{28}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces DNS vs RANS vs LES}}{28}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Virtual Wind Tunnel Dimensions}}{30}{figure.caption.29}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Sarkic Cross-Section}}{30}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces GiD Model of Virtual Wind Tunnel}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces GiD Model of Virtual Wind Tunnel}}{32}{figure.caption.31}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces CFD Results for Model 3}}{33}{figure.caption.33}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Heave Motion}}{33}{figure.caption.34}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Mesh Convergence Study Results}}{34}{figure.caption.35}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Combined Flutter Derivatives}}{37}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Frequency Domain Analysis Heave}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Frequency Domain Analysis Pitch}}{38}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Prescribed Motion Amplitude Vs Force}}{40}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Frequency Domain Analysis Pitch}}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Prescribed Motion Amplitude Vs Force}}{41}{figure.caption.41}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Compiled Prescribed Motion Displacement Vs Force}}{41}{figure.caption.42}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Prescribed Displacement}}{42}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion}}{42}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Critical wind speed vs.\ Amplitude Scheme}}{43}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Reduced critical wind speed vs.\ Amplitude Scheme}}{43}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion}}{43}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Critical wind speed vs.\ Amplitude Scheme}}{44}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Reduced critical wind speed vs.\ Amplitude Scheme}}{44}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Individual forced motion components for MF1 Simulation~16}}{48}{figure.caption.52}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Superposed forced motion for MF1 Simulation~16}}{48}{figure.caption.53}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Aerodynamic lift force in the time domain - MF1 Simulation~16}}{49}{figure.caption.54}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Aerodynamic lift force in the frequency domain - MF1 Simulation~16}}{49}{figure.caption.55}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Individually extracted aerodynamic lift force components - MF1 Simulation~16}}{50}{figure.caption.56}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Aerodynamic moment in the time domain - MF1 Simulation~16}}{50}{figure.caption.57}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Flutter derivatives - Campaign~1}}{51}{figure.caption.59}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Amplitude errors as a function of reduced velocity - Campaign~1}}{53}{figure.caption.60}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Phase errors as a function of reduced velocity - Campaign~1}}{53}{figure.caption.61}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Compiled Prescribed Displacement vs.\ force - Campaign~1}}{54}{figure.caption.62}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Spectral Analysis - Heave, Campaign~1}}{55}{figure.caption.63}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Spectral Analysis - Pitch, Campaign~1}}{55}{figure.caption.64}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Reduced Velocity Vs Force Amplitudes}}{56}{figure.caption.65}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Critical wind speed vs.\ number of superpositions - Campaign~1}}{57}{figure.caption.66}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Reduced critical wind speed vs.\ number of superpositions - Campaign~1}}{57}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Individual forced motion components for MF1 Simulation~16}}{49}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Superposed forced motion for MF1 Simulation~16}}{49}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Aerodynamic lift force in the time domain - MF1 Simulation~16}}{50}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Aerodynamic lift force in the frequency domain - MF1 Simulation~16}}{50}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Individually extracted aerodynamic lift force components - MF1 Simulation~16}}{51}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Aerodynamic moment in the time domain - MF1 Simulation~16}}{51}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Flutter derivatives - Campaign~1}}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Amplitude errors as a function of reduced velocity - Campaign~1}}{54}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Phase errors as a function of reduced velocity - Campaign~1}}{54}{figure.caption.61}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Compiled Prescribed Displacement vs.\ force - Campaign~1}}{55}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Spectral Analysis - Heave, Campaign~1}}{56}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Spectral Analysis - Pitch, Campaign~1}}{56}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Reduced Velocity Vs Force Amplitudes}}{57}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Critical wind speed vs.\ number of superpositions - Campaign~1}}{58}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Reduced critical wind speed vs.\ number of superpositions - Campaign~1}}{58}{figure.caption.66}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Flutter derivatives - Campaign~2}}{59}{figure.caption.68}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Amplitude errors as a function of reduced velocity - Campaign~2}}{60}{figure.caption.69}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Phase errors as a function of reduced velocity - Campaign~2}}{61}{figure.caption.70}%

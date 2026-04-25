@@ -23,13 +23,45 @@
 \usepackage{doi}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{anyfontsize}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% ============================================================
+% Float and page optimization
+% ============================================================
+
+% Allow more floats on a page
+\setcounter{totalnumber}{4}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+
+% Increase the minimum fraction of text per page
+\renewcommand{\textfraction}{0.1}      % Minimum 10% text required
+\renewcommand{\topfraction}{0.85}      % Max 85% for top floats
+\renewcommand{\bottomfraction}{0.75}   % Max 75% for bottom floats
+\renewcommand{\floatpagefraction}{0.7} % Allow float-only pages with 70% floats
+
+% Reduce spacing around floats for tighter layout
+\setlength{\intextsep}{8pt}            % Space above/below inline floats
+\setlength{\textfloatsep}{8pt}         % Space between text and page-top/bottom floats
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{6pt}
+
+% Use flushbottom to justify pages vertically
+\flushbottom
+
+% Allow LaTeX to be less strict about spacing
+\raggedbottom  % Or use \flushbottom for justified bottom alignment
 
 % ============================================================
 % Chapter heading formatting 
 % ============================================================
 
 \titleformat{\chapter}[display]
-  {\normalfont\Large\bfseries\centering}  
+  {\fontsize{19}{22}\selectfont\normalfont\bfseries\centering}  
   {\chaptertitlename\ \thechapter}        
   {0.5em}                                  
   {\MakeUppercase}                         
@@ -38,14 +70,56 @@
 \titlespacing*{\chapter}
   {0pt}         
   {-50pt}        
-  {20pt}         
+  {20pt}
+
+% ============================================================
+% Section heading formatting
+% ============================================================
+
+\titleformat{\section}
+  {\fontsize{15}{17}\selectfont\normalfont\bfseries}
+  {\thesection}
+  {0.8em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}
+  {12pt}
+  {6pt}
+
+% ============================================================
+% Subsection heading formatting
+% ============================================================
+
+\titleformat{\subsection}
+  {\fontsize{12}{13}\selectfont\normalfont\bfseries}
+  {\thesubsection}
+  {0.6em}
+  {}
+
+\titlespacing*{\subsection}
+  {0pt}
+  {10pt}
+  {4pt}         
 
 
 % ============================================================
-% Other formatting
+% Line spacing and other formatting
 % ============================================================
+\onehalfspacing
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+
+% ============================================================
+% Caption formatting
+% ============================================================
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  skip=8pt
+}
+\renewcommand{\captionfont}{\fontsize{8}{10}\selectfont}
+\renewcommand{\captionlabelfont}{\fontsize{8}{10}\selectfont\bfseries}
 
 % ============================================================
 % Document
@@ -63,12 +137,12 @@
 
     \begin{center}
 
-    {\LARGE\bfseries Efficient Identification of Flutter Derivatives\\
+    {\fontsize{24}{26}\selectfont\bfseries Efficient Identification of Flutter Derivatives\\
     from Multi-Frequency Forced-Motion Simulations\\[1em]}
 
     \vspace{2.5cm}
 
-    {\normalsize
+    {\fontsize{18}{27}\selectfont
     Submitted to the Department of Civil, Geo and Environmental Engineering\\
     in partial fulfillment of the requirements for the degree of\\
     M.Sc.\\
@@ -79,6 +153,7 @@
     \vspace{2.5cm}
 
     \begin{flushleft}
+    {\fontsize{14.4}{17.5}\selectfont
     % Two-column info block
     \begin{tabular}{@{} p{3.5cm} p{8cm} @{}}
         \textbf{Supervised by} 
@@ -95,6 +170,7 @@
             % \today 
             \\
     \end{tabular}
+    }
 
     \end{flushleft}
 
