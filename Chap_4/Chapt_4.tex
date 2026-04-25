@@ -80,34 +80,37 @@ formulations.
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}{\textwidth}
+
+    % First mini image
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.5\textwidth]{Figures/CFD/Energy_Casacade.png}
+        \includegraphics[width=\textwidth]{Figures/CFD/Energy_Casacade.png}
         \label{fig:Heave}
-    \end{subfigure}
-    \vspace{0.0cm}
-    \begin{subfigure}{\textwidth}
+    \end{minipage}
+
+    \vspace{0.3cm}
+
+    % Second mini image
+    \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.5\textwidth]{Figures/CFD/Energy_vs_wave_number.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{Figures/CFD/Energy_vs_wave_number.png}
+        \caption{Kolmogorov Turbulent Energy Spectrum \cite{wolfdynamics2021}}
         \label{fig:Pitch}
-    \end{subfigure}
-    % \vspace{0.0cm}
-    % \begin{subfigure}{\textwidth}
-    %     \centering
-    %     \includegraphics[width=0.5\textwidth]{Figures/CFD/Scale.png}
-    %     \caption{}
-    %     \label{fig:Pitch}
-    % \end{subfigure}
+    \end{minipage}
+
     \vspace{0.5cm}
-    \begin{subfigure}{\textwidth}
+
+    % Third mini image (slightly wider)
+    \begin{minipage}{0.6\textwidth}
         \centering
-        \includegraphics[width=0.6\textwidth]{Figures/CFD/DNS_LES_URANS.png}
+        \includegraphics[width=\textwidth]{Figures/CFD/DNS_LES_URANS.png}
         \caption{DNS vs RANS vs LES}
-        \label{fig:Pitch}
-    \end{subfigure}
+        \label{fig:DNS_RANS_LES}
+    \end{minipage}
+
     \label{fig:Model_3_CFD_Output}
 \end{figure}
+
 
 The $k-\epsilon$ turbulence model have high robustness in free-stream conditions but lacks near-wall accuracy, 
 whereas the $k-\omega$ formulation excels at resolving boundary layers but exhibits excessive sensitivity in the deep 

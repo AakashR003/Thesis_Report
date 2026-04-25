@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  24 APR 2026 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  25 APR 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -624,6 +624,12 @@ File: Figures/Atmospheric_Boundary_Layer.png Graphic file (type png)
 <use Figures/Atmospheric_Boundary_Layer.png>
 Package pdftex.def Info: Figures/Atmospheric_Boundary_Layer.png  used on input line 74.
 (pdftex.def)             Requested size: 271.7835pt x 132.81544pt.
+
+LaTeX Warning: Citation `2024' on page 1 undefined on input line 75.
+
+
+LaTeX Warning: Citation `2024' on page 1 undefined on input line 75.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -632,26 +638,46 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Wind_speed_vs_time.png, id=44, 295.70474pt x 148.75575pt>
-File: Figures/Wind_speed_vs_time.png Graphic file (type png)
-<use Figures/Wind_speed_vs_time.png>
-Package pdftex.def Info: Figures/Wind_speed_vs_time.png  used on input line 81.
-(pdftex.def)             Requested size: 271.7835pt x 136.72755pt.
- [1
+<Figures/Wind_speed_vs_time_1.png, id=44, 379.4175pt x 254.1495pt>
+File: Figures/Wind_speed_vs_time_1.png Graphic file (type png)
+<use Figures/Wind_speed_vs_time_1.png>
+Package pdftex.def Info: Figures/Wind_speed_vs_time_1.png  used on input line 81.
+(pdftex.def)             Requested size: 271.7835pt x 182.0529pt.
 
 
-{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Atmospheric_Boundary_Layer.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_time.png>]
+LaTeX Warning: Citation `xu2013' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Citation `xu2013' on page 1 undefined on input line 82.
+
+[1
+
+
+{C:/Users/aakas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Atmospheric_Boundary_Layer.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_time_1.png>]
 <Figures/Vander_Hoven_Spectrum.png, id=65, 578.16pt x 277.63725pt>
 File: Figures/Vander_Hoven_Spectrum.png Graphic file (type png)
 <use Figures/Vander_Hoven_Spectrum.png>
 Package pdftex.def Info: Figures/Vander_Hoven_Spectrum.png  used on input line 122.
-(pdftex.def)             Requested size: 271.7835pt x 130.5107pt.
-<Figures/Wind_speed_vs_response_Books.png, id=66, 203.5605pt x 236.082pt>
-File: Figures/Wind_speed_vs_response_Books.png Graphic file (type png)
-<use Figures/Wind_speed_vs_response_Books.png>
-Package pdftex.def Info: Figures/Wind_speed_vs_response_Books.png  used on input line 129.
-(pdftex.def)             Requested size: 163.06871pt x 189.13242pt.
- [3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Vander_Hoven_Spectrum.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_response_Books.png>]
+(pdftex.def)             Requested size: 267.24939pt x 128.33319pt.
+
+
+LaTeX Warning: Citation `IsaacVanderHoven1957' on page 3 undefined on input line 123.
+
+
+LaTeX Warning: Citation `IsaacVanderHoven1957' on page 3 undefined on input line 123.
+
+<Figures/Wind_speed_vs_response_paper.png, id=66, 196.93575pt x 151.767pt>
+File: Figures/Wind_speed_vs_response_paper.png Graphic file (type png)
+<use Figures/Wind_speed_vs_response_paper.png>
+Package pdftex.def Info: Figures/Wind_speed_vs_response_paper.png  used on input line 129.
+(pdftex.def)             Requested size: 176.6572pt x 136.14671pt.
+
+LaTeX Warning: Citation `fujino2013' on page 3 undefined on input line 130.
+
+
+LaTeX Warning: Citation `fujino2013' on page 3 undefined on input line 130.
+
+[3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Vander_Hoven_Spectrum.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_response_paper.png>]
 
 LaTeX Warning: Citation `scanlan' on page 4 undefined on input line 161.
 
@@ -661,6 +687,13 @@ File: Figures/Galloping_2.png Graphic file (type png)
 <use Figures/Galloping_2.png>
 Package pdftex.def Info: Figures/Galloping_2.png  used on input line 252.
 (pdftex.def)             Requested size: 452.9679pt x 167.76566pt.
+
+
+LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 253.
+
+
+LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 253.
+
 <Figures/Flutter_1.png, id=99, 317.38576pt x 164.41425pt>
 File: Figures/Flutter_1.png Graphic file (type png)
 <use Figures/Flutter_1.png>
@@ -681,7 +714,13 @@ File: Figures/Flutter_2_1_3.png Graphic file (type png)
 <use Figures/Flutter_2_1_3.png>
 Package pdftex.def Info: Figures/Flutter_2_1_3.png  used on input line 294.
 (pdftex.def)             Requested size: 226.48395pt x 37.01045pt.
- [6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Galloping_2.png>]
+
+LaTeX Warning: Citation `pentek' on page 6 undefined on input line 297.
+
+
+LaTeX Warning: Citation `pentek' on page 6 undefined on input line 297.
+
+[6 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Galloping_2.png>]
 
 LaTeX Warning: Citation `TheodorsenGarrick1934' on page 7 undefined on input line 317.
 
@@ -746,14 +785,14 @@ Package rerunfilecheck Info: File `Chapt_2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23323 strings out of 476402
- 440659 string characters out of 5794312
+ 440673 string characters out of 5794312
  1948542 words of memory out of 5000000
  44912 multiletter control sequences out of 15000+600000
  566088 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,23n,110p,523b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (14 pages, 1620714 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (14 pages, 1609028 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  71 named destinations out of 1000 (max. 500000)
