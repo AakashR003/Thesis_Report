@@ -3,60 +3,64 @@
 \chapter{Introduction}
 
 \section{Motivation}
-In recent decades, there has been a rapid development in infrastructures, including buildings and bridges, due to urbanisation and to meet the needs of the 
-people. To satisfy this requirement, there has been a significant development in construction structures in larger scale. This results in 
-structures with greater exposure to the wind loads. For example if considering design of a building, as the height increases the importance of accurate analysis of 
-the wind loads acting on the structure increases. This case is similar for design of majority of structures like bridges and wind turbines. 
 
-In the design of bridges of high spans, cable stayed bridges 
-and the suspension bridges are the solution to satisfy this requirement. But due to their highly optimised nature, the structures are more flexible under the limit state of human loads. 
-Consequently they are more susceptible to the unsteady wind loads, especially for the fluid-interaction, Flutter. 
-Flutter is an aeroelastic phenomenon that can cause instability failure of structures which occurs due to the interaction of the structure with the wind. This was the reason for the Tacoma Narrows Bridge's failure, USA in 1940. 
-The key challenge in analysing flutter is quantifying the aerodynamic forces acting on the structure. In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an 
-analytical solution for the aerodynamic forces for unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. 
-This is reformulated by Scanlan in 1971 \cite{scanlan1971}, in motivation of applying to bluff bodies such as bridge decks. 
-This reformulation introduced new shape constants known as flutter derivatives. These are set of functions that quantify the unsteady aerodynamic forces acting on a structure in relation to its frequency of vibration.
- 
+In recent decades infrastructure including buildings and bridges has developed rapidly due to urbanisation and the need to 
+meet people's requirements. To satisfy this demand, construction structures have been built on a larger scale. This results 
+in structures with greater exposure to wind loads. For example, when considering the design of a building, as the height 
+increases, the importance of accurate analysis of the wind loads acting on the structure also increases. The same applies to 
+the design of most structures such as bridges and wind turbines. \\
 
-\vspace{0.5 cm}
-CFD simulations or wind tunnel are performed to obtain these constants. Since these constants are functions, multiple CFD simulations by 
-varying the vibration frequency are required to obtain the flutter derivatives. This is a time consuming process.
-To overcome this, multi-frequency vibration method was introduced by Lin Huang et al in 2011 \cite{huang2011}. 
-By this method, instead of applying a single motion frequency, one can superpose multiple 
-motions of different frequencies and apply them. Then by using mathematical 
-tools, such as the Fourier Transform, the individual components can be obtained. By this way, the method can be theoretically n times as efficient (where n 
-is the number of combinations). But according to the author, the multi-frequency method reduced 
-the simulation by only 18\%. 
-%The reason was inaccuracy in identifying the flutter derivative using a multi-frequency method. 
-This was because, on using the multi-frequency vibration method, the accuracy of flutter derivatives were affected and therefore
- more simulation time was required which resulted in decrease in efficiency of this method. 
-After that, for a number of years, no research was conducted focusing on this. In 2023, G. Martínez-López 
-investigated the multi-frequency method to obtain flutter derivatives via curve fitting with LES 
-Turbulence modelling \cite{Martínez-López_2023}. The same result as with Lin Huang was observed. I.e., 
-to obtain accurate Flutter derivatives using the multi-frequency method, the simulation time must 
-be increased. An important observation from this work is that the selection of the frequency played 
-an important role in the method's accuracy This raises several open questions: First, why does the multi-frequency method not achieve the 
-theoretical efficiency improvement? Understanding the reason for this inaccuracy is critical for improving the method.
-Second, how does the choice of frequencies affect accuracy, and how can frequencies be selected efficiently? Additionally, 
-how much does frequency selection impact the simulation time and the significance of this inaccuracy with respect to the critical velocity? 
-Third, are there additional parameters beyond frequency that influence accuracy, such as the amplitude of motion or the number of frequency combinations? 
-Identifying these parameters would provide a more comprehensive understanding of the method's behavior.
+In the design of long-span bridges, cable-stayed bridges and suspension bridges are the solutions that satisfy this requirement. 
+However, due to their highly optimised nature, these structures become more flexible under human-induced limit states. 
+Consequently, they are more susceptible to unsteady wind loads, especially to aeroelastic phenomena such as flutter. 
+Flutter is an aeroelastic phenomenon that can cause instability or failure of structures through interaction with wind. 
+Until 1940, there was limited focus on this domain, primarily because of an insufficient understanding of wind-structure 
+interaction \cite{gimsing2012}. The failure of the Tacoma Narrows Bridge (span 853 m) in the USA in 1940 was a pivotal 
+moment in this field. Within four months of its opening, the bridge failed due to flutter at a wind speed of 68 km/h \cite{abbas2017}. \\
+
+The key challenge in analysing this flutter behaviour is quantifying the aerodynamic forces that act on the structure. 
+In 1934, Theodorsen, a Norwegian American aerodynamicist, developed an analytical solution for aerodynamic forces for 
+unsteady flutter analysis of an airfoil \cite{TheodorsenGarrick1934}. This was reformulated by Scanlan in 1971 \cite{scanlan1971} 
+with the motivation of applying it to bluff bodies such as bridge decks. This reformulation introduced new shape constants 
+known as flutter derivatives. These are a set of functions that quantify the unsteady aerodynamic forces acting on a 
+structure in relation to its vibration frequency. \\
+
+CFD simulations or wind tunnel tests are performed to obtain these constants. One method to obtain them with CFD simulation 
+is forced motion simulation, where a 2D bridge deck is oscillated at a specific frequency, and the flutter derivatives are 
+obtained based on the aerodynamic forces. Since these constants are functions, multiple CFD simulations by varying the vibration 
+frequency are required to obtain the flutter derivatives, which is a time-consuming process. \\
+
+Currently, with bridge spans exceeding 2000 m, faster results are needed so that efficient designs can be obtained. 
+To overcome the time consumption of the forced motion simulation method, the multi-frequency forced motion vibration method 
+was introduced by Lin Huang et al. in 2011 \cite{huang2011}. In this method, instead of applying a single motion frequency, 
+one can superpose multiple motions of different frequencies and apply them. Then, using mathematical tools such as the 
+Fourier transform, the individual components can be obtained. In this way, the method can theoretically be \(N\) times as 
+efficient (where \(N\) is the number of combinations). However, according to the authors, the multi-frequency method reduced 
+the simulation time by only 18\%. This was because when using the multi-frequency vibration method, the accuracy of flutter 
+derivatives was affected, and therefore more simulation time was required, which resulted in a decrease in the method's 
+efficiency. \\
+
+Subsequently, for several years no research focused on this topic. In 2023, G. Martínez-López investigated the multi-frequency 
+method to obtain flutter derivatives via curve fitting with LES turbulence modelling \cite{Martínez-López_2023}. The same result 
+as with Lin Huang was observed; that is, to obtain accurate flutter derivatives using the multi-frequency method, the simulation 
+time must be increased. An important observation from that work is that the selection of the frequency played a key role in the 
+method's accuracy. This raises several open issues. First, the reasons why the multi-frequency method fails to achieve its 
+theoretical efficiency improvement remain unclear. Understanding the source of this inaccuracy is essential for refining the 
+method. Second, the influence of frequency choice on accuracy and the criteria for efficient frequency selection have not been 
+established. Furthermore, the extent to which frequency selection affects simulation time and the relevance of any resulting 
+inaccuracy for the critical velocity require investigation. Third, additional parameters beyond frequency, such as motion 
+amplitude or the number of frequency combinations, may also affect accuracy. Identifying these parameters would contribute 
+to a more comprehensive understanding of the method's behaviour.
 
 \section{Objective}
-The investigation of the open questions outlined above forms the core objective of this master's thesis. 
-The work follows a two-step approach. If inaccuracies appear in the multi-frequency method, they may originate either from the CFD 
-simulations or from the mathematical tools used in post-processing. To examine the latter, signal analysis using FFT was performed, 
-employing the SciPy FFT module in Python.
-To assess potential CFD-related errors, the single frequency simulations were performed to validate the principle of superposition on flutter derivatives. 
-%with aim of investigating influence of motion amplitude on flutter derivative identification. 
-%This is important because, Since the multi-frequency method assumes a linear relationship between the imposed motion and the resulting aerodynamic forces, 
-%it becomes essential to validate this before proceding to multi-frequency simulations. 
-Based on the signal analysis, guidelines are developed for selecting suitable frequencies. Similarly, the based on single frequency simulations, guidelines for 
-choosing appropriate motion amplitudes is derived.
-Using these guidelines, two sets of multi-frequency CFD simulations were carried out to evaluate the effectiveness of the proposed 
-framework   
-\vspace{0.5 cm}
-
+The investigation of the open questions outlined above forms the core objective of this master's thesis. The work follows 
+a two-step approach. If inaccuracies appear in the multi-frequency method, they may originate either from the CFD simulations 
+or from the mathematical tools used in post-processing. To examine the latter, signal analysis using FFT was performed with 
+the SciPy FFT module in Python. To assess potential CFD-related errors, single-frequency simulations were performed to validate 
+the principle of superposition on flutter derivatives. Based on the signal analysis, guidelines are developed for selecting 
+suitable frequencies. Similarly, based on the single-frequency simulations, guidelines for choosing appropriate motion 
+amplitudes are derived. Using these guidelines, two sets of multi-frequency CFD simulations were carried out to evaluate 
+the effectiveness of the proposed framework.   
 \vspace{0.5 cm}
 
 \section{Structure of the Thesis}

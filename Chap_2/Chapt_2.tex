@@ -58,14 +58,14 @@ temporal and spatial variation of wind loads.
 
 \end{tikzpicture}
 
-\caption{Wind loading chain based on Davenport}
+\caption{Davenport's wind loading chain}
 \label{fig:wind_chain_circular}
 
 \end{figure}
 
 The fourth link is the structural response to these forces. The focus of this thesis is mainly on these last two links 
 (aerodynamics and structural response). Before delving into them, a few points about the Van der Hoven spectrum are 
-discussed, as it provides insight into the time scales that links 3 and 4 deal with, relative to wind climate. 
+discussed, as it provides context into the time scales that links 3 and 4 deal with, relative to wind climate. 
 
 \begin{figure}[htbp]
     \centering
@@ -117,17 +117,17 @@ is given in EN 1991-1-4.
 
 \begin{figure}[htbp]
     \centering
-    \begin{minipage}{0.59\textwidth}
+    \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Figures/Vander_Hoven_Spectrum.png}
         \captionof{figure}{Van der Hoven spectrum \cite{IsaacVanderHoven1957}}
         \label{fig:vander_hoven}
     \end{minipage}
     \hfill
-    \begin{minipage}{0.39\textwidth}
+    \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figures/Wind_speed_vs_response_paper.png}
-        \captionof{figure}{Relation of wind speed to its structural response \cite{fujino2013}}
+        \includegraphics[width=\linewidth]{Figures/Wind_speed_vs_response_abbas.png}
+        \captionof{figure}{structural response plotted against wind speed: — uniform flow, - - turbulent flow. \cite{abbas2017}}
         \label{fig:wind_response}
     \end{minipage}
 \end{figure}
@@ -167,7 +167,7 @@ and hence can be useful in the intuitive understanding of these dynamic aeroelas
 \section{Galloping}
 \label{section: Galloping}
 
-Consider a 1-DOF spring-mass system with a bluff body attached to it. When the wind passes over the bluff body, it creates drag and lift forces. 
+Consider a 1-DOF spring-mass system with a bluff body attached to it (Figure \ref{fig:galloping} ). When the wind passes over the bluff body, it creates drag and lift forces. 
 Assume, due to an external forced vibration or VIV, the structure starts to vibrate in the vertical direction. Due to this vertical vibration, 
 depending on the structural velocity, the angle of attack of the wind on the bluff body changes. 
 Since the angle of attack changes, the lift and drag forces also change (except for sections where, for any angle of attack, the lift force remains constant — like a circle).

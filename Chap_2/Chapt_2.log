@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  25 APR 2026 13:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  25 APR 2026 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,7 +658,7 @@ LaTeX Warning: Citation `xu2013' on page 1 undefined on input line 82.
 File: Figures/Vander_Hoven_Spectrum.png Graphic file (type png)
 <use Figures/Vander_Hoven_Spectrum.png>
 Package pdftex.def Info: Figures/Vander_Hoven_Spectrum.png  used on input line 122.
-(pdftex.def)             Requested size: 267.24939pt x 128.33319pt.
+(pdftex.def)             Requested size: 217.42265pt x 104.40602pt.
 
 
 LaTeX Warning: Citation `IsaacVanderHoven1957' on page 3 undefined on input line 123.
@@ -666,23 +666,23 @@ LaTeX Warning: Citation `IsaacVanderHoven1957' on page 3 undefined on input line
 
 LaTeX Warning: Citation `IsaacVanderHoven1957' on page 3 undefined on input line 123.
 
-<Figures/Wind_speed_vs_response_paper.png, id=66, 196.93575pt x 151.767pt>
-File: Figures/Wind_speed_vs_response_paper.png Graphic file (type png)
-<use Figures/Wind_speed_vs_response_paper.png>
-Package pdftex.def Info: Figures/Wind_speed_vs_response_paper.png  used on input line 129.
-(pdftex.def)             Requested size: 176.6572pt x 136.14671pt.
+<Figures/Wind_speed_vs_response_abbas.png, id=66, 250.536pt x 172.2435pt>
+File: Figures/Wind_speed_vs_response_abbas.png Graphic file (type png)
+<use Figures/Wind_speed_vs_response_abbas.png>
+Package pdftex.def Info: Figures/Wind_speed_vs_response_abbas.png  used on input line 129.
+(pdftex.def)             Requested size: 217.42265pt x 149.48004pt.
 
-LaTeX Warning: Citation `fujino2013' on page 3 undefined on input line 130.
+LaTeX Warning: Citation `abbas2017' on page 3 undefined on input line 130.
 
 
-LaTeX Warning: Citation `fujino2013' on page 3 undefined on input line 130.
+LaTeX Warning: Citation `abbas2017' on page 3 undefined on input line 130.
 
-[3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Vander_Hoven_Spectrum.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_response_paper.png>]
+[3 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Vander_Hoven_Spectrum.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Wind_speed_vs_response_abbas.png>]
 
 LaTeX Warning: Citation `scanlan' on page 4 undefined on input line 161.
 
 [4] [5]
-<Figures/Galloping_2.png, id=97, 666.69075pt x 246.9225pt>
+<Figures/Galloping_2.png, id=98, 666.69075pt x 246.9225pt>
 File: Figures/Galloping_2.png Graphic file (type png)
 <use Figures/Galloping_2.png>
 Package pdftex.def Info: Figures/Galloping_2.png  used on input line 252.
@@ -694,22 +694,22 @@ LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input li
 
 LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 253.
 
-<Figures/Flutter_1.png, id=99, 317.38576pt x 164.41425pt>
+<Figures/Flutter_1.png, id=100, 317.38576pt x 164.41425pt>
 File: Figures/Flutter_1.png Graphic file (type png)
 <use Figures/Flutter_1.png>
 Package pdftex.def Info: Figures/Flutter_1.png  used on input line 267.
 (pdftex.def)             Requested size: 203.83417pt x 105.59354pt.
-<Figures/Flutter_2_1_1.png, id=103, 246.9225pt x 131.2905pt>
+<Figures/Flutter_2_1_1.png, id=104, 246.9225pt x 131.2905pt>
 File: Figures/Flutter_2_1_1.png Graphic file (type png)
 <use Figures/Flutter_2_1_1.png>
 Package pdftex.def Info: Figures/Flutter_2_1_1.png  used on input line 280.
 (pdftex.def)             Requested size: 217.42265pt x 115.6041pt.
-<Figures/Flutter_2_1_2.png, id=104, 246.9225pt x 115.632pt>
+<Figures/Flutter_2_1_2.png, id=105, 246.9225pt x 115.632pt>
 File: Figures/Flutter_2_1_2.png Graphic file (type png)
 <use Figures/Flutter_2_1_2.png>
 Package pdftex.def Info: Figures/Flutter_2_1_2.png  used on input line 287.
 (pdftex.def)             Requested size: 217.42265pt x 101.81645pt.
-<Figures/Flutter_2_1_3.png, id=105, 246.9225pt x 40.35075pt>
+<Figures/Flutter_2_1_3.png, id=106, 246.9225pt x 40.35075pt>
 File: Figures/Flutter_2_1_3.png Graphic file (type png)
 <use Figures/Flutter_2_1_3.png>
 Package pdftex.def Info: Figures/Flutter_2_1_3.png  used on input line 294.
@@ -728,23 +728,23 @@ LaTeX Warning: Citation `TheodorsenGarrick1934' on page 7 undefined on input lin
 LaTeX Warning: Citation `scanlan1971' on page 7 undefined on input line 324.
 
 [7 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_2_1_1.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_2_1_2.png> <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Flutter_2_1_3.png>] [8] [9]
-<Figures/Single_Frequency.png, id=154, 589.0005pt x 355.92975pt>
+<Figures/Single_Frequency.png, id=155, 589.0005pt x 355.92975pt>
 File: Figures/Single_Frequency.png Graphic file (type png)
 <use Figures/Single_Frequency.png>
 Package pdftex.def Info: Figures/Single_Frequency.png  used on input line 453.
 (pdftex.def)             Requested size: 339.72592pt x 205.3043pt.
-<Figures/MultiFrequency_Explanation.png, id=155, 748.59676pt x 305.943pt>
+<Figures/MultiFrequency_Explanation.png, id=156, 748.59676pt x 305.943pt>
 File: Figures/MultiFrequency_Explanation.png Graphic file (type png)
 <use Figures/MultiFrequency_Explanation.png>
 Package pdftex.def Info: Figures/MultiFrequency_Explanation.png  used on input line 460.
 (pdftex.def)             Requested size: 748.59492pt x 305.94223pt.
  [10 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/Single_Frequency.png>] [11 <d:/1.TUM courses/Masters Thesis/Report_Latex/Chap_2/Figures/MultiFrequency_Explanation.png>]
-<Figures/Flutter_Decay_Solution_Plot.png, id=179, 722.7pt x 433.62pt>
+<Figures/Flutter_Decay_Solution_Plot.png, id=180, 722.7pt x 433.62pt>
 File: Figures/Flutter_Decay_Solution_Plot.png Graphic file (type png)
 <use Figures/Flutter_Decay_Solution_Plot.png>
 Package pdftex.def Info: Figures/Flutter_Decay_Solution_Plot.png  used on input line 581.
 (pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
-<Figures/Flutter_Growth_Solution_Plot.png, id=180, 722.7pt x 433.62pt>
+<Figures/Flutter_Growth_Solution_Plot.png, id=181, 722.7pt x 433.62pt>
 File: Figures/Flutter_Growth_Solution_Plot.png Graphic file (type png)
 <use Figures/Flutter_Growth_Solution_Plot.png>
 Package pdftex.def Info: Figures/Flutter_Growth_Solution_Plot.png  used on input line 587.
@@ -762,7 +762,7 @@ LaTeX Warning: Citation `TheodorsenGarrick1934' on page 13 undefined on input li
 
 LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 13 undefined on input line 646.
 
-<Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png, id=194, 722.7pt x 289.08pt>
+<Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png, id=195, 722.7pt x 289.08pt>
 File: Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png Graphic file (type png)
 <use Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png>
 Package pdftex.def Info: Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png  used on input line 687.
@@ -792,9 +792,9 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  104i,23n,110p,523b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aakas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (14 pages, 1609028 bytes).
+Output written on "d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.pdf" (14 pages, 1612562 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
+ 278 PDF objects out of 1000 (max. 8388607)
  71 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

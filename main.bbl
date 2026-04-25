@@ -19,14 +19,14 @@ Isaac~Van der Hoven.
   \href {https://doi.org/10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}
   {\path{doi:10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}}.
 
-\bibitem{fujino2013}
-Yozo Fujino and Dionysius Siringoringo.
-\newblock Vibration {{Mechanisms}} and {{Controls}} of {{Long-Span Bridges}}:
-  {{A Review}}.
-\newblock {\em Structural Engineering International}, 23(3):248--268, August
-  2013.
-\newblock \href {https://doi.org/10.2749/101686613X13439149156886}
-  {\path{doi:10.2749/101686613X13439149156886}}.
+\bibitem{abbas2017}
+Tajammal Abbas, Igor Kavrakov, and Guido Morgenthal.
+\newblock Methods for flutter stability analysis of long-span bridges: A
+  review.
+\newblock {\em Proceedings of the Institution of Civil Engineers - Bridge
+  Engineering}, 170(4):271--310, December 2017.
+\newblock \href {https://doi.org/10.1680/jbren.15.00039}
+  {\path{doi:10.1680/jbren.15.00039}}.
 
 \bibitem{NaudascherRockwell1994}
 Eduard Naudascher and Donald Rockwell.
@@ -48,6 +48,11 @@ Mate Pentek.
   \url{https://www.wolfdynamics.com/training/turbulence/OF2021/turbulence_2021_OF8.pdf},
   2021.
 \newblock Online training material, Advanced session.
+
+\bibitem{gimsing2012}
+Niels~J. Gimsing and Christos~T. Georgakis.
+\newblock {\em Cable Supported Bridges: Concept and Design}.
+\newblock J. Wiley, Chichester, West Sussex, U.K, 3rd ed edition, 2012.
 
 \bibitem{TheodorsenGarrick1934}
 Theodore Theodorsen and Ira~E. Garrick.
@@ -150,14 +155,14 @@ Hao Zhan and Tao Fang.
   Narrows Bridge}} by {{CFD}} numerical simulation.
 \newblock 2012.
 
-\bibitem{abbas2017}
-Tajammal Abbas, Igor Kavrakov, and Guido Morgenthal.
-\newblock Methods for flutter stability analysis of long-span bridges: A
-  review.
-\newblock {\em Proceedings of the Institution of Civil Engineers - Bridge
-  Engineering}, 170(4):271--310, December 2017.
-\newblock \href {https://doi.org/10.1680/jbren.15.00039}
-  {\path{doi:10.1680/jbren.15.00039}}.
+\bibitem{fujino2013}
+Yozo Fujino and Dionysius Siringoringo.
+\newblock Vibration {{Mechanisms}} and {{Controls}} of {{Long-Span Bridges}}:
+  {{A Review}}.
+\newblock {\em Structural Engineering International}, 23(3):248--268, August
+  2013.
+\newblock \href {https://doi.org/10.2749/101686613X13439149156886}
+  {\path{doi:10.2749/101686613X13439149156886}}.
 
 \bibitem{sarkar2009}
 Partha~P. Sarkar, Luca Caracoglia, Frederick~L. Haan, Hiroshi Sato, and Jun
@@ -291,11 +296,6 @@ P.~Dadvand, R.~Rossi, M.~Gil, X.~Martorell, J.~Cotela, E.~Juanpere, S.R.
 \newblock {\em Computers \& Fluids}, 80:301--309, July 2013.
 \newblock \href {https://doi.org/10.1016/j.compfluid.2012.02.004}
   {\path{doi:10.1016/j.compfluid.2012.02.004}}.
-
-\bibitem{gimsing2012}
-Niels~J. Gimsing and Christos~T. Georgakis.
-\newblock {\em Cable Supported Bridges: Concept and Design}.
-\newblock J. Wiley, Chichester, West Sussex, U.K, 3rd ed edition, 2012.
 
 \bibitem{SimiuScanlan1996}
 Emil Simiu and Robert~H. Scanlan.
