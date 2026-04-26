@@ -18,22 +18,22 @@ Finally, the multi-frequency method is introduced and its workflow is compared w
 \section{Wind Effect on Structures}
 
 For understanding the effect of wind loads on structures, beginning with Alan G. Davenport's wind loading chain is a standard approach 
-as it provides a framework for breaking down the complex problem of wind loading into a series of five interconnected links (Figure \ref{fig:wind_chain_circular}).
+as it provides a framework for breaking down the complex problem of wind loading into a series of five interconnected links (Figure \ref{fig:wind_chain_circular}). \\
 
 The first link is wind climate, which deals with the macrometeorological scale of wind. It provides information based on the 
 geographical location, high-return-period phenomena such as natural hazards, and annual wind variations. This information 
-is crucial for determining the maximum wind load that a structure must withstand over its service life.
+is crucial for determining the maximum wind load that a structure must withstand over its service life. \\
 
 The second link is the influence of terrain. This step moves from the larger spatial scale of the previous link to the 
 specific location of the building. To understand it, one must first know the atmospheric boundary layer (ABL). The ABL 
 describes the wind profile as a function of height (Figure \ref{fig:abl_across_terrain}). Due to the viscosity of the wind and the turbulence caused by buildings 
 and the ground, wind velocities near the surface are low but increase with height. This height-dependent profile is defined 
 by the ABL. Importantly, the ABL profile varies depending on the terrain where the structure is located. For example, a 
-building in a dense urban area experiences lower wind velocities at its base compared to a structure near the seashore. 
+building in a dense urban area experiences lower wind velocities at its base compared to a structure near the seashore. \\
 
 The third link is aerodynamics. This step converts the wind profile, which varies in both time and space, into aerodynamic 
 forces acting on the building. Figures \ref{fig:abl_across_terrain} and \ref{fig:wind_velocity_variation} should be viewed together to appreciate the 
-temporal and spatial variation of wind loads.
+temporal and spatial variation of wind loads. \\
 
 \begin{figure}[htbp]
 \centering
@@ -72,21 +72,21 @@ temporal and spatial variation of wind loads.
 
 The fourth link is the structural response to these forces. The focus of this thesis is mainly on these last two links 
 (aerodynamics and structural response). Before delving into them, a few points about the Van der Hoven spectrum are 
-discussed, as it provides context into the time scales that links 3 and 4 deal with, relative to wind climate. 
+discussed, as it provides context into the time scales that links 3 and 4 deal with, relative to wind climate. \\
 
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{0.6\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Figures/Atmospheric_Boundary_Layer.png}
-        \captionof{figure}{ABL across different terrain \cite{2024}}
+        \captionof{figure}{Atmospheric boundary layer wind profiles for different terrain categories \cite{2024}}
         \label{fig:abl_across_terrain}
     \end{minipage}
     
     \begin{minipage}{0.6\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Figures/Wind_speed_vs_time_1.png}
-        \captionof{figure}{Wind velocity variation with time \cite{xu2013}}
+        \captionof{figure}{Time history of wind velocity showing turbulent fluctuations \cite{xu2013}}
         \label{fig:wind_velocity_variation}
     \end{minipage}
 \end{figure}
@@ -95,46 +95,46 @@ In the Van der Hoven spectrum, the x-axis represents frequency and the y-axis is
 wind cycles are dominant. For instance, a peak can be observed at a period of approximately 0.5 days, corresponding to 
 the daily wind cycle. Another important observation is the presence of a spectral gap, % (marked in the figure), 
 which separates the macrometeorological and micrometeorological characteristics of wind, effectively distinguishing wind climate 
-from aerodynamic forces.
+from aerodynamic forces. \\
 
 In analyzing the forces acting on a structure due to wind, the shape of the structure, along with wind characteristics, 
 strongly affects the aerodynamic forces. Depending on the shape, aerodynamic analysis is classified into two categories: 
-bluff bodies and streamlined bodies. Civil engineering structures mostly fall under the category of bluff body aerodynamics.
+bluff bodies and streamlined bodies. Civil engineering structures mostly fall under the category of bluff body aerodynamics. \\
 
 A bluff body can be understood as an object that disturbs the streamline flow of a fluid and causes flow separation at 
 defined points. A wake is the region downstream of the body where the flow is highly disturbed and exhibits negative 
-pressures. When fluid flows over a structure, it separates at the separation points, forming a wake region in the downstream.
+pressures. When fluid flows over a structure, it separates at the separation points, forming a wake region in the downstream. \\
 
 The response of a structure to wind load can be broadly classified into two types: along-wind and across-wind responses. 
 Along-wind responses are forces acting on the structure parallel to the wind direction. In across-wind response, 
 forces act perpendicular to the wind direction. Since wind loads vary with time, the structural response to these loads 
 are dynamic in nature. Therefore, the analysis of structures subjected to wind must differentiate between static and dynamic 
-analysis.
+analysis. \\
 
 In static analysis, the response of the structure to the mean wind load is evaluated. In dynamic analysis, the response 
 due to the fluctuating (time-varying) component of the wind load is considered. Static analysis primarily involves the 
 along-wind response generated by the drag force exerted by the wind on the structure. The major sources of dynamic wind 
 loads are responses due to extraneously induced excitations, instability-induced excitations, and movement-induced excitations. 
-This response of the structure due to these loads can be seen in Figure \ref{fig:wind_response}.
+This response of the structure due to these loads can be seen in Figure \ref{fig:wind_response}. \\
 
 Buffeting is a primary example of extraneously induced excitation, which acts as an along-wind response caused by wind 
 turbulence. As shown in \ref{fig:wind_velocity_variation}, the mean of the wind velocity (acting on the structure) over time represents the 
 static component, while the variance corresponds to the buffeting component. The calculation of the buffeting component 
-is given in EN 1991-1-4.
+is given in EN 1991-1-4. \\
 
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Figures/Vander_Hoven_Spectrum.png}
-        \captionof{figure}{Van der Hoven spectrum \cite{IsaacVanderHoven1957}}
+        \captionof{figure}{Van der Hoven spectrum of wind kinetic energy \cite{IsaacVanderHoven1957}}
         \label{fig:vander_hoven}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{Figures/Wind_speed_vs_response_abbas.png}
-        \captionof{figure}{structural response plotted against wind speed: — uniform flow, - - turbulent flow. \cite{abbas2017}}
+        \captionof{figure}{Structural response amplitude versus wind speed under uniform (solid line) and turbulent flow (dashed line) \cite{abbas2017}}
         \label{fig:wind_response}
     \end{minipage}
 \end{figure}
@@ -148,14 +148,14 @@ This causes vibration in the structure known as vortex-induced vibration. Since 
 When the frequency of vortex shedding matches the natural frequency of the structure, it causes resonance, leading to large-amplitude vibrations. 
 This can be seen in Figure \ref{fig:wind_response}, where a small local maximum can be observed in the vortex shedding region. 
 The vortex shedding frequency is given by the formula \(f = \text{St}\,U/D\), where \(D\) is the characteristic length of the structure and \(U\) is the velocity of the fluid. 
-St is the non-dimensional parameter called the Strouhal number, which is a shape constant. For regular shapes, the value of St is taken from EN 1991-1-4.
+St is the non-dimensional parameter called the Strouhal number, which is a shape constant. For regular shapes, the value of St is taken from EN 1991-1-4. \\
 
 Finally, movement-induced excitations are caused by the interaction between the wind and the structure. When wind passes over a structure, 
 it creates a force that causes deformation/displacement in the structure. Due to this displacement, 
 the flow around the structure changes and consequently the force acting on the structure changes (also depending on the rate of change of displacement 
 of the structure, the force acting changes). This can create a positive feedback loop where the 
 deformation causes an increase in the force, which in turn causes more deformation. This leads to a rapid increase in the amplitude of vibrations, which can 
-ultimately result in structural failure. These phenomena are known as movement-induced vibrations, as an initial motion is first required to trigger this phenomenon. 
+ultimately result in structural failure. These phenomena are known as movement-induced vibrations, as an initial motion is first required to trigger this phenomenon. \\
 
 Movement-induced excitations mostly cause instability failures in civil engineering structures. This is 
 because once the threshold limit is reached, the structure is not able to return to a stable state and fails directly. 
@@ -165,11 +165,11 @@ this instability is static in nature. Torsional divergence can be observed in th
 Instability indicates a loss in any one of the structural parameters such as stiffness or damping due to the interaction with wind. In torsional
 divergence, the stiffness of the structure is lost due to the interaction with wind. This is analogous to structural stability failure like buckling. 
 In buckling, stiffness is lost due to the second-order effect, and in this case it is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
-this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}.
+this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}. \\
 
 In flutter, the loss is in damping. Since flutter is the focus of this thesis, the following sections focus on discussing the mathematical formulations for quantifying this loss.
 Before discussing flutter, galloping is discussed first. This is done because galloping is a similar phenomenon to flutter with less complexity 
-and hence can be useful in the intuitive understanding of these dynamic aeroelastic phenomena.
+and hence can be useful in the intuitive understanding of these dynamic aeroelastic phenomena. \\
 
 \section{Galloping}
 \label{section: Galloping}
@@ -257,7 +257,7 @@ quasi-steady analysis. This is the result of the assumption introduced earlier i
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/Galloping_2.png}
-    \caption{SDOF system for galloping and \(C_y\) versus angle of attack \cite{NaudascherRockwell1994}}
+    \caption{SDOF galloping model and variation of vertical force coefficient with angle of attack \cite{NaudascherRockwell1994}}
     \label{fig:galloping}
 \end{figure}
 
@@ -267,18 +267,18 @@ quasi-steady analysis. This is the result of the assumption introduced earlier i
 Flutter is a dynamic instability phenomenon that occurs when the aerodynamic forces acting on a structure couple with its natural modes of vibration, leading to self-excited oscillations.
 Consider a 2-DOF system of vertical (heave) and rotational (pitch) motion (Figure \ref{fig:flutter_1}). If the vertical and pitch motions are coupled such that the aerodynamic forces 
 due to the vertical motion cause an increase in the pitch motion, and the aerodynamic forces due to the pitch motion cause an increase in the vertical motion, then a positive feedback loop is 
-created. This can lead to a rapid increase in the amplitude of oscillations, which can ultimately result in structural failure.
+created. This can lead to a rapid increase in the amplitude of oscillations, which can ultimately result in structural failure. \\
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.45\textwidth]{Figures/Flutter_1.png}
-    \caption{Two-degree-of-freedom system for flutter analysis.}
+    \caption{2-DOF sectional model for flutter analysis (heave and pitch)}
     \label{fig:flutter_1}
 \end{figure}
 
 This is illustrated in Figure \ref{fig:flutter_2}. In the Figure \ref{fig:flutter_mechanism_stable}, it can be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the Figure \ref{fig:flutter_mechanism_unstable}, the phase between the vertical and pitch motion is such that 
-positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable.
+positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable. \\
 
 \begin{figure}[htbp]
     \centering
@@ -301,14 +301,14 @@ positive work is created during both the upward and downward motion. Hence, a po
         \includegraphics[width=\linewidth]{Figures/Flutter_2_1_3.png}   
     \end{subfigure}
 
-    \caption{Mechanism of flutter\cite{pentek}}
+    \caption{Flutter mechanism: stable versus unstable phase relationships \cite{pentek}}
     \label{fig:flutter_2}   
 \end{figure}
 
 Flutter analysis, like galloping, involves determining the critical wind speed at which structural instability initiates. 
 However, unlike galloping (which is a single-degree-of-freedom system), flutter analysis considers two degrees of freedom 
 and includes phase differences between the applied aerodynamic forces and the structural response. Consequently, flutter analysis 
-must account for unsteady aerodynamic forces, making it considerably more complex than galloping. 
+must account for unsteady aerodynamic forces, making it considerably more complex than galloping. \\
 
 The dynamic equilibrium equations for a 2-DOF system are
 
@@ -328,7 +328,7 @@ The reduced frequency can be understood as the oscillating velocity relative to 
 This quantifies the time lag between the applied force and the structure's displacement.  
 As this theory was based on the assumption of potential flow, it cannot be applied to bridges. In 1971, Scanlan, 
 an American civil engineer, reformulated Theodorsen's theory to accommodate bridges using a semi-empirical method based on eight 
-functions (for a 2-DOF system) known as flutter derivatives \cite{scanlan1971}.
+functions (for a 2-DOF system) known as flutter derivatives \cite{scanlan1971}. \\
 
 \begin{equation}
 \label{eq:lift_force}
@@ -347,7 +347,7 @@ of the section's vertical velocity, angular rotation, and speed of angular rotat
 of \(U_{red} = \frac{1}{K} = \frac{U}{fB}\). These derivatives can be understood as follows: just as \(C_d\) is a non-dimensional shape constant for computing drag force on a structure, 
 each flutter derivative quantifies a particular aeroelastic lift or moment component. For example, 
 \(H_1^*\) is the flutter derivative for quantifying the lift force due to vertical velocity of the structure. \(A_3^*\) is 
-the flutter derivative for quantifying the moment force due to angular rotation of the structure.
+the flutter derivative for quantifying the moment force due to angular rotation of the structure. \\
 
 Since this is a semi-empirical method, these derivatives must be found through CFD simulations or wind-tunnel tests. 
 Once obtained, they are applied back to the dynamic equilibrium equations to determine the critical velocity.
@@ -358,7 +358,7 @@ In free vibration tests, the structure is allowed to vibrate freely under the in
 and the flutter derivatives are determined from the observed damping response.
 For the preliminary analysis of flutter, forced motion tests with CFD have greater 
 importance due to their easier setup and lower cost. Since forced motion tests are the interest of this thesis, only this approach is 
-explained in the following sections.
+explained in the following sections. \\
 
 \section{Identification of Flutter Derivatives with Forced Motion Simulations}
 \label{section: Identification of Flutter Derivatives with Forced Motion Simulations}
@@ -458,14 +458,14 @@ illustrate the workflow for the two methods.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{Figures/Single_Frequency.png}
-    \caption{Workflow for the single-frequency method.}
+    \caption{Workflow of the single-frequency forced-motion method}
     \label{fig:single_freq_method}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[angle=0, width=\textwidth]{Figures/MultiFrequency_Explanation.png}
-    \caption{Workflow for the multi-frequency method.}
+    \caption{Workflow of the multi-frequency forced-motion method}
     \label{fig:multi_freq_method}
 \end{figure}
 
@@ -548,7 +548,7 @@ the solution takes the form \(x(t) = e^{i\omega t} = e^{i\omega_r t} \cdot e^{-\
 where the real part \(\omega_r\) is the oscillation frequency and the imaginary part \(\omega_i\) governs the damping of the response.
 This equation must be solved for \(\omega\) to determine the system's oscillating frequency and damping characteristics. 
 Because structural damping is present, the problem takes the form of a quadratic eigenvalue problem. Hence this is 
-linearised as shown below to be solved as a generalised eigenvalue problem:
+linearised as shown below to be solved as a generalised eigenvalue problem: \\
 
 \begin{equation}
     \left(
@@ -568,7 +568,7 @@ Then, \(e^{-\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)\) represen
 \(\omega_r\) and an amplitude that decays exponentially over time due to the positive \(\omega_i\).
 If \(\omega = \omega_r - i\omega_i\), then \(e^{+\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)\) represents the same oscillation 
 but with an amplitude that grows exponentially over time due to the negative \(\omega_i\).
-So, the sign of \(\omega_i\) determines stability:
+So, the sign of \(\omega_i\) determines stability: \\
 
 \begin{itemize}
     \setlength{\itemsep}{6pt}
@@ -594,7 +594,7 @@ This is illustrated in Figure~\ref{fig:Flutter_Solution_Plot}.
         \includegraphics[width=\textwidth]{Figures/Flutter_Growth_Solution_Plot.png}
         \subcaption{Divergent solution}
     \end{minipage}
-    \caption{Time-domain response of the flutter/galloping solution}
+    \caption{Stable (damped) and unstable (diverging) time-domain flutter responses}
     \label{fig:Flutter_Solution_Plot}
 \end{figure}
 
@@ -650,7 +650,7 @@ first obtained by Theodorsen~\cite{TheodorsenGarrick1934}. They are expressed in
 of the real and imaginary parts of the Theodorsen circulatory function
 \(C(k) = F(k) + iG(k)\), where \(k\) is the reduced frequency. The analytical
 expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
-Figure~\ref{fig:Theodorsen_Flutter_Derivatives}.
+Figure~\ref{fig:Theodorsen_Flutter_Derivatives}. \\
 
 \begin{table}[htbp]
     \centering
@@ -692,7 +692,7 @@ Figures~\ref{fig:eigen_freq_vs_Ur}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png}
-    \caption{Real and imaginary parts of the eigenfrequency plotted against
+    \caption{Real and imaginary parts of the eigenfrequency variation against
              reduced velocity}
     \label{fig:eigen_freq_vs_Ur}
 \end{figure}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  25 APR 2026 22:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  26 APR 2026 04:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,12 +595,60 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             <->"Times New
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
-)) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
+Package: textpos 2022/07/23 v1.10.1
+Package textpos Info: choosing support for LaTeX3 on input line 60.
+\TP@textbox=\box71
+\TP@holdbox=\box72
+\TPHorizModule=\dimen306
+\TPVertModule=\dimen307
+\TP@margin=\dimen308
+\TP@absmargin=\dimen309
 
-LaTeX Warning: Label `fig:Heave' multiply defined.
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen310
+\TP@ox=\dimen311
+\TP@oy=\dimen312
+\TP@tbargs=\toks40
+TextBlockOrigin set to 0pt x 0pt
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count334
+\calc@Bcount=\count335
+\calc@Adimen=\dimen313
+\calc@Bdimen=\dimen314
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count336
+\calc@Cskip=\skip62
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen315
+\ESO@tempdimb=\dimen316
+)
+\AM@pagewidth=\dimen317
+\AM@pageheight=\dimen318
+\AM@fboxrule=\dimen319
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\ppxetex.def
+File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count337
+\AM@pagebox=\box73
+\AM@global@opts=\toks41
+\AM@pagecnt=\count338
+\AM@toc@title=\toks42
+\AM@lof@heading=\toks43
+\c@AM@survey=\count339
+\AM@templatesizebox=\box74
+))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
 
-
-LaTeX Warning: Label `fig:Pitch' multiply defined.
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `fig:Model_3_CFD_Output' multiply defined.
@@ -614,30 +662,30 @@ LaTeX Warning: Label `sub@fig:Pitch_PhaseMx_vs_Amplitude' multiply defined.
 )
 \openout1 = `Chapt_4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -677,7 +725,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 2.
+Package hyperref Info: Link coloring OFF on input line 7.
 (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out)
 \@outlinefile=\write4
 \openout4 = `Chapt_4.out'.
@@ -688,91 +736,139 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 2.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 2.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 2.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 2.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 2.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 2.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 2.
-LaTeX Font Info:    Redeclaring math accent \check on input line 2.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 2.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 2.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 2.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 2.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 2.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 7.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 7.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 7.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 7.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 7.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 7.
+LaTeX Font Info:    Redeclaring math accent \check on input line 7.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 7.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 7.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 2.
+(Font)              `operators' in the math version `normal' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 2.
+(Font)              `operators' in the math version `bold' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 2.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 2.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 2.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 2.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 2.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 2.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 2.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 2.
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 2.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 2.
-
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 7.
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+))
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+
+ []
+
 File: Figures/CFD/Energy_Casacade.png Graphic file (type bmp)
 <Figures/CFD/Energy_Casacade.png>
 File: Figures/CFD/Energy_vs_wave_number.png Graphic file (type bmp)
 <Figures/CFD/Energy_vs_wave_number.png>
 
+LaTeX Warning: Citation `wolfdynamics2021' on page 2 undefined on input line 103.
 
-LaTeX Warning: Citation `wolfdynamics2021' on page 2 undefined on input line 97.
 
-
-LaTeX Warning: Citation `wolfdynamics2021' on page 2 undefined on input line 97.
+LaTeX Warning: Citation `wolfdynamics2021' on page 2 undefined on input line 103.
 
 File: Figures/CFD/DNS_LES_URANS.png Graphic file (type bmp)
 <Figures/CFD/DNS_LES_URANS.png>
 
-LaTeX Warning: Float too large for page by 0.97823pt on input line 112.
+LaTeX Warning: Float too large for page by 12.97823pt on input line 118.
 
 [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
-LaTeX Warning: Citation `sarkic2012' on page 4 undefined on input line 131.
+ []
 
 
-LaTeX Warning: Reference `add the references some book or paper where you studied on how to dimesolinse fluid domain' on page 4 undefined on input line 142.
+LaTeX Warning: Citation `sarkic2012' on page 4 undefined on input line 137.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+LaTeX Warning: Reference `add the references some book or paper where you studied on how to dimesolinse fluid domain' on page 4 undefined on input line 148.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
 File: Figures/Mesh_Convergence_Study/Virtual_Wind_Tunnel_Dimensions.png Graphic file (type bmp)
@@ -781,19 +877,39 @@ File: Figures/Mesh_Convergence_Study/Sarkic_Section.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/Sarkic_Section.png>
 
 
-LaTeX Warning: Citation `dadvand2010' on page 5 undefined on input line 220.
+LaTeX Warning: Citation `dadvand2010' on page 5 undefined on input line 226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--234
+
+ []
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 235--248
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 231.
+ []
 
 
-LaTeX Warning: Reference `section' on page 6 undefined on input line 247.
+LaTeX Warning: Reference `section' on page 6 undefined on input line 253.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--258
+
+ []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
+
+ []
+
 File: Figures/Mesh_Convergence_Study/GiD_Model_2.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/GiD_Model_2.png>
- [7]
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
+
+ []
+
+[7]
 File: Figures/Mesh_Convergence_Study/CFD_Result.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/CFD_Result.png>
 File: Figures/Mesh_Convergence_Study/Model_3_Heave.png Graphic file (type bmp)
@@ -817,58 +933,57 @@ File: Figures/Mesh_Convergence_Study/Convergence_Study_H4.png Graphic file (type
 File: Figures/Mesh_Convergence_Study/Convergence_Study_A4.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/Convergence_Study_A4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--419
+Underfull \hbox (badness 10000) in paragraph at lines 419--425
 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 420--425
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--445
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 426--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--495
+Underfull \hbox (badness 10000) in paragraph at lines 447--451
 
  []
 
-[10]
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 496--501
+
+ []
+
 File: Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--514
-
- []
-
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86' on page 11 undefined on input line 518.
-
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86' on page 11 undefined on input line 518.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 515--519
+Underfull \hbox (badness 10000) in paragraph at lines 514--520
 
  []
 
 [11] [12]
 
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86' on page 13 undefined on input line 524.
+LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86' on page 13 undefined on input line 524.
 
 
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86' on page 13 undefined on input line 524.
+LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86' on page 13 undefined on input line 524.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--526
+Underfull \hbox (badness 10000) in paragraph at lines 521--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--533
+LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86' on page 13 undefined on input line 530.
+
+
+LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86' on page 13 undefined on input line 530.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--539
 
  []
 
@@ -885,59 +1000,60 @@ File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftFor
 File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 594--601
+Underfull \hbox (badness 10000) in paragraph at lines 596--599
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 602--607
+Underfull \hbox (badness 10000) in paragraph at lines 600--607
 
  []
 
 
-LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 614.
-
-
-LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 614.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 608--617
+Underfull \hbox (badness 10000) in paragraph at lines 608--613
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
-
- []
+LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 620.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 620.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--623
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 624--632
+Underfull \hbox (badness 10000) in paragraph at lines 624--626
 
  []
 
 
-LaTeX Warning: Reference `fig:Appendix_Complete_Compiled_Displacement_Vs_Force' on page 15 undefined on input line 636.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 633--637
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--642
+Underfull \hbox (badness 10000) in paragraph at lines 630--638
 
  []
 
+
+LaTeX Warning: Reference `fig:Appendix_Complete_Compiled_Displacement_Vs_Force' on page 15 undefined on input line 642.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--643
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--648
+
+ []
+
+[15]
 File: Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png>
 File: Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_Phases_vs_Amplitude.png Graphic file (type bmp)
@@ -955,33 +1071,35 @@ File: Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/Phas
 File: Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>
 
-LaTeX Warning: Citation `noda2003' on page 15 undefined on input line 720.
+
+LaTeX Warning: Citation `noda2003' on page 16 undefined on input line 726.
 
 
-LaTeX Warning: Citation `lin2019' on page 15 undefined on input line 720.
+LaTeX Warning: Citation `lin2019' on page 16 undefined on input line 726.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--725
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 726--732
-
- []
-
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 733--736
+Underfull \hbox (badness 10000) in paragraph at lines 726--731
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--754
+Underfull \hbox (badness 10000) in paragraph at lines 732--738
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 739--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--760
 
  []
 
 File: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png>
+[17]
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png>
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png Graphic file (type bmp)
@@ -991,29 +1109,31 @@ File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>
 
-LaTeX Warning: Citation `diana2020' on page 17 undefined on input line 875.
+
+LaTeX Warning: Citation `diana2020' on page 18 undefined on input line 881.
 
 
-LaTeX Warning: Citation `xin2007' on page 17 undefined on input line 875.
+LaTeX Warning: Citation `xin2007' on page 18 undefined on input line 881.
 
 
-LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 17 undefined on input line 875.
+LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 18 undefined on input line 881.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 873--877
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 878--886
+Underfull \hbox (badness 10000) in paragraph at lines 879--883
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--892
+
+ []
+
+[18]
 File: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png>
 File: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>
-[18] [19] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
+ [19] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1029,12 +1149,12 @@ Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
 (rerunfilecheck)             Checksum: F50EBCF31F4C322D00C0E51188661D41;3317.
  ) 
 Here is how much of TeX's memory you used:
- 25758 strings out of 411570
- 542411 string characters out of 5806423
- 1939191 words of memory out of 5000000
- 47294 multiletter control sequences out of 15000+600000
- 563277 words of font info for 80 fonts, out of 8000000 for 9000
+ 26784 strings out of 411570
+ 560229 string characters out of 5806423
+ 1940191 words of memory out of 5000000
+ 48286 multiletter control sequences out of 15000+600000
+ 565016 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 104i,11n,110p,532b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,11n,110p,532b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.xdv (19 pages, 389924 bytes).
+Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.xdv (19 pages, 397980 bytes).

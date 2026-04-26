@@ -1,23 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{2024}
-Structural {{Dynamicssummer}} term 2024.
-\newblock {\em Structural Dynamics}, 2024.
-
-\bibitem{xu2013}
-You-Lin Xu.
-\newblock {\em Wind Effects on Cable-Supported Bridges}.
-\newblock Wiley, Singapore, 2013.
-
-\bibitem{IsaacVanderHoven1957}
-Isaac~Van der Hoven.
-\newblock Power spectrum of horizontal wind speed in the frequency range from
-  0.0007 to 900 cycles per hour.
-\newblock {\em Journal of Atmospheric Sciences}, 14(2):160 -- 164, 1957.
-\newblock URL:
-  \url{https://journals.ametsoc.org/view/journals/atsc/14/2/1520-0469_1957_014_0160_psohws_2_0_co_2.xml},
-  \href {https://doi.org/10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}
-  {\path{doi:10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}}.
+\bibitem{gimsing2012}
+Niels~J. Gimsing and Christos~T. Georgakis.
+\newblock {\em Cable Supported Bridges: Concept and Design}.
+\newblock J. Wiley, Chichester, West Sussex, U.K, 3rd ed edition, 2012.
 
 \bibitem{abbas2017}
 Tajammal Abbas, Igor Kavrakov, and Guido Morgenthal.
@@ -27,32 +13,6 @@ Tajammal Abbas, Igor Kavrakov, and Guido Morgenthal.
   Engineering}, 170(4):271--310, December 2017.
 \newblock \href {https://doi.org/10.1680/jbren.15.00039}
   {\path{doi:10.1680/jbren.15.00039}}.
-
-\bibitem{NaudascherRockwell1994}
-Eduard Naudascher and Donald Rockwell.
-\newblock {\em Flow-Induced Vibrations: An Engineering Guide}, volume~7 of {\em
-  IAHR Hydraulic Structures Design Manuals}.
-\newblock Routledge, London, 1994.
-\newblock \href {https://doi.org/10.1201/9780203755747}
-  {\path{doi:10.1201/9780203755747}}.
-
-\bibitem{pentek}
-Mate Pentek.
-\newblock Method {{Development}} for the {{Numerical Wind Tunnel}} in {{Applied
-  Structural Engineering}}.
-
-\bibitem{wolfdynamics2021}
-{Wolf Dynamics}.
-\newblock Turbulence modeling in {OpenFOAM}: Theory and applications.
-\newblock
-  \url{https://www.wolfdynamics.com/training/turbulence/OF2021/turbulence_2021_OF8.pdf},
-  2021.
-\newblock Online training material, Advanced session.
-
-\bibitem{gimsing2012}
-Niels~J. Gimsing and Christos~T. Georgakis.
-\newblock {\em Cable Supported Bridges: Concept and Design}.
-\newblock J. Wiley, Chichester, West Sussex, U.K, 3rd ed edition, 2012.
 
 \bibitem{TheodorsenGarrick1934}
 Theodore Theodorsen and Ira~E. Garrick.
@@ -85,6 +45,38 @@ Givenname Surname et~al.
 \newblock \href {https://doi.org/10.5281/zenodo.15687676}
   {\path{doi:10.5281/zenodo.15687676}}.
 
+\bibitem{2024}
+Structural {{Dynamicssummer}} term 2024.
+\newblock {\em Structural Dynamics}, 2024.
+
+\bibitem{xu2013}
+You-Lin Xu.
+\newblock {\em Wind Effects on Cable-Supported Bridges}.
+\newblock Wiley, Singapore, 2013.
+
+\bibitem{IsaacVanderHoven1957}
+Isaac~Van der Hoven.
+\newblock Power spectrum of horizontal wind speed in the frequency range from
+  0.0007 to 900 cycles per hour.
+\newblock {\em Journal of Atmospheric Sciences}, 14(2):160 -- 164, 1957.
+\newblock URL:
+  \url{https://journals.ametsoc.org/view/journals/atsc/14/2/1520-0469_1957_014_0160_psohws_2_0_co_2.xml},
+  \href {https://doi.org/10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}
+  {\path{doi:10.1175/1520-0469(1957)014<0160:PSOHWS>2.0.CO;2}}.
+
+\bibitem{NaudascherRockwell1994}
+Eduard Naudascher and Donald Rockwell.
+\newblock {\em Flow-Induced Vibrations: An Engineering Guide}, volume~7 of {\em
+  IAHR Hydraulic Structures Design Manuals}.
+\newblock Routledge, London, 1994.
+\newblock \href {https://doi.org/10.1201/9780203755747}
+  {\path{doi:10.1201/9780203755747}}.
+
+\bibitem{pentek}
+Mate Pentek.
+\newblock Method {{Development}} for the {{Numerical Wind Tunnel}} in {{Applied
+  Structural Engineering}}.
+
 \bibitem{diana2020}
 Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
   Andersen, Tommaso Argentini, Miguel Cid~Montoya, Santiago Hern{\'a}ndez,
@@ -103,6 +95,14 @@ Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
 Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
 \newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
 \newblock URL: \url{https://www.scipy.org/}.
+
+\bibitem{wolfdynamics2021}
+{Wolf Dynamics}.
+\newblock Turbulence modeling in {OpenFOAM}: Theory and applications.
+\newblock
+  \url{https://www.wolfdynamics.com/training/turbulence/OF2021/turbulence_2021_OF8.pdf},
+  2021.
+\newblock Online training material, Advanced session.
 
 \bibitem{sarkic2012}
 Anina {\v S}arki{\'c}, Rupert Fisch, R{\"u}diger H{\"o}ffer, and Kai-Uwe

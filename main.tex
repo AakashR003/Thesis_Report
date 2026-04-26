@@ -25,9 +25,14 @@
 \usetikzlibrary{arrows.meta, positioning}
 \usepackage{setspace}
 \usepackage{caption}
+\usepackage{subcaption}
 \usepackage{anyfontsize}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
+\usepackage[absolute]{textpos}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+
 
 % ============================================================
 % Float and page optimization
@@ -125,55 +130,74 @@
 % Document
 % ============================================================
 \begin{document}
+\includepdf[pages=-]{Front_Page.pdf}
 
 % --- Title Page ---
 \begin{titlepage}
-    
-    \begin{flushright}
-        \includegraphics[width=2cm]{TUM_Logo.png}
-    \end{flushright}
 
-    \vspace{1.5cm}
+% Page geometry for title page
+\newgeometry{
+    top=43.5mm,
+    bottom=10mm,
+    left=20mm,
+    right=20mm
+}
 
-    \begin{center}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+\pagestyle{empty}
 
-    {\fontsize{24}{26}\selectfont\bfseries Efficient Identification of Flutter Derivatives\\
-    from Multi-Frequency Forced-Motion Simulations\\[1em]}
+% TUM Logo positioned at top right
+\begin{textblock*}{19mm}[1,0](\textwidth+15mm, 20mm)
+    \raggedleft\includegraphics[width=19mm]{TUM_Logo.png}
+\end{textblock*}
 
-    \vspace{2.5cm}
+% Title and Subtitle
+\begin{textblock*}{\textwidth}[0,0](20mm, 43.5mm)
+{\fontsize{24pt}{26pt}\selectfont\textbf{Efficient Identification of Flutter Derivatives\\[0.2em]
+from Multi-Frequency Forced-Motion Simulations}}
 
-    {\fontsize{18}{27}\selectfont
-    Submitted to the Department of Civil, Geo and Environmental Engineering\\
-    in partial fulfillment of the requirements for the degree of\\
-    M.Sc.\\
-    at the Technical University of Munich.
-    }
-    \end{center}
+\vspace*{14pt}
+{\fontsize{18pt}{27pt}\selectfont\textbf{}}
+\end{textblock*}
 
-    \vspace{2.5cm}
+\vspace*{92.2mm}
 
-    \begin{flushleft}
-    {\fontsize{14.4}{17.5}\selectfont
-    % Two-column info block
-    \begin{tabular}{@{} p{3.5cm} p{8cm} @{}}
-        \textbf{Supervised by} 
-            & Guillermo Martínez-López, M.Sc. \\
-            & Prof. Dr.-Ing. Roland Wuchner \\
-            & Chair of Structural Analysis \\[1em]
-        \textbf{Submitted by}  
-            & Aakash Ravichandran \\
-            & Hiltenspergerstraße 80 \\
-            & 80796 München \\
-            & Student number: 03780894 \\[1em]
-        \textbf{Submitted on}  
-            & Munich, --
-            % \today 
-            \\
-    \end{tabular}
-    }
+% Submission text
+\fontsize{14.4pt}{17.5pt}\selectfont
+Submitted to the Department of Civil and Environmental Engineering\\
+in partial fulfillment of the requirements for the degree of\\
+M.Sc. Civil Engineering \\
+at the Technical University of Munich.
 
-    \end{flushleft}
+% Info section with proper spacing
+\renewcommand{\baselinestretch}{1.47}
+\normalsize\selectfont
+\vspace*{17.1mm}
 
+\textbf{Supervised by}\hspace{1.5cm}
+\begin{minipage}[t]{10cm}
+Guillermo Martínez-López, M.Sc.\\
+Prof. Dr.-Ing. habil. Roland Wuchner\\
+Chair of Structural Analysis\strut
+\end{minipage}
+
+\vspace*{4.3mm}
+\textbf{Submitted by}\hspace{1.65cm}
+\begin{minipage}[t]{10cm}
+Aakash Ravichandran\\
+Hiltenspergerstraße 80\\
+80796 München\\
+Student number: 03780894
+\end{minipage}
+
+\vspace*{-1mm}
+\textbf{Submitted on}\hspace{1.5cm}
+\begin{minipage}[t]{10cm}
+Munich, April 26, 2026\strut
+\end{minipage}
+
+\restoregeometry
 \end{titlepage}
 
 \subfile{Abstract/Abstract}
@@ -182,8 +206,6 @@
 \setcounter{page}{1}
 
 \tableofcontents\newpage
-\listoffigures\newpage
-\listoftables\newpage
 
 \cleardoublepage
 \pagenumbering{arabic}
@@ -200,9 +222,11 @@
 \subfile{Chap_6/Chapt_6}
 \appendix
 \subfile{Chap_A/Chapt_A}
+\listoffigures\newpage
+\listoftables\newpage
 
 \nocite{*}
 \bibliographystyle{unsrturl}
 \bibliography{references}
-
+\subfile{Declaration/Declaration}
 \end{document}

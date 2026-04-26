@@ -266,7 +266,7 @@ as shown in Figure~\ref{fig:MF1_IndividualComponents_ForcedMotion}.\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_Component_ForcedMotion.PNG}
-    \caption{Individual forced motion components for MF1 Simulation~16}
+    \caption{Individual prescribed forced-motion components at frequencies 0.125 Hz, 0.15 Hz, 0.2 Hz, and 0.25 Hz for MF1 Simulation 16 (heave motion)}
     \label{fig:MF1_IndividualComponents_ForcedMotion}
 \end{figure}
 
@@ -274,7 +274,7 @@ These four prescribed forced motions are superposed, and the resulting superpose
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png}
-    \caption{Superposed forced motion for MF1 Simulation~16}
+    \caption{Superposed prescribed heave motion for MF1 Simulation 16 (Superposition Scheme 4)}
     \label{fig:MF1_Superposed_ForcedMotion}
 \end{figure}
 
@@ -287,7 +287,7 @@ Figures~\ref{fig:MF1_AeroLift_TimeDomain} and~\ref{fig:MF1_AeroMoment_TimeDomain
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png}
-    \caption{Aerodynamic lift force in the time domain - MF1 Simulation~16}
+    \caption{Time history of the computed aerodynamic lift force for MF1 Simulation 16 (heave motion, Superposition Scheme 4)}
     \label{fig:MF1_AeroLift_TimeDomain}
 \end{figure}
 
@@ -296,7 +296,7 @@ in Figure~\ref{fig:MF1_DFT_LiftForce_SP4}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png}
-    \caption{Aerodynamic lift force in the frequency domain - MF1 Simulation~16}
+    \caption{Frequency spectrum of the aerodynamic lift force for MF1 Simulation 16 (heave motion, Superposition Scheme 4)}
     \label{fig:MF1_DFT_LiftForce_SP4}
 \end{figure}
 
@@ -315,16 +315,16 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png}
-    \caption{Individually extracted aerodynamic lift force components - MF1 Simulation~16}
+    \caption{Individually extracted harmonic components of the aerodynamic lift force via FFT for MF1 Simulation 16 (heave motion, Superposition Scheme 4)}
     \label{fig:MF1_IndividualHarmonicLift}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png}
-    \caption{Aerodynamic moment in the time domain - MF1 Simulation~16}
-    \label{fig:MF1_AeroMoment_TimeDomain}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/4_Computed_Aerodynamic_Moment.png}
+%     \caption{Aerodynamic moment in the time domain - MF1 Simulation~16}
+%     \label{fig:MF1_AeroMoment_TimeDomain}
+% \end{figure}
 
 % \begin{figure}[htbp]
 %     \centering
@@ -365,7 +365,7 @@ Figures~\ref{fig:MF1_AeroMoment_TimeDomain}--\ref{fig:MF1_IndividualHarmonicMome
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png}
-    \caption{Flutter derivatives - Campaign~1}
+    \caption{Flutter derivatives identified from Multi-Frequency Campaign 1 across all superposition schemes}
     \label{fig:Combined_Flutter_Derivatives_1}
 \end{figure}
 
@@ -426,7 +426,7 @@ and the intended use of the results.\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png}
-    \caption{Amplitude errors as a function of reduced velocity - Campaign~1}
+    \caption{Relative errors in aerodynamic force and moment amplitudes versus reduced velocity for Multi-Frequency Campaign 1}
     \label{fig: Amplitude_Errors}
 \end{figure}
 
@@ -437,7 +437,7 @@ Furthermore, similar to the errors in forces and moments for heave motion at red
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png}
-    \caption{Phase errors as a function of reduced velocity - Campaign~1}
+    \caption{Phase errors in aerodynamic lift force and moment versus reduced velocity for Multi-Frequency Campaign 1.}
     \label{fig: Phase_Errors}
 \end{figure}
 
@@ -498,7 +498,7 @@ lower reduced velocities, while at higher reduced velocities the error is due to
         \label{fig:MF1_Compiled_Pitch_PhaseMoment_Error_vs_Superpositions}
     \end{subfigure}
 
-    \caption{Compiled Prescribed Displacement vs.\ force - Campaign~1}
+    \caption{Normalised aerodynamic moment magnitudes and phase errors across superposition schemes for heave and pitch motions (Campaign 1)}
     \label{fig:MF1_Compiled_Displacement_Vs_Force}
 \end{figure}
 
@@ -539,7 +539,7 @@ be detected from these outputs alone.\\
         \label{fig:Heave_DFT_moment_amplitude_case_6}
     \end{subfigure}
     
-    \caption{Spectral Analysis - Heave, Campaign~1}
+    \caption{Frequency spectra of aerodynamic lift force and moment for heave motion in Superposition Scheme 4 (Campaign 1)}
     \label{fig:Frequency_Domain_Analysis_Heave_MF1}
 \end{figure}
 
@@ -559,7 +559,7 @@ be detected from these outputs alone.\\
         \label{fig:Pitch_DFT_moment_amplitude_case_6_MF1}
     \end{subfigure}
     
-    \caption{Spectral Analysis - Pitch, Campaign~1}
+    \caption{Frequency spectra of aerodynamic lift force and moment for pitch motion in Superposition Scheme 4 (Campaign 1)}
     \label{fig:Frequency_Domain_Analysis_Pitch_MF1}
 \end{figure}
 
@@ -584,7 +584,7 @@ This is the reason that the effect does not cause significant error in the pitch
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png}
-    \caption{Reduced Velocity Vs Force Amplitudes}
+    \caption{Aerodynamic force and moment amplitudes versus reduced velocity for heave and pitch motions (Campaign 1)}
     \label{fig:Reduced Velocity Vs Force Amplitudes}
 \end{figure}
 
@@ -610,14 +610,14 @@ velocity range, and these errors are directly reflected in the predicted critica
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png}
-        \caption{Critical wind speed vs.\ number of superpositions - Campaign~1}
+        \caption{Critical flutter wind speed versus number of superposed frequencies for Campaign 1}
         \label{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF1}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png}
-        \caption{Reduced critical wind speed vs.\ number of superpositions - Campaign~1}
+        \caption{Reduced critical flutter velocity versus number of superposed frequencies for Campaign 1}
         \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF1}
     \end{minipage}
 \end{figure}
@@ -659,7 +659,7 @@ Pitch Amplitude (rad)   & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 & 0.087 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png}
-    \caption{Flutter derivatives - Campaign~2}
+    \caption{Flutter derivatives identified from Multi-Frequency Campaign 2 across all superposition schemes}
     \label{fig:Combined_Flutter_Derivatives_2}
 \end{figure}
 
@@ -681,14 +681,14 @@ The phase errors for pitch motion are approximately 0.2~radians, which is becaus
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png}
-    \caption{Amplitude errors as a function of reduced velocity - Campaign~2}
+    \caption{Relative errors in aerodynamic force and moment amplitudes versus reduced velocity for Multi-Frequency Campaign 2}
     \label{fig:Amplitude_Errors_MF2}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png}
-    \caption{Phase errors as a function of reduced velocity - Campaign~2}
+    \caption{Phase errors in aerodynamic lift force and moment versus reduced velocity for Multi-Frequency Campaign 2}
     \label{fig:Phase_Errors_MF2}
 \end{figure}
 
@@ -715,7 +715,7 @@ These higher-order terms are the primary cause of the significant variation erro
         \label{fig:Heave_DFT_moment_amplitude_case_6_MF2}
     \end{subfigure}
     
-    \caption{Spectral Analysis - Heave, Campaign~2}
+    \caption{Frequency spectra of aerodynamic lift force and moment for heave motion in Superposition Scheme 4 (Campaign 2}
     \label{fig:Frequency_Domain_Analysis_Heave_MF2}
 \end{figure}
 
@@ -742,7 +742,7 @@ It can clearly identify nonlinearity arising from a violation of Scanlan's linea
         \label{fig:Pitch_DFT_moment_amplitude_case_6_MF2}
     \end{subfigure}
     
-    \caption{Spectral Analysis - Pitch, Campaign~2}
+    \caption{Frequency spectra of aerodynamic lift force and moment for pitch motion in Superposition Scheme 4 (Campaign 2)}
     \label{fig:Frequency_Domain_Analysis_Pitch_MF2}
 \end{figure}
 
@@ -759,14 +759,14 @@ and~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}.\\
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png}
-        \caption{Critical wind speed vs.\ number of superpositions - Campaign~2}
+        \caption{Critical flutter wind speed versus number of superposed frequencies for Campaign 2}
         \label{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF2}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png}
-        \caption{Reduced critical wind speed vs.\ number of superpositions - Campaign~2}
+        \caption{Reduced critical flutter velocity versus number of superposed frequencies for Campaign 2}
         \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}
     \end{minipage}
 \end{figure}
@@ -823,14 +823,14 @@ motion cases.
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Simulation_Time_1.png}
-        \caption{Overall Combinations - Total Time Saved vs No. of Superpositions}
+        \caption{Total computational time saved versus number of superposed frequencies for different combination strategies}
         \label{fig:Overall Combinations - Total Time Saved vs No. of Superpositions}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Simulation_Time_2.png}
-        \caption{Higher Ur vs Lower Ur - Total Time Saved vs No. of Superposition}
+        \caption{Computational time savings for superpositions in high versus low reduced velocity ranges}
         \label{fig:Higher Ur vs Lower Ur - Total Time Saved vs No. of Superpositions}
     \end{minipage}
 \end{figure}
