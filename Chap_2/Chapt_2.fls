@@ -1,16 +1,16 @@
-PWD d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2
+PWD d:\1.TUM courses\Masters Thesis\Report_Latex
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.tex
-OUTPUT Chapt_2.log
+OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.log
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
-INPUT ..\main.tex
-INPUT ..\main.tex
-INPUT ..\main.tex
-INPUT ..\main.tex
-INPUT ..\main.tex
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\..\main.tex
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\..\main.tex
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -274,30 +274,30 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
-INPUT .\Chapt_2.aux
-INPUT .\Chapt_2.aux
-INPUT Chapt_2.aux
-OUTPUT Chapt_2.aux
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
+OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
-INPUT .\Chapt_2.out
-INPUT .\Chapt_2.out
-INPUT Chapt_2.out
-INPUT Chapt_2.out
-INPUT .\Chapt_2.out
-INPUT .\Chapt_2.out
-OUTPUT Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
-OUTPUT Chapt_2.xdv
-INPUT .\Figures\Atmospheric_Boundary_Layer.png
-INPUT .\Figures\Atmospheric_Boundary_Layer.png
-INPUT .\Figures\Atmospheric_Boundary_Layer.png
+OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.xdv
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Atmospheric_Boundary_Layer.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Atmospheric_Boundary_Layer.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Atmospheric_Boundary_Layer.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
@@ -322,42 +322,42 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT .\Figures\Wind_speed_vs_time_1.png
-INPUT .\Figures\Wind_speed_vs_time_1.png
-INPUT .\Figures\Wind_speed_vs_time_1.png
-INPUT .\Figures\Vander_Hoven_Spectrum.png
-INPUT .\Figures\Vander_Hoven_Spectrum.png
-INPUT .\Figures\Vander_Hoven_Spectrum.png
-INPUT .\Figures\Wind_speed_vs_response_abbas.png
-INPUT .\Figures\Wind_speed_vs_response_abbas.png
-INPUT .\Figures\Wind_speed_vs_response_abbas.png
-INPUT .\Figures\Galloping_2.png
-INPUT .\Figures\Galloping_2.png
-INPUT .\Figures\Galloping_2.png
-INPUT .\Figures\Flutter_1.png
-INPUT .\Figures\Flutter_1.png
-INPUT .\Figures\Flutter_1.png
-INPUT .\Figures\Flutter_2_1_1.png
-INPUT .\Figures\Flutter_2_1_1.png
-INPUT .\Figures\Flutter_2_1_1.png
-INPUT .\Figures\Flutter_2_1_2.png
-INPUT .\Figures\Flutter_2_1_2.png
-INPUT .\Figures\Flutter_2_1_2.png
-INPUT .\Figures\Flutter_2_1_3.png
-INPUT .\Figures\Flutter_2_1_3.png
-INPUT .\Figures\Flutter_2_1_3.png
-INPUT .\Figures\Single_Frequency.png
-INPUT .\Figures\Single_Frequency.png
-INPUT .\Figures\Single_Frequency.png
-INPUT .\Figures\MultiFrequency_Explanation.png
-INPUT .\Figures\MultiFrequency_Explanation.png
-INPUT .\Figures\MultiFrequency_Explanation.png
-INPUT .\Figures\Flutter_Decay_Solution_Plot.png
-INPUT .\Figures\Flutter_Decay_Solution_Plot.png
-INPUT .\Figures\Flutter_Decay_Solution_Plot.png
-INPUT .\Figures\Flutter_Growth_Solution_Plot.png
-INPUT .\Figures\Flutter_Growth_Solution_Plot.png
-INPUT .\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_time_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_time_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_time_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Vander_Hoven_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Vander_Hoven_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Vander_Hoven_Spectrum.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_response_abbas.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_response_abbas.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Wind_speed_vs_response_abbas.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Galloping_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_1.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_2.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_3.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_3.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_2_1_3.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Single_Frequency.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\MultiFrequency_Explanation.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Decay_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Flutter_Growth_Solution_Plot.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
@@ -366,9 +366,9 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
-INPUT .\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
-INPUT .\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
-INPUT Chapt_2.aux
-INPUT .\Chapt_2.out
-INPUT .\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Figures\Validation\Eigen_Frequency_Vs_Reduced_Velocity.png
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
+INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out
