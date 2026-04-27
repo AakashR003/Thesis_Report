@@ -1,27 +1,55 @@
 \chapter*{Abstract}
+\thispagestyle{empty}
 
 This thesis investigates an efficient approach for identifying flutter derivatives using the 
 multi-frequency forced-motion method in CFD. Flutter is an aeroelastic instability that occurs 
 when a flexible structure interacts with a fluid flow. If the incoming flow speed exceeds the 
-structure's critical velocity, negative aerodynamic damping will be introduced, leading to 
-catastrophic failure. Design of long-span suspension and cable-stayed bridges for wind loading 
-is mainly governed by this phenomenon.
+structure's critical velocity, the self-excited aerodynamic forces introduce negative damping, resulting in 
+rapidly diverging oscillations and potential catastrophic failure. Design of long-span suspension and 
+cable-stayed bridges for wind loading is mainly governed by this phenomenon. \\
 
-Flutter derivatives are a set of aerodynamic coefficients that quantify self-excited lift and 
-moment forces on a bridge deck (or any bluff body) as functions of reduced velocity. Traditionally, 
-these derivatives are obtained via semi-empirical CFD procedures that require many forced-motion 
-simulations which makes the method computationally expensive.
+Flutter derivatives are a set of aeroelastic coefficients that quantify self-excited lift and 
+moment forces on a bridge deck (or any bluff body) as functions of reduced velocity. Traditionally, these derivatives 
+are obtained from a large number of single-frequency forced-motion CFD simulations, which makes the process computationally expensive. \\
 
 This work investigates the use of multi-frequency forced-motion oscillations within URANS ($k$--$\omega$ SST turbulence modeling) 
 CFD simulations to identify flutter derivatives, which can reduce 
-simulation cost significantly. First, an error analysis with Fast Fourier Transform (FFT) is 
+simulation cost significantly. First, a signal analysis with Fast Fourier Transform (FFT) is 
 performed for obtaining information on efficient frequency selection for multi-frequency method.
-Then nonlinearity assessment of \v{S}arki\'c cross-section is performed to validate the principle of 
+Then, nonlinearity assessment of \v{S}arki\'c bridge deck section is performed to validate the principle of 
 superposition for flutter derivatives. A comprehensive guideline combining these analyses is 
 developed and applied to two multi-frequency test campaigns. The results demonstrate that, 
-when the proposed guideline is implemented, simulation costs can be reduced by up to 60\%.
+when the proposed guideline is implemented, simulation costs can be reduced by 60\%. \\
 
 \vspace{0.5cm}
 
 \noindent\textbf{Keywords:} 
-Flutter Derivatives, Multi-Frequency Simulations, CFD, FFT, Forced-Motion, Bridge Aerodynamics
+Flutter Derivatives, Signal Analysis, CFD, FFT, Bridge Aerodynamics, Fluid-Structure Interaction
+
+
+% --- German translation ---
+\chapter*{Zusammenfassung}
+\thispagestyle{empty}
+
+Diese Arbeit untersucht einen effizienten Ansatz zur Identifikation von Flatterderivaten mithilfe der 
+Mehrfrequenz-Zwangsbewegungsmethode in der numerischen Strömungsmechanik (CFD). Flattern ist eine aeroelastische Instabilität, die auftritt, 
+wenn eine flexible Struktur mit einer Fluidströmung interagiert. Wenn die Anströmgeschwindigkeit die 
+kritische Geschwindigkeit der Struktur überschreitet, führen die selbsterregten aerodynamischen Kräfte zu einer negativen Dämpfung, was in 
+schnell divergierenden Schwingungen und einem potenziellen katastrophalen Versagen resultiert. Die Auslegung von weitgespannten Hänge- und 
+Schrägseilbrücken unter Windbelastung wird maßgeblich von diesem Phänomen bestimmt. \\
+
+Flatterderivate sind ein Satz aeroelastischer Koeffizienten, die die selbsterregten Auftriebs- und 
+Momentenkräfte auf ein Brückendeck (oder einen beliebigen stumpfen Körper) als Funktionen der reduzierten Geschwindigkeit quantifizieren. Traditionell 
+werden diese Derivate aus einer großen Anzahl von CFD-Simulationen mit einfrequenter Zwangsbewegung gewonnen, was den Prozess rechenintensiv macht. \\
+
+Diese Arbeit untersucht die Verwendung von Mehrfrequenz-Zwangsschwingungen innerhalb von URANS ($k$--$\omega$ SST Turbulenzmodellierung) 
+CFD-Simulationen zur Identifikation von Flatterderivaten, was die Simulationskosten signifikant reduzieren kann. Zunächst wird eine Signalanalyse mit der schnellen Fourier-Transformation (FFT) 
+durchgeführt, um Informationen über eine effiziente Frequenzauswahl für die Mehrfrequenzmethode zu erhalten.
+Anschließend wird eine Nichtlinearitätsbewertung des Brückendeckquerschnitts nach \v{S}arki\'c durchgeführt, um das Prinzip der 
+Superposition für Flatterderivate zu validieren. Ein umfassender Leitfaden, der diese Analysen kombiniert, 
+wird entwickelt und auf zwei Mehrfrequenz-Testkampagnen angewendet. Die Ergebnisse zeigen, dass, 
+wenn der vorgeschlagene Leitfaden angewendet wird, die Simulationskosten um 60\% reduziert werden können. \\
+\vspace{0.5cm}
+
+\noindent\textbf{Schlüsselwörter:} 
+Flatterderivate, Signalanalyse, CFD, FFT, Brückenaerodynamik, Fluid-Struktur-Wechselwirkung

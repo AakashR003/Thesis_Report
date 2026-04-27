@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 16:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,6 +646,10 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
 ))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
 \openout1 = `Chapt_2.aux'.
 
@@ -682,19 +686,19 @@ LaTeX Font Info:    ... okay on input line 7.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* h-part:(L,W,R)=(113.81102pt, 423.94608pt, 59.75078pt)
+* v-part:(T,H,B)=(73.40811pt, 701.0759pt, 70.56284pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \textwidth=423.94608pt
+* \textheight=701.0759pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-21.86188pt
+* \headheight=13.0pt
+* \headsep=10.0pt
 * \topskip=11.0pt
-* \footskip=30.0pt
+* \footskip=33.2897pt
 * \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -888,6 +892,11 @@ LaTeX Warning: Citation `abbas2017' on page 3 undefined on input line 136.
 LaTeX Warning: Citation `abbas2017' on page 3 undefined on input line 136.
 
 
+Overfull \hbox (9.47154pt too wide) in paragraph at lines 141--151
+[]\TU/TimesNewRoman(0)/m/n/10.95 Next are instability-induced excitations. Vortex-induced vibration (VIV) is an example of instability-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 141--151
 
  []
@@ -910,9 +919,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--183
+
+ []
+
 [4]
 
 LaTeX Warning: Citation `NaudascherRockwell1994' on page 5 undefined on input line 186.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
+
+ []
 
 [5]
 
@@ -982,53 +1001,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 354--364
 
  []
 
-[8] [9]
+[8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 446--451
+
+ []
+
 File: Figures/Single_Frequency.png Graphic file (type bmp)
 <Figures/Single_Frequency.png>
 File: Figures/MultiFrequency_Explanation.png Graphic file (type bmp)
 <Figures/MultiFrequency_Explanation.png>
- [10] [11]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 546--554
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 567--574
 
  []
 
-[12]
 File: Figures/Flutter_Decay_Solution_Plot.png Graphic file (type bmp)
 <Figures/Flutter_Decay_Solution_Plot.png>
 File: Figures/Flutter_Growth_Solution_Plot.png Graphic file (type bmp)
 <Figures/Flutter_Growth_Solution_Plot.png>
+[13]
 
-Overfull \hbox (3.50847pt too wide) in paragraph at lines 609--611
-[]\TU/TimesNewRoman(0)/m/n/10.95 Flutter derivatives corresponding to that reduced velocity are interpolated from the flutter-derivative
+LaTeX Warning: Citation `diana2020' on page 14 undefined on input line 627.
+
+
+LaTeX Warning: Citation `diana2020' on page 14 undefined on input line 628.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+
  []
 
 
-LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 627.
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 14 undefined on input line 656.
 
 
-LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 628.
+LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 14 undefined on input line 660.
 
 
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 13 undefined on input line 651.
+Overfull \hbox (3.55011pt too wide) in paragraph at lines 653--662
+[]\TU/TimesNewRoman(0)/m/n/10.95 Theodorsen derivatives are used for the aerodynamic properties of the cross-section. The Theodors-
+ []
 
 
-LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 13 undefined on input line 655.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 648--656
+Underfull \hbox (badness 10000) in paragraph at lines 653--662
 
  []
 
 File: Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png Graphic file (type bmp)
 <Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png>
-[13] [14]
+[14]
 
-LaTeX Warning: Citation `diana2020' on page 15 undefined on input line 721.
+LaTeX Warning: Citation `diana2020' on page 15 undefined on input line 725.
 
 [15] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
  ***********
@@ -1043,12 +1071,12 @@ Package rerunfilecheck Info: File `Chapt_2.out' has not changed.
 (rerunfilecheck)             Checksum: E11E3852B095DD9A654D1F159E140BFC;1652.
  ) 
 Here is how much of TeX's memory you used:
- 26520 strings out of 411570
- 532711 string characters out of 5806423
- 1943191 words of memory out of 5000000
- 48057 multiletter control sequences out of 15000+600000
- 564992 words of font info for 90 fonts, out of 8000000 for 9000
+ 26534 strings out of 411570
+ 532966 string characters out of 5806423
+ 1942191 words of memory out of 5000000
+ 48070 multiletter control sequences out of 15000+600000
+ 564976 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,23n,110p,532b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.xdv (15 pages, 296420 bytes).
+Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.xdv (15 pages, 297444 bytes).

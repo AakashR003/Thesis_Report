@@ -179,11 +179,11 @@ depending on the structural velocity, the angle of attack of the wind on the blu
 Since the angle of attack changes, the lift and drag forces also change (except for sections where, for any angle of attack, the lift force remains constant — like a circle).
 If the change in forces is such that it increases the motion amplitude, then a positive feedback loop is created. This is known as galloping. 
 For this reason, a purely circular rope or cable does not undergo galloping, as the lift force is constant for all angles of attack. 
-But a rectangular section undergoes galloping as the lift force changes with angle of attack.
+But a rectangular section undergoes galloping as the lift force changes with angle of attack. \\
 
 Next, the analytical formulation for galloping is derived. This formulation is based on the assumption that the instantaneous excitation 
 force acting on the moving structure is nearly equivalent to the static force calculated considering the change in angle of attack due to the 
-velocity of the structure \cite{NaudascherRockwell1994}. This means there is no phase difference between applied force and structural velocity. 
+velocity of the structure \cite{NaudascherRockwell1994}. This means there is no phase difference between applied force and structural velocity. \\
 
 For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force acting on the structure is
 
@@ -447,7 +447,7 @@ Under the assumption of aerodynamic linearity, the total aerodynamic response is
 the superposition of the responses at each individual frequency. Consequently,
 \(N\) sets of flutter derivatives can be extracted from a single simulation by
 applying a Fourier decomposition of the measured aerodynamic forces at each
-frequency component \(\omega_k\).
+frequency component \(\omega_k\). \\
 
 The procedures for calculating the
 critical wind speed (Section \ref{section: Calculation of Critical Wind Speed}) is identical for both the single and
@@ -455,7 +455,7 @@ multi-frequency methods. The only difference lies in the identification of
 aerodynamic forces (Section \ref{section: Identification of Flutter Derivatives with Forced Motion Simulations}), where multiple frequency components are excited
 simultaneously rather than one at a time.
 Figures~\ref{fig:single_freq_method} and~\ref{fig:multi_freq_method}
-illustrate the workflow for the two methods.
+illustrate the workflow for the two methods. 
 
 \begin{figure}[htbp]
     \centering
@@ -625,21 +625,26 @@ performed iteratively to find the critical wind speed:
 \section{Validation of the Critical Velocity Tool}
 
 The Python tool is validated against the benchmark results of \cite{diana2020}.
-The structural parameters taken for the validation are taken from \cite{diana2020} and given in Table~\ref{tab:structural_params}.
+The structural parameters taken for the validation are taken from \cite{diana2020} and given in Table~\ref{tab:structural_params}. \\
 
 \begin{table}[htbp]
     \centering
     \caption{Structural parameters used for validation (Diana benchmark).}
     \label{tab:structural_params}
-    \begin{tabular}{llc}
+    \begin{tabular}{|l|l|c|}
         \hline
         \textbf{Symbol} & \textbf{Description} & \textbf{Value} \\
         \hline
         $m_L$            & Mass per unit length                          & $22\,740\ \mathrm{kg/m}$      \\
+        \hline
         $J_L$            & Moment of inertia per unit length             & $2.47\times10^6\ \mathrm{kg\,m^2/m}$ \\
+        \hline
         $B$              & Deck chord (width)                            & $31\ \mathrm{m}$              \\
+        \hline
         $f_z$            & Vertical structural eigenfrequency            & $0.10\ \mathrm{Hz}$           \\
+        \hline
         $f_\theta$       & Torsional structural eigenfrequency           & $0.278\ \mathrm{Hz}$          \\
+        \hline
         $\xi$            & Damping ratio (both modes)                    & $0.003\ (-)$                  \\
         \hline
     \end{tabular}
@@ -652,32 +657,36 @@ first obtained by Theodorsen \cite{TheodorsenGarrick1934}. They are expressed in
 of the real and imaginary parts of the Theodorsen circulatory function
 \(C(k) = F(k) + iG(k)\), where \(k\) is the reduced frequency. The analytical
 expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
-Figure~\ref{fig:Theodorsen_Flutter_Derivatives}. \\
+Figure~\ref{fig:Theodorsen_Flutter_Derivatives}. The results obtained with the Python tool are shown in
+Figures~\ref{fig:eigen_freq_vs_Ur}. \\
 
 \begin{table}[htbp]
     \centering
     \caption{Analytical Theodorsen flutter derivative expressions for a flat plate.}
     \label{tab:theodorsen_derivs}
     \small
-    \begin{tabular}{@{}cll@{}}
+    \begin{tabular}{|c|l|l|}
         \hline
         & \textbf{\(H_i^*\)} & \textbf{\(A_i^*\)} \\
         \hline
         \(i=1\) &
             \(\displaystyle H_1^* = -\frac{2\pi}{K}\,F\) &
             \(\displaystyle A_1^* = \phantom{-}\frac{\pi}{2K}\,F\) \\[10pt]
+        \hline
         \(i=2\) &
             \(\displaystyle H_2^* = -\frac{\pi}{2K}\!\left(1 + F + \frac{4G}{K}\right)\) &
             \(\displaystyle A_2^* = -\frac{\pi}{8K}\!\left(1 - F - \frac{4G}{K}\right)\) \\[10pt]
+        \hline
         \(i=3\) &
             \(\displaystyle H_3^* = -\frac{2\pi}{K^2}\!\left(F - \frac{KG}{4}\right)\) &
             \(\displaystyle A_3^* = \phantom{-}\frac{\pi}{2K^2}\!\left(\frac{K^2}{32} + F - \frac{KG}{4}\right)\) \\[10pt]
+        \hline
         \(i=4\) &
             \(\displaystyle H_4^* = \phantom{-}\frac{\pi}{2}\!\left(1 + \frac{4G}{K}\right)\) &
             \(\displaystyle A_4^* = -\frac{\pi}{2K}\,G\) \\[6pt]
         \hline
     \end{tabular}
-\end{table} 
+\end{table}
 
 % \begin{figure}[htbp]
 %     \centering
@@ -685,11 +694,6 @@ Figure~\ref{fig:Theodorsen_Flutter_Derivatives}. \\
 %     \caption{Theodorsen Flutter Derivatives}
 %     \label{fig:Theodorsen_Flutter_Derivatives}
 % \end{figure}
-
-\subsection*{Results}
-
-The results obtained with the Python tool are shown in
-Figures~\ref{fig:eigen_freq_vs_Ur}.
 
 \begin{figure}[htbp]
     \centering

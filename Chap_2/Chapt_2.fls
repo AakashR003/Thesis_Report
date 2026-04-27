@@ -6,11 +6,11 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.c
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT ..\main.tex
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT ..\main.tex
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT ..\main.tex
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -274,6 +274,8 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux

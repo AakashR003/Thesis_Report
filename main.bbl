@@ -47,13 +47,15 @@ Lin Huang and Haili Liao.
   {\path{doi:10.1080/19942060.2011.11015349}}.
 
 \bibitem{Martínez-López_2023}
-David Martínez-López and C~L{\'a}zaro.
+G.~Martínez-López and C~L{\'a}zaro.
 \newblock Reducing the computational cost of forced-motion simulations to
   obtain flutter derivatives.
+\newblock URL:
+  \url{https://www.researchgate.net/publication/387994784_Reducing_the_computational_cost_of_forced-motion_simulations_to_obtain_flutter_derivatives}.
 
 \bibitem{2024}
 Structural {{Dynamicssummer}} term 2024.
-\newblock {\em Structural Dynamics}, 2024.
+\newblock 2024.
 
 \bibitem{xu2013}
 You-Lin Xu.
@@ -62,9 +64,7 @@ You-Lin Xu.
 
 \bibitem{EN1991-1-4}
 Eurocode 1: Actions on structures -- part 1-4: General actions -- wind actions,
-  2005.
-\newblock Adopted as a European Standard; use the relevant National Annex where
-  applicable.
+  2024.
 
 \bibitem{IsaacVanderHoven1957}
 Isaac~Van der Hoven.
@@ -104,6 +104,8 @@ Emil Simiu and DongHun Yeo.
 Mate Pentek.
 \newblock Method {{Development}} for the {{Numerical Wind Tunnel}} in {{Applied
   Structural Engineering}}.
+\newblock URL:
+  \url{https://mediatum.ub.tum.de/doc/1721336/3lh32nfqtkcb2encj7y9lxsij.DrIng_Dissertation_MPentek_OnlineReady_04102024.pdf}.
 
 \bibitem{diana2020}
 Giorgio Diana, Stoyan Stoyanoff, Ketil {Aas-Jakobsen}, Andrew Allsop, Michael
@@ -147,6 +149,10 @@ Rajesh Ranjan.
   2021.
 \newblock Online training material, Advanced session.
 
+\bibitem{SWE2024}
+Structural {{Wind Engineering}} 2024.
+\newblock {\em Structural Dynamics}, 2024.
+
 \bibitem{sarkic2012}
 Anina {\v S}arki{\'c}, Rupert Fisch, R{\"u}diger H{\"o}ffer, and Kai-Uwe
   Bletzinger.
@@ -182,8 +188,8 @@ M~Noda, H~Utsunomiya, F~Nagao, M~Kanda, and N~Shiraishi.
 
 \bibitem{huang2013}
 Lin Huang and Haili Liao.
-\newblock {{NONLINEAR AERODYNAMIC FORCES ON THE FLAT PLATE IN LARGE AMPLITUDE
-  OSCILLATION}}.
+\newblock {{Nonlinear aerodynamic forces on the flat plate in large amplitude
+  oscillation}}.
 \newblock 05(04):1350039.
 \newblock URL:
   \url{https://www.worldscientific.com/doi/abs/10.1142/S1758825113500397},
@@ -206,8 +212,9 @@ Flow-induced {{Flutter Derivatives}} of {{Bridge Decks}}.
   {\path{doi:10.47176/jafm.18.4.3005}}.
 
 \bibitem{Andi2022}
-Evaluation of bridge deck flutter derivatives using fem simulations and the
-  k-omega sst urans turbulence model.
+Andi~Makarim Katili.
+\newblock Evaluation of bridge deck flutter derivatives using fem simulations
+  and the k-omega sst urans turbulence model.
 \newblock Master thesis, TUM, 2022.
 
 \bibitem{lin2019}

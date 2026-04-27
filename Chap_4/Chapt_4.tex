@@ -28,7 +28,7 @@ for instance, the differential equation governing the bending of a beam under th
 The solution, i.e., the deflection profile, can be obtained either analytically through direct integration or approximately 
 via numerical methods such as the Finite Element Method (FEM). Analytical solutions offer the advantage of being continuous 
 and exact across the entire domain. In contrast, 
-numerical solutions lack such accuracy and provide results only at discrete sets of points.
+numerical solutions lack such accuracy and provide results only at discrete sets of points. \\
 
 The fundamental equations governing fluid flow are the Navier-Stokes equations. Due to their complex, non-linear nature, 
 analytical solutions do not generally exist for real-world engineering applications (a mathematical challenge famously 
@@ -67,7 +67,7 @@ it needs to resolve all turbulent scales down to the Kolmogorov length scale, wh
 turbulence is modelled rather than resolved directly. This leads to methods such as Reynolds-Averaged Navier-Stokes (RANS) 
 and Unsteady RANS (URANS), which significantly reduce simulation times. An intermediate approach, Large Eddy Simulation (LES), 
 resolves the larger energy-containing eddies while modelling the smaller ones. LES thus has a computational 
-cost between that of DNS and RANS.
+cost between that of DNS and RANS. \\
 
 In RANS and URANS, the Navier-Stokes equations are time-averaged, yielding the Reynolds-averaged Navier-Stokes equations. 
 This decomposition separates the instantaneous velocity into mean and fluctuating components. The averaging procedure introduces 
@@ -75,13 +75,13 @@ additional terms known as the Reynolds stresses, which represent the effects of 
 problem, as additional equations are required to relate these unknown stresses to the mean flow velocity. Turbulence models are used 
 to solve this closure problem \cite{menter}. A comparative understanding of the simulation results for each method can be obtained 
 by observing Figure~\ref{fig:DNS_RANS_LES}. These simulation results should be interpreted in relation to the Kolmogorov spectrum, shown 
-in Figure~\ref{fig:Kolmogorov_Spectrum}. 
+in Figure~\ref{fig:Kolmogorov_Spectrum}. \\
 
 Most RANS models rely on the Boussinesq hypothesis, which relates the Reynolds stresses to the mean velocity gradients via a 
 turbulent "eddy viscosity." This parameter mathematically acts as an artificial increase in the fluid's viscosity to account 
 for the momentum transfer and energy dissipation caused by turbulent mixing \cite{Ranjan2024ACFD}. Formulating closure models for the Reynolds stresses 
 through the Boussinesq hypothesis to obtain eddy viscosity is the primary objective of turbulence models, which leads to $k-\epsilon$ and $k-\omega$ 
-formulations. 
+formulations. \\
 
 \begin{figure}[htbp]
     \centering
@@ -100,7 +100,7 @@ formulations.
         \centering
         \includegraphics[width=\textwidth]{Figures/CFD/Energy_vs_wave_number.png}
         \caption{Kolmogorov turbulent energy spectrum \cite{wolfdynamics2021}}
-        \label{}
+        \label{fig:Kolmogorov_Spectrum}
     \end{minipage}
 
     \vspace{0.5cm}
@@ -109,7 +109,7 @@ formulations.
     \begin{minipage}{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/CFD/DNS_LES_URANS.png}
-        \caption{Comparison of DNS, RANS, and LES turbulence modelling approaches}
+        \caption{Comparison of DNS, RANS, and LES turbulence modelling approaches \cite{SWE2024}}
         \label{fig:DNS_RANS_LES}
     \end{minipage}
 
@@ -129,7 +129,7 @@ This section describes the creation of the geometric model used for the numerica
 In this thesis, GiD software is used for the creation of the CAD model and meshing. 
 GiD is an adaptive, unified pre- and post-processing tool for 
 numerical simulations in science and engineering, developed and maintained by the International Center for Numerical Methods in 
-Engineering (CIMNE).
+Engineering (CIMNE). \\
 
 The bridge cross-section used in this thesis is adopted from \v{S}arki\'c \cite{sarkic2012} ( 
 Figure~\ref{fig:Sarkic_Section}). This cross-section was selected because the reference paper presents a validation of 
@@ -143,32 +143,37 @@ as shown in Figure~\ref{fig:GiD_Model_2}.
 Following the creation of the structural geometry, the surrounding fluid domain was modelled. The fluid domain is 
 dimensionalised based on the structure's size and is presented in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
 Within this fluid domain, the bridge structure is treated as a solid obstacle through which fluid cannot flow. 
-Therefore, no mesh or structural properties (described in the subsequent section) are assigned to the structure.
+Therefore, no mesh or structural properties (described in the subsequent section) are assigned to the structure. \\
 
 As most flow variations, such as flow separations, occur in the immediate vicinity of the structure, a highly 
 refined mesh is required in this near-structure region to capture these phenomena accurately, as discussed in the previous chapter. 
 Conversely, farther from the structure, the flow remains largely invariant in both time and space. Hence, a coarser mesh 
-is used in these areas for computational efficiency.
+is used in these areas for computational efficiency. \\
 
 Therefore, an adaptive meshing approach was used across the fluid domain. 
 Mesh element sizes are progressively increased from the structure outward. The total fluid domain was divided 
 into six zones, with mesh sizes transitioning from fine (near the structure) to coarse (near the outer boundaries)  
 (shown in Figure~\ref{fig:GiD_Model_2}). The dimensions of these transition layers are listed in 
 Table~\ref{tab:bounding_boxes}, while the corresponding mesh sizes assigned to each zone are provided in 
-Table~\ref{tab:mesh_convergence}.
+Table~\ref{tab:mesh_convergence}. \\
 
 \begin{table}[h!]
 \centering
 \caption{Bounding box coordinates used in the CFD domain (dimensions in meters)}
-\begin{tabular}{lcccc}
+\begin{tabular}{|l|c|c|c|c|}
 \hline
 \textbf{Region} & $x_{\min}$ & $x_{\max}$ & $y_{\min}$ & $y_{\max}$ \\
 \hline
 Outer (A) & -3.111  & 8.967  & -2.9613 & 2.9613 \\
+\hline
 Inner (F) & -0.2196 & 0.2196 & -0.0766 & 0.0632 \\
+\hline
 B         & -1.647  & 4.575  & -1.4973 & 1.4973 \\
+\hline
 C         & -0.915  & 2.379  & -0.7653 & 0.7653 \\
+\hline
 D         & -0.549  & 1.281  & -0.3993 & 0.3993 \\
+\hline
 E         & -0.2806 & 0.4758 & -0.1309 & 0.1309 \\
 \hline
 \end{tabular}
@@ -177,26 +182,24 @@ E         & -0.2806 & 0.4758 & -0.1309 & 0.1309 \\
 
 \subsubsection{Boundary Conditions}
 The boundary conditions applied to the fluid domain are illustrated in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. 
-A brief physical interpretation of each condition is provided below to facilitate a better understanding.
+A brief physical interpretation of each condition is provided below to facilitate a better understanding. \\
 
 \textbf{Slip Boundary Condition}: A slip condition allows free flow along the boundary. This condition is assigned 
 to the top and bottom walls of the domain because it simulates an infinitely extended domain in the vertical direction, 
-approximating unbounded flow conditions. 
+approximating unbounded flow conditions. \\
 
 \textbf{No-Slip Boundary Condition}: A no-slip condition, where the velocity is zero, 
 is applied to the surface of the bridge structure. This is the region where boundary layers develop 
-and fluid separation occurs.
+and fluid separation occurs. \\
 
 \textbf{Inlet Boundary Condition}: Inlet velocity is provided at the upstream boundary of the domain. 
-This defines the freestream fluid velocity in the virtual wind tunnel.
+This defines the freestream fluid velocity in the virtual wind tunnel. \\
 
-\textbf{Outlet Boundary Condition}: Zero pressure is applied at the outlet, allowing the flow to exit the domain without imposing unphysical reflections.
+\textbf{Outlet Boundary Condition}: Zero pressure is applied at the outlet, allowing the flow to exit the domain without imposing unphysical reflections. \\
 
 These boundary conditions explain the importance of careful domain sizing mentioned 
 previously. If the domain were not sufficiently large, applying boundary conditions would force the solver to 
 artificially maintain them, introducing spurious effects rather than representing physical behaviour.
-
-\vspace{0.5 cm}
 
 \begin{figure}[htbp]  
     \centering
@@ -212,8 +215,6 @@ artificially maintain them, introducing spurious effects rather than representin
     \label{fig:Sarkic_Section}
 \end{figure}
 
-\vspace{0.5 cm}
-
 \subsection{Solver Information} 
 
 The solver settings needed to solve the fluid model created in the previous section are presented below. The solver used in this 
@@ -224,7 +225,7 @@ and the MeshMotionApplication. The MeshMotionApplication
 is required to apply movement to the structure because forced-motion simulation requires external oscillation of the structure. 
 This is performed within Kratos based on the Arbitrary 
 Lagrangian-Eulerian (ALE) framework. The StructuralMechanicsApplication and CoSimulationApplication (coupled simulation) are not used 
-for the same reason. Since no fluid-structure interaction is modelled, they are not required.
+for the same reason. Since no fluid-structure interaction is modelled, they are not required. \\
 
 The URANS equations with the $k$-$\omega$ SST turbulence model are used, with a turbulence intensity of 0.1 and a 
 turbulent mixing length of 0.0588~m. The inlet velocity is set to 1 m/s, and the corresponding Reynolds number for the 
@@ -238,7 +239,7 @@ scheme, it may be kept above 1. Since it is not possible to accurately estimate 
 around the structural body is unknown), a safety factor of 1.5 is applied based on the inlet velocity, and the time step is 
 calculated accordingly. The minimum mesh size is taken from GiD. The time step is then verified by running a preliminary 
 simulation and examining the maximum CFL output from Kratos. In the present work, the time step is taken as 0.002 seconds 
-(the corresponding CFL values are shown in Table~\ref{tab:mesh_convergence}).
+(the corresponding CFL values are shown in Table~\ref{tab:mesh_convergence}). \\
 
 The next parameter to set is the simulation time. The total simulation time is divided into three phases: ramp-up, 
 stabilisation, and stable time period. The ramp-up period is provided to avoid numerical instabilities in the CFD simulation. 
@@ -278,7 +279,7 @@ at a reduced velocity of 10.93. From the literature, it is identified that 5$\%$
 and 5 degrees as the pitch amplitude are the appropriate forced motion amplitudes such that aerodynamic forces show linear behaviour \cite{noda2003, huang2013, brusiani2013, Su2025, Andi2022}. 
 For this study, the heave amplitude is calculated as $ \frac{5 \times 0.366}{100} $ = 0.0183 m, the pitch amplitude is 0.087 
 radians, the motion frequency is 0.25 Hz, and the stable time period is $ 10 \times \frac{1}{0.25} $ = 40 seconds. 
-Therefore, the total simulation time is the sum of ramp-up time, stabilisation time, and stable time period, which is 54.64 seconds.
+Therefore, the total simulation time is the sum of ramp-up time, stabilisation time, and stable time period, which is 54.64 seconds. \\
 
 \begin{table}[htbp]  
     \centering
@@ -304,9 +305,10 @@ Therefore, the total simulation time is the sum of ramp-up time, stabilisation t
 \end{table}
 
 With this simulation setup, CFD simulations are conducted for all five models. 
-The simulation result of Model 3 is shown in Figure~\ref{fig:CFD_Result}. From this result, pressures on the structural surface are integrated to obtain aerodynamic lift and moment
+The simulation result of Model 3 is shown in Figure~\ref{fig:CFD_Result}. From this result, 
+pressures on the structural surface are integrated to obtain aerodynamic lift and moment
 forces. Figure~\ref{fig:Model_3_CFD_Output} shows the aerodynamic lift and moment forces obtained for Model 3. 
-These aerodynamic forces are then used to calculate the flutter derivatives. The convergence of the flutter derivatives is then analysed.
+These aerodynamic forces are then used to calculate the flutter derivatives. The convergence of the flutter derivatives is then analysed. \\
 
 \begin{figure}[htbp]  
     \centering
@@ -340,7 +342,7 @@ The results of the mesh convergence study are shown in Figure~\ref{fig:convergen
 derivatives $H_1^*,H_3^*,A_1^*,A_2^*,$ and $A_3^*$ exhibit good convergence, while derivatives $H_2^*,H_4^*,$ and $A_4^*$ display 
 oscillatory convergence behaviour. This behaviour is consistent with findings in the literature, as these 
 particular derivatives are known to be more difficult to capture accurately. From the study, it is concluded 
-that Model 3 is optimal, and this mesh size is used for all subsequent simulations.
+that Model 3 is optimal, and this mesh size is used for all subsequent simulations. \\
 
 %% Figures for Mesh Convergence Study
 \begin{figure}[htbp]  
@@ -381,16 +383,16 @@ that Model 3 is optimal, and this mesh size is used for all subsequent simulatio
 
 The base assumption of the Multi-Frequency method is that the principle of linear superposition holds. This assumption is derived from Scanlan's linearity assumption, which states that for small heave and pitch amplitudes, 
 the applied forced motion oscillation and the obtained aerodynamic forces are equivalent with a phase 
-shift. Although the above two assumptions might appear to point to the same meaning, they can differ in 
+shift and amplitude change. Although the above two assumptions might appear to point to the same meaning, they can differ in 
 certain cases. From Scanlan's linearity assumption, the obtained forces can be linear with respect to 
 the prescribed motion, but the phase shift can vary. Therefore, it becomes essential to validate the principle of linear superposition and study the 
-linearity limit to ensure that the Multi-Frequency method is valid and to create a guideline for this method.
+linearity limit to ensure that the Multi-Frequency method is valid and to create a guideline for this method. \\
 
 This section focuses on validating the assumption and extending the knowledge of the nonlinearity characteristics 
 of \v{S}arki\'c's section. Although investigating the nonlinearity characteristics of a particular cross-section may make 
 the developed guideline specific to that cross-section, this is done so that any unexpected discrepancies 
 in the results of the Multi-Frequency method can be reasonably explained. These inferences from the nonlinearity study are then generalised 
-when framing the procedure for the Multi-Frequency method.
+when framing the procedure for the Multi-Frequency method. \\
 
 The investigation is conducted by increasing the heave and pitch motion amplitudes and then examining the obtained 
 flutter derivatives, aerodynamic forces, and their phases. Based on the results, the following studies are performed 
@@ -409,7 +411,8 @@ to understand the nonlinearity characteristics of the section:
 Since the motion amplitudes are the only parameters changed, the remaining parameters derived from Chapter 2 are kept the same. 
 From the literature review, it is identified that 5$\%$ of the section width for heave amplitude and 5 degrees for pitch are 
 the linearity limits. Hence, six CFD simulations are performed by linearly increasing the heave 
-amplitudes from 0.68$\%$ to 8.20$\%$ and the pitch amplitude from 1 degree to 8 degrees. Table~\ref{tab:nonlinear_amplitude} shows the simulation parameters for the amplitude ranges.
+amplitudes from 0.68$\%$ to 8.20$\%$ and the pitch amplitude from 1 degree to 8 degrees. 
+Table~\ref{tab:nonlinear_amplitude} shows the simulation parameters for the amplitude ranges. \\
 
 For each heave and pitch motion amplitude, aerodynamic forces are computed at 8 different reduced velocities (shown in Table~\ref{tab:Reduced velocities}). As mentioned in 
 Chapter 2, the stable time period for each of the reduced velocities is also given in the table. A total of $7 \times 8 \times 2 = 112$ 
@@ -458,7 +461,7 @@ Figure~\ref{fig:Combined_Flutter_Derivatives} shows the flutter derivatives obta
 and pitch amplitudes. It is observed that derivatives $H_1^*$, $H_4^*$, $A_1^*$, and $A_4^*$ are equal for amplitudes up to a 
 heave ratio of 5.46$\%$. When this value is exceeded, the flutter derivatives vary. This validates the rule of thumb 
 of a 5$\%$ linearity limit. For derivatives $H_2^*$, $H_3^*$, and $A_3^*$, the linear 
-limit holds up to 3 degrees, although $H_2^*$ exhibits slight nonlinear behaviour within that range. This is slightly lower than the rule of thumb of 5 degrees.
+limit holds up to 3 degrees, although $H_2^*$ exhibits slight nonlinear behaviour within that range. This is slightly lower than the rule of thumb of 5 degrees. \\
 
 From Figure~\ref{fig:Combined_Flutter_Derivatives}, derivative $A_2^*$ significantly deviates beyond 1.55 degrees. It should be noted that this 
 derivative even changes its sign at Amplitude Scheme 3 (pitch degree = 4.01). The reason for these behaviours is investigated and explained in the following sections.
@@ -477,26 +480,26 @@ validating Scanlan's linearity assumption. If the spectrum of the obtained force
 other than the applied frequency, 
 then nonlinear behaviour is present. In this section, the spectrum of the obtained aerodynamic lift force and moment is 
 analysed for different amplitudes. A Discrete Fourier Transform (DFT) is used to obtain the spectrum of the forces. 
-Since the reduced velocity of 21.8 is the most affected by nonlinearity, plots of the spectrum corresponding to this reduced velocity are presented as representative samples.
+Since the reduced velocity of 21.8 is the most affected by nonlinearity, plots of the spectrum corresponding to this reduced velocity are presented as representative samples. \\
 
 Figure~\ref{fig:Frequency_Domain_Analysis_Heave} shows the spectrum for amplitude scheme 6 for heave motion. In this plot, the y-axis is presented on a log scale so that any noise 
 is easily distinguishable. It is observed that the spectra of both the obtained lift force and moment are without spurious frequencies, 
 indicating that the obtained forces are linear with respect to the prescribed motion. 
-This is the same for all amplitude schemes.  
+This is the same for all amplitude schemes. \\
 
 Figure~\ref{fig:Frequency_Domain_Analysis_Pitch} shows the lift force spectrum for amplitude schemes 3 and 4 for pitch motion (pitch degrees of 4.01 and 4.98). 
 In general, the spectrum of pitch motion is noisy when visualised on a log scale. However, on the normal scale, this spectrum is without spurious frequencies up to scheme 3. 
 It is observed that the spectrum exhibits spurious frequency components from scheme 4, indicating the presence of higher-order sine terms and, 
 therefore, nonlinearity starts to appear. For all degrees above this pitch degree, the spectrum contains spurious frequencies. 
 This case is the same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
-which is slightly lower than the rule of thumb of 5 degrees.
+which is slightly lower than the rule of thumb of 5 degrees. \\
 
 On comparing Figure~\ref{fig:Combined_Flutter_Derivatives} and Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, 
 it is observed that the nonlinearity in flutter derivatives $A_2^*$ and $H_2^*$ starts to occur at a lower pitch degree (3.09 degrees) 
 than the linearity limit obtained from the spectrum analysis (4.98 degrees). 
-Therefore, the deviation in flutter derivatives A2 and H2 for schemes 3 and 4 does not arise from nonlinearity in the forces themselves. Although spectral analysis approximately validates the 
-rule of thumb of 5 degrees for pitch motion, 
-the flutter derivatives exhibit nonlinearity at a smaller pitch angle. This is investigated in the next section with a study on aerodynamic forces and phases.
+Therefore, the deviation in flutter derivatives A2 and H2 for schemes 3 and 4 does not arise from nonlinearity in 
+the forces themselves. Although spectral analysis approximately validates the rule of thumb of 5 degrees for pitch motion, 
+the flutter derivatives exhibit nonlinearity at a smaller pitch angle. This is investigated in the next section with a study on aerodynamic forces and phases. \\
 
 \begin{figure}[htbp]  
     \centering    
@@ -556,7 +559,7 @@ the flutter derivatives exhibit nonlinearity at a smaller pitch angle. This is i
 
 In this section, the obtained aerodynamic forces and moments are compared against the prescribed motion 
 amplitude to understand the nonlinearity characteristics of forces and moments. This is also 
-conducted for the phase of aerodynamic forces and moments.
+conducted for the phase of aerodynamic forces and moments. \\
 
 Figure~\ref{fig:Displacement_Vs_Force} shows plots of prescribed motion amplitude versus aerodynamic force and moment, and 
 prescribed motion amplitude versus phase of aerodynamic force and moment, for both heave and pitch motion. These are plotted for 
@@ -564,13 +567,13 @@ a reduced velocity of 21.86. It is observed that for heave motion, the lift forc
 exhibit linear behaviour with respect to the prescribed displacement. Furthermore, the phase of the force and 
 moment is constant. For pitch motion, the lift force and moment show linear behaviour up to a pitch degree of 5 
 (a mild nonlinearity is present, and this is the reason minor noise components are obtained in the spectrum even in the lower amplitude scheme for pitch in the previous section). This is again consistent with the rule of thumb of 5 degrees and 
-spectral analysis and therefore validates Scanlan's linearity assumption.
+spectral analysis and therefore validates Scanlan's linearity assumption. \\
 
 However, the phase is not constant for either the lift force or moment after 3 degrees. To facilitate the comparative 
 study of the phase alongside flutter derivatives, their relationship is briefly reiterated. Derivatives $H_1^*$, $A_1^*$, $H_4^*$, and $A_4^*$ are associated with the heave motion aerodynamic 
 lift, moment, and their phase. Derivatives $H_2^*$, $A_2^*$, $H_3^*$, and $A_3^*$ are associated with the pitch motion aerodynamic 
 lift, moment, and their phase. $H_2^*$ and $A_2^*$ are associated with the phase of the pitch motion aerodynamic 
-lift and moment.
+lift and moment. \\
 
 On comparing Figure~\ref{fig:Displacement_Vs_Force} and Figure~\ref{fig:Combined_Flutter_Derivatives}, 
 it is clear that the nonlinearity in flutter derivatives $A_2^*$ and $H_2^*$ is due to the phase change. 
@@ -583,10 +586,11 @@ but due to the phase change. This explains why the force spectrum remains withou
 referenced paper is provided in the next subsection on pressure distribution analysis).\\ 
 
 This observation points to the earlier discussion that Scanlan's linearity assumption is not equivalent to the principle of linear superposition. 
-Although the obtained forces may be linear with respect to the prescribed motion, linear superposition of the signals is not applicable at these amplitudes.
+Although the obtained forces may be linear with respect to the prescribed motion, linear superposition of the signals is not applicable at these amplitudes. \\
 
 Since Figure~\ref{fig:Displacement_Vs_Force} plots linearity assessment only for the reduced velocity of 21.86, it is necessary to analyse the results for other reduced 
-velocities before finalising the conclusion. The results for all reduced velocities are compiled in Figure~\ref{fig:Compiled_Displacement_Vs_Force}. The x-axis is the same as before (the amplitude scheme), but the y-axis is modified.
+velocities before finalising the conclusion. The results for all reduced velocities are compiled in Figure~\ref{fig:Compiled_Displacement_Vs_Force}. 
+The x-axis is the same as before (the amplitude scheme), but the y-axis is modified. \\
 
 The y-axis represents aerodynamic force divided by the prescribed motion amplitude and normalised with respect to the first amplitude scheme. The normalisation 
 is performed because different reduced velocities yield different values of aerodynamic force per unit motion amplitude. With respect 
@@ -595,22 +599,22 @@ better comparison of the nonlinearity characteristics across different reduced v
 if the aerodynamic forces are linear, the plot should be a constant horizontal line at a value of 1. If the phase is constant, 
 the plot should similarly be a horizontal line at a value of 0 (indicating error is zero). Note that the $y$-axis limits are not uniform across subplots (this should be considered 
 when comparing the degree of nonlinearity between the two figures). The non-uniform limits are 
-kept to capture the variations in nonlinearity even when the overall error is small.
+kept to capture the variations in nonlinearity even when the overall error is small. \\
 
 It is observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
 for reduced velocities above 1.71. This is equivalent to the behaviour observed earlier for the reduced velocity of 21.86 
 (Figure~\ref{fig:Displacement_Vs_Force}). The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone show significant deviation 
 because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at 
-higher frequencies (1.6 and 3.2 Hz) difficult. Similar behaviour is observed for the heave lift force as well.
+higher frequencies (1.6 and 3.2 Hz) difficult. Similar behaviour is observed for the heave lift force as well. \\
 
 For pitch motion, the moment exhibits slight nonlinearity, as seen before for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}). 
 Another observation is that the influence of nonlinearity in phase increases with increasing reduced velocity (decreasing frequency). This further validates 
 the behaviour observed in Figure~\ref{fig:Combined_Flutter_Derivatives}, 
-where the nonlinearity in $A_2^*$ and $H_2^*$ is less at lower reduced velocities.
+where the nonlinearity in $A_2^*$ and $H_2^*$ is less at lower reduced velocities. \\
 
 To conclude, although Scanlan's assumption of linearity holds for the 
 obtained forces, aerodynamic derivatives may still exhibit nonlinearity. Moreover, this 
-nonlinear behaviour cannot be detected via spectral analysis.
+nonlinear behaviour cannot be detected via spectral analysis. \\
 
 % Nonlinearity Study
 \begin{figure}[htbp]  
@@ -688,22 +692,22 @@ As mentioned earlier, a similar nonlinear behaviour of derivatives $A_2^*$ and $
 However, in those works, the linearity limits were observed at larger pitch 
 angles than observed in this study. This difference raises the question of whether the same underlying physical mechanism 
 is responsible for the phenomenon. Hence, in this subsection, the reason behind this behaviour is analysed and verified to determine whether it is 
-similar to what is observed in the references.
+similar to what is observed in the references. \\
 
 In that paper, it is explained that the phase shift is primarily due to changes in the flow reattachment 
 point, which results in a variation in pressure distribution along the section. At small pitch amplitudes, 
 the pressure field remains relatively consistent throughout the oscillation cycle. The flow around the structure does not undergo 
 substantial changes between the positive and negative peaks of the pitch motion amplitude. At larger pitch amplitudes, the pressure 
 distribution varies greatly over the cycle because the flow field exhibits significant alterations during 
-the peak pitch motion. This is the cause of the observed phase deviation.
+the peak pitch motion. This is the cause of the observed phase deviation. \\
 
 To perform a similar study, pressure distributions for the present simulation were extracted and compared across different pitch amplitudes. Time instants were chosen 
 to cover one full oscillation cycle, starting from pitch degree 0 (at a simulation time of 32 seconds) to the maximum negative peak rotation at 38 seconds 
-(as shown in Figure~\ref{fig:Prescribed Displacement}).
+(as shown in Figure~\ref{fig:Prescribed Displacement}). \\
 
 Figure~\ref{fig: Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - Pitch Motion} shows the pressure distribution plotted around the 
 bridge cross-section for amplitude schemes 0 and 6 (pressure inward represents negative pressure). It is observed that for scheme 0, the pressure distribution 
-is consistent among all four time steps. However, for amplitude scheme 6, it varies greatly.
+is consistent among all four time steps. However, for amplitude scheme 6, it varies greatly. \\
 
 Although the distribution of pressure itself changes, this behaviour mainly affects the pitching moment (and therefore derivatives $A_2^*$ and $H_2^*$) 
 rather than the lift force (related to $A_3^*$ and $H_3^*$). This is because the integrated lift force remains approximately constant 
@@ -712,11 +716,11 @@ of pressure (the moment arm weighted by the pressure distribution) shifts during
 reflected in the pitching moment. Since the lift force is the net vertical integration, it is considerably less 
 sensitive to these redistributions. This observation is consistent with the observations from the references, and 
 therefore it is concluded that a similar mechanism is responsible 
-for this discrepancy in the derivatives $A_2^*$ and $H_2^*$.
+for this discrepancy in the derivatives $A_2^*$ and $H_2^*$. \\
 
 Finally, it should be noted that the onset of this nonlinear behaviour in pitch motion is strongly 
 influenced by the breadth-to-depth ratio of the section. Hence, the amplitude threshold 
-at which phase nonlinearity becomes significant will vary across different cross-sectional shapes.
+at which phase nonlinearity becomes significant will vary across different cross-sectional shapes. \\
 
 \begin{figure}[htbp]  
     \centering
@@ -764,7 +768,7 @@ at which phase nonlinearity becomes significant will vary across different cross
 Finally, the influence of this nonlinearity on the critical velocity is studied. For the calculation of critical velocity, 
 structural parameters are required. For this, the structural parameters of four existing bridges are taken from 
 \cite{diana2020, xin2007, zhan2012_Tacoma_Narrows} and their structural properties are 
-summarised in Table~\ref{tab:bridge_configs}.
+summarised in Table~\ref{tab:bridge_configs}. \\
 
 To assess the influence of motion amplitude on the critical wind speed, it is helpful to first identify the parameters 
 to which the critical wind speed is most sensitive, in order to perform this analysis efficiently. 
@@ -772,7 +776,7 @@ The sensitivity of the critical wind speed to errors in flutter derivatives depe
 range at which errors occur coincides with the critical flutter range of the bridge. Second,
 the structural properties of the bridge determine which flutter derivative plays a dominant
 role in the critical velocity prediction. To address the latter factor only, the structural 
-parameters of four bridges are analysed.
+parameters of four bridges are analysed. \\
 
 Figure~\ref{fig:CriticalVelocity_Vs_Amplitude_Scheme} shows the critical velocity obtained for all amplitude schemes. 
 It is observed for all three bridge configurations (except for the Humen bridge properties) that up to amplitude scheme 5 there is little influence on 
@@ -780,7 +784,7 @@ the obtained critical velocity. For Humen, after amplitude scheme 3, the critica
 bridge configuration might be more sensitive to the $A_2^*$ and $H_2^*$ derivatives. The reason that no major deviation is observed 
 in the critical velocity (up to scheme 5) is that all the critical reduced velocities are below 12 (Figure~\ref{fig:ReducedVelocity_Vs_Amplitude_Scheme}). 
 As the errors in flutter derivatives are significant at higher reduced velocities, 
-the critical velocity did not show significant variation.
+the critical velocity did not show significant variation. \\
 
 \begin{table}[h!]
 \centering
@@ -818,12 +822,18 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 
 \section{Discussions}
 
-The linearity limit for heave motion agrees with the rule of thumb; therefore, the 
-Multi-Frequency method should remain valid as long as the amplitude remains within a heave of 5.0$\%$ of the deck width and a pitch of 3°. 
-Scanlan's assumptions and the principle of superposition 
-are not equivalent and may differ; this discrepancy is observed for pitch motion. Therefore, when 
-validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2^*$ and $H_2^*$. Although 
-the nonlinearity in $A_2^*$ and $H_2^*$ has been established in multiple research papers, the finding from this investigation is that 
-the present model exhibits nonlinearity at a considerably lower pitch degree for \v{S}arki\'c's cross-section.
+The single-frequency forced-motion simulations conducted in this chapter provide important insights into the validity 
+of Scanlan's linearity assumption and the understandings of nonlinearity in the \v{S}arki\'c bridge deck section. 
+For heave motion, the aerodynamic forces and associated flutter derivatives ($H_1^*$, $H_4^*$, $A_1^*$, $A_4^*$) remain linear up 
+to approximately 5\% of the deck width. Spectral analysis shows no higher-order harmonics, confirming linear force response. \\
+
+In contrast, pitch motion exhibits more complex behaviour. While the force and moment amplitudes stay approximately linear up to 5°, 
+the phase relationship begins to deviate noticeably from 3° onwards. This is caused by changes in flow reattachment and 
+pressure redistribution, causes significant variations in $A_2^*$ and moderate effects on $H_2^*$. 
+Importantly, these nonlinearities do not appear as higher harmonics in the force spectra, showing that force linearity and the 
+principle of linear superposition are not equivalent. Therefore, when applying the Multi-Frequency method, 
+derivatives $A_2^*$ and $H_2^*$ might show slight deviations from single-frequency simulation results. Although the nonlinearity of 
+these derivatives are established in multiple research papers, it showcases threshold different limits for different sections. The aim of this investigation is to 
+extend this understanding for the \v{S}arki\'c bridge deck section which will be useful in next chapter when validating the Multi-Frequency method.
 
 \end{document}

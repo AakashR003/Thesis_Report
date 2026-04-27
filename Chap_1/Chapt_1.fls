@@ -1,16 +1,16 @@
-PWD d:\1.TUM courses\Masters Thesis\Report_Latex
+PWD d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.tex
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.log
+OUTPUT Chapt_1.log
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -274,20 +274,22 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT .\Chapt_1.aux
+INPUT .\Chapt_1.aux
+INPUT Chapt_1.aux
+OUTPUT Chapt_1.aux
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
+INPUT .\Chapt_1.out
+INPUT .\Chapt_1.out
+INPUT Chapt_1.out
+INPUT Chapt_1.out
+INPUT .\Chapt_1.out
+INPUT .\Chapt_1.out
+OUTPUT Chapt_1.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
@@ -318,7 +320,7 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.xdv
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_1\Chapt_1.out
+OUTPUT Chapt_1.xdv
+INPUT Chapt_1.aux
+INPUT .\Chapt_1.out
+INPUT .\Chapt_1.out

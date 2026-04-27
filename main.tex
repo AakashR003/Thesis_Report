@@ -1,11 +1,14 @@
-\documentclass[a4paper, 11pt]{report}
+\documentclass[a4paper, 11pt, openright]{report}
+% \documentclass[a4paper, 11pt, twoside, openright]{report}
 
 % ============================================================
 % Packages
 % ============================================================
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage[margin=1in]{geometry}
+% \usepackage[margin=1in]{geometry}[top=25.8mm, bottom=24.8mm, left=40mm, right=21mm, headheight=13pt, includehead]{geometry}
+% \usepackage[top=25.8mm, bottom=24.8mm, left=40mm, right=21mm, headheight=13pt,headsep=10pt,footskip=11.7mm]{geometry}
+\usepackage[top=25.8mm, bottom=24.8mm, inner=40mm,outer=21mm,headheight=13pt,headsep=10pt,footskip=11.7mm]{geometry}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{float}
@@ -32,54 +35,48 @@
 \usepackage[absolute]{textpos}
 \usepackage{pdfpages}
 \usepackage{graphicx}
-
-
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 
 % ============================================================
 % Float and page optimization
 % ============================================================
 
-% Allow more floats on a page
 \setcounter{totalnumber}{4}
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{2}
 
-% Increase the minimum fraction of text per page
-\renewcommand{\textfraction}{0.1}      % Minimum 10% text required
-\renewcommand{\topfraction}{0.85}      % Max 85% for top floats
-\renewcommand{\bottomfraction}{0.75}   % Max 75% for bottom floats
-\renewcommand{\floatpagefraction}{0.7} % Allow float-only pages with 70% floats
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.75}
+\renewcommand{\floatpagefraction}{0.7}
 
-% Reduce spacing around floats for tighter layout
-\setlength{\intextsep}{8pt}            % Space above/below inline floats
-\setlength{\textfloatsep}{8pt}         % Space between text and page-top/bottom floats
+\setlength{\intextsep}{8pt}
+\setlength{\textfloatsep}{8pt}
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{6pt}
 
-% Use flushbottom to justify pages vertically
 \flushbottom
-
-% Allow LaTeX to be less strict about spacing
-\raggedbottom  % Or use \flushbottom for justified bottom alignment
+\raggedbottom
 
 % ============================================================
 % Chapter heading formatting 
 % ============================================================
 
-\titleformat{\chapter}[display]
-  {\fontsize{19}{22}\selectfont\normalfont\bfseries\centering}  
-  {\chaptertitlename\ \thechapter}        
-  {0.5em}                                  
-  {\MakeUppercase}                         
-
+\titleformat{\chapter}
+  {\fontsize{19}{22}\selectfont\normalfont\bfseries\raggedright}
+  {\thechapter}
+  {0.5em}
+  {}                       
 
 \titlespacing*{\chapter}
-  {0pt}         
-  {-50pt}        
-  {20pt}
+  {0pt}
+  {0pt}
+  {29pt}
 
 % ============================================================
-% Section heading formatting
+% Section and subsection formatting
 % ============================================================
 
 \titleformat{\section}
@@ -108,13 +105,17 @@
   {10pt}
   {4pt}         
 
+% \titlespacing*{\chapter}{0pt}{-\parskip}{29pt}
+% \titlespacing*{\section}{0pt}{-\parskip}{24.1pt}
+% \titlespacing*{\subsection}{0pt}{-\parskip}{18pt}
+
 
 % ============================================================
 % Line spacing and other formatting
 % ============================================================
 \onehalfspacing
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{0pt}
 
 % ============================================================
 % Caption formatting
@@ -201,12 +202,22 @@ Munich, April 26, 2026\strut
 \restoregeometry
 \end{titlepage}
 
+% ============================================================
+% ABSTRACT 
+% ============================================================
+\clearpage
+\pagestyle{empty}              
 \subfile{Abstract/Abstract}
-\newpage
+\clearpage  
+\pagestyle{plain}          
+
+% ============================================================
+% Front matter with roman page numbers
+% ============================================================
 \pagenumbering{roman}
 \setcounter{page}{1}
 
-\tableofcontents\newpage
+\tableofcontents
 
 \cleardoublepage
 \pagenumbering{arabic}
@@ -221,8 +232,10 @@ Munich, April 26, 2026\strut
 \subfile{Chap_4/Chapt_4}
 \subfile{Chap_5/Chapt_5}
 \subfile{Chap_6/Chapt_6}
+
 \appendix
 \subfile{Chap_A/Chapt_A}
+
 \listoffigures\newpage
 \listoftables\newpage
 

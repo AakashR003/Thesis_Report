@@ -11,52 +11,53 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 Warning--entry type for "Kratos" isn't style-file defined
---line 1043 of file references.bib
+--line 1051 of file references.bib
 Warning--entry type for "EN1991-1-4" isn't style-file defined
---line 1315 of file references.bib
+--line 1337 of file references.bib
 Warning--I didn't find a database entry for "Šarkić2012"
 Warning--empty journal in Martínez-López_2023
 Warning--empty year in Martínez-López_2023
 Warning--empty author in 2024
+Warning--empty journal in 2024
 Warning--empty journal in pentek
 Warning--empty year in pentek
 Warning--empty journal in menter
 Warning--empty year in menter
+Warning--empty author in SWE2024
 Warning--empty journal in huang2013
 Warning--empty year in huang2013
 Warning--empty author in Su2025
-Warning--empty author in Andi2022
 Warning--empty journal in zhan2012_Tacoma_Narrows
-You've used 46 entries,
+You've used 47 entries,
             2616 wiz_defined-function locations,
-            906 strings with 14148 characters,
-and the built_in function-call counts, 16503 in all, are:
-= -- 1714
-> -- 524
+            910 strings with 14386 characters,
+and the built_in function-call counts, 16789 in all, are:
+= -- 1743
+> -- 530
 < -- 4
-+ -- 169
-- -- 123
-* -- 1005
-:= -- 2120
-add.period$ -- 165
-call.type$ -- 46
-change.case$ -- 43
++ -- 171
+- -- 124
+* -- 1014
+:= -- 2154
+add.period$ -- 169
+call.type$ -- 47
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 411
-empty$ -- 1777
-format.name$ -- 123
-if$ -- 4585
+cite$ -- 60
+duplicate$ -- 423
+empty$ -- 1814
+format.name$ -- 124
+if$ -- 4672
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 45
-newline$ -- 260
-num.names$ -- 42
-pop$ -- 364
+int.to.str$ -- 47
+missing$ -- 46
+newline$ -- 266
+num.names$ -- 43
+pop$ -- 374
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1227
+skip$ -- 1254
 stack$ -- 0
 substring$ -- 763
 swap$ -- 114
@@ -64,8 +65,8 @@ text.length$ -- 66
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
-while$ -- 96
-width$ -- 48
-write$ -- 552
-(There were 15 warnings)
+warning$ -- 13
+while$ -- 97
+width$ -- 49
+write$ -- 563
+(There were 16 warnings)
