@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  26 APR 2026 04:39
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 04:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,7 +646,7 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
-))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
+))) (Chapt_4.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -726,7 +726,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 7.
-(d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out)
+(Chapt_4.out) (Chapt_4.out)
 \@outlinefile=\write4
 \openout4 = `Chapt_4.out'.
 
@@ -801,25 +801,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--32
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+LaTeX Warning: Citation `seshu2003' on page 2 undefined on input line 61.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+LaTeX Warning: Citation `menter' on page 2 undefined on input line 77.
 
- []
+
+LaTeX Warning: Reference `fig:Kolmogorov_Spectrum' on page 2 undefined on input line 79.
+
+
+LaTeX Warning: Citation `Ranjan2024ACFD' on page 2 undefined on input line 83.
 
 File: Figures/CFD/Energy_Casacade.png Graphic file (type bmp)
 <Figures/CFD/Energy_Casacade.png>
@@ -836,39 +844,32 @@ File: Figures/CFD/DNS_LES_URANS.png Graphic file (type bmp)
 
 LaTeX Warning: Float too large for page by 12.97823pt on input line 118.
 
-[2] [3]
+
+LaTeX Warning: Citation `menter' on page 2 undefined on input line 125.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
  []
 
+[2] [3]
 
 LaTeX Warning: Citation `sarkic2012' on page 4 undefined on input line 137.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--141
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
 
 
-LaTeX Warning: Reference `add the references some book or paper where you studied on how to dimesolinse fluid domain' on page 4 undefined on input line 148.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--157
+Underfull \hbox (badness 10000) in paragraph at lines 156--162
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
 File: Figures/Mesh_Convergence_Study/Virtual_Wind_Tunnel_Dimensions.png Graphic file (type bmp)
@@ -877,116 +878,119 @@ File: Figures/Mesh_Convergence_Study/Sarkic_Section.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/Sarkic_Section.png>
 
 
-LaTeX Warning: Citation `dadvand2010' on page 5 undefined on input line 226.
+LaTeX Warning: Citation `dadvand2010' on page 5 undefined on input line 224.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--234
+LaTeX Warning: Citation `Kratos' on page 5 undefined on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 235--248
+
+LaTeX Warning: Citation `sarkic2012' on page 6 undefined on input line 235.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--246
 
  []
 
 
-LaTeX Warning: Reference `section' on page 6 undefined on input line 253.
+LaTeX Warning: Reference `cha:flutter' on page 6 undefined on input line 251.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--258
+LaTeX Warning: Citation `EN1991-1-4' on page 6 undefined on input line 252.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--266
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 263--268
-
- []
-
 File: Figures/Mesh_Convergence_Study/GiD_Model_2.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/GiD_Model_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--290
+
+LaTeX Warning: Citation `noda2003' on page 7 undefined on input line 284.
+
+
+LaTeX Warning: Citation `huang2013' on page 7 undefined on input line 284.
+
+
+LaTeX Warning: Citation `brusiani2013' on page 7 undefined on input line 284.
+
+
+LaTeX Warning: Citation `Su2025' on page 7 undefined on input line 284.
+
+
+LaTeX Warning: Citation `Andi2022' on page 7 undefined on input line 284.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--288
 
  []
 
-[7]
 File: Figures/Mesh_Convergence_Study/CFD_Result.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/CFD_Result.png>
 File: Figures/Mesh_Convergence_Study/Model_3_Heave.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/Model_3_Heave.png>
 File: Figures/Mesh_Convergence_Study/Model_3_Pitch.png Graphic file (type bmp)
 <Figures/Mesh_Convergence_Study/Model_3_Pitch.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_H1.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_H1.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_A1.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_A1.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_H2.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_H2.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_A2.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_A2.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_H3.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_H3.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_A3.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_A3.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_H4.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_H4.png>
-File: Figures/Mesh_Convergence_Study/Convergence_Study_A4.png Graphic file (type bmp)
-<Figures/Mesh_Convergence_Study/Convergence_Study_A4.png>
+[7] [8]
+File: Figures/Mesh_Convergence_Study/H1_and_H4.png Graphic file (type bmp)
+<Figures/Mesh_Convergence_Study/H1_and_H4.png>
+File: Figures/Mesh_Convergence_Study/A1_and_A4.png Graphic file (type bmp)
+<Figures/Mesh_Convergence_Study/A1_and_A4.png>
+File: Figures/Mesh_Convergence_Study/H2_and_H3.png Graphic file (type bmp)
+<Figures/Mesh_Convergence_Study/H2_and_H3.png>
+File: Figures/Mesh_Convergence_Study/A2_and_A3.png Graphic file (type bmp)
+<Figures/Mesh_Convergence_Study/A2_and_A3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--425
+Underfull \hbox (badness 10000) in paragraph at lines 389--395
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 426--431
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 396--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--451
+Underfull \hbox (badness 10000) in paragraph at lines 417--421
 
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 496--501
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--471
 
  []
 
+[10]
 File: Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--520
+Underfull \hbox (badness 10000) in paragraph at lines 484--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--511
 
  []
 
 [11] [12]
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86' on page 13 undefined on input line 524.
-
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86' on page 13 undefined on input line 524.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--525
-
- []
-
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86' on page 13 undefined on input line 530.
-
-
-LaTeX Warning: Reference `fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86' on page 13 undefined on input line 530.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--532
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--539
-
- []
-
 File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Amplitude_Scheme_6.png>
 File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Heave/DFT_Moment_Amplitude_Scheme_6.png Graphic file (type bmp)
@@ -1000,60 +1004,56 @@ File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_LiftFor
 File: Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--599
+Underfull \hbox (badness 10000) in paragraph at lines 568--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--579
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 600--607
+Underfull \hbox (badness 10000) in paragraph at lines 580--585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--613
+LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 592.
+
+
+LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 592.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--595
 
  []
 
 
-LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 620.
+Underfull \hbox (badness 10000) in paragraph at lines 596--598
+
+ []
 
 
-LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 620.
+Underfull \hbox (badness 10000) in paragraph at lines 599--601
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--623
+Underfull \hbox (badness 10000) in paragraph at lines 602--610
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 624--626
+Underfull \hbox (badness 10000) in paragraph at lines 611--617
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 618--622
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 630--638
-
- []
-
-
-LaTeX Warning: Reference `fig:Appendix_Complete_Compiled_Displacement_Vs_Force' on page 15 undefined on input line 642.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--643
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 644--648
-
- []
-
-[15]
 File: Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png>
 File: Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_Phases_vs_Amplitude.png Graphic file (type bmp)
@@ -1071,35 +1071,33 @@ File: Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/Phas
 File: Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>
 
-
-LaTeX Warning: Citation `noda2003' on page 16 undefined on input line 726.
-
-
-LaTeX Warning: Citation `lin2019' on page 16 undefined on input line 726.
+LaTeX Warning: Citation `noda2003' on page 15 undefined on input line 700.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 726--731
-
- []
+LaTeX Warning: Citation `lin2019' on page 15 undefined on input line 700.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 732--738
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 739--742
+Underfull \hbox (badness 10000) in paragraph at lines 700--705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--760
+Underfull \hbox (badness 10000) in paragraph at lines 706--712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--716
+
+ []
+
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 726--734
 
  []
 
 File: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png>
-[17]
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png>
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png Graphic file (type bmp)
@@ -1109,31 +1107,29 @@ File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_
 File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>
 
-
-LaTeX Warning: Citation `diana2020' on page 18 undefined on input line 881.
-
-
-LaTeX Warning: Citation `xin2007' on page 18 undefined on input line 881.
+LaTeX Warning: Citation `diana2020' on page 17 undefined on input line 855.
 
 
-LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 18 undefined on input line 881.
+LaTeX Warning: Citation `xin2007' on page 17 undefined on input line 855.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 879--883
-
- []
+LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 17 undefined on input line 855.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 884--892
+Underfull \hbox (badness 10000) in paragraph at lines 853--857
 
  []
 
-[18]
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 858--866
+
+ []
+
 File: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png>
 File: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>
- [19] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
+[18] [19] (Chapt_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1146,15 +1142,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
-(rerunfilecheck)             Checksum: F50EBCF31F4C322D00C0E51188661D41;3317.
+(rerunfilecheck)             Checksum: 62AEFEC5C1604C9587E94E6AE91DA8A0;3355.
  ) 
 Here is how much of TeX's memory you used:
- 26784 strings out of 411570
- 560229 string characters out of 5806423
- 1940191 words of memory out of 5000000
- 48286 multiletter control sequences out of 15000+600000
+ 26654 strings out of 411570
+ 552162 string characters out of 5806423
+ 1941191 words of memory out of 5000000
+ 48161 multiletter control sequences out of 15000+600000
  565016 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,11n,110p,532b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.xdv (19 pages, 397980 bytes).
+Output written on Chapt_4.xdv (19 pages, 395904 bytes).

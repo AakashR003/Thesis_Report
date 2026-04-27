@@ -11,23 +11,23 @@
 
 This chapter investigates the linearity of flutter derivatives using single-frequency forced-motion simulations with 
 prescribed heave and pitch motions. First a brief overview on CFD is presented. 
-The computational setup and mesh convergence are then established to ensure the 
-reliability of the simulations. The motion amplitudes are systematically increased from small values (0.68\% heave ratio and 1° pitch) to larger levels 
-(8.20\% heave ratio and 8° pitch), extending beyond the linear range. For each amplitude, flutter derivatives 
+The computational setup and mesh convergence are then established. 
+The motion amplitudes are systematically increased from a value of 0.68\% of bridge deck length (for heave) and 1° for pitch to the values of 
+8.20\% for heave and 8° for pitch. For each amplitude, flutter derivatives 
 are computed across a range of reduced velocities. The aerodynamic response is analyzed using flutter derivative evaluation, spectral decomposition of force signals, 
 phase relationship assessment, and pressure distribution study. This investigation is focused on the verification of Scanlan's 
 linearity assumption and the applicability of linear superposition, while also identifying which analysis methods 
-are most efficient in capturing different forms of nonlinearity. Based on this, a clear baseline is established for selecting 
+are most efficient in capturing different forms of nonlinearity. Based on this, a foundation is established for selecting 
 appropriate motion amplitudes in the subsequent multi-frequency simulations.
 
 \section{Computational Fluid Dynamics}
 
 Computational Fluid Dynamics (CFD) refers to the numerical modelling of fluid flow problems. Numerical modelling are 
-approximate methods for partial differential equations using mathematical techniques. Consider, 
+approximate methods for solving partial differential equations using mathematical techniques. Consider, 
 for instance, the differential equation governing the bending of a beam under the assumption of first-order kinematics. 
 The solution i.e., the deflection profile, can be obtained either analytically through direct integration or approximately 
 via numerical methods such as the Finite Element Method (FEM). Analytical solutions offer the advantage of being continuous 
-and exact across the entire domain; for any point on the beam, the deflection can be determined precisely. In contrast, 
+and exact across the entire domain. In contrast, 
 numerical solutions lack such accuracy and provide results only at discrete sets of points. \\
 
 The fundamental equations governing fluid flow are the Navier-Stokes equations. Due to their complex, non-linear nature, 
@@ -39,11 +39,10 @@ modeling.
 \subsection{Numerical Solution of the Navier-Stokes Equations} 
 
 When formulating the equations of motion for a fluid system, Eulerian system is used. 
-In the Eulerian system, the observer moves with and tracks individual fluid particles over 
-time. In the Eulerian framework, a fixed frame of reference is used, where the observer measures 
+In the Eulerian system, a fixed frame of reference is used, where the observer measures 
 the properties of the fluid as it passes through fixed spatial locations.
 The Navier-Stokes equations represent Newton's second law of motion adapted for fluid continua within an Eulerian framework, 
-constrained by the principle of mass conservation.  
+constrained by the principle of mass conservation. They are given by the following equations:  
 
 
 \begin{equation}
@@ -59,29 +58,30 @@ them into a system of algebraic equations through spatial and temporal discretiz
 Volume, Finite Difference, and Finite Element methods. As the solver used in this thesis is based on the Finite Element 
 Method (FEM), this approach is primarily discussed. In FEM, the strong form of the governing differential equations is 
 transformed into an integral weak form. By discretizing the fluid domain into finite elements, the continuous problem is 
-converted into a system of linear equations that can be solved computationally (refer to [Insert Citation] for a detailed 
-mathematical formulation).
+converted into a system of linear equations that can be solved computationally (refer to \cite{seshu2003} for a FEM).
 
 \subsection{Turbulence Modelling} 
 
-The most precise methodology for solving fluid flows is Direct Numerical Simulation (DNS), which resolves the Navier-Stokes 
-equations across all spatial and temporal scales. The primary limitation of DNS is its extreme computational cost: 
-resolving all turbulent scales down to the Kolmogorov length scale requires an exceedingly fine mesh. To overcome this, 
+The most accurate method to solve fluid flows is Direct Numerical Simulation (DNS), which resolves the Navier-Stokes 
+equations across all spatial and temporal scales. The primary limitation of DNS is its extreme computational cost because 
+it needs to resolve all turbulent scales down to the Kolmogorov length scale which requires an exceedingly fine mesh. To overcome this, 
 turbulence is modelled rather than resolved directly. This leads to methods such as Reynolds-Averaged Navier-Stokes (RANS) 
-and Unsteady RANS (URANS) and Large Eddy Simulation (LES), which significantly reduce simulation times. An intermediate approach, Large Eddy Simulation (LES), 
-resolves the larger energy containing eddies while modelling the smaller. LES thus incurs a computational 
+and Unsteady RANS (URANS), which significantly reduce simulation times. An intermediate approach, Large Eddy Simulation (LES), 
+resolves the larger energy containing eddies while modelling the smaller. LES thus has a computational 
 cost between that of DNS and RANS. \\ 
 
 In RANS and URANS, the Navier-Stokes equations are time averaged, yielding the Reynolds-averaged Navier-Stokes equations. 
 This decomposition separates the instantaneous velocity into mean and fluctuating components. The averaging procedure introduces 
-additional terms—the Reynolds stresses—which represent the effects of turbulence on the mean flow. This constitutes a closure 
-problem, as additional equations are required to relate these unknown stresses to the mean flow variables. Turbulence models 
-to solve this closure problem. \\
+additional terms known asthe Reynolds stresses which represent the effects of turbulence on the mean flow. This creates a closure 
+problem, as additional equations are required to relate these unknown stresses to the mean flow velocity. Turbulence models are there
+to solve this closure problem \cite{menter}. A comparative understanding of the simulation results for each method can be obtained 
+by observing Figure~\ref{fig:DNS_RANS_LES}. This simulation results shall be interpreted in relation to the Kolmogorov spectrum, shown 
+in Figure~\ref{fig:Kolmogorov_Spectrum}. 
 
 Most RANS models rely on the Boussinesq hypothesis, which relates the Reynolds stresses to the mean velocity gradients via a 
 turbulent "eddy viscosity." This parameter mathematically acts as an artificial increase in the fluid's viscosity to account 
-for the momentum transfer and energy dissipation caused by turbulent mixing. Formulating closure models for the Reynolds stresses 
-through the Boussinesq hypothesis to obtain eddy viscosity is the primary objective of turbulence models such as the $k-\epsilon$ and $k-\omega$ 
+for the momentum transfer and energy dissipation caused by turbulent mixing \cite{Ranjan2024ACFD}. Formulating closure models for the Reynolds stresses 
+through the Boussinesq hypothesis to obtain eddy viscosity is the primary objective of turbulence models which leads to $k-\epsilon$ and $k-\omega$ 
 formulations. 
 
 \begin{figure}[htbp]
@@ -118,11 +118,11 @@ formulations.
 \end{figure}
 
 
-The $k-\epsilon$ turbulence model have high robustness in free-stream conditions but lacks near-wall accuracy, 
-whereas the $k-\omega$ formulation excels at resolving boundary layers but exhibits excessive sensitivity in the deep 
+The $k-\epsilon$ turbulence model is good in simulation of free-stream conditions but lacks accuracy near the walls, 
+whereas the $k-\omega$ formulation is good at resolving boundary layers but exhibits excessive sensitivity in the free flow  
 fluid domain. To overcome these limitations, Florian Menter introduced the $k-\omega$ Shear Stress Transport 
-(SST) model, which employes mathematical blending functions to dynamically transition between the near-wall $k-\omega$ 
-approach and the far-field $k-\epsilon$ formulation. The $k-\omega$ SST model is used for all CFD simulations presented in this thesis. 
+(SST) model, which uses mathematical blending functions to dynamically transition between the near-wall $k-\omega$ 
+approach and the far-field $k-\epsilon$ formulation \cite{menter}. The $k-\omega$ SST model is used for all CFD simulations presented in this thesis. 
 
 
 \section{Simulation Setup and Methodology}
@@ -137,16 +137,14 @@ Engineering (CIMNE). \\
 The bridge cross-section used in this thesis is adopted from Sarkic \cite{sarkic2012} ( 
 Figure~\ref{fig:Sarkic_Section}). This cross-section was selected because the reference paper presents a validation of 
 flutter derivatives derived from wind tunnel experiments against CFD modelling. Hence, these results shall be utilized 
-for validating the results from the CFD of the present thesis. \\
-
+for validating the results from the CFD of the present thesis. 
 Using the dimensions provided in Figure~\ref{fig:Sarkic_Section}, a two-dimensional CFD model was constructed in GiD, 
 which is shown in Figure~\ref{fig:GiD_Model_2}. 
 
 \subsubsection{Meshing}
 
-Following the creation of the structural geometry, the surrounding fluid domain was modelled. The fluid domain has to be 
-dimesionalised based on strcutures size. This is referred from \ref{add the references some book or paper where you studied on how to dimesolinse fluid domain}
-and the fluid domain is created and is presented in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. %\cite{[add reference, e.g., Franke et al., 2007; Blocken, 2015]}, and the resulting 
+Following the creation of the structural geometry, the surrounding fluid domain was modelled. The fluid domain is  
+dimensionalised based on structures size and is presented in Figure~\ref{fig:Virtual_Wind_Tunnel_Dimensions}. %\cite{[add reference, e.g., Franke et al., 2007; Blocken, 2015]}, and the resulting 
 Within this fluid domain, the bridge structure is treated as a solid obstacle through which fluid cannot flow. 
 Therefore, no mesh or structural properties (described in the subsequent section) are assigned to the structure. \\
 
@@ -157,7 +155,7 @@ shall be used in this areas for computational efficiency. \\
 
 So an adaptive meshing approach was used across the fluid domain. 
 Mesh element sizes are progressively increased from the structure outward. The total fluid domain was divided 
-into six distinct zones, with mesh sizes transitioning from fine (near the structure) to coarse (near the outer boundaries)  
+into six zones, with mesh sizes transitioning from fine (near the structure) to coarse (near the outer boundaries)  
 (Shown in Figure~\ref{fig:GiD_Model_2}). The dimensions of these transition layers are listed in 
 Table~\ref{tab:bounding_boxes}, while the corresponding mesh sizes assigned to each zone are provided in 
 Table~\ref{tab:mesh_convergence}. \\
@@ -223,18 +221,18 @@ artificially maintain it, introducing spurious effects rather than representing 
 \subsection{Solver Information} 
 
 The solver settings needed to solve the fluid model created in the previous section are shown here. The solver used in this 
-thesis is KratosMultiphysics \cite{dadvand2010}, which is developed by CIMNE. It is an open-source multiphysics solver 
+thesis is KratosMultiphysics \cite{dadvand2010, Kratos}, which is developed by CIMNE. It is an open-source multiphysics solver 
 capable of structural, fluid, and coupled analysis, as well as optimization. The package is divided into sub-modules known 
 as applications, each dedicated to a specific task. The applications used in the present case are the FluidDynamicsApplication 
 and the MeshMotionApplication. The MeshMotionApplication 
 is required to apply movement to the structure, because for the forced motion simulation external oscillation of the structure is needed. 
 This is performed within Kratos based on the Arbitrary 
-Lagrangian-Eulerian (ALE) framework. The StructuralApplication and CoSimulationApplication (coupled simulation) are not used 
+Lagrangian-Eulerian (ALE) framework. The StructuralMechanicsApplication and CoSimulationApplication (coupled simulation) are not used 
 for the same reason. Since no fluid-structure interaction is modelled, they are not required. \\
 
 The URANS equations with the $k$-$\omega$ SST turbulence model are used, with a turbulence intensity of 0.1 and a 
 turbulent mixing length of 0.0588~m. The inlet velocity is set to 1 m/s, and the corresponding Reynolds number for the 
-flow is $2.43 \times 10^4$. This velocity does not match with the velocity of reference [\ref{}] because, for flutter it shall be chosen independently. 
+flow is $2.43 \times 10^4$. This velocity does not match with the velocity of reference [\cite{sarkic2012}] because, for flutter it shall be chosen independently. 
 For flutter only the reduced velocities is important, which can be altered by modyfying the bridge's oscillating frequency. 
 Then time step must be chosen. It is calculated based on the CFL number 
 (CFL $= \frac{u \Delta t}{\Delta x}$, where $u$ is the velocity, $\Delta t$ the time step, and $\Delta x$ the mesh size). 
@@ -247,11 +245,11 @@ simulation and examining the maximum CFL output from Kratos. In the present work
 (the corresponding CFL values are shown in Table~\ref{tab:mesh_convergence}). \\
 
 The next parameter to set is the simulation time. The total simulation time is divided into three phases: ramp-up, 
-stabilization, and stable time period. The ramp-up phase is provided to avoid numerical instabilities in the CFD simulation. 
-During this phase, the flow velocity is steadily increased from 0 to 1 m/s. The stabilization phase allows the flow to settle. 
+stabilization, and stable time period. The ramp-up period is provided to avoid numerical instabilities in the CFD simulation. 
+During this period, the flow velocity is steadily increased from 0 to 1 m/s. The stabilization period allows the flow to settle. 
 Finally, the stable time period is where simulation measurements are taken and used for post-processing. The ramp-up and 
-stabilization times are determined based on the vortex shedding frequency of the section. As discussed in Chapter \ref{section}, 
-the Strouhal number is needed for this calculation. This value is taken from EN 1991; however, since no standard Strouhal number 
+stabilization times are determined based on the vortex shedding frequency of the section. As discussed in Chapter \ref{cha:flutter}, 
+the Strouhal number is needed for this calculation. This value is taken from EN 1991-1-4 \cite{EN1991-1-4}; however, since no standard Strouhal number 
 is provided there for this specific section, the Strouhal number of a rectangular section is used, which is 0.1. Hence, 
 the vortex shedding frequency is $ \frac{0.1 \times 1}{0.366} = 0.273$ Hz. Based on this, the ramp-up and stabilization 
 times are calculated as: \\
@@ -260,10 +258,10 @@ Ramp-up time $= 2 \times \frac{1}{0.273} = 7.32$ seconds
 
 Stabilization time $= 2 \times \frac{1}{0.273} = 7.32$ seconds
 
-For the flutter response, the stable time period is taken as the time required for 10 complete forced motion oscillations 
-(see, e.g., [cite relevant literature]). Since each reduced velocity results in a different forced motion frequency, the duration 
-of the stable phase varies across simulations. A higher reduced velocity corresponds to a lower oscillating frequency and thus 
-requires a longer simulation time, and vice versa. Therefore, the specific calculation of the stable phase duration is presented 
+To evaluate the flutter derivatives, a stable time period of 10 complete forced-motion oscillations is prescribed. 
+Since each reduced velocity results in a different forced motion frequency, the duration 
+of the stable period varies across simulations. A higher reduced velocity corresponds to a lower oscillating frequency and thus 
+requires a longer simulation time, and vice versa. Therefore, the specific calculation of the stable period duration is presented 
 after the prescribed motion frequency is provided in the consecutive chapters. \\
 
 %Check: if any other reduced velocity is taken, the stable time period is mentioned in the respective chapter.
@@ -283,10 +281,10 @@ A mesh convergence study is conducted to determine the optimal mesh element size
 mesh sizes are created, and the convergence of 8 derivatives is analyzed. Table~\ref{tab:mesh_convergence} shows the models
 and corresponding mesh sizes at each zone. The study is performed for a single point on the flutter derivative curve
 at a reduced velocity of 10.93. From the literature, it is identified that 5$\%$ of the width of the bridge deck as the heave amplitude 
-and 5 degrees as the pitch amplitude are the appropriate forced motion amplitudes such that aerodynamic forces show linear behavior. 
+and 5 degrees as the pitch amplitude are the appropriate forced motion amplitudes such that aerodynamic forces show linear behavior \cite{noda2003, huang2013, brusiani2013, Su2025, Andi2022}. 
 For this study, the heave amplitude is calculated as $ \frac{5 \times 0.366}{100} $ = 0.0183 m, the pitch amplitude is 0.087 
 radians, the motion frequency is 0.25 Hz, and the stable time period is $ 10 \times \frac{1}{0.25} $ = 40 seconds. 
-Therefore, the total simulation time is the sum of ramp-up time, stabilization time, and stable time period: 7.32 + 7.32 + 40 = 54.64 seconds. \\
+Therefore, the total simulation time is the sum of ramp-up time, stabilization time, and stable time period which is 54.64 seconds. \\
 
 \begin{table}[htbp]  
     \centering
@@ -355,58 +353,30 @@ that Model 3 is optimal, and this mesh size is used for all subsequent simulatio
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H1}
-        \caption{$H_1^*$}
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/H1_and_H4.png}
+        \caption{$H_1^*$ and $H_4^*$}
         \label{fig:h1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A1}
-        \caption{$A_1^*$}
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/A1_and_A4.png}
+        \caption{$A_1^*$ and $A_4^*$}
         \label{fig:a1}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H2}
-        \caption{$H_2^*$}
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/H2_and_H3.png}
+        \caption{$H_2^*$ and $H_3^*$}
         \label{fig:h2}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A2}
-        \caption{$A_2^*$}
+        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/A2_and_A3.png}
+        \caption{$A_2^*$ and $A_3^*$}
         \label{fig:a2}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H3}
-        \caption{$H_3^*$}
-        \label{fig:h3}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A3}
-        \caption{$A_3^*$}
-        \label{fig:a3}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_H4}
-        \caption{$H_4^*$}
-        \label{fig:h4}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/Mesh_Convergence_Study/Convergence_Study_A4}
-        \caption{$A_4^*$}
-        \label{fig:a4}
     \end{subfigure}
     
     \caption{Mesh convergence study results for the eight flutter derivatives}
@@ -414,7 +384,7 @@ that Model 3 is optimal, and this mesh size is used for all subsequent simulatio
 \end{figure}
 
 
-\section{Influence of Amplitude on Flutter Derivatives}
+\section{Influence of Motion Amplitude on Flutter Derivatives}
 
 The base assumption of the Multi-Frequency method is that the principle of linear superposition holds. This assumption is derived from Scanlan's linearity assumption, which states that for small heave and pitch amplitudes, 
 the applied forced motion oscillation and the obtained aerodynamic forces are equivalent with a phase 
@@ -459,7 +429,7 @@ simulations are conducted.
     \label{tab:nonlinear_amplitude}
     \begin{tabular}{|l|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
         \hline
-        & \textbf{Heave Amplitude (m)} & \textbf{Heave ratio} & \textbf{Pitch (radians)} & \textbf{Pitch (Degree)} \\
+        & \textbf{Heave Amplitude (m)} & \textbf{Heave ratio} & \textbf{Pitch (radians)} & \textbf{Pitch (degrees)} \\
         \hline
         \textbf{Amplitude Scheme 0} & 0.0025 & 0.68 & 0.017 & 0.97 \\
         \hline
@@ -521,13 +491,15 @@ since the reduced velocity of 21.8 is the most affected by nonlinearity, plots o
 Figure~\ref{fig:Frequency_Domain_Analysis_Heave} shows the spectrum for amplitude scheme 6 for heave motion. In this plot, the y-axis is presented on a log scale so that any noise 
 is easily distinguishable. It is observed that the spectra of both the obtained lift force and moment are without spurious frequencies, 
 indicating that the obtained forces are linear with respect to the prescribed motion. 
-This is the same for all amplitude schemes, which is shown in Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86}. \\
+This is the same for all amplitude schemes.  
+% which is shown in Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Heave_scheme_4_to_6_U_21_86}. \\
 
 Figure~\ref{fig:Frequency_Domain_Analysis_Pitch} shows the lift force spectrum for amplitude schemes 3 and 4 for pitch motion (pitch degrees of 4.01 and 4.98). 
 In general, the spectrum of pitch motion is noisy when visualized on a log scale. However on the normal scale, this spectrum is without spurious frequencies up to scheme 3. 
 It is observed that the spectrum exhibits spurious frequency components from scheme 4, indicating the presence of higher-order sine terms and, 
-therefore, nonlinearity starts to appear. For all degrees above this pitch degree, the spectrum contains spurious frequencies. This is  
-presented in Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86}. This case is the same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
+therefore, nonlinearity starts to appear. For all degrees above this pitch degree, the spectrum contains spurious frequencies. 
+% This is presented in Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_0_to_3_U_21_86} and Appendix~\ref{fig:Frequency_Domain_Analysis_Pitch_scheme_4_to_6_U_21_86}. 
+This case is the same for the pitch moment spectrum as well. Hence, it can be concluded that the linearity limit for pitch motion is between 4 and 5 degrees, 
 which is slightly lower than the rule of thumb of 5 degrees.\\
 
 On comparing Figure~\ref{fig:Combined_Flutter_Derivatives} and Figure~\ref{fig:Frequency_Domain_Analysis_Pitch}, 
@@ -639,7 +611,9 @@ kept to capture the variations in nonlinearity even when the overall error is sm
 It is observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
 for reduced velocities above 1.71. This is equivalent to the behavior observed earlier for the reduced velocity of 21.86 
 (Figure~\ref{fig:Displacement_Vs_Force}). The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone show significant deviation 
-because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at higher frequencies (1.6 and 3.2 Hz) difficult. Similar behavior is observed for the heave lift force as well, which presented in Appendix~\ref{fig:Appendix_Complete_Compiled_Displacement_Vs_Force}.\\
+because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at 
+higher frequencies (1.6 and 3.2 Hz) difficult. Similar behavior is observed for the heave lift force as well. \\ 
+% which presented in Appendix~\ref{fig:Appendix_Complete_Compiled_Displacement_Vs_Force}.\\
 
 For pitch motion, the moment exhibits slight nonlinearity, as seen before for the reduced velocity of 21.86 (Figure~\ref{fig:Displacement_Vs_Force}). 
 Another observation is that the influence of nonlinearity in phase increases with increasing reduced velocity (decreasing frequency). This further validates 
@@ -878,10 +852,10 @@ at which phase nonlinearity becomes significant will vary across different cross
 
 Finally, the influence of this nonlinearity on the critical velocity is studied. For the calculation of critical velocity, 
 structural parameters are required. For this structural parameters of four existing bridges are taken from 
-- [\cite{diana2020}, \cite{xin2007}, \cite{zhan2012_Tacoma_Narrows}] and their structural properties are 
+- [\cite{diana2020, xin2007, zhan2012_Tacoma_Narrows}] and their structural properties are 
 summarized in Table~\ref{tab:bridge_configs}.\\
 
-To assess the influence of amplitude on the critical wind speed, it is helpful to first identify the parameters 
+To assess the influence of motion amplitude on the critical wind speed, it is helpful to first identify the parameters 
 to which the critical wind speed is most sensitive, in order to perform this analysis efficiently. 
 The sensitivity of the critical wind speed
 to errors in flutter derivatives depends on two factors. First, whether the reduced velocity
@@ -891,7 +865,7 @@ role in the critical velocity prediction. To address the latter factor only, the
 parameters of four bridges are analyzed.\\ 
 
 Figure~\ref{fig:CriticalVelocity_Vs_Amplitude_Scheme} shows the critical velocity obtained for all amplitude schemes. 
-It is observed for all three bridge configurations (except Humen) that up to amplitude scheme 5 there is less influence on 
+It is observed for all three bridge configurations (except for Humen bridge properties) that up to amplitude scheme 5 there is less influence on 
 the obtained critical velocity. For Humen, after amplitude scheme 3, the critical velocity varies significantly. This indicates that this
 bridge configuration might be more sensitive to the $A_2^*$ and $H_2^*$ derivatives. The reason that no major deviation is observed 
 in the critical velocity (up to scheme 5) is that all the critical reduced velocities are below 12 (Figure~\ref{fig:ReducedVelocity_Vs_Amplitude_Scheme}). 
@@ -937,7 +911,8 @@ Tacoma Narrows     & 11.9  & 4250   & 0.005 & 0.130  & $1.78 \times 10^5$  & 0.0
 \section{Observations and Discussion}
 
 The linearity limit for heave motion agrees with the rule of thumb; therefore, the 
-Multi-Frequency method should remain valid as long as the amplitude remains within this limit. Scanlan’s assumptions and the principle of superposition 
+Multi-Frequency method should remain valid as long as the amplitude remains within heave of 5.0$\%$ of the deck width and pitch of 3°. 
+Scanlan's assumptions and the principle of superposition 
 are not equivalent and may differ; this discrepancy is observed for pitch motion. Therefore, when 
 validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2^*$ and $H_2^*$. Although 
 the nonlinearity in $A_2^*$ and $H_2^*$ has been established in multiple research papers, the finding from this investigation is that 

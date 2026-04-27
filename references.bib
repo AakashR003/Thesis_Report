@@ -252,12 +252,12 @@
   file = {C:\Users\aakas\Zotero\storage\GVWC4LDW\Huang and Liao - 2011 - Identification of Flutter Derivatives of Bridge Deck Under Multi-Frequency Vibration.pdf}
 }
 
-@article{warnakulasuriya,
+@article{Martínez-López_2023,
   title = {Reducing the Computational Cost of Forced-Motion Simulations to Obtain Flutter Derivatives},
-  author = {Warnakulasuriya, Suneth and L{\'a}zaro, C},
+  author = {Martínez-López, David and L{\'a}zaro, C},
   abstract = {We investigate two strategies to reduce the computational cost of forced-motion simulations in obtaining flutter derivatives. First, the multi-frequency approach, consisting of exciting a cross-section at more than one frequency at a time, is analysed in detail. Several LES-type investigations are carried out to determine the limits of this methodology, comparing the results with the classical single-frequency simulations. Second, we explore the possibilities of a URANS-based approach. Both turbulence models are developments in the context of the finite element method. Our strategies are applied to find the flutter derivatives of two cross-sections: a rectangular cylinder with proportions 5:1 and a generic streamlined bridge cross-section. Here we only include an excerpt of the results for the latter shape. The results obtained from the multi-frequency simulations show excellent agreement with the ones obtained through classical means. However, when it comes to decreasing the computational cost, the URANS simulations are considerably more efficient, remaining a viable option for estimating the flutter derivatives. We highlight the possibility of combining these strategies, potentially leading to a computational cost of less than 1\% of the original effort.},
   langid = {english},
-  file = {C:\Users\aakas\Zotero\storage\JIEXUWCY\Warnakulasuriya and Lázaro - 19 PUBLICATIONS 43 CITATIONS SEE PROFILE.pdf}
+  file = {C:\Users\aakas\Zotero\storage\JIEXUWCY\Martínez-López and Lázaro - 19 PUBLICATIONS 43 CITATIONS SEE PROFILE.pdf}
 }
 
 %random noise
@@ -333,6 +333,46 @@
 }
 
 %heave and pitch amplitude
+
+@article{nieto2015,
+  title = {Bridge Deck Flutter Derivatives: {{Efficient}} Numerical Evaluation Exploiting Their Interdependence},
+  shorttitle = {Bridge Deck Flutter Derivatives},
+  author = {Nieto, F. and Owen, J.S. and Hargreaves, D.M. and Hern{\'a}ndez, S.},
+  year = 2015,
+  month = jan,
+  journal = {Journal of Wind Engineering and Industrial Aerodynamics},
+  volume = {136},
+  pages = {138--150},
+  issn = {01676105},
+  doi = {10.1016/j.jweia.2014.11.006},
+  urldate = {2025-08-13},
+  abstract = {Increasing the efficiency in the process to numerically compute the flutter derivatives of bridge deck sections is desirable to advance the application of CFD based aerodynamic design in industrial projects. In this article, a 2D unsteady Reynolds-averaged Navier-Stokes (URANS) approach adopting Menter's SST k-{$\omega$} turbulence model is employed for computing the flutter derivatives and the static aerodynamic characteristics of two well known examples: a rectangular cylinder showing a completely reattached flow and the generic G1 section representative of streamlined deck sections. The analytical relationships between flutter derivatives reported in the literature are applied with the purpose of halving the number of required numerical simulations for computing the flutter derivatives. The solver of choice has been the open source code OpenFOAM. It has been found that the proposed methodology offers results which agree well with the experimental data and the accuracy of the estimated flutter derivatives is similar to the results reported in the literature where the complete set of numerical simulations has been performed for both heave and pitch degrees of freedom.},
+  langid = {english},
+  file = {C:\Users\aakas\Zotero\storage\IJNDF9SD\Nieto et al. - 2015 - Bridge deck flutter derivatives Efficient numerical evaluation exploiting their interdependence.pdf}
+}
+
+@article{brusiani2013,
+  title = {On the Evaluation of Bridge Deck Flutter Derivatives Using {{RANS}} Turbulence Models},
+  author = {Brusiani, F. and De Miranda, S. and Patruno, L. and Ubertini, F. and Vaona, P.},
+  year = 2013,
+  month = aug,
+  journal = {Journal of Wind Engineering and Industrial Aerodynamics},
+  volume = {119},
+  pages = {39--47},
+  issn = {01676105},
+  doi = {10.1016/j.jweia.2013.05.002},
+  urldate = {2025-08-13},
+  abstract = {This paper concerns the capabilities and the limitations of computational fluid dynamic simulations in evaluating the dynamic aeroelastic coefficients currently used to study the bridge deck instability due to wind loading. The attention is focused on the Reynolds-averaged Navier-Stokes (RANS) approach coupled with the k-{$\omega$} turbulence model, identified as the best compromise between accuracy and computational cost. Firstly, the capabilities of the turbulence model to evaluate the aerodynamic forces acting on static bluff bodies are assessed. Then, the static and dynamic aerodynamic coefficients of the Great Belt East Bridge cross-section are evaluated, and the performances of three widely used turbulence models are compared. Aiming at providing a well-defined modus operandi useful for structural engineers who approach computational flutter derivatives estimation, much attention is devoted to detail the setting of the numerical analyses as well as the interpretation of the results and the comparison to wind tunnel data.},
+  langid = {english},
+  file = {C:\Users\aakas\Zotero\storage\4CUNYFAA\Brusiani et al. - 2013 - On the evaluation of bridge deck flutter derivatives using RANS turbulence models.pdf}
+}
+
+@mastersthesis{Andi2022,
+  title  = {Evaluation of Bridge Deck Flutter Derivatives Using FEM Simulations and the k-omega SST URANS Turbulence Model},
+  school = {TUM},
+  year   = {2022},
+  type   = {Master thesis}
+}
 
 %benchmark
 @article{diana2020,
@@ -462,7 +502,7 @@ journal = {Wind and Structures An International Journal},
 doi = {10.12989/was.2018.27.6.381}
 }
 
-@article{2025,
+@article{Su2025,
   title = {Flow-Induced {{Flutter Derivatives}} of {{Bridge Decks}}},
   year = 2025,
   month = apr,
@@ -479,8 +519,8 @@ doi = {10.12989/was.2018.27.6.381}
 
 
 %%Softwares
-@software{Martínez-López_2023,
-  author       = {Surname, Givenname and others},
+@software{Kratos,
+  author       = {Kratos Multiphysics},
   title        = {Kratos Multiphysics, Release 10.1},
   month        = {sep},
   year         = {2023},
@@ -581,6 +621,21 @@ doi = {10.12989/was.2018.27.6.381}
   isbn      = {0471121576},
 }
 
+@inbook{SimiuYeo2019Ch20,
+  author    = {Simiu, Emil and Yeo, DongHun},
+  title     = {Galloping and Torsional Divergence},
+  chapter   = {20},
+  pages     = {297--304},
+  booktitle = {Wind Effects on Structures: Modern Structural Design for Wind},
+  publisher = {John Wiley \& Sons, Ltd},
+  year      = {2019},
+  doi       = {10.1002/9781119375890.ch20},
+  url       = {https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119375890.ch20},
+  isbn      = {9781119375890},
+  keywords  = {aeroelastic behavior, airfoils, bridge decks, galloping, lateral buckling, torsional divergence},
+  note      = {Chapter 20}
+}
+
 %Course
 
 @misc{Ranjan2024ACFD,
@@ -598,6 +653,24 @@ doi = {10.12989/was.2018.27.6.381}
   journal = {Structural Dynamics},
   langid = {english},
   file = {C:\Users\aakas\Zotero\storage\8V5HH8KN\2024 - Structural Dynamicssummer term 2024.pdf}
+}
+
+@standard{EN1991-1-4,
+  title        = {Eurocode 1: Actions on structures -- Part 1-4: General actions -- Wind actions},
+  organization  = {European Committee for Standardization (CEN)},
+  number        = {EN 1991-1-4:2005},
+  year         = {2005},
+  address      = {Brussels},
+  note         = {Adopted as a European Standard; use the relevant National Annex where applicable}
+}
+
+@book{seshu2003,
+author = {Seshu, P.},
+title = {Textbook of Finite Element Analysis},
+publisher = {PHI Learning Pvt. Ltd.},
+address = {New Delhi},
+year = {2003},
+isbn = {978-81-203-2315-5}
 }
 
 

@@ -70,7 +70,7 @@ are described below.\\
 Within each superposition scheme, 
 the lowest frequency (corresponding to the highest reduced velocity) is 
 chosen first, with all other frequencies in the scheme selected relative to it.
-The lowest frequency may be chosen independently, but one important condition must be satisfied: its frequency bin spacing 
+The lowest frequency may be chosen independently, but one important condition must be satisfied. Its frequency bin spacing 
 must be a definite number, so that the dependent frequencies fall exactly on the frequency bins.
 To illustrate, if the lowest frequency is set to $0.133\dots$~Hz, the resulting frequency bins would be $0.133\dots$~Hz, $0.266\dots$~Hz, $0.40$~Hz, 
 and so forth (determined by multiplying by integer values).
@@ -131,7 +131,7 @@ Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3
 \end{table}
 
 % \textbf{Note:} The amplitude is identical for all frequencies;
-therefore, within each superposition, 
+Therefore, within each superposition, 
 % only the frequencies are listed and may be matched against the table above.
 The schemes are structured as follows:
 
@@ -398,10 +398,10 @@ underlying the Fourier transformation, the resulting errors are negligible.\\
 In this section, the errors are quantified.
 Since the source of error lies in the aerodynamic forces, 
 moments, and phases (structural properties are assumed to be known), the error analysis is performed 
-on the forces and phases.\\
+on the amplitude and phase of the forces with respect to the imposed motion.\\
 
 Figure~\ref{fig: Amplitude_Errors} shows the lift force and moment magnitude error as a function of reduced velocity for each superposition scheme.
-For heave motion (solid lines), the errors at higher reduced velocities are negligible (see Tables in Appendix~\ref{app:amp_phase_errors} for values).
+For heave motion (solid lines), the errors at higher reduced velocities are negligible.
 Below the reduced velocity of 6.83, the error rises to up to 40\% for Superposition Scheme~4.
 The reason for this behavior is investigated further in Section~\ref{sec:MF1_FreqDomain}.
 For pitch motion, slight errors are present at higher reduced velocities, which is consistent with the single frequency simulations
@@ -513,7 +513,7 @@ cross-section.\\
 From Figures~\ref{fig:Frequency_Domain_Analysis_Heave_MF1} and~\ref{fig:Frequency_Domain_Analysis_Pitch_MF1},
 the frequency spectra for the 4th superposition schemes are without spurious frequencies, showing only the static 
 component, the forced-motion response components, and the vortex shedding component.
-This is observed for the other 2 superposition schemes as well, which can be verified from Appendix~\ref{fig:app:Frequency_Domain_Analysis_Heave_MF1}.\\
+This is observed for the other 2 superposition schemes as well.\\
 This strengthens the argument from previous sections: provided the total amplitude remains below the 
 linearity limit, no higher-order harmonic terms appear in the aerodynamic response.\\
 
@@ -579,7 +579,15 @@ This effect is less significant for pitch motion because the ratio of
 aerodynamic lift force between the two extreme reduced velocities within a superposition scheme group is  
 smaller in pitch than in heave.
 Numerically, this ratio is 28.32 for the heave lift force and 3.186 for the pitch lift force.
-This is the reason that the effect does not cause significant error in the pitch case.\\
+This is the reason that the effect does not cause significant error in the pitch case. 
+
+This effect can be reduced by ensuring that the amplitudes of the aerodynamic forces at the different frequencies in 
+the superposition are of comparable magnitude. Since the resulting aerodynamic force is dependent on the prescribed motion 
+amplitude, the amplitude parameters can be adjusted accordingly by using a smaller amplitude at lower reduced velocities 
+and a larger amplitude at higher reduced velocities. However, the exact ratio between these amplitudes is not known in advance, 
+as the aerodynamic forces are known only after the CFD simulations. Therefore, a similar ratio from the present study 
+can be adopted as a reference, but it should be used with caution and carefully verified after performing the CFD simulations 
+to ensure the ratio does not become excessively large. \\
 
 \begin{figure}[htbp]
     \centering
@@ -623,7 +631,7 @@ velocity range, and these errors are directly reflected in the predicted critica
 \end{figure}
 
 % ============================================================
-\section{Multi-Frequency Simulations 2}
+\section{Multi-Frequency Simulations II}
 % ============================================================
 
 In this section, the multi-frequency method is applied by keeping only individual prescribed motion
@@ -697,7 +705,7 @@ The phase errors for pitch motion are approximately 0.2~radians, which is becaus
 From the spectral analysis for heave motion
 (Figure~\ref{fig:Frequency_Domain_Analysis_Heave_MF2}), higher-order harmonic terms begin to
 appear as the number of superposed frequencies increases, although they are not substantial.
-These higher-order terms are the primary cause of the significant variation errors in the $H_4^*$ and $A_4^*$ derivatives.\\
+These higher-order terms are the primary cause of the significant variation errors in the $H_4^*$ and $A_4^*$ derivatives and a clear sign of nonlinearity.\\
 
 \begin{figure}[htbp]  
     \centering   
@@ -762,13 +770,13 @@ and~\ref{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}.\\
         \caption{Critical flutter wind speed versus number of superposed frequencies for Campaign 2}
         \label{fig:CriticalVelocity_Vs_Number_of_Superpositions_MF2}
     \end{minipage}
-    \hfill
-    \begin{minipage}{0.48\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png}
-        \caption{Reduced critical flutter velocity versus number of superposed frequencies for Campaign 2}
-        \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}
-    \end{minipage}
+    % \hfill
+    % \begin{minipage}{0.48\textwidth}
+    %     \centering
+    %     \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png}
+    %     \caption{Reduced critical flutter velocity versus number of superposed frequencies for Campaign 2}
+    %     \label{fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2}
+    % \end{minipage}
 \end{figure}
 
 % ------------------------------------------------------------
@@ -839,7 +847,7 @@ motion cases.
 \section{Framework for Multi-Frequency Simulations}
 % ============================================================
 
-Based on the results obtained above, the following framework is proposed for conducting multi-frequency simulations.
+Based on the results obtained above, the following general guidelines are proposed for conducting multi-frequency simulations.
 
 \begin{enumerate}
     \item \textbf{Determine the number of superpositions.} The recommended number is 3 or 4. Based on the 
@@ -850,7 +858,7 @@ Based on the results obtained above, the following framework is proposed for con
           which can significantly affect the identified critical velocity.
           The limitation governing the maximum 
           number of superpositions is governed by the relative aerodynamic forces between frequency components 
-          within a superposition.
+          within a superposition and this shall be overcome by using different prescribed motion amplitudes to maintain constant aerodynamic force accross the frequencies.
           Also, superposing more than four frequencies does not yield a substantial reduction in 
           computational cost.
           This is because, when superposing higher frequencies (lower reduced velocities), 
@@ -885,7 +893,7 @@ Based on the results obtained above, the following framework is proposed for con
           affect the extracted amplitude and phase at that frequency.
 
     \item \textbf{Select amplitudes.} Amplitudes must be selected such that the total amplitude (sum across all frequencies in a superposition) 
-          remains below a heave ratio of 5\% and a pitch angle of 3°.
+          remains below, for heave 5\% of the bridge deck width and for pitch, an angle of 3°.
 
     \item \textbf{Post-processing and verification:} Apply the Discrete Fourier Transform (DFT) to the 
           aerodynamic forces and moments for the extraction of individual frequency components.

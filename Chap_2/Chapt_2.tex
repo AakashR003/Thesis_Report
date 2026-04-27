@@ -120,7 +120,7 @@ This response of the structure due to these loads can be seen in Figure \ref{fig
 Buffeting is a primary example of extraneously induced excitation, which acts as an along-wind response caused by wind 
 turbulence. As shown in \ref{fig:wind_velocity_variation}, the mean of the wind velocity (acting on the structure) over time represents the 
 static component, while the variance corresponds to the buffeting component. The calculation of the buffeting component 
-is given in EN 1991-1-4. \\
+is given in EN 1991-1-4 \cite{EN1991-1-4}. \\
 
 \begin{figure}[htbp]
     \centering
@@ -165,7 +165,7 @@ this instability is static in nature. Torsional divergence can be observed in th
 Instability indicates a loss in any one of the structural parameters such as stiffness or damping due to the interaction with wind. In torsional
 divergence, the stiffness of the structure is lost due to the interaction with wind. This is analogous to structural stability failure like buckling. 
 In buckling, stiffness is lost due to the second-order effect, and in this case it is due to fluid-structure interaction (FSI). Also, similar to buckling, the failure due to
-this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{scanlan}. \\
+this phenomenon depends on the flexibility of the structure rather than the ultimate strength~\cite{SimiuScanlan1996}. \\
 
 In flutter, the loss is in damping. Since flutter is the focus of this thesis, the following sections focus on discussing the mathematical formulations for quantifying this loss.
 Before discussing flutter, galloping is discussed first. This is done because galloping is a similar phenomenon to flutter with less complexity 
@@ -184,7 +184,7 @@ But a rectangular section undergoes galloping as the lift force changes with ang
 
 Next, the analytical formulation for galloping is derived. This formulation is based on the assumption that the instantaneous excitation 
 force acting on the moving structure is nearly equivalent to the static force calculated considering the change in angle of attack due to the 
-velocity of the structure. This means there is no phase difference between applied force and structural velocity. 
+velocity of the structure \cite{NaudascherRockwell1994}. This means there is no phase difference between applied force and structural velocity. 
 
 For the system shown in Figure~\ref{fig:galloping}(a), the net vertical force acting on the structure is
 
@@ -249,6 +249,8 @@ Hence, the critical wind speed for galloping is obtained by setting the effectiv
 V_{\mathrm{crit}} = \frac{2c}{\left.\frac{\mathrm{d}C_y}{\mathrm{d}\alpha}\right|_{\alpha=0}\rho\,d}
 \end{equation}
 
+This formula shall be better understood by relating to the inference that was arrived earlier. For a circle, \(\frac{\mathrm{d}C_y}{\mathrm{d}\alpha} = 0\), 
+which makes entire aerodynamic terms as zero \cite{SimiuYeo2019Ch20}. 
 To determine whether a structure will undergo galloping, CFD simulations are conducted without fluid-structure interaction (FSI) at various angles of attack. 
 The lift and drag coefficients are extracted from these simulations. Subsequently, the slope of the aerodynamic force function at zero angle of attack is 
 determined and substituted into the critical galloping equation presented above. This approach enables analysis of structural response subjected to unsteady forces using 
@@ -278,7 +280,8 @@ created. This can lead to a rapid increase in the amplitude of oscillations, whi
 
 This is illustrated in Figure \ref{fig:flutter_2}. In the Figure \ref{fig:flutter_mechanism_stable}, it can be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the Figure \ref{fig:flutter_mechanism_unstable}, the phase between the vertical and pitch motion is such that 
-positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable. \\
+positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable. 
+One can refer to the work of Billah.K and et.al, where a detailed discussion on above mentioned concepts in the context of failure of Tacoma Narrows Bridge is presented \cite{billah1991}\\
 
 \begin{figure}[htbp]
     \centering

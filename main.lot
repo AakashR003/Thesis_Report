@@ -7,11 +7,11 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces FFT amplitude detection results for a multi-frequency bin-matched signal with added white noise.}}{24}{table.caption.20}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces FFT amplitude detection results for a multi-frequency signal with one non-bin-matched component at 1.05~Hz.}}{25}{table.caption.22}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Bounding box coordinates used in the CFD domain}}{31}{table.caption.26}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Bounding box coordinates used in the CFD domain}}{30}{table.caption.26}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Mesh Convergence Study Results}}{34}{table.caption.31}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Heave and pitch amplitude}}{37}{table.caption.35}%
 \contentsline {table}{\numberline {4.4}{\ignorespaces Reduced velocities}}{37}{table.caption.36}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Structural parameters of bridge samples used for critical velocity analysis}}{45}{table.caption.44}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Structural parameters of bridge samples used for critical velocity analysis}}{44}{table.caption.44}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Frequency Parameters for Multi-Frequency Simulations}}{48}{table.caption.46}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Frequencies and Amplitude Parameters for Multi-Frequency Campaign~1 - Superposition Scheme~1}}{49}{table.caption.47}%

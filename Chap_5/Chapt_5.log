@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  26 APR 2026 04:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 04:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,7 +646,7 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
-))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux)
+))) (Chapt_5.aux)
 \openout1 = `Chapt_5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -713,7 +713,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 7.
-(d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out)
+(Chapt_5.out) (Chapt_5.out)
 \@outlinefile=\write4
 \openout4 = `Chapt_5.out'.
 
@@ -915,9 +915,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--402
  []
 
 
-LaTeX Warning: Reference `app:amp_phase_errors' on page 10 undefined on input line 404.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 403--409
 
  []
@@ -969,9 +966,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--512
  []
 
 
-LaTeX Warning: Reference `fig:app:Frequency_Domain_Analysis_Heave_MF1' on page 12 undefined on input line 516.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 513--519
 
  []
@@ -1001,49 +995,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--577
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--583
+Underfull \hbox (badness 10000) in paragraph at lines 584--591
 
  []
 
+[13]
 File: Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png>
-[13]
-
-LaTeX Warning: Reference `tab:bridge_configs' on page 14 undefined on input line 596.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--597
-
- []
+LaTeX Warning: Reference `tab:bridge_configs' on page 14 undefined on input line 604.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--601
+Underfull \hbox (badness 10000) in paragraph at lines 602--605
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--607
+Underfull \hbox (badness 10000) in paragraph at lines 606--609
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--615
+
+ []
+
+[14]
 File: Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superpositions.png>
 File: Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png>
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 637--640
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--648
 
  []
 
 File: Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--673
+Underfull \hbox (badness 10000) in paragraph at lines 674--681
 
  []
 
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 676--680
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 684--688
 
  []
 
@@ -1052,17 +1048,17 @@ File: Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png Graphic file 
 File: Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 697--701
+Underfull \hbox (badness 10000) in paragraph at lines 705--709
 
  []
 
-[17]
+[18]
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png>
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--728
+Underfull \hbox (badness 10000) in paragraph at lines 730--736
 
  []
 
@@ -1071,25 +1067,21 @@ File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_LiftFor
 File: Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--756
+LaTeX Warning: Reference `fig:ReducedVelocity_Vs_Number_of_Superpositions_MF2' on page 19 undefined on input line 763.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--764
 
  []
 
 File: Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
 <Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png>
-File: Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
-<Figures/MultiFrequency_Study_2/ReducedVelocity_vs_Number_of_Superpositions.png>
-[18] [19]
+[19] [20]
 File: Figures/Simulation_Time_1.png Graphic file (type bmp)
 <Figures/Simulation_Time_1.png>
 File: Figures/Simulation_Time_2.png Graphic file (type bmp)
 <Figures/Simulation_Time_2.png>
-
-Overfull \hbox (0.6042pt too wide) in paragraph at lines 842--843
-\TU/TimesNewRoman(0)/m/n/10.95 Based on the results obtained above, the following framework is proposed for conducting multi-frequency
- []
-
-[20] [21] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux)
+ [21] [22] (Chapt_5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1099,15 +1091,15 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Chapt_5.out' has not changed.
-(rerunfilecheck)             Checksum: 95A15F92FF4F5B0213D208FC18ADCBE7;4108.
+(rerunfilecheck)             Checksum: DDCC13BEB91CB72AF35E91917CF6E7D5;4113.
  ) 
 Here is how much of TeX's memory you used:
- 26572 strings out of 411570
- 549583 string characters out of 5806423
+ 26561 strings out of 411570
+ 548434 string characters out of 5806423
  1947191 words of memory out of 5000000
- 48101 multiletter control sequences out of 15000+600000
+ 48091 multiletter control sequences out of 15000+600000
  563269 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,9n,110p,532b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.xdv (21 pages, 355244 bytes).
+Output written on Chapt_5.xdv (22 pages, 363744 bytes).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  26 APR 2026 04:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  26 APR 2026 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,7 +646,7 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
-))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
+))) (Chapt_2.aux)
 \openout1 = `Chapt_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -713,7 +713,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 7.
-(d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.out)
+(Chapt_2.out) (Chapt_2.out)
 \@outlinefile=\write4
 \openout4 = `Chapt_2.out'.
 
@@ -864,6 +864,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--119
  []
 
 
+LaTeX Warning: Citation `EN1991-1-4' on page 3 undefined on input line 123.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
@@ -895,7 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--159
  []
 
 
-LaTeX Warning: Citation `scanlan' on page 4 undefined on input line 168.
+LaTeX Warning: Citation `SimiuScanlan1996' on page 4 undefined on input line 168.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 160--169
@@ -907,18 +910,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--173
 
  []
 
-[4] [5]
+[4]
+
+LaTeX Warning: Citation `NaudascherRockwell1994' on page 5 undefined on input line 187.
+
+[5]
+
+LaTeX Warning: Citation `SimiuYeo2019Ch20' on page 6 undefined on input line 253.
+
 File: Figures/Galloping_2.png Graphic file (type bmp)
 <Figures/Galloping_2.png>
 
-
-LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 260.
-
-
-LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 260.
+LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 262.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--271
+LaTeX Warning: Citation `NaudascherRockwell1994' on page 6 undefined on input line 262.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--273
 
  []
 
@@ -926,7 +935,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--271
 File: Figures/Flutter_1.png Graphic file (type bmp)
 <Figures/Flutter_1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--282
+
+LaTeX Warning: Citation `billah1991' on page 7 undefined on input line 284.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
 
  []
 
@@ -937,34 +950,35 @@ File: Figures/Flutter_2_1_2.png Graphic file (type bmp)
 File: Figures/Flutter_2_1_3.png Graphic file (type bmp)
 <Figures/Flutter_2_1_3.png>
 
-LaTeX Warning: Citation `pentek' on page 7 undefined on input line 304.
+LaTeX Warning: Citation `pentek' on page 7 undefined on input line 307.
 
 
-LaTeX Warning: Citation `pentek' on page 7 undefined on input line 304.
+LaTeX Warning: Citation `pentek' on page 7 undefined on input line 307.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--312
-
- []
-
-
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 7 undefined on input line 324.
-
-
-LaTeX Warning: Citation `scanlan1971' on page 7 undefined on input line 331.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--332
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 343--351
+
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 8 undefined on input line 327.
+
+
+LaTeX Warning: Citation `scanlan1971' on page 8 undefined on input line 334.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--362
+Underfull \hbox (badness 10000) in paragraph at lines 346--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--365
 
  []
 
@@ -974,12 +988,12 @@ File: Figures/Single_Frequency.png Graphic file (type bmp)
 File: Figures/MultiFrequency_Explanation.png Graphic file (type bmp)
 <Figures/MultiFrequency_Explanation.png>
  [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 544--552
+Underfull \hbox (badness 10000) in paragraph at lines 547--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--572
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
 
  []
 
@@ -989,24 +1003,24 @@ File: Figures/Flutter_Decay_Solution_Plot.png Graphic file (type bmp)
 File: Figures/Flutter_Growth_Solution_Plot.png Graphic file (type bmp)
 <Figures/Flutter_Growth_Solution_Plot.png>
 
-Overfull \hbox (3.50847pt too wide) in paragraph at lines 607--609
+Overfull \hbox (3.50847pt too wide) in paragraph at lines 610--612
 []\TU/TimesNewRoman(0)/m/n/10.95 Flutter derivatives corresponding to that reduced velocity are interpolated from the flutter-derivative
  []
 
 
-LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 625.
+LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 628.
 
 
-LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 626.
+LaTeX Warning: Citation `diana2020' on page 13 undefined on input line 629.
 
 
-LaTeX Warning: Citation `TheodorsenGarrick1934' on page 13 undefined on input line 649.
+LaTeX Warning: Citation `TheodorsenGarrick1934' on page 13 undefined on input line 652.
 
 
-LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 13 undefined on input line 653.
+LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 13 undefined on input line 656.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--654
+Underfull \hbox (badness 10000) in paragraph at lines 649--657
 
  []
 
@@ -1014,9 +1028,9 @@ File: Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png Graphic file (t
 <Figures/Validation/Eigen_Frequency_Vs_Reduced_Velocity.png>
 [13] [14]
 
-LaTeX Warning: Citation `diana2020' on page 15 undefined on input line 719.
+LaTeX Warning: Citation `diana2020' on page 15 undefined on input line 722.
 
-[15] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.aux)
+[15] (Chapt_2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1029,12 +1043,12 @@ Package rerunfilecheck Info: File `Chapt_2.out' has not changed.
 (rerunfilecheck)             Checksum: 817C7DD1263ED09DF0E4955420896E66;1589.
  ) 
 Here is how much of TeX's memory you used:
- 26520 strings out of 411570
- 532711 string characters out of 5806423
+ 26519 strings out of 411570
+ 532305 string characters out of 5806423
  1943191 words of memory out of 5000000
  48057 multiletter control sequences out of 15000+600000
  564992 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,23n,110p,532b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_2\Chapt_2.xdv (15 pages, 292228 bytes).
+Output written on Chapt_2.xdv (15 pages, 295756 bytes).

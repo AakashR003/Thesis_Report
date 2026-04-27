@@ -1,16 +1,16 @@
-PWD d:\1.TUM courses\Masters Thesis\Report_Latex
+PWD d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.tex
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.log
+OUTPUT Chapt_5.log
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -274,27 +274,27 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux
+INPUT .\Chapt_5.aux
+INPUT .\Chapt_5.aux
+INPUT Chapt_5.aux
+OUTPUT Chapt_5.aux
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
+INPUT .\Chapt_5.out
+INPUT .\Chapt_5.out
+INPUT Chapt_5.out
+INPUT Chapt_5.out
+INPUT .\Chapt_5.out
+INPUT .\Chapt_5.out
+OUTPUT Chapt_5.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.xdv
+OUTPUT Chapt_5.xdv
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
@@ -319,96 +319,93 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\MultiFrequency_Study_2\ReducedVelocity_vs_Number_of_Superpositions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_1.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Figures\Simulation_Time_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_5\Chapt_5.out
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Individual_Component_ForcedMotion.PNG
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\2_Superimposed_ForcedMotion.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Computed_Aerodynamic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Procedure_Explanation\3_Individual_Harmonic_Lift_Force.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Superpositions_RelativeToFirst.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Heave\PhaseLiftForce_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Compressed_Displacement_Vs_Force\Pitch\PhaseMoment_Error_vs_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
+INPUT .\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
+INPUT .\Figures\MultiFrequency_Study_1\Heave_Pitch_Amplitude_Plots.png
+INPUT .\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_1\ReducedVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Flutter_Derivative.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Amplitude_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Combined_Phase_Errors.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Heave\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\Frequency_Domain_Analysis\Pitch\DFT_Moment_Superposition_Scheme_4.png
+INPUT .\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\MultiFrequency_Study_2\CriticalVelocity_vs_Number_of_Superpositions.png
+INPUT .\Figures\Simulation_Time_1.png
+INPUT .\Figures\Simulation_Time_1.png
+INPUT .\Figures\Simulation_Time_1.png
+INPUT .\Figures\Simulation_Time_2.png
+INPUT .\Figures\Simulation_Time_2.png
+INPUT .\Figures\Simulation_Time_2.png
+INPUT Chapt_5.aux
+INPUT .\Chapt_5.out
+INPUT .\Chapt_5.out
