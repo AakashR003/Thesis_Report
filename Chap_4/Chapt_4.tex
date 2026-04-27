@@ -134,7 +134,7 @@ GiD is an adaptive, unified pre- and post-processing tool for
 numerical simulations in science and engineering, developed and maintained by the International Center for Numerical Methods in 
 Engineering (CIMNE). \\
 
-The bridge cross-section used in this thesis is adopted from Sarkic \cite{sarkic2012} ( 
+The bridge cross-section used in this thesis is adopted from \v{S}arki\'c \cite{sarkic2012} ( 
 Figure~\ref{fig:Sarkic_Section}). This cross-section was selected because the reference paper presents a validation of 
 flutter derivatives derived from wind tunnel experiments against CFD modelling. Hence, these results shall be utilized 
 for validating the results from the CFD of the present thesis. 
@@ -212,7 +212,7 @@ artificially maintain it, introducing spurious effects rather than representing 
 \begin{figure}[htbp]  
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/Mesh_Convergence_Study/Sarkic_Section.png}
-    \caption{Sarkic bridge deck cross-section (dimensions in mm)}
+    \caption{\v{S}arki\'c bridge deck cross-section (dimensions in mm)}
     \label{fig:Sarkic_Section}
 \end{figure}
 
@@ -232,7 +232,7 @@ for the same reason. Since no fluid-structure interaction is modelled, they are 
 
 The URANS equations with the $k$-$\omega$ SST turbulence model are used, with a turbulence intensity of 0.1 and a 
 turbulent mixing length of 0.0588~m. The inlet velocity is set to 1 m/s, and the corresponding Reynolds number for the 
-flow is $2.43 \times 10^4$. This velocity does not match with the velocity of reference [\cite{sarkic2012}] because, for flutter it shall be chosen independently. 
+flow is $2.43 \times 10^4$. This velocity does not match with the velocity of reference [\cite{\v{S}arki\'c2012}] because, for flutter it shall be chosen independently. 
 For flutter only the reduced velocities is important, which can be altered by modyfying the bridge's oscillating frequency. 
 Then time step must be chosen. It is calculated based on the CFL number 
 (CFL $= \frac{u \Delta t}{\Delta x}$, where $u$ is the velocity, $\Delta t$ the time step, and $\Delta x$ the mesh size). 
@@ -394,7 +394,7 @@ the prescribed motion, but the phase shift can be varry. Therefore, it becomes e
 linearity limit to ensure the Multi-Frequency method is valid and to create a framework for this method.\\
 
 This section focuses on validating the assumption and extending the knowledge of the nonlinearity characteristics 
-of Sarkic's section. Although investigating the nonlinearity characteristics of a particular cross-section may make 
+of \v{S}arki\'c's section. Although investigating the nonlinearity characteristics of a particular cross-section may make 
 the developed framework specific to that cross-section, this is done so that any unexpected discrepancies 
 in the results of the Multi-Frequency method can be reasonably explained. These inferences from the nonlinearity study are then generalised 
 when framing the procedure for the Multi-Frequency method.\\
@@ -916,6 +916,6 @@ Scanlan's assumptions and the principle of superposition
 are not equivalent and may differ; this discrepancy is observed for pitch motion. Therefore, when 
 validating the Multi-Frequency method, it is not necessary to obtain accurate derivatives for $A_2^*$ and $H_2^*$. Although 
 the nonlinearity in $A_2^*$ and $H_2^*$ has been established in multiple research papers, the finding from this investigation is that 
-the present model exhibits nonlinearity at a considerably lower pitch degree for Sarkic's cross-section.
+the present model exhibits nonlinearity at a considerably lower pitch degree for \v{S}arki\'c's cross-section.
 
 \end{document}
