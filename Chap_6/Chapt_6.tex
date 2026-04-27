@@ -1,6 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  Author: Aakash Ravichandran %%%%
+%%%%  Description: Conclusions and outlook for future work
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[../main]{subfiles}
 \begin{document}
+
 \chapter{Conclusion and Outlook}
+\label{cha:conclusion}
 
 \section{Conclusion}
 This thesis presents a comprehensive investigation into the efficient identification of 
@@ -8,11 +15,9 @@ flutter derivatives using multi-frequency forced-motion simulations with computa
 dynamics (CFD). The primary objective was to validate and optimize the multi-frequency method 
 for flutter derivative identification, addressing key questions regarding its accuracy, efficiency, 
 and limitations compared to the traditional single-frequency approach. The objectives were 
-achieved by investigating two base principles of multi-frequency method and creating framework based on this. 
+achieved by investigating two base principles of multi-frequency method and developing general guidelines to use this approach. 
 First, examing the mathematical tool used for transformation. Secondly, investigation of validity of 
-principle of superposition for aerodynamic forces and moments. \\ 
-% - URANS
-
+principle of superposition for aerodynamic forces and moments. 
 A signal analysis was performed using python SciPy's FFT module. The study demonstrated that frequency 
 bin alignment is critical for accurate amplitude identification, with errors up to 34.70$\%$ 
 for non-matching bins (Spectral leakage). Noise effects were shown to be minimal (0.04$\%$ error) compared 
@@ -20,37 +25,40 @@ to leakage, emphasizing the need for precise frequency selection in multi-freque
 simulations. As spectral leakage showed spatial decay, with multifrequency method, 
 it is difficult to identify aerodynamic forces at intermediate timesteps. Accuracy of FFT is independent of number of 
 superpositions, suggesting any error in identification of flutter derivative with multi-frequency method
-is not because of FFT (if frequency bins are matched). \\
-
-Next, Nonlinearity characteristics of the Sarkic cross-section is studied to validate the principle of superposition 
+is not because of FFT (if frequency bins are matched). 
+Next, Nonlinearity characteristics of the \v{S}arki\'c cross-section is studied to validate the principle of superposition 
 assumptions underlying the multi-frequency method. 
 Results of 112 simulations by varying heave (0.68$\%$ to 8.20$\%$ of deck width) and pitch (1° to 8°) amplitudes revealed 
 that flutter derivatives remain linear up to 5.46$\%$ heave and 3° pitch for most cases, with 
 A2 and H2 showing deviations due to phase changes rather than force nonlinearity due to higher order terms. 
 Spectral analysis confirmed clean spectra up to 5° pitch, validating Scanlan's linearity assumption. 
-But principle of linear superposition is not valid to a greater extent for pitch above 1.55°.\\
-
+But principle of linear superposition is not valid to a greater extent for pitch above 1.55°. 
 Building on these insights, Chapter 5 conducted multi-frequency analysis with two campaigns: 
 one limiting the sum of amplitudes below nonlinearity thresholds and another constraining individual 
 amplitudes. Eight frequencies (0.125 Hz to 3.2 Hz) were organized into four superposition schemes (1 to 4 frequencies). 
 Results showed that increasing superpositions improves efficiency without compromising accuracy. 
 But the efficiency is limited by relative amplitudes of superposition combinations and relative time saving. 
 The multi-frequency method shows high reliability and time saving for higher reduced velocities and vise-versa 
-for lower reduced velocities. The proposed framework with frequency bin alignment and amplitude thresholds produces reliable 
+for lower reduced velocities. The proposed guidelines with frequency bin alignment and amplitude thresholds produces reliable 
 multi-frequency simulations, reducing computational cost by up to 65 percentage compared to single-frequency methods. \\
 
 \section{Outlook}
 
-In developing the framework for the multi-frequency simulation method, this thesis presents two key inferences. 
-The first concerns the linearity characteristics of the Sarkic cross-section, derived from single-frequency simulations. 
+In developing the general guidelines for the multi-frequency simulation method, this thesis presents two key inferences. 
+The first concerns the linearity characteristics of the \v{S}arki\'c cross-section, derived from single-frequency simulations. 
 The second relates to the limits of the superposition scheme, identified through the ratio of aerodynamic forces. 
 The former is influenced by the turbulence model employed, while the latter depends on turbulence modelling also on 
-the specific cross-section geometry.
+the specific cross-section geometry and amplitude combinations used.
 
 Since this investigation used only one cross-section shape and relies exclusively on URANS with the 
 $k$--$\omega$ SST turbulence model, the generality of these conclusions remains limited. To strengthen and validate the 
 findings, the same analyses should be repeated using alternative turbulence models and different cross-section 
 geometries. Consistent outcomes across these variations would provide a more robust basis for the conclusions drawn 
-in this thesis. This would ultimately increase the confidence on the multi-frequency method based on proposed framework.
+in this thesis. This would ultimately increase the confidence on the multi-frequency method based on proposed guidelines. \\
 
+Additionally, this thesis hypothesizes that using different prescribed motion amplitudes across frequencies within a 
+superposition and maintaining the constant aerodynamic force can mitigate the limitations of the superposition combinations. 
+This hypothesis can be further explored through simulation results. Moreover, future research could investigate techniques for 
+estimating the aerodynamic lift force ratios at different frequencies through detailed analysis and interpretation of Theodorsen's 
+circulatory function and how it can be adapted for different cross-section geometries. 
 \end{document}

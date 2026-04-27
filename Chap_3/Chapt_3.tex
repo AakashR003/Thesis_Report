@@ -1,7 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  Author: Aakash Ravichandran %%%%
+%%%%  Description: Discrete Fourier Transform, FFT analysis, spectral leakage effects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[../main]{subfiles}
 \begin{document}
 
 \chapter{Signal Analysis}
+\label{cha:signal_analysis}
 
 Signal analysis is performed in this chapter. The aim is to first provide a brief introduction
 to the Discrete Fourier Transform (DFT) in the context of its application to multi-frequency analysis
@@ -442,6 +448,33 @@ A key observation is that the magnitude of this leakage-induced error decreases 
 increasing spectral distance from the non-bin-matched frequency. This spatial decay of leakage
 is also visible in the FFT spectrum, where the spurious disturbance diminishes progressively
 at frequencies further from 1.05~Hz. This behavior denotes the importance of ensuring
-all frequency components in a multi-frequency signal fall on frequency bins.
+all frequency components in a multi-frequency signal fall on frequency bins. 
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+This chapter presented a detailed analysis of the Discrete Fourier Transform (FFT) and its limitations when applied to 
+the extraction of signals. 
+
+The study showed that when a signal frequency coincides exactly with an FFT frequency bin, the amplitude is identified without significant error, 
+both for single-frequency and multi-frequency signals. But, when a frequency component does not fall on a bin (non-bin-matched case), spectral leakage 
+introduces significant amplitude errors. In the single-frequency case, these errors can exceed 30\% depending on the relative position of the signal 
+within the bin interval. In multi-frequency signals, spectral leakage from a single non-bin-matched component 
+propagates to neighbouring frequencies, corrupting their extracted amplitudes as well and leading to overall errors.
+
+White noise was shown to have a comparatively minor influence on amplitude extraction accuracy. When frequencies are properly 
+aligned with frequency bins, confirming that spectral leakage is the dominant source of error in FFT-based multi-frequency 
+analysis. \\
+
+The frequency resolution, determined by the length of the data record ($T = N/f_s$), has an important role in reducing spectral 
+leakage. If the length of the data record is increased, the likelihood that signal frequencies fall close to a frequency bin in 
+relative terms increases, thereby reducing leakage-induced errors. However, the sensitivity of the error to the exact relative 
+position within a bin also increases with finer resolution. Hence, careful selection of simulation duration and excitation 
+frequencies is needed. \\
+
+These results show the importance of frequency selection in the multi-frequency method for flutter derivative identification. 
+While performing the multi-frequency simulations, prescribed motion frequencies should be chosen such that they coincide with 
+FFT frequency bins for the chosen data length (total simulation time steps) and sampling frequency (1/time step). \\
 
 \end{document}
