@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 15:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,7 +646,7 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
-))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
+))) (Chapt_4.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -726,7 +726,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 7.
-(d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out)
+(Chapt_4.out) (Chapt_4.out)
 \@outlinefile=\write4
 \openout4 = `Chapt_4.out'.
 
@@ -919,6 +919,11 @@ LaTeX Warning: Citation `noda2003' on page 13 undefined on input line 581.
 
 LaTeX Warning: Citation `lin2019' on page 13 undefined on input line 581.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--584
+
+ []
+
 [13]
 File: Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/Displacement_Vs_Force/Heave/Heave_LiftForce_and_Moment_vs_Amplitude.png>
@@ -938,10 +943,10 @@ File: Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/Phas
 <Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>
 
 
-LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 685.
+LaTeX Warning: Citation `noda2003' on page 14 undefined on input line 687.
 
 
-LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 685.
+LaTeX Warning: Citation `lin2019' on page 14 undefined on input line 687.
 
 [14] [15]
 File: Figures/Influence_of_Amplitude/Pitch_Study/Prescribed Displacement_marked.png Graphic file (type bmp)
@@ -956,20 +961,20 @@ File: Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_
 <Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>
 
 
-LaTeX Warning: Citation `diana2020' on page 16 undefined on input line 764.
+LaTeX Warning: Citation `diana2020' on page 16 undefined on input line 766.
 
 
-LaTeX Warning: Citation `xin2007' on page 16 undefined on input line 764.
+LaTeX Warning: Citation `xin2007' on page 16 undefined on input line 766.
 
 
-LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 16 undefined on input line 764.
+LaTeX Warning: Citation `zhan2012_Tacoma_Narrows' on page 16 undefined on input line 766.
 
 [16]
 File: Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Scheme.png>
 File: Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>
- [17] [18] (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux)
+ [17] [18] (Chapt_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -985,12 +990,12 @@ Package rerunfilecheck Info: File `Chapt_4.out' has not changed.
 (rerunfilecheck)             Checksum: 414E513FC4128574FF3897F08417225D;3340.
  ) 
 Here is how much of TeX's memory you used:
- 26655 strings out of 411570
- 552568 string characters out of 5806423
- 1941191 words of memory out of 5000000
+ 26654 strings out of 411570
+ 552162 string characters out of 5806423
+ 1940191 words of memory out of 5000000
  48161 multiletter control sequences out of 15000+600000
  565016 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,11n,110p,532b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.xdv (18 pages, 394552 bytes).
+Output written on Chapt_4.xdv (18 pages, 396324 bytes).
