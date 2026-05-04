@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 23:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  28 APR 2026 06:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,28 +876,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--266
 
 File: Figures/MultiFrequency/1_Input_Signal.png Graphic file (type bmp)
 <Figures/MultiFrequency/1_Input_Signal.png>
-
-Underfull \hbox (badness 2376) in paragraph at lines 322--322
-[]\TU/TimesNewRoman(0)/b/n/8 (a) |\TU/TimesNewRoman(0)/m/n/10 Multi-frequency input signal — all bin-
- []
-
 File: Figures/MultiFrequency/1_Spectrum.png Graphic file (type bmp)
 <Figures/MultiFrequency/1_Spectrum.png>
 [5]
 File: Figures/MultiFrequency/2_Input_Signal.png Graphic file (type bmp)
 <Figures/MultiFrequency/2_Input_Signal.png>
-
-Underfull \hbox (badness 3417) in paragraph at lines 377--377
-[]\TU/TimesNewRoman(0)/b/n/8 (a) |\TU/TimesNewRoman(0)/m/n/10 Multi-frequency input signal with white
- []
-
 File: Figures/MultiFrequency/2_Spectrum.png Graphic file (type bmp)
 <Figures/MultiFrequency/2_Spectrum.png>
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 402--406
 
  []
 
+[6]
 File: Figures/MultiFrequency/3_Input_Signal.png Graphic file (type bmp)
 <Figures/MultiFrequency/3_Input_Signal.png>
 File: Figures/MultiFrequency/3_Spectrum.png Graphic file (type bmp)
@@ -943,4 +934,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  104i,9n,110p,532b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.xdv (8 pages, 174208 bytes).
+Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.xdv (8 pages, 170164 bytes).

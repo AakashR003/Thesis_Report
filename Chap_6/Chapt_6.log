@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  27 APR 2026 04:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  28 APR 2026 05:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../main'
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (d:\1.TUM courses\Masters Thesis\Report_Latex\main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+) (../main.tex (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -646,6 +646,10 @@ File: ppxetex.def 2026/03/30 v0.6h Pdfpages driver for XeTeX (AM)
 \AM@lof@heading=\toks43
 \c@AM@survey=\count339
 \AM@templatesizebox=\box74
+) (C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
 ))) (d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_6\Chapt_6.aux)
 \openout1 = `Chapt_6.aux'.
 
@@ -682,19 +686,19 @@ LaTeX Font Info:    ... okay on input line 7.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* h-part:(L,W,R)=(113.81102pt, 423.94608pt, 59.75078pt)
+* v-part:(T,H,B)=(73.40811pt, 701.0759pt, 70.56284pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \textwidth=423.94608pt
+* \textheight=701.0759pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-21.86188pt
+* \headheight=13.0pt
+* \headsep=10.0pt
 * \topskip=11.0pt
-* \footskip=30.0pt
+* \footskip=33.2897pt
 * \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -795,6 +799,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--44
 
  []
 
+
+Overfull \hbox (1.6611pt too wide) in paragraph at lines 47--52
+\TU/TimesNewRoman(0)/m/n/10.95 In developing the general guidelines for the multi-frequency simulation method, this thesis presents
+ []
+
 [1
 
 
@@ -812,12 +821,12 @@ Package rerunfilecheck Info: File `Chapt_6.out' has not changed.
 (rerunfilecheck)             Checksum: 058625BA7DC5647C47F1E1D87F731E5C;352.
  ) 
 Here is how much of TeX's memory you used:
- 26191 strings out of 411570
- 522959 string characters out of 5806423
- 1937191 words of memory out of 5000000
- 47755 multiletter control sequences out of 15000+600000
+ 26209 strings out of 411570
+ 523395 string characters out of 5806423
+ 1936191 words of memory out of 5000000
+ 47770 multiletter control sequences out of 15000+600000
  563229 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,5n,110p,532b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_6\Chapt_6.xdv (2 pages, 49676 bytes).
+Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_6\Chapt_6.xdv (2 pages, 49704 bytes).

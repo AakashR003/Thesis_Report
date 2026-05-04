@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  28 APR 2026 00:24
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  28 APR 2026 06:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -742,9 +742,6 @@ LaTeX Warning: Label `fig:MF-I_Compiled_Pitch_PhaseMoment_Error_vs_Superposition
 LaTeX Warning: Label `sub@fig:MF-I_Compiled_Pitch_PhaseMoment_Error_vs_Superpositions' multiply defined.
 
 
-LaTeX Warning: Label `fig:MF-I_Compiled_Displacement_Vs_Force' multiply defined.
-
-
 LaTeX Warning: Label `fig:Heave_DFT_Fy_amplitude_case_6' multiply defined.
 
 
@@ -1088,7 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--37
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
@@ -1100,32 +1097,32 @@ File: Chap_2/Figures/Atmospheric_Boundary_Layer.png Graphic file (type bmp)
 File: Chap_2/Figures/Wind_speed_vs_time_1.png Graphic file (type bmp)
 <Chap_2/Figures/Wind_speed_vs_time_1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--98
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--112
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 114--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
 
@@ -1134,37 +1131,37 @@ File: Chap_2/Figures/Vander_Hoven_Spectrum.png Graphic file (type bmp)
 File: Chap_2/Figures/Wind_speed_vs_response_abbas.png Graphic file (type bmp)
 <Chap_2/Figures/Wind_speed_vs_response_abbas.png>
 
-Overfull \hbox (9.47154pt too wide) in paragraph at lines 141--151
+Overfull \hbox (9.47154pt too wide) in paragraph at lines 142--152
 []\TU/TimesNewRoman(0)/m/n/10.95 Next are instability-induced excitations. Vortex-induced vibration (VIV) is an example of instability-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--151
+Underfull \hbox (badness 10000) in paragraph at lines 142--152
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 152--158
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--168
+Underfull \hbox (badness 10000) in paragraph at lines 160--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
+Underfull \hbox (badness 10000) in paragraph at lines 170--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--183
+Underfull \hbox (badness 10000) in paragraph at lines 177--184
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 184--187
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
@@ -1172,14 +1169,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--187
 File: Chap_2/Figures/Galloping_2.png Graphic file (type bmp)
 <Chap_2/Figures/Galloping_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--272
+Underfull \hbox (badness 10000) in paragraph at lines 269--273
 
  []
 
 File: Chap_2/Figures/Flutter_1.png Graphic file (type bmp)
 <Chap_2/Figures/Flutter_1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--284
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
 
  []
 
@@ -1191,27 +1188,27 @@ File: Chap_2/Figures/Flutter_2_1_2.png Graphic file (type bmp)
 File: Chap_2/Figures/Flutter_2_1_3.png Graphic file (type bmp)
 <Chap_2/Figures/Flutter_2_1_3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--314
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--334
+Underfull \hbox (badness 10000) in paragraph at lines 325--335
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 345--353
+Underfull \hbox (badness 10000) in paragraph at lines 346--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--364
+Underfull \hbox (badness 10000) in paragraph at lines 355--365
 
  []
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 446--451
+Underfull \hbox (badness 10000) in paragraph at lines 447--452
 
  []
 
@@ -1220,12 +1217,12 @@ File: Chap_2/Figures/Single_Frequency.png Graphic file (type bmp)
 File: Chap_2/Figures/MultiFrequency_Explanation.png Graphic file (type bmp)
 <Chap_2/Figures/MultiFrequency_Explanation.png>
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 546--554
+Underfull \hbox (badness 10000) in paragraph at lines 547--555
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 567--574
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
 
  []
 
@@ -1234,20 +1231,17 @@ File: Chap_2/Figures/Flutter_Decay_Solution_Plot.png Graphic file (type bmp)
 File: Chap_2/Figures/Flutter_Growth_Solution_Plot.png Graphic file (type bmp)
 <Chap_2/Figures/Flutter_Growth_Solution_Plot.png>
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
  []
 
 
-LaTeX Warning: Reference `fig:Theodorsen_Flutter_Derivatives' on page 16 undefined on input line 660.
-
-
-Overfull \hbox (3.55011pt too wide) in paragraph at lines 653--662
+Overfull \hbox (3.55011pt too wide) in paragraph at lines 654--662
 []\TU/TimesNewRoman(0)/m/n/10.95 Theodorsen derivatives are used for the aerodynamic properties of the cross-section. The Theodors-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 653--662
+Underfull \hbox (badness 10000) in paragraph at lines 654--662
 
  []
 
@@ -1333,29 +1327,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--266
 
 File: Chap_3/Figures/MultiFrequency/1_Input_Signal.png Graphic file (type bmp)
 <Chap_3/Figures/MultiFrequency/1_Input_Signal.png>
-
-Underfull \hbox (badness 2376) in paragraph at lines 322--322
-[]\TU/TimesNewRoman(0)/b/n/8 (a) |\TU/TimesNewRoman(0)/m/n/10 Multi-frequency input signal — all bin-
- []
-
 File: Chap_3/Figures/MultiFrequency/1_Spectrum.png Graphic file (type bmp)
 <Chap_3/Figures/MultiFrequency/1_Spectrum.png>
-[22]
 File: Chap_3/Figures/MultiFrequency/2_Input_Signal.png Graphic file (type bmp)
 <Chap_3/Figures/MultiFrequency/2_Input_Signal.png>
-
-Underfull \hbox (badness 3417) in paragraph at lines 377--377
-[]\TU/TimesNewRoman(0)/b/n/8 (a) |\TU/TimesNewRoman(0)/m/n/10 Multi-frequency input signal with white
- []
-
 File: Chap_3/Figures/MultiFrequency/2_Spectrum.png Graphic file (type bmp)
 <Chap_3/Figures/MultiFrequency/2_Spectrum.png>
-
+[22] [23]
 Underfull \hbox (badness 10000) in paragraph at lines 402--406
 
  []
 
-[23]
 File: Chap_3/Figures/MultiFrequency/3_Input_Signal.png Graphic file (type bmp)
 <Chap_3/Figures/MultiFrequency/3_Input_Signal.png>
 File: Chap_3/Figures/MultiFrequency/3_Spectrum.png Graphic file (type bmp)
@@ -1365,12 +1347,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--461
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 471--480
 
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 481--486
 
  []
@@ -1468,11 +1450,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--229
  []
 
 [30]
-
-LaTeX Warning: Citation `Šarkić2012' on page 31 undefined on input line 232.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 230--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--252
 
  []
 
@@ -1480,27 +1463,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--243
 File: Chap_4/Figures/Mesh_Convergence_Study/GiD_Model_2.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/GiD_Model_2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--283
+Underfull \hbox (badness 10000) in paragraph at lines 270--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--312
+Underfull \hbox (badness 10000) in paragraph at lines 302--307
 
  []
 
 File: Chap_4/Figures/Mesh_Convergence_Study/CFD_Result.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/CFD_Result.png>
-[32]
 File: Chap_4/Figures/Mesh_Convergence_Study/Model_3_Heave.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/Model_3_Heave.png>
 File: Chap_4/Figures/Mesh_Convergence_Study/Model_3_Pitch.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/Model_3_Pitch.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--346
+Underfull \hbox (badness 10000) in paragraph at lines 336--338
 
  []
 
+[32] [33]
 File: Chap_4/Figures/Mesh_Convergence_Study/H1_and_H4.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/H1_and_H4.png>
 File: Chap_4/Figures/Mesh_Convergence_Study/A1_and_A4.png Graphic file (type bmp)
@@ -1510,22 +1493,22 @@ File: Chap_4/Figures/Mesh_Convergence_Study/H2_and_H3.png Graphic file (type bmp
 File: Chap_4/Figures/Mesh_Convergence_Study/A2_and_A3.png Graphic file (type bmp)
 <Chap_4/Figures/Mesh_Convergence_Study/A2_and_A3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--390
+Underfull \hbox (badness 10000) in paragraph at lines 376--382
 
  []
 
-[33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 391--396
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--416
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 383--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--465
+Underfull \hbox (badness 10000) in paragraph at lines 403--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--457
 
  []
 
@@ -1533,22 +1516,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 460--465
 File: Chap_4/Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Chap_4/Figures/Influence_of_Amplitude/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--484
+Underfull \hbox (badness 10000) in paragraph at lines 470--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--489
+Underfull \hbox (badness 10000) in paragraph at lines 477--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--496
+Underfull \hbox (badness 10000) in paragraph at lines 482--488
 
  []
 
 [36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 497--503
+Underfull \hbox (badness 10000) in paragraph at lines 489--495
 
  []
 
@@ -1565,52 +1548,52 @@ File: Chap_4/Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_
 File: Chap_4/Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png Graphic file (type bmp)
 <Chap_4/Figures/Influence_of_Amplitude/Frequency_Domain_Analysis/Pitch/DFT_Moment_Amplitude_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--563
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 564--571
+Underfull \hbox (badness 10000) in paragraph at lines 552--556
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 572--577
+Underfull \hbox (badness 10000) in paragraph at lines 557--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--587
+Underfull \hbox (badness 10000) in paragraph at lines 566--571
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--590
+Underfull \hbox (badness 10000) in paragraph at lines 572--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--594
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--591
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 595--603
+Underfull \hbox (badness 10000) in paragraph at lines 592--600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--609
+Underfull \hbox (badness 10000) in paragraph at lines 601--606
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--614
+Underfull \hbox (badness 10000) in paragraph at lines 607--611
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--618
+Underfull \hbox (badness 10000) in paragraph at lines 612--615
 
  []
 
@@ -1631,32 +1614,32 @@ File: Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Hea
 File: Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png Graphic file (type bmp)
 <Chap_4/Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--696
+Underfull \hbox (badness 10000) in paragraph at lines 688--693
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 697--703
+Underfull \hbox (badness 10000) in paragraph at lines 694--700
 
  []
 
 [40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 704--707
+Underfull \hbox (badness 10000) in paragraph at lines 701--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--711
+Underfull \hbox (badness 10000) in paragraph at lines 705--708
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--720
+Underfull \hbox (badness 10000) in paragraph at lines 709--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--724
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
 
  []
 
@@ -1671,17 +1654,17 @@ File: Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_v
 File: Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png Graphic file (type bmp)
 <Chap_4/Figures/Influence_of_Amplitude/Pitch_Study/Amp_0/Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--772
+Underfull \hbox (badness 10000) in paragraph at lines 765--769
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 773--780
+Underfull \hbox (badness 10000) in paragraph at lines 770--777
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 781--788
+Underfull \hbox (badness 10000) in paragraph at lines 778--785
 
  []
 
@@ -1690,76 +1673,76 @@ File: Chap_4/Figures/Influence_of_Amplitude/CriticalVelocity_vs__Amplitude_Schem
 File: Chap_4/Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png Graphic file (type bmp)
 <Chap_4/Figures/Influence_of_Amplitude/ReducedVelocity_Vs__Amplitude_Scheme.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 825--829
+Underfull \hbox (badness 10000) in paragraph at lines 822--826
 
  []
 
 [43]) (Chap_5/Chapt_5.tex [44]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--54
+Underfull \hbox (badness 10000) in paragraph at lines 48--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--69
+Underfull \hbox (badness 10000) in paragraph at lines 62--71
 
  []
 
 [45
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 70--84
+Underfull \hbox (badness 10000) in paragraph at lines 72--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--111
+Underfull \hbox (badness 10000) in paragraph at lines 106--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
-[46]
-Overfull \hbox (18.23991pt too wide) in paragraph at lines 225--237
+[46] [47]
+Overfull \hbox (18.23991pt too wide) in paragraph at lines 234--246
  [][] 
  []
 
 
-Overfull \hbox (25.00233pt too wide) in paragraph at lines 243--255
+Overfull \hbox (25.00233pt too wide) in paragraph at lines 252--264
  [][] 
  []
 
-[47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
@@ -1768,10 +1751,7 @@ File: Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Individual_C
 File: Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/2_Superimposed_ForcedMotion.png>
 
-LaTeX Warning: Reference `fig:MF-I_AeroMoment_TimeDomain' on page 49 undefined on input line 285.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--286
+Underfull \hbox (badness 10000) in paragraph at lines 290--295
 
  []
 
@@ -1780,12 +1760,12 @@ File: Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aer
 File: Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_DFT_LiftForce_Superposition_Scheme_4.png>
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 303--309
+Underfull \hbox (badness 10000) in paragraph at lines 312--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--312
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
@@ -1795,61 +1775,61 @@ File: Chap_5/Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_H
 File: Chap_5/Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--378
+Underfull \hbox (badness 10000) in paragraph at lines 379--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--384
+Underfull \hbox (badness 10000) in paragraph at lines 388--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--390
+Underfull \hbox (badness 10000) in paragraph at lines 394--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
 [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 396--400
+Underfull \hbox (badness 10000) in paragraph at lines 405--409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--407
+Underfull \hbox (badness 10000) in paragraph at lines 410--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--416
+Underfull \hbox (badness 10000) in paragraph at lines 417--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--423
+Underfull \hbox (badness 10000) in paragraph at lines 426--432
 
  []
 
 File: Chap_5/Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Combined_Amplitude_Errors.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
 
  []
 
 File: Chap_5/Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Combined_Phase_Errors.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--446
+Underfull \hbox (badness 10000) in paragraph at lines 451--455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--467
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
 
  []
 
@@ -1863,17 +1843,17 @@ File: Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Hea
 File: Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Compressed_Displacement_Vs_Force/Pitch/PhaseMoment_Error_vs_Superpositions.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--510
+Underfull \hbox (badness 10000) in paragraph at lines 515--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--516
+Underfull \hbox (badness 10000) in paragraph at lines 520--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
+Underfull \hbox (badness 10000) in paragraph at lines 526--531
 
  []
 
@@ -1886,22 +1866,22 @@ File: Chap_5/Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_
 File: Chap_5/Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--567
+Underfull \hbox (badness 10000) in paragraph at lines 572--576
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 568--574
+Underfull \hbox (badness 10000) in paragraph at lines 577--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--580
+Underfull \hbox (badness 10000) in paragraph at lines 584--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--588
+Underfull \hbox (badness 10000) in paragraph at lines 590--597
 
  []
 
@@ -1909,17 +1889,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--588
 File: Chap_5/Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--602
+Underfull \hbox (badness 10000) in paragraph at lines 608--611
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--606
+Underfull \hbox (badness 10000) in paragraph at lines 612--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--612
+Underfull \hbox (badness 10000) in paragraph at lines 616--621
 
  []
 
@@ -1928,24 +1908,24 @@ File: Chap_5/Figures/MultiFrequency_Study_1/CriticalVelocity_vs_Number_of_Superp
 File: Chap_5/Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_1/ReducedVelocity_vs_Number_of_Superpositions.png>
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 634--639
+Underfull \hbox (badness 10000) in paragraph at lines 643--648
 
  []
 
 
-Overfull \hbox (24.60234pt too wide) in paragraph at lines 650--660
+Overfull \hbox (24.60234pt too wide) in paragraph at lines 659--669
  [][] 
  []
 
 File: Chap_5/Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_2/Combined_Flutter_Derivative.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 671--678
+Underfull \hbox (badness 10000) in paragraph at lines 680--687
 
  []
 
 [58] [59]
-Underfull \hbox (badness 10000) in paragraph at lines 681--685
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
 
@@ -1954,7 +1934,7 @@ File: Chap_5/Figures/MultiFrequency_Study_2/Combined_Amplitude_Errors.png Graphi
 File: Chap_5/Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_2/Combined_Phase_Errors.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--706
+Underfull \hbox (badness 10000) in paragraph at lines 711--715
 
  []
 
@@ -1964,7 +1944,7 @@ File: Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_
 File: Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--733
+Underfull \hbox (badness 10000) in paragraph at lines 736--742
 
  []
 
@@ -1973,45 +1953,38 @@ File: Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_
 File: Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_2/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png>
 
-LaTeX Warning: Reference `fig:ReducedVelocity_Vs_Number_of_Superpositions_MF-II' on page 61 undefined on input line 760.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 756--761
+Underfull \hbox (badness 10000) in paragraph at lines 765--769
 
  []
 
 File: Chap_5/Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png Graphic file (type bmp)
 <Chap_5/Figures/MultiFrequency_Study_2/CriticalVelocity_vs_Number_of_Superpositions.png>
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 783--793
+Underfull \hbox (badness 10000) in paragraph at lines 791--807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--802
+Underfull \hbox (badness 10000) in paragraph at lines 808--813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--808
+Underfull \hbox (badness 10000) in paragraph at lines 814--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--817
+Underfull \hbox (badness 10000) in paragraph at lines 824--829
 
  []
 
 [62]
-Overfull \hbox (5.16571pt too wide) in paragraph at lines 818--829
-\TU/TimesNewRoman(0)/m/n/10.95 For pitch motion with the four highest frequencies, results are more subjective, and single-frequency
- []
-
 File: Chap_5/Figures/Simulation_Time_1.png Graphic file (type bmp)
 <Chap_5/Figures/Simulation_Time_1.png>
 File: Chap_5/Figures/Simulation_Time_2.png Graphic file (type bmp)
 <Chap_5/Figures/Simulation_Time_2.png>
-[63]) (Chap_6/Chapt_6.tex [64]
+ [63]) (Chap_6/Chapt_6.tex [64]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--44
@@ -2263,12 +2236,7 @@ Underfull \hbox (badness 4254) in paragraph at lines 145--151
 []\TU/TimesNewRoman(0)/m/n/10.95 Wolf Dynamics.  Turbulence modeling in OpenFOAM: Theory and application-
  []
 
-[85] [86]
-Underfull \hbox (badness 1127) in paragraph at lines 312--318
-[]\TU/TimesNewRoman(0)/m/n/10.95 P.S. Brar, R. Raul, and R.H. Scanlan.  NUMERICAL CALCULATION OF FLUT-
- []
-
-) (Declaration/Declaration.tex [87]) [88
+[85] [86]) (Declaration/Declaration.tex [87]) [88
 
 ] (main.aux)
  ***********
@@ -2277,21 +2245,18 @@ L3 programming layer <2024-01-04>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1045488E92AF21B61A8C22675CD2ADC5;13068.
+(rerunfilecheck)             Checksum: DE1D0FB1E6E8C381F5474826F6EC6893;12205.
  ) 
 Here is how much of TeX's memory you used:
- 28717 strings out of 411570
- 705499 string characters out of 5806423
- 1944191 words of memory out of 5000000
- 50044 multiletter control sequences out of 15000+600000
+ 28714 strings out of 411570
+ 705406 string characters out of 5806423
+ 1948191 words of memory out of 5000000
+ 50041 multiletter control sequences out of 15000+600000
  565072 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,23n,93p,501b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (94 pages, 1830180 bytes).
+Output written on main.xdv (94 pages, 1832536 bytes).

@@ -30,13 +30,13 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces Mesh convergence study results for the eight flutter derivatives}}{34}{figure.caption.35}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Flutter derivatives as a function of reduced velocity for all amplitude schemes}}{37}{figure.caption.38}%
 \contentsline {figure}{\numberline {28}{\ignorespaces Frequency spectra of lift force and moment for heave motion at reduced velocity 21.86}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Frequency spectra of lift force and moment for pitch motion at reduced velocity 21.86}}{39}{figure.caption.40}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Effect of motion amplitude on aerodynamic force/moment magnitude and phase at reduced velocity 21.86}}{41}{figure.caption.41}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Comparison of frequency spectra of lift force and moment for pitch motion between schemes 3 and 4 at reduced velocity 21.86}}{38}{figure.caption.40}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Linearity assessment of aerodynamic force/moment magnitude and phase at reduced velocity 21.86}}{41}{figure.caption.41}%
 \contentsline {figure}{\numberline {31}{\ignorespaces Normalised aerodynamic force/moment and relative phase error versus amplitude scheme for all reduced velocities}}{41}{figure.caption.42}%
 \contentsline {figure}{\numberline {32}{\ignorespaces Time history of prescribed pitch displacement showing selected time instants for pressure analysis}}{42}{figure.caption.43}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Pressure distribution around the bridge deck at four instants during one oscillation cycle: Amplitude Scheme 0 (red), Amplitude Scheme 6 (blue)}}{43}{figure.caption.44}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Critical wind speed versus amplitude scheme for four bridge configurations}}{44}{figure.caption.46}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Critical reduced velocity versus amplitude scheme for four bridge configurations}}{44}{figure.caption.46}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Comparison of variation in the pressure distribution around the bridge deck at four time instants during one oscillation cycle for amplitude scheme 0 (red), amplitude scheme 6 (blue)}}{43}{figure.caption.44}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Variation of critical wind velocity with amplitude scheme for four bridge configurations}}{44}{figure.caption.46}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Variation of reduced critical velocity with amplitude scheme for four bridge configurations}}{44}{figure.caption.46}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {36}{\ignorespaces Individual prescribed forced-motion components at frequencies 0.125 Hz, 0.15 Hz, 0.2 Hz, and 0.25 Hz for MF-I Simulation 16 (heave motion)}}{49}{figure.caption.52}%
 \contentsline {figure}{\numberline {37}{\ignorespaces Superposed prescribed heave motion for MF-I Simulation 16 (Superposition Scheme 4)}}{49}{figure.caption.53}%
@@ -55,7 +55,7 @@
 \contentsline {figure}{\numberline {50}{\ignorespaces Flutter derivatives identified from Multi-Frequency Campaign II across all superposition schemes}}{59}{figure.caption.67}%
 \contentsline {figure}{\numberline {51}{\ignorespaces Relative errors in aerodynamic force and moment amplitudes versus reduced velocity for Multi-Frequency Campaign II}}{60}{figure.caption.68}%
 \contentsline {figure}{\numberline {52}{\ignorespaces Phase errors in aerodynamic lift force and moment versus reduced velocity for Multi-Frequency Campaign II}}{60}{figure.caption.69}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Frequency spectra of aerodynamic lift force and moment for heave motion in Superposition Scheme 4 (Campaign II}}{61}{figure.caption.70}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Frequency spectra of aerodynamic lift force and moment for heave motion in Superposition Scheme 4 (Campaign II)}}{61}{figure.caption.70}%
 \contentsline {figure}{\numberline {54}{\ignorespaces Frequency spectra of aerodynamic lift force and moment for pitch motion in Superposition Scheme 4 (Campaign II)}}{61}{figure.caption.71}%
 \contentsline {figure}{\numberline {55}{\ignorespaces Critical flutter wind speed versus number of superposed frequencies for Campaign II}}{62}{figure.caption.72}%
 \contentsline {figure}{\numberline {56}{\ignorespaces Total computational time saved versus number of superposed frequencies for different combination strategies}}{63}{figure.caption.73}%
@@ -66,9 +66,9 @@
 \contentsline {figure}{\numberline {59}{\ignorespaces Frequency Domain Analysis Heave - Part 2 (Schemes 4-6)}}{68}{figure.caption.75}%
 \contentsline {figure}{\numberline {60}{\ignorespaces Frequency Domain Analysis Pitch - Part 1 (Schemes 0-3)}}{69}{figure.caption.76}%
 \contentsline {figure}{\numberline {61}{\ignorespaces Frequency Domain Analysis Pitch - Part 2 (Schemes 4-6)}}{70}{figure.caption.77}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Compiled Prescribed Motion Displacement Vs Force}}{71}{figure.caption.78}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Compiled Prescribed Motion Displacement vs Force}}{71}{figure.caption.78}%
 \contentsline {figure}{\numberline {63}{\ignorespaces Compiled displacement vs.\ force - Campaign~I}}{72}{figure.caption.79}%
 \contentsline {figure}{\numberline {64}{\ignorespaces Frequency domain analysis of aerodynamic forces - Heave, Campaign~I}}{73}{figure.caption.80}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Frequency domain analysis of aerodynamic forces - Pitch, Campaign~1}}{74}{figure.caption.81}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Frequency domain analysis of aerodynamic forces - Pitch, Campaign I}}{74}{figure.caption.81}%
 \contentsline {figure}{\numberline {66}{\ignorespaces Frequency domain analysis of aerodynamic forces - Heave, Campaign~II}}{78}{figure.caption.88}%
 \contentsline {figure}{\numberline {67}{\ignorespaces Frequency domain analysis of aerodynamic forces - Pitch, Campaign~II}}{79}{figure.caption.89}%

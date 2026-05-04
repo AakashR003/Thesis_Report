@@ -31,11 +31,11 @@
 \contentsline {subsubsection}{Boundary Conditions}{30}{subsubsection*.28}%
 \contentsline {subsection}{\numberline {4.2.2}Solver Information}{31}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Mesh Convergence Study}{32}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Impact of Motion Amplitude on Flutter Derivatives}{35}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Impact of Motion Amplitude on Flutter Derivatives}{34}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Simulation Parameters}{35}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparison of Flutter Derivatives}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Comparison of Flutter Derivatives}{35}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Spectral Analysis}{36}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Aerodynamic Force and Moment Analysis}{38}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}Aerodynamic Force and Moment Analysis}{39}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Pressure Distribution Study}{40}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Amplitude Impact on Critical Wind Speed}{42}{subsection.4.3.6}%
 \contentsline {section}{\numberline {4.4}Discussions}{43}{section.4.4}%
@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {5.1}Simulation Parameters}{45}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Selection of Frequencies and Superpositions}{45}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Multi-Frequency Simulations I}{47}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Superposition Schemes}{47}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Superposition Schemes}{48}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Procedure of Multi-Frequency Method with FFT}{49}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Comparison of Flutter Derivatives}{51}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Error Assessment Against Single-Frequency Simulations}{53}{subsection.5.2.4}%
@@ -63,6 +63,3 @@
 \contentsline {chapter}{\numberline {A}Appendix}{67}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Single Frequency Simulation Results}{67}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Multi-Frequency Simulation Results}{67}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Multi-Frequency Simulation Results - Campaign I}{67}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Amplitude and Phase Error Tables}{67}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Multi-Frequency Simulation Results - Campaign II}{77}{subsection.A.2.3}%

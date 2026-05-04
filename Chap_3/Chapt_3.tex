@@ -146,14 +146,14 @@ on a frequency bin, no discretisation error is introduced.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/1_Input_Signal.png}
-        \caption{Input signal at 0.4~Hz.}
+        \caption{Signal}
         \label{fig:sf_binmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/1_Spectrum.png}
-        \caption{FFT amplitude spectrum — bin match.}
+        \caption{Amplitude spectrum}
         \label{fig:sf_binmatch_spectrum}
     \end{subfigure}
     
@@ -174,14 +174,14 @@ assigns its amplitude to the nearest neighbouring bin. \\
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/2_Input_Signal.png}
-        \caption{Input signal at 0.45~Hz.}
+        \caption{Signal}
         \label{fig:sf_nonbinmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/2_Spectrum.png}
-        \caption{FFT amplitude spectrum — non-bin match.}
+        \caption{Amplitude spectrum}
         \label{fig:sf_nonbinmatch_spectrum}
     \end{subfigure}
     
@@ -208,14 +208,14 @@ less severe than that of spectral leakage.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/3_Input_Signal.png}
-        \caption{Input signal at 0.4~Hz with white noise.}
+        \caption{Signal}
         \label{fig:sf_noise_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/SingleFrequency/3_Spectrum.png}
-        \caption{FFT amplitude spectrum — bin match with noise.}
+        \caption{Amplitude spectrum}
         \label{fig:sf_noise_spectrum}
    
     \end{subfigure}
@@ -319,14 +319,14 @@ accuracy of the FFT output is verified for each component.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/1_Input_Signal.png}
-        \caption{Multi-frequency input signal — all bin-matched.}
+        \caption{Signal}
         \label{fig:mf_binmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/1_Spectrum.png}
-        \caption{FFT amplitude spectrum — all components bin-matched.}
+        \caption{Amplitude spectrum}
         \label{fig:mf_binmatch_spectrum}
     \end{subfigure}
     \caption{Multi-frequency bin-matched case: input signal and corresponding FFT spectrum with zero error across all components.}
@@ -374,14 +374,14 @@ persists under multi-frequency conditions.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Input_Signal.png}        
-        \caption{Multi-frequency input signal with white noise.}
+        \caption{Signal}
         \label{fig:mf_noise_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/2_Spectrum.png}
-        \caption{FFT amplitude spectrum — bin match with noise.}
+        \caption{Amplitude spectrum}
         \label{fig:mf_noise_spectrum}
     \end{subfigure}
     \caption{Multi-frequency bin-matched case with added white noise: input signal and corresponding FFT spectrum.}
@@ -439,14 +439,14 @@ worst-case spectral leakage scenario.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering   
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/3_Input_Signal.png}
-        \caption{Multi-frequency input signal with one non-bin-matched component.}
+        \caption{Signal}
         \label{fig:mf_nonbinmatch_input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency/3_Spectrum.png}
-        \caption{FFT amplitude spectrum showing spectral leakage from the non-bin-matched component.}
+        \caption{Amplitude spectrum}
         \label{fig:mf_nonbinmatch_spectrum}
     \end{subfigure}
     \caption{Multi-frequency case with one non-bin-matched component at 1.05~Hz: input signal and FFT 
@@ -471,7 +471,7 @@ all frequency components in a multi-frequency signal fall on frequency bins.
 The signal analysis conducted in this chapter provide important insights into the Fast Fourier Transform (FFT) and its limitations
 when applied to the extraction of signals. The study showed that when a signal frequency coincides exactly with an FFT frequency bin, the amplitude is identified without significant error, 
 both for single-frequency and multi-frequency signals. However, when a frequency component does not fall on a bin (non-bin-matched case), spectral leakage 
-introduces significant amplitude errors. In the single-frequency case, these errors can exceed 30\%, depending on the relative position of the signal 
+introduces significant amplitude errors. In the single-frequency case, these errors can exceed 20\%, depending on the relative position of the signal 
 within the bin interval. In multi-frequency signals, spectral leakage from a single non-bin-matched component 
 propagates to neighbouring frequencies, causing errors in their extracted amplitudes as well as to overall errors.
 White noise had a comparatively minor influence on amplitude extraction accuracy when frequencies are properly 
@@ -481,7 +481,7 @@ analysis. \\
 The frequency resolution, determined by the length of the data record (\(T = N/f_s\)), plays an important role in reducing spectral 
 leakage. If the length of the data record is increased, the possibility that signal frequencies fall close to a frequency bin in 
 relative terms increases, thereby reducing leakage-induced errors. However, the sensitivity of the error to the exact relative 
-position within a bin also increases with finer resolution. Hence, careful selection of simulation duration and excitation 
+position within a bin also increases with finer resolution. Hence, careful selection of simulation time and excitation 
 frequencies is needed. \\
 
 These results illustrate the importance of frequency selection in the multi-frequency method for flutter derivative identification. 

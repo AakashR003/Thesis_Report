@@ -70,7 +70,8 @@ temporal and spatial variation of wind loads. \\
 
 \end{figure}
 
-The fourth link is the structural response to these forces. The focus of this thesis is mainly on the last two links 
+The fourth link is the structural response to these forces. The fifth link is the criteria for assessing the structural performance under these loads. 
+The focus of this thesis is mainly on the 3rd and 4th links 
 (aerodynamics and structural response). Before delving into them, a few points about the Van der Hoven spectrum are 
 discussed, as it provides context into the time scales that links 3 and 4 deal with, relative to wind climate. \\
 
@@ -280,7 +281,7 @@ created. This can lead to a rapid increase in the amplitude of oscillations, whi
 This is illustrated in Figure \ref{fig:flutter_2}. In the Figure \ref{fig:flutter_mechanism_stable}, it can be observed that the phase between the vertical and pitch motion is such that the positive work created during the
 upward motion is cancelled by the negative work created during the downward motion. Hence, the system is stable. But in the Figure \ref{fig:flutter_mechanism_unstable}, the phase between the vertical and pitch motion is such that 
 positive work is created during both the upward and downward motion. Hence, a positive feedback loop is created and the system becomes unstable. 
-One can refer to the work of Billah.K and et.al, where a detailed discussion on above mentioned concepts in the context of failure of Tacoma Narrows Bridge is presented \cite{billah1991}\\
+One can refer to the work of Billah et.al \cite{billah1991}, where a detailed discussion on above mentioned concepts in the context of failure of Tacoma Narrows Bridge is presented. \\
 
 \begin{figure}[htbp]
     \centering
@@ -549,7 +550,7 @@ This represents a pure sinusoidal oscillation with frequency \(\omega\) (real nu
 the solution takes the form \(x(t) = e^{i\omega t} = e^{i\omega_r t} \cdot e^{-\omega_i t} = e^{-\omega_i t} \bigl(\cos(\omega t) + i \sin(\omega t)\bigr)\),
 where the real part \(\omega_r\) is the oscillation frequency and the imaginary part \(\omega_i\) governs the damping of the response.
 This equation must be solved for \(\omega\) to determine the system's oscillating frequency and damping characteristics. 
-Because structural damping is present, the problem takes the form of a quadratic eigenvalue problem. Hence this is 
+Because structural damping is present, the problem takes the form of a quadratic eigenvalue problem. Hence, this is 
 linearised as shown below to be solved as a generalised eigenvalue problem: \\
 
 \begin{equation}
@@ -629,7 +630,7 @@ The structural parameters taken for the validation are taken from \cite{diana202
 
 \begin{table}[htbp]
     \centering
-    \caption{Structural parameters used for validation (Diana benchmark).}
+    \caption{Structural parameters used for validation \cite{diana2020}.}
     \label{tab:structural_params}
     \begin{tabular}{|l|l|c|}
         \hline
@@ -656,8 +657,7 @@ derived from the closed-form solution for a thin flat plate in potential flow,
 first obtained by Theodorsen \cite{TheodorsenGarrick1934}. They are expressed in terms
 of the real and imaginary parts of the Theodorsen circulatory function
 \(C(k) = F(k) + iG(k)\), where \(k\) is the reduced frequency. The analytical
-expressions are listed in Table~\ref{tab:theodorsen_derivs} and plotted in
-Figure~\ref{fig:Theodorsen_Flutter_Derivatives}. The results obtained with the Python tool are shown in
+expressions are listed in Table~\ref{tab:theodorsen_derivs}. The results obtained with the Python tool are shown in
 Figures~\ref{fig:eigen_freq_vs_Ur}. \\
 
 \begin{table}[htbp]

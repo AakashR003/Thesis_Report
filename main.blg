@@ -11,10 +11,9 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 Warning--entry type for "Kratos" isn't style-file defined
---line 1051 of file references.bib
+--line 1053 of file references.bib
 Warning--entry type for "EN1991-1-4" isn't style-file defined
 --line 1337 of file references.bib
-Warning--I didn't find a database entry for "Šarkić2012"
 Warning--empty journal in Martínez-López_2023
 Warning--empty year in Martínez-López_2023
 Warning--empty author in 2024
@@ -24,49 +23,49 @@ Warning--empty year in pentek
 Warning--empty journal in menter
 Warning--empty year in menter
 Warning--empty author in SWE2024
+Warning--empty journal in SWE2024
 Warning--empty journal in huang2013
 Warning--empty year in huang2013
-Warning--empty author in Su2025
 Warning--empty journal in zhan2012_Tacoma_Narrows
 You've used 47 entries,
             2616 wiz_defined-function locations,
-            910 strings with 14386 characters,
-and the built_in function-call counts, 16789 in all, are:
-= -- 1743
-> -- 530
+            909 strings with 14384 characters,
+and the built_in function-call counts, 16808 in all, are:
+= -- 1744
+> -- 533
 < -- 4
-+ -- 171
-- -- 124
-* -- 1014
-:= -- 2154
-add.period$ -- 169
++ -- 172
+- -- 125
+* -- 1011
+:= -- 2163
+add.period$ -- 170
 call.type$ -- 47
 change.case$ -- 44
 chr.to.int$ -- 0
 cite$ -- 60
 duplicate$ -- 423
 empty$ -- 1814
-format.name$ -- 124
-if$ -- 4672
+format.name$ -- 125
+if$ -- 4674
 int.to.chr$ -- 0
 int.to.str$ -- 47
 missing$ -- 46
-newline$ -- 266
-num.names$ -- 43
-pop$ -- 374
+newline$ -- 267
+num.names$ -- 44
+pop$ -- 375
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1254
+skip$ -- 1253
 stack$ -- 0
 substring$ -- 763
-swap$ -- 114
+swap$ -- 113
 text.length$ -- 66
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 97
+while$ -- 98
 width$ -- 49
-write$ -- 563
-(There were 16 warnings)
+write$ -- 564
+(There were 15 warnings)
