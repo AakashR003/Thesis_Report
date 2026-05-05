@@ -39,7 +39,7 @@ modelling.
 \subsection{Numerical Solution of the Navier-Stokes Equations} 
 
 When formulating the equations of motion for a fluid system, the Eulerian system is used. 
-In the Eulerian system, a fixed frame of reference is used, where the observer measures 
+In the Eulerian system, a fixed frame of reference is taken, where the observer measures 
 the properties of the fluid as it passes through fixed spatial locations.
 The Navier-Stokes equations represent Newton's second law of motion adapted for fluid continua within an Eulerian framework, 
 constrained by the principle of mass conservation. They are given by the following equations:  
@@ -57,7 +57,7 @@ them into a system of algebraic equations through spatial and temporal discretiz
 Volume, Finite Difference, and Finite Element methods. As the solver used in this thesis is based on the Finite Element 
 Method (FEM), this approach is primarily discussed. In FEM, the strong form of the governing differential equations is 
 transformed into an integral weak form. By discretising the fluid domain into finite elements, the continuous problem is 
-converted into a system of linear equations that can be solved computationally (refer to \cite{seshu2003} for a description of FEM).
+converted into a system of linear equations that can be solved computationally (refer to the book\cite{seshu2003} for a description of FEM).
 
 \subsection{Turbulence Modelling} 
 
@@ -146,7 +146,7 @@ Within this fluid domain, the bridge structure is treated as a solid obstacle th
 Therefore, no mesh or structural properties (described in the subsequent section) are assigned to the structure. \\
 
 As most flow variations, such as flow separations, occur in the immediate vicinity of the structure, a highly 
-refined mesh is required in this near-structure region to capture these phenomena accurately, as discussed in the previous chapter. 
+refined mesh is required in this near-structure region to capture these phenomena accurately. 
 Conversely, farther from the structure, the flow remains largely invariant in both time and space. Hence, a coarser mesh 
 is used in these areas for computational efficiency. \\
 
@@ -229,7 +229,7 @@ for the same reason. Since no fluid-structure interaction is modelled, they are 
 
 The URANS equations with the $k$-$\omega$ SST turbulence model are used, with a turbulence intensity of 0.1 and a 
 turbulent mixing length of 0.0588~m. The inlet velocity is set to 1 m/s, and the corresponding Reynolds number for the 
-flow is $2.43 \times 10^4$. This velocity does not match the velocity in the reference \cite{sarkic2012} because, for flutter, it must be chosen independently. 
+flow is $2.43 \times 10^4$. This velocity does not match the velocity in the reference \cite{sarkic2012} because, for flutter, it shall be chosen independently. 
 For flutter, only the reduced velocity is important, which can be altered by modifying the bridge's oscillation frequency. 
 The time step must then be chosen. It is calculated based on the CFL number 
 (CFL $= \frac{u \Delta t}{\Delta x}$, where $u$ is the velocity, $\Delta t$ the time step, and $\Delta x$ the mesh size). 
@@ -278,7 +278,7 @@ Therefore, the total simulation time is the sum of ramp-up time, stabilisation t
 
 \begin{table}[htbp]  
     \centering
-    \caption{Mesh Convergence Study Results}
+    \caption{Mesh convergence study parameters: Mesh size distribution across zones, time step, CFL for all models}
     \label{tab:mesh_convergence}
     \begin{tabular}{|l|c|c|c|c|c|}
         \hline
@@ -412,7 +412,7 @@ simulations are conducted.
 
 \begin{table}[htbp]
     \centering
-    \caption{Heave and pitch amplitude}
+    \caption{Heave and pitch motion amplitudes across all amplitude schemes for conducting linearity assessment}
     \label{tab:nonlinear_amplitude}
     \begin{tabular}{|l|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
         \hline
@@ -437,7 +437,7 @@ simulations are conducted.
 
 \begin{table}[htbp]
     \centering
-    \caption{Reduced velocities}
+    \caption{Reduced velocity and stable time periods for selected frequencies for each amplitude scheme in the linearity assessment}
     \label{tab:Reduced velocities}
     \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
         \hline
@@ -598,7 +598,7 @@ the plot should similarly be a horizontal line at a value of 0 (indicating error
 when comparing the degree of nonlinearity between the two figures). The non-uniform limits are 
 kept to capture the variations in nonlinearity even when the overall error is small. \\
 
-It is observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
+It is observed that for heave motion, the moment and its phase (\ref{fig:Compiled_Heave_Moment_vs_Amplitude_c4} and \ref{fig:Compiled_Heave_PhaseMx_vs_Amplitude_c4}) remain constant up to amplitude scheme 5 (heave ratio of 5.46) 
 for reduced velocities above 1.71. This is equivalent to the behaviour observed earlier for the reduced velocity of 21.86 
 (Figure~\ref{fig:Displacement_Vs_Force}). The reduced velocities of 1.71 (frequency = 1.6 Hz) and 0.85 (frequency = 3.2 Hz) alone show significant deviation 
 because they are affected by the vortex shedding effect. Spectral leakage from vortex shedding makes capturing derivatives at 
@@ -655,28 +655,28 @@ nonlinear behaviour cannot be detected via spectral analysis. \\
         \centering
         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{Magnitude of Moment - Heave}
-        \label{fig:Compiled_Heave_Moment_vs_Amplitude}
+        \label{fig:Compiled_Heave_Moment_vs_Amplitude_c4}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png}
         \caption{Magnitude of Moment - Pitch}
-        \label{fig:Compiled_Pitch_Moment_vs_Amplitude}
+        \label{fig:Compiled_Pitch_Moment_vs_Amplitude_c4}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Heave/PhaseMx_Error_vs_Amplitude_Schemes.png}
         \caption{Phase of Moment - Heave}
-        \label{fig:Compiled_Heave_PhaseMx_vs_Amplitude}
+        \label{fig:Compiled_Heave_PhaseMx_vs_Amplitude_c4}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/Influence_of_Amplitude/Compressed_Displacement_Vs_Force/Pitch/PhaseMx_Error_vs_Amplitude_Schemes.png}
         \caption{Phase of Moment - Pitch}
-        \label{fig:Compiled_Pitch_PhaseMx_vs_Amplitude}
+        \label{fig:Compiled_Pitch_PhaseMx_vs_Amplitude_c4}
     \end{subfigure}
     
     \caption{Normalised aerodynamic force/moment and relative phase error versus amplitude scheme for all reduced velocities}
@@ -706,12 +706,14 @@ Figure~\ref{fig: Comparative Pressure Distribution Amplitude Scheme - 0 Vs 6 - P
 bridge cross-section for amplitude schemes 0 and 6 (pressure inward represents negative pressure). It is observed that for scheme 0, the pressure distribution 
 is consistent among all four time steps. However, for amplitude scheme 6, it varies greatly. \\
 
-Although the distribution of pressure itself changes, this behaviour mainly affects the pitching moment (and therefore derivatives $A_2^*$ and $H_2^*$) 
-rather than the lift force (related to $A_3^*$ and $H_3^*$). This is because the integrated lift force remains approximately constant 
-even at higher pitch angles, but the distribution of pressure on the structure's surface changes considerably. As a result, the effective centre 
+Although the distribution of pressure itself changes, this behaviour mainly affects the  derivatives $A_2^*$ and $H_2^*$ 
+and not the derivatives $A_3^*$ and $H_3^*$. This is because the change in pressure distribution affected the time lag 
+of the aerodynamic force and moment rather than their magnitude.
+A sign change is observed only in derivative $A_2^*$ because 
+the integrated lift force did not change its sign  
+even at higher pitch angles, while the distribution of pressure on the structure's surface changes considerably. As a result, the effective centre 
 of pressure (the moment arm weighted by the pressure distribution) shifts during the cycle, which is directly 
-reflected in the pitching moment. Since the lift force is the net vertical integration, it is considerably less 
-sensitive to these redistributions. This observation is consistent with the observations from the references, and 
+reflected in the sign of the pitching moment. This observation is consistent with the observations from the references, and 
 therefore it is concluded that a similar mechanism is responsible 
 for this discrepancy in the derivatives $A_2^*$ and $H_2^*$. \\
 

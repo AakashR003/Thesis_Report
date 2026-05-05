@@ -48,7 +48,7 @@ The frequency bin refers to the discrete set of frequency values produced by the
 domain conversion. If the frequency of the signal to be extracted coincides with one of the
 values in the frequency bin, the extracted amplitude will be accurate and free from
 discretisation errors. If the signal frequency does not coincide with a frequency bin value, the amplitude obtained
-from the FFT will contain an error. This effect is known as \textit{spectral leakage}: since
+from the FFT will contain an error. This effect is known as spectral leakage: This happens because since 
 no bin directly corresponds to the signal frequency, its amplitude is distributed across the
 neighbouring bins. The frequency bins of a time data is calculated as
 
@@ -67,12 +67,12 @@ where
 
 \vspace{0.3cm}
 
-The spacing between two adjacent frequencies in the bin is known as the \textit{bin spacing},
-and the \textit{frequency resolution} of an FFT refers to how small this spacing is. A smaller
+The spacing between two adjacent frequencies in the bin is known as the bin spacing,
+and the frequency resolution of an FFT refers to how small this spacing is. A smaller
 bin spacing corresponds to a higher frequency resolution. As shown by the formula, the
 resolution depends on the length of the data record.\\
 
-Another important issue to be aware of is \textit{aliasing}. The maximum signal frequency that
+Another important issue to be aware of is aliasing. The maximum signal frequency that
 can be extracted using an FFT is limited by the Nyquist frequency, given by:
 
 \begin{equation}
@@ -104,8 +104,6 @@ single- and multi-frequency methods in the following sections. \\
 %           of the signal of interest will disturb the extracted amplitude. Since the noise is
 %           random, a large bin spacing further compounds this error through spectral leakage.
 % \end{enumerate}
-
-\vspace{0.5cm}
 
 % ============================================================
 \section{Single Frequency}

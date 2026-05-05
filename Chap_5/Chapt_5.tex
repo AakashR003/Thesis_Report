@@ -25,7 +25,7 @@ Finally, based on the results and inferences obtained from both campaigns, a pra
 The chapter proceeds as follows. Section 1 defines the simulation parameters, including the selection of frequencies and 
 the superposition schemes.
 Section 2 presents the first multi-frequency campaign together with the detailed procedure of 
-the multi-frequency method using the fast Fourier transform.
+the multi-frequency method using the Fast Fourier transform.
 Section 3 describes the second multi-frequency campaign. 
 Section 4 formulates the recommended guideline for conducting multi-frequency simulations.
 
@@ -132,35 +132,36 @@ Stable Time Period (s)  & 80    & 80    & 50    & 40    & 25   & 12.5 & 6.25 & 3
 \end{tabular}
 \end{table}
 
+Superposition schemes are then formed by grouping these frequencies into subsets of two, three, and four frequencies which will be shown in the following sections.
 % \textbf{Note:} The amplitude is identical for all frequencies;
-Therefore, within each superposition, 
+% Therefore, within each superposition, 
 % only the frequencies are listed and may be matched against the table above.
-the schemes are structured as follows:
+% the schemes are structured as follows:
 
-\begin{itemize}
-    \item \textbf{Superposition Scheme 1:} Single frequencies (this is taken as reference)
+% \begin{itemize}
+%     \item \textbf{Superposition Scheme 1:} Single frequencies (this is taken as reference)
 
-    \item \textbf{Superposition Scheme 2:}
-    \begin{itemize}
-        \item $[0.125,\ 0.15]$
-        \item $[0.2,\ 0.25]$
-        \item $[0.4,\ 0.8]$
-        \item $[1.6,\ 3.2]$
-    \end{itemize}
+%     \item \textbf{Superposition Scheme 2:}
+%     \begin{itemize}
+%         \item $[0.125,\ 0.15]$
+%         \item $[0.2,\ 0.25]$
+%         \item $[0.4,\ 0.8]$
+%         \item $[1.6,\ 3.2]$
+%     \end{itemize}
 
-    \item \textbf{Superposition Scheme 3:}
-    \begin{itemize}
-        \item $[0.125,\ 0.15,\ 0.2]$
-        \item $[0.25,\ 0.4,\ 0.8]$
-        \item $[0.8,\ 1.6,\ 3.2]$
-    \end{itemize}
+%     \item \textbf{Superposition Scheme 3:}
+%     \begin{itemize}
+%         \item $[0.125,\ 0.15,\ 0.2]$
+%         \item $[0.25,\ 0.4,\ 0.8]$
+%         \item $[0.8,\ 1.6,\ 3.2]$
+%     \end{itemize}
 
-    \item \textbf{Superposition Scheme 4:}
-    \begin{itemize}
-        \item $[0.125,\ 0.15,\ 0.2,\ 0.25]$
-        \item $[0.4,\ 0.8,\ 1.6,\ 3.2]$
-    \end{itemize}
-\end{itemize}
+%     \item \textbf{Superposition Scheme 4:}
+%     \begin{itemize}
+%         \item $[0.125,\ 0.15,\ 0.2,\ 0.25]$
+%         \item $[0.4,\ 0.8,\ 1.6,\ 3.2]$
+%     \end{itemize}
+% \end{itemize}
 
 % ============================================================
 \section{Multi-Frequency Simulations I}
@@ -296,7 +297,7 @@ Figure~\ref{fig:MF-I_AeroLift_TimeDomain}. \\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Computed_Aerodynamic_Lift_Force.png}
-    \caption{Time history of the computed aerodynamic lift force for MF-I Simulation 16 (heave motion, Superposition Scheme 4)}
+    \caption{Time history of the aerodynamic lift force obtained from the CFD for MF-I Simulation 16 (heave motion, Superposition Scheme 4)}
     \label{fig:MF-I_AeroLift_TimeDomain}
 \end{figure}
 
@@ -322,7 +323,7 @@ The corresponding amplitude and phase values are listed in Table~\ref{tab:MF-I_A
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Procedure_Explanation/3_Individual_Harmonic_Lift_Force.png}
-    \caption{Individually extracted harmonic components of the aerodynamic lift force via FFT for MF-I Simulation 16 (heave motion, Superposition Scheme 4)}
+    \caption{Individually extracted harmonic components of the aerodynamic lift force via FFT for MF-I simulation 16 (heave motion, Superposition Scheme 4)}
     \label{fig:MF-I_IndividualHarmonicLift}
 \end{figure}
 
@@ -349,7 +350,7 @@ The corresponding amplitude and phase values are listed in Table~\ref{tab:MF-I_A
 
 \begin{table}[htbp]
 \centering
-\caption{Amplitude and Phase Data for MF-I Simulation~16 (Heave, Superposition Scheme~4)}
+\caption{Amplitude and phase values obtained from the CFD for MF-I simulation~16 (Heave, Superposition Scheme~4)}
 \label{tab:MF-I_AmpPhase_SP4}
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
@@ -394,7 +395,7 @@ the error is not clearly visible in this figure.\\
 For the flutter derivatives $H_2^*$ and $A_2^*$, the errors at lower reduced velocities are negligible, 
 even for Superposition Scheme~4.
 However, at higher reduced velocities, the error becomes significantly larger.
-Based on the single frequency simulations, this is expected, as it reflects the nonlinearity due to the phase of the moment of 
+Based on the single frequency simulations, this is expected, as it reflects the nonlinearity due to the phase of the pitch motion of 
 the flutter derivative coefficients $H_2^*$ and $A_2^*$, and is not a consequence of the multi-frequency method itself.\\
 
 The plot indicates that when the multi-frequency method is implemented in accordance with the principles 
@@ -534,14 +535,14 @@ be detected from these outputs alone.\\
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_LiftForce_Superposition_Scheme_4.png}
-        \caption{Lift Force - Scheme 4}
+        \caption{Heave lift force - scheme 4}
         \label{fig:Heave_DFT_Fy_amplitude_case_6}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Heave/DFT_Moment_Superposition_Scheme_4.png}
-        \caption{Moment - Scheme 4}
+        \caption{Heave moment - scheme 4}
         \label{fig:Heave_DFT_moment_amplitude_case_6}
     \end{subfigure}
     
@@ -554,14 +555,14 @@ be detected from these outputs alone.\\
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_LiftForce_Superposition_Scheme_4.png}
-        \caption{Lift Force - Scheme 4}
+        \caption{Pitch lift force - scheme 4}
         \label{fig:Pitch_DFT_Fy_amplitude_case_6_MF-I}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/MultiFrequency_Study_1/Frequency_Domain_Analysis/Pitch/DFT_Moment_Superposition_Scheme_4.png}
-        \caption{Moment - Scheme 4}
+        \caption{Pitch moment - scheme 4}
         \label{fig:Pitch_DFT_moment_amplitude_case_6_MF-I}
     \end{subfigure}
     
@@ -598,7 +599,7 @@ to ensure the ratio does not become excessively large. \\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{Figures/MultiFrequency_Study_1/Heave_Pitch_Amplitude_Plots.png}
-    \caption{Aerodynamic force and moment amplitudes versus reduced velocity for heave and pitch motions (Campaign I)}
+    \caption{Comparative ratio of maximum and minimum aerodynamic force and moment amplitudes within the superposition scheme 4 for heave and pitch motions (Campaign I)}
     \label{fig:Reduced Velocity Vs Force Amplitudes}
 \end{figure}
 

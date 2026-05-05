@@ -1,15 +1,15 @@
-PWD d:\1.TUM courses\Masters Thesis\Report_Latex
+PWD d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4
 INPUT C:\Users\aakas\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.tex
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.log
+OUTPUT Chapt_4.log
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\import\import.sty
 INPUT ..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\..\main.tex
 INPUT ..\main.tex
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\..\main.tex
+INPUT ..\main.tex
+INPUT ..\main.tex
 INPUT ..\main.tex
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -276,20 +276,20 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.de
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\ppxetex.def
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\chngcntr\chngcntr.sty
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
+INPUT .\Chapt_4.aux
+INPUT .\Chapt_4.aux
+INPUT Chapt_4.aux
+OUTPUT Chapt_4.aux
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
+INPUT .\Chapt_4.out
+INPUT .\Chapt_4.out
+INPUT Chapt_4.out
+INPUT Chapt_4.out
+INPUT .\Chapt_4.out
+INPUT .\Chapt_4.out
+OUTPUT Chapt_4.out
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
@@ -320,37 +320,37 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-OUTPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.xdv
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_Casacade.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_Casacade.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_Casacade.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_vs_wave_number.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_vs_wave_number.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\Energy_vs_wave_number.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\DNS_LES_URANS.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\DNS_LES_URANS.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\CFD\DNS_LES_URANS.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Sarkic_Section.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\GiD_Model_2.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\CFD_Result.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Heave.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H1_and_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H1_and_H4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H1_and_H4.png
+OUTPUT Chapt_4.xdv
+INPUT .\Figures\CFD\Energy_Casacade.png
+INPUT .\Figures\CFD\Energy_Casacade.png
+INPUT .\Figures\CFD\Energy_Casacade.png
+INPUT .\Figures\CFD\Energy_vs_wave_number.png
+INPUT .\Figures\CFD\Energy_vs_wave_number.png
+INPUT .\Figures\CFD\Energy_vs_wave_number.png
+INPUT .\Figures\CFD\DNS_LES_URANS.png
+INPUT .\Figures\CFD\DNS_LES_URANS.png
+INPUT .\Figures\CFD\DNS_LES_URANS.png
+INPUT .\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
+INPUT .\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
+INPUT .\Figures\Mesh_Convergence_Study\Virtual_Wind_Tunnel_Dimensions.png
+INPUT .\Figures\Mesh_Convergence_Study\Sarkic_Section.png
+INPUT .\Figures\Mesh_Convergence_Study\Sarkic_Section.png
+INPUT .\Figures\Mesh_Convergence_Study\Sarkic_Section.png
+INPUT .\Figures\Mesh_Convergence_Study\GiD_Model_2.png
+INPUT .\Figures\Mesh_Convergence_Study\GiD_Model_2.png
+INPUT .\Figures\Mesh_Convergence_Study\GiD_Model_2.png
+INPUT .\Figures\Mesh_Convergence_Study\CFD_Result.png
+INPUT .\Figures\Mesh_Convergence_Study\CFD_Result.png
+INPUT .\Figures\Mesh_Convergence_Study\CFD_Result.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Heave.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Heave.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Heave.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
+INPUT .\Figures\Mesh_Convergence_Study\Model_3_Pitch.png
+INPUT .\Figures\Mesh_Convergence_Study\H1_and_H4.png
+INPUT .\Figures\Mesh_Convergence_Study\H1_and_H4.png
+INPUT .\Figures\Mesh_Convergence_Study\H1_and_H4.png
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
@@ -359,81 +359,81 @@ INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\aakas\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A1_and_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A1_and_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A1_and_A4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H2_and_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H2_and_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\H2_and_H3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A2_and_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A2_and_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Mesh_Convergence_Study\A2_and_A3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.aux
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
-INPUT d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_4\Chapt_4.out
+INPUT .\Figures\Mesh_Convergence_Study\A1_and_A4.png
+INPUT .\Figures\Mesh_Convergence_Study\A1_and_A4.png
+INPUT .\Figures\Mesh_Convergence_Study\A1_and_A4.png
+INPUT .\Figures\Mesh_Convergence_Study\H2_and_H3.png
+INPUT .\Figures\Mesh_Convergence_Study\H2_and_H3.png
+INPUT .\Figures\Mesh_Convergence_Study\H2_and_H3.png
+INPUT .\Figures\Mesh_Convergence_Study\A2_and_A3.png
+INPUT .\Figures\Mesh_Convergence_Study\A2_and_A3.png
+INPUT .\Figures\Mesh_Convergence_Study\A2_and_A3.png
+INPUT .\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
+INPUT .\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
+INPUT .\Figures\Influence_of_Amplitude\Combined_Flutter_Derivative.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_LiftForce_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Heave\DFT_Moment_Amplitude_Scheme_6.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_3.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_LiftForce_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Frequency_Domain_Analysis\Pitch\DFT_Moment_Amplitude_Scheme_4.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Heave\Heave_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_LiftForce_and_Moment_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Displacement_Vs_Force\Pitch\Pitch_Phases_vs_Amplitude.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\NormalizedMoment_vs_Amplitude_Schemes_RelativeToFirst.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Heave\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Compressed_Displacement_Vs_Force\Pitch\PhaseMx_Error_vs_Amplitude_Schemes.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Prescribed Displacement_marked.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t32.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t34.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t36.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
+INPUT .\Figures\Influence_of_Amplitude\Pitch_Study\Amp_0\Comparative_Amp0_vs_Amp6_Pitch_ComparativePressure_Amp0_vs_Amp6_t38.000.png
+INPUT .\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
+INPUT .\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
+INPUT .\Figures\Influence_of_Amplitude\CriticalVelocity_vs__Amplitude_Scheme.png
+INPUT .\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
+INPUT .\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
+INPUT .\Figures\Influence_of_Amplitude\ReducedVelocity_Vs__Amplitude_Scheme.png
+INPUT Chapt_4.aux
+INPUT .\Chapt_4.out
+INPUT .\Chapt_4.out

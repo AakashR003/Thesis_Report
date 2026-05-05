@@ -20,7 +20,7 @@ the design of most structures such as bridges and wind turbines. \\
 In the design of long-span bridges, cable-stayed bridges and suspension bridges are the solutions that satisfy this requirement. 
 However, due to their highly optimised nature, these structures become more flexible under human-induced limit states. 
 Consequently, they are more susceptible to unsteady wind loads, especially to aeroelastic phenomena such as flutter. 
-Flutter is an aeroelastic phenomenon that can cause instability or failure of structures through interaction with wind. 
+Flutter is an aeroelastic phenomenon that can cause instability failure of structures through interaction with wind. 
 Until 1940, there was limited focus on this domain, primarily because of an insufficient understanding of wind-structure 
 interaction \cite{gimsing2012}. The failure of the Tacoma Narrows Bridge (span 853 m) in the USA in 1940 was a pivotal 
 moment in this field. Within four months of its opening, the bridge failed due to flutter at a wind speed of 68 km/h \cite{abbas2017, billah1991}. \\
@@ -33,7 +33,7 @@ known as flutter derivatives. These are a set of functions that quantify the uns
 structure in relation to its vibration frequency. \\
 
 CFD simulations or wind tunnel tests are performed to obtain these constants. One method to obtain them with CFD simulation 
-is forced motion simulation, where a 2D bridge deck is oscillated at a specific frequency, and the flutter derivatives are 
+is forced motion simulation, where a 2D bridge deck is oscillated in virtual wind tunnel at a specific frequency, and the flutter derivatives are 
 obtained based on the aerodynamic forces. Since these constants are functions, multiple CFD simulations by varying the vibration 
 frequency are required to obtain the flutter derivatives, which is a time-consuming process. \\
 
@@ -41,7 +41,7 @@ Currently, with bridge spans exceeding 2000 m, faster results are needed so that
 To overcome the time consumption of the forced motion simulation method, the multi-frequency forced motion vibration method 
 was introduced by Lin Huang et al. in 2011 \cite{huang2011}. In this method, instead of applying a single motion frequency, 
 one can superpose multiple motions of different frequencies and apply them. Then, using mathematical tools such as the 
-Fourier transform, the individual components can be obtained. In this way, the method can theoretically be \(N\) times as 
+Fourier transform or curve fitting, the individual components can be obtained. In this way, the method can theoretically be \(N\) times as 
 efficient (where \(N\) is the number of combinations). However, according to the authors, the multi-frequency method reduced 
 the simulation time by only 18\%. This was because when using the multi-frequency vibration method, the accuracy of flutter 
 derivatives was affected, and therefore more simulation time was required, which resulted in a decrease in the method's 
@@ -73,7 +73,7 @@ the effectiveness of the proposed guidelines.
 This document is structured as follows:
 
 \begin{itemize}
-    \item \textbf{Chapter 2: Flutter} \\
+    \item \textbf{Chapter 2: Aeroelastic Flutter} \\
     This chapter provides the theoretical foundation for understanding flutter analysis. It covers structural wind engineering concepts, 
     the mathematical formulation of flutter using flutter derivatives according to Scanlan's theory, and the identification of aerodynamic forces 
     through forced-motion CFD simulations. Then, the calculation of critical wind speed using aerodynamic and structural properties is presented.

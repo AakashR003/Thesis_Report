@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  28 APR 2026 06:22
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2026.4.25)  5 MAY 2026 01:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,7 +841,7 @@ File: Figures/SingleFrequency/1_Input_Signal.png Graphic file (type bmp)
 File: Figures/SingleFrequency/1_Spectrum.png Graphic file (type bmp)
 <Figures/SingleFrequency/1_Spectrum.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
 
  []
 
@@ -855,22 +855,22 @@ File: Figures/SingleFrequency/3_Input_Signal.png Graphic file (type bmp)
 File: Figures/SingleFrequency/3_Spectrum.png Graphic file (type bmp)
 <Figures/SingleFrequency/3_Spectrum.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--234
+Underfull \hbox (badness 10000) in paragraph at lines 228--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--239
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 242--252
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--266
+Underfull \hbox (badness 10000) in paragraph at lines 260--264
 
  []
 
@@ -884,7 +884,7 @@ File: Figures/MultiFrequency/2_Input_Signal.png Graphic file (type bmp)
 File: Figures/MultiFrequency/2_Spectrum.png Graphic file (type bmp)
 <Figures/MultiFrequency/2_Spectrum.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--406
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
 
  []
 
@@ -894,22 +894,22 @@ File: Figures/MultiFrequency/3_Input_Signal.png Graphic file (type bmp)
 File: Figures/MultiFrequency/3_Spectrum.png Graphic file (type bmp)
 <Figures/MultiFrequency/3_Spectrum.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--461
+Underfull \hbox (badness 10000) in paragraph at lines 455--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--480
+Underfull \hbox (badness 10000) in paragraph at lines 469--478
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 481--486
+Underfull \hbox (badness 10000) in paragraph at lines 479--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 485--488
 
  []
 
@@ -926,12 +926,12 @@ Package rerunfilecheck Info: File `Chapt_3.out' has not changed.
 (rerunfilecheck)             Checksum: 7655A4BC62B3E49F1AECC39870B26A54;1781.
  ) 
 Here is how much of TeX's memory you used:
- 26397 strings out of 411570
- 530134 string characters out of 5806423
+ 26395 strings out of 411570
+ 530035 string characters out of 5806423
  1935191 words of memory out of 5000000
- 47941 multiletter control sequences out of 15000+600000
- 563285 words of font info for 81 fonts, out of 8000000 for 9000
+ 47940 multiletter control sequences out of 15000+600000
+ 563277 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,9n,110p,532b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.xdv (8 pages, 170164 bytes).
+Output written on d:\1.TUM courses\Masters Thesis\Report_Latex\Chap_3\Chapt_3.xdv (8 pages, 170252 bytes).
